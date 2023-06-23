@@ -9,6 +9,7 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Add component Pricing Slider for Stat pricing page.
 - Added config values to publish mirror repo
+- Auto-publish jetpack-components package to npm
 
 ## 0.38.1 - 2023-06-21
 ### Changed
