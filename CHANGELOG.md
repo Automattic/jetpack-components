@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.40.0-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Added
+- Add authentication to zendesk chat
+
 ## [0.39.0] - 2023-06-23
 ### Added
 - Add component Pricing Slider for Stat pricing page.
@@ -744,4 +751,5 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.40.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.39.0...0.40.0-alpha
 [0.39.0]: https://github.com/Automattic/jetpack-components/compare/0.38.1...0.39.0
