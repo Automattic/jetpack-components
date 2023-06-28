@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update storybook mdx to use `@storybook/blocks` directly rather than `@storybook/addon-docs`.
 
+### Fixed
+- Fix Jetpack footer accessibility issues
+
 ## [0.40.0] - 2023-06-26
 ### Added
 - Add authentication to Zendesk chat. [#31339]
