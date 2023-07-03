@@ -11,6 +11,7 @@ This is an alpha version! The changes listed here are not final.
 - Update storybook mdx to use `@storybook/blocks` directly rather than `@storybook/addon-docs`.
 
 ### Fixed
+- Add tagName prop to Col and Container
 - Fix Jetpack footer accessibility issues
 
 ## [0.40.0] - 2023-06-26
