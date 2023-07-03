@@ -7,6 +7,7 @@
 This is an alpha version! The changes listed here are not final.
 
 ### Changed
+- Adjust component pricing slider border and box-shadow styling.
 - Update storybook mdx to use `@storybook/blocks` directly rather than `@storybook/addon-docs`.
 
 ### Fixed
