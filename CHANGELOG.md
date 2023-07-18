@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Changed
+- Use Connection initial state for fetching Calypso Env.
+
 ### Fixed
 - Fix some minor issues in Jetpack plugin codebase
 
