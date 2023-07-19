@@ -2,15 +2,10 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.40.4-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [0.40.4] - 2023-07-18
 ### Changed
-- Use Connection initial state for fetching Calypso Env.
-
-### Fixed
-- Fix some minor issues in Jetpack plugin codebase
+- Use Connection initial state for fetching Calypso Env. [#31906]
+- Code quality improvements. [#31684]
 
 ## [0.40.3] - 2023-07-17
 ### Changed
@@ -777,7 +772,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.40.4-alpha]: https://github.com/Automattic/jetpack-components/compare/0.40.3...0.40.4-alpha
+[0.40.4]: https://github.com/Automattic/jetpack-components/compare/0.40.3...0.40.4
 [0.40.3]: https://github.com/Automattic/jetpack-components/compare/0.40.2...0.40.3
 [0.40.2]: https://github.com/Automattic/jetpack-components/compare/0.40.1...0.40.2
 [0.40.1]: https://github.com/Automattic/jetpack-components/compare/0.40.0...0.40.1
