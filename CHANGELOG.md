@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Jetpack Footer: added generic links
 
+### Changed
+- Updated package dependencies.
+
 ## [0.40.4] - 2023-07-18
 ### Changed
 - Use Connection initial state for fetching Calypso Env. [#31906]
