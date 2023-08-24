@@ -6,8 +6,12 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Added
+- Add uPlot library and boost score graph component
+
 ### Changed
 - UI: Improve discount elements for pricing section
+- Updated package dependencies.
 
 ## [0.41.1] - 2023-08-09
 ### Changed
