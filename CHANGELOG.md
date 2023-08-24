@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.41.2-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- UI: Improve discount elements for pricing section
+
 ## [0.41.1] - 2023-08-09
 ### Changed
 - Updated package dependencies. [#32166]
@@ -783,6 +790,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.41.2-alpha]: https://github.com/Automattic/jetpack-components/compare/0.41.1...0.41.2-alpha
 [0.41.1]: https://github.com/Automattic/jetpack-components/compare/0.41.0...0.41.1
 [0.41.0]: https://github.com/Automattic/jetpack-components/compare/0.40.4...0.41.0
 [0.40.4]: https://github.com/Automattic/jetpack-components/compare/0.40.3...0.40.4
