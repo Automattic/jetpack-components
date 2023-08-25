@@ -13,6 +13,9 @@ This is an alpha version! The changes listed here are not final.
 - UI: Improve discount elements for pricing section
 - Updated package dependencies.
 
+### Fixed
+- BoostScoreGraph: add mock module to avoid the mobile editor importing incompatible web dependencies.
+
 ## [0.41.1] - 2023-08-09
 ### Changed
 - Updated package dependencies. [#32166]
