@@ -2,19 +2,16 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.41.2-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [0.41.2] - 2023-08-28
 ### Added
-- Add uPlot library and boost score graph component
+- Add uPlot library and boost score graph component [#32016]
 
 ### Changed
-- UI: Improve discount elements for pricing section
-- Updated package dependencies.
+- UI: Improve discount elements for pricing section [#32545]
+- Updated package dependencies. [#32016]
 
 ### Fixed
-- BoostScoreGraph: add mock module to avoid the mobile editor importing incompatible web dependencies.
+- BoostScoreGraph: add mock module to avoid the mobile editor importing incompatible web dependencies. [#32672]
 
 ## [0.41.1] - 2023-08-09
 ### Changed
@@ -797,7 +794,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.41.2-alpha]: https://github.com/Automattic/jetpack-components/compare/0.41.1...0.41.2-alpha
+[0.41.2]: https://github.com/Automattic/jetpack-components/compare/0.41.1...0.41.2
 [0.41.1]: https://github.com/Automattic/jetpack-components/compare/0.41.0...0.41.1
 [0.41.0]: https://github.com/Automattic/jetpack-components/compare/0.40.4...0.41.0
 [0.40.4]: https://github.com/Automattic/jetpack-components/compare/0.40.3...0.40.4
