@@ -2,34 +2,6 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.42.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
-### Added
-- Popover: Added new component.
-
-### Changed
-- Renamed pricing-slider to number-slider
-
-### Removed
-- Remove unnecessary files from mirror repo and published package.
-
-## [0.41.2] - 2023-08-28
-### Added
-- Add uPlot library and boost score graph component [#32016]
-
-### Changed
-- UI: Improve discount elements for pricing section [#32545]
-- Updated package dependencies. [#32016]
-
-### Fixed
-- BoostScoreGraph: add mock module to avoid the mobile editor importing incompatible web dependencies. [#32672]
-
-## [0.41.1] - 2023-08-09
-### Changed
-- Updated package dependencies. [#32166]
-
 ## [0.41.0] - 2023-07-24
 ### Added
 - Jetpack Footer: added generic links [#31627]
@@ -807,9 +779,6 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.42.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.41.2...0.42.0-alpha
-[0.41.2]: https://github.com/Automattic/jetpack-components/compare/0.41.1...0.41.2
-[0.41.1]: https://github.com/Automattic/jetpack-components/compare/0.41.0...0.41.1
 [0.41.0]: https://github.com/Automattic/jetpack-components/compare/0.40.4...0.41.0
 [0.40.4]: https://github.com/Automattic/jetpack-components/compare/0.40.3...0.40.4
 [0.40.3]: https://github.com/Automattic/jetpack-components/compare/0.40.2...0.40.3

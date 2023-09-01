@@ -6,5 +6,3 @@ node_modules      export-ignore
 /changelog/**     production-exclude
 /.eslintrc.cjs    production-exclude
 /jest.config.cjs  production-exclude
-**/stories/**     production-exclude
-**/test/**        production-exclude
