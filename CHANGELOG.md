@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Added
+- Popover: Added new component.
+
 ### Changed
 - Renamed pricing-slider to number-slider
 
