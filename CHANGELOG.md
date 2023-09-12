@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Changed
+- Updated package dependencies.
+
 ## [0.42.2] - 2023-09-11
 ### Changed
 - Bump pkgs version [#32825]
