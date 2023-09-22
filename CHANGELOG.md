@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Added WhatsApp social icon
+- Aded CopyToClipboard component
 
 ## [0.42.4] - 2023-09-19
 
