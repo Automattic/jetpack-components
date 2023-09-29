@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.43.0-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Added
+- Added new sharing icon
+
 ## [0.42.5] - 2023-09-25
 ### Added
 - Added WhatsApp social icon. [#33074]
@@ -826,6 +833,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.43.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.42.5...0.43.0-alpha
 [0.42.5]: https://github.com/Automattic/jetpack-components/compare/0.42.4...0.42.5
 [0.42.4]: https://github.com/Automattic/jetpack-components/compare/0.42.3...0.42.4
 [0.42.3]: https://github.com/Automattic/jetpack-components/compare/0.42.2...0.42.3
