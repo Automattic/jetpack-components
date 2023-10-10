@@ -7,6 +7,7 @@
 This is an alpha version! The changes listed here are not final.
 
 ### Changed
+- Boost Score Graph: Show a straight line before the first data point.
 - Updated package dependencies.
 
 ## [0.43.0] - 2023-10-03
