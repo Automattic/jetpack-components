@@ -2,12 +2,9 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.43.2-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [0.43.2] - 2023-10-11
 ### Changed
-- Changed Twitter icon and label to X
+- Changed Twitter icon and label to X [#33445]
 
 ## [0.43.1] - 2023-10-10
 ### Changed
@@ -842,7 +839,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.43.2-alpha]: https://github.com/Automattic/jetpack-components/compare/0.43.1...0.43.2-alpha
+[0.43.2]: https://github.com/Automattic/jetpack-components/compare/0.43.1...0.43.2
 [0.43.1]: https://github.com/Automattic/jetpack-components/compare/0.43.0...0.43.1
 [0.43.0]: https://github.com/Automattic/jetpack-components/compare/0.42.5...0.43.0
 [0.42.5]: https://github.com/Automattic/jetpack-components/compare/0.42.4...0.42.5
