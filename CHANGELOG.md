@@ -2,13 +2,10 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.43.3-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [0.43.3] - 2023-10-16
 ### Changed
-- Replaced inline social icons with social-logos package
-- Updated package dependencies.
+- Replaced inline social icons with social-logos package. [#33613]
+- Updated package dependencies. [#33584, #33429]
 
 ## [0.43.2] - 2023-10-11
 ### Changed
@@ -847,7 +844,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.43.3-alpha]: https://github.com/Automattic/jetpack-components/compare/0.43.2...0.43.3-alpha
+[0.43.3]: https://github.com/Automattic/jetpack-components/compare/0.43.2...0.43.3
 [0.43.2]: https://github.com/Automattic/jetpack-components/compare/0.43.1...0.43.2
 [0.43.1]: https://github.com/Automattic/jetpack-components/compare/0.43.0...0.43.1
 [0.43.0]: https://github.com/Automattic/jetpack-components/compare/0.42.5...0.43.0
