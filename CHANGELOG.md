@@ -7,6 +7,7 @@
 This is an alpha version! The changes listed here are not final.
 
 ### Changed
+- Replaced inline social icons with social-logos package
 - Updated package dependencies.
 
 ## [0.43.2] - 2023-10-11
