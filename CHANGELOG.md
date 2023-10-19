@@ -10,6 +10,9 @@ This is an alpha version! The changes listed here are not final.
 - Add a `ProgressBar` component.
 - Social: Add the Nextdoor connection toggle
 
+### Changed
+- Updated package dependencies.
+
 ## [0.43.4] - 2023-10-17
 ### Changed
 - Updated package dependencies. [#33646]
