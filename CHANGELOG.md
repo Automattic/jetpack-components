@@ -2,12 +2,9 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.44.1-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [0.44.1] - 2023-10-23
 ### Changed
-- Use pointer-events: none on arrow icon so its click behavior falls back to the container/underlying component
+- Use pointer-events: None on arrow icon so its click behavior falls back to the container/underlying component. [#33733]
 
 ## [0.44.0] - 2023-10-19
 ### Added
@@ -863,7 +860,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.44.1-alpha]: https://github.com/Automattic/jetpack-components/compare/0.44.0...0.44.1-alpha
+[0.44.1]: https://github.com/Automattic/jetpack-components/compare/0.44.0...0.44.1
 [0.44.0]: https://github.com/Automattic/jetpack-components/compare/0.43.4...0.44.0
 [0.43.4]: https://github.com/Automattic/jetpack-components/compare/0.43.3...0.43.4
 [0.43.3]: https://github.com/Automattic/jetpack-components/compare/0.43.2...0.43.3
