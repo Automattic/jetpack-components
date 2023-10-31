@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Social: Update Nextdoor icon styling so it's round.
 
+### Fixed
+- Fix IconTooltip Popover styles
+
 ## [0.44.1] - 2023-10-23
 ### Changed
 - Use pointer-events: None on arrow icon so its click behavior falls back to the container/underlying component. [#33733]
