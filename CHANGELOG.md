@@ -2,12 +2,9 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.44.3-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [0.44.3] - 2023-10-31
 ### Fixed
-- Fix IconTooltip Popover styles
+- Fix IconTooltip Popover styles. [#33856]
 
 ## [0.44.2] - 2023-10-30
 ### Changed
@@ -871,7 +868,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.44.3-alpha]: https://github.com/Automattic/jetpack-components/compare/0.44.2...0.44.3-alpha
+[0.44.3]: https://github.com/Automattic/jetpack-components/compare/0.44.2...0.44.3
 [0.44.2]: https://github.com/Automattic/jetpack-components/compare/0.44.1...0.44.2
 [0.44.1]: https://github.com/Automattic/jetpack-components/compare/0.44.0...0.44.1
 [0.44.0]: https://github.com/Automattic/jetpack-components/compare/0.43.4...0.44.0
