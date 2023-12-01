@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.45.4-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Updated package dependencies.
+
 ## [0.45.3] - 2023-11-21
 ### Fixed
 - Fixed ActionPopover CSS variables. [#34226]
@@ -886,6 +893,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.45.4-alpha]: https://github.com/Automattic/jetpack-components/compare/0.45.3...0.45.4-alpha
 [0.45.3]: https://github.com/Automattic/jetpack-components/compare/0.45.2...0.45.3
 [0.45.2]: https://github.com/Automattic/jetpack-components/compare/0.45.1...0.45.2
 [0.45.1]: https://github.com/Automattic/jetpack-components/compare/0.45.0...0.45.1
