@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.45.8-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Updated package dependencies.
+
 ## [0.45.7] - 2023-12-13
 ### Added
 - Added `className` prop to RecordMeterBar component [#34182]
@@ -902,6 +909,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.45.8-alpha]: https://github.com/Automattic/jetpack-components/compare/0.45.7...0.45.8-alpha
 [0.45.7]: https://github.com/Automattic/jetpack-components/compare/0.45.6...0.45.7
 [0.45.6]: https://github.com/Automattic/jetpack-components/compare/0.45.5...0.45.6
 [0.45.5]: https://github.com/Automattic/jetpack-components/compare/0.45.4...0.45.5
