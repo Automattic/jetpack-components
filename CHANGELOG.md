@@ -7,6 +7,7 @@
 This is an alpha version! The changes listed here are not final.
 
 ### Changed
+- Updated package dependencies.
 - Updated the design for Quick Share buttons and fixed its a11y
 
 ## [0.45.8] - 2023-12-19
