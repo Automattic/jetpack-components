@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Updated package dependencies.
 
+### Fixed
+- Added consistency for Jetpack footer links
+
 ## [0.45.9] - 2024-01-02
 ### Changed
 - Updated the design and fixed a11y for Quick Share buttons. [#34754]
