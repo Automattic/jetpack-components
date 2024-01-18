@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Added
+- Show a Jetpack Manage banner into My Jetpack section.
+
 ### Changed
 - Use blog ID for links instead of site slug.
 
