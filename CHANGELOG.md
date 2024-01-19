@@ -2,12 +2,9 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.47.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [0.47.0] - 2024-01-18
 ### Added
-- Show a Jetpack Manage banner into My Jetpack section.
+- My Jetpack: add a Jetpack Manage banner. [#35078]
 
 ## [0.46.0] - 2024-01-18
 ### Changed
@@ -928,7 +925,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.47.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.46.0...0.47.0-alpha
+[0.47.0]: https://github.com/Automattic/jetpack-components/compare/0.46.0...0.47.0
 [0.46.0]: https://github.com/Automattic/jetpack-components/compare/0.45.10...0.46.0
 [0.45.10]: https://github.com/Automattic/jetpack-components/compare/0.45.9...0.45.10
 [0.45.9]: https://github.com/Automattic/jetpack-components/compare/0.45.8...0.45.9
