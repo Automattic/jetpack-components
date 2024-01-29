@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Move the UpsellBanner component to js-packages/components
 
+### Fixed
+- Fix TypeScript type for a Boost Score prop
+
 ## [0.47.0] - 2024-01-18
 ### Added
 - My Jetpack: add a Jetpack Manage banner. [#35078]
