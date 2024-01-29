@@ -1,6 +1,6 @@
 {
 	"name": "@automattic/jetpack-components",
-	"version": "0.48.0-alpha",
+	"version": "0.48.0",
 	"description": "Jetpack Components Package",
 	"author": "Automattic",
 	"license": "GPL-2.0-or-later",
@@ -15,7 +15,7 @@
 	},
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
-		"@automattic/jetpack-boost-score-api": "^0.1.20-alpha",
+		"@automattic/jetpack-boost-score-api": "^0.1.20",
 		"@babel/runtime": "^7",
 		"@wordpress/browserslist-config": "5.31.0",
 		"@wordpress/components": "25.14.0",
