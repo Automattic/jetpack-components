@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Update clicking an icon tooltip to cause the tooltip to show/hide instead of always showing.
+- Updated package dependencies.
 
 ## [0.48.0] - 2024-01-29
 ### Changed
