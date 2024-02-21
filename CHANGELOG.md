@@ -12,6 +12,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Updated package dependencies.
 
+### Fixed
+- Jetpack Logo: prevent VoiceOver on Safari from reading SVG content
+
 ## [0.48.3] - 2024-02-19
 ### Added
 - Added support for annotations in graph [#34978]
