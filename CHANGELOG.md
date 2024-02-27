@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.49.0-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Added
+- Components: add AI icon
+
 ## [0.48.4] - 2024-02-22
 ### Added
 - Adding accesible text for external links on connection page and footer [#35733]
@@ -955,6 +962,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.49.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.48.4...0.49.0-alpha
 [0.48.4]: https://github.com/Automattic/jetpack-components/compare/0.48.3...0.48.4
 [0.48.3]: https://github.com/Automattic/jetpack-components/compare/0.48.2...0.48.3
 [0.48.2]: https://github.com/Automattic/jetpack-components/compare/0.48.1...0.48.2
