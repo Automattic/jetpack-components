@@ -2,15 +2,16 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.49.0-alpha] - unreleased
+## [0.49.1-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
 
-### Added
-- Components: add AI icon
-
 ### Changed
 - Update ProgressBar styles.
+
+## [0.49.0] - 2024-02-27
+### Added
+- Components: add AI icon [#35965]
 
 ## [0.48.4] - 2024-02-22
 ### Added
@@ -965,7 +966,8 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.49.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.48.4...0.49.0-alpha
+[0.49.1-alpha]: https://github.com/Automattic/jetpack-components/compare/0.49.0...0.49.1-alpha
+[0.49.0]: https://github.com/Automattic/jetpack-components/compare/0.48.4...0.49.0
 [0.48.4]: https://github.com/Automattic/jetpack-components/compare/0.48.3...0.48.4
 [0.48.3]: https://github.com/Automattic/jetpack-components/compare/0.48.2...0.48.3
 [0.48.2]: https://github.com/Automattic/jetpack-components/compare/0.48.1...0.48.2
