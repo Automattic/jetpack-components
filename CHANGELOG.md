@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Components: add AI icon
 
+### Changed
+- Update ProgressBar styles.
+
 ## [0.48.4] - 2024-02-22
 ### Added
 - Adding accesible text for external links on connection page and footer [#35733]
