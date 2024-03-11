@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Social Logos: add new SMS icon.
 
+### Changed
+- Updated package dependencies.
+
 ## [0.50.0] - 2024-03-07
 ### Added
 - Fix typescript errors [#35904]
