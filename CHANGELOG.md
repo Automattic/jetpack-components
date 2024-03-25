@@ -2,13 +2,10 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.50.3-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [0.50.3] - 2024-03-25
 ### Added
-- Annotations: Make it possible to interact with them
-- Create RadioControl component
+- Annotations: Make it possible to interact with them [#36453]
+- Create RadioControl component [#36532]
 
 ## [0.50.2] - 2024-03-14
 ### Added
@@ -990,7 +987,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.50.3-alpha]: https://github.com/Automattic/jetpack-components/compare/0.50.2...0.50.3-alpha
+[0.50.3]: https://github.com/Automattic/jetpack-components/compare/0.50.2...0.50.3
 [0.50.2]: https://github.com/Automattic/jetpack-components/compare/0.50.1...0.50.2
 [0.50.1]: https://github.com/Automattic/jetpack-components/compare/0.50.0...0.50.1
 [0.50.0]: https://github.com/Automattic/jetpack-components/compare/0.49.2...0.50.0
