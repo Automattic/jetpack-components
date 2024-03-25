@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Annotations: Make it possible to interact with them
+- Create RadioControl component
 
 ## [0.50.2] - 2024-03-14
 ### Added
