@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Added AutomatticIconLogo and AutomatticForAgenciesLogo components.
 
+### Changed
+- Jetpack Components: only display div that contains title if a title is passed.
+
 ## [0.50.5] - 2024-03-29
 ### Changed
 - Internal updates.
