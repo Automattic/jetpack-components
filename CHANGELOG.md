@@ -11,6 +11,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Jetpack Components: only display div that contains title if a title is passed.
+- Updated package dependencies.
 
 ## [0.50.5] - 2024-03-29
 ### Changed
