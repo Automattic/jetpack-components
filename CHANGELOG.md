@@ -2,16 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.51.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [0.51.0] - 2024-04-08
 ### Added
-- Added AutomatticIconLogo and AutomatticForAgenciesLogo components.
+- Added AutomatticIconLogo and AutomatticForAgenciesLogo components. [#36664]
 
 ### Changed
-- Jetpack Components: only display div that contains title if a title is passed.
-- Updated package dependencies.
+- Jetpack Components: only display div that contains title if a title is passed. [#36711]
+- Updated package dependencies. [#36756, #36760, #36761]
 
 ## [0.50.5] - 2024-03-29
 ### Changed
@@ -1006,7 +1003,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.51.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.50.5...0.51.0-alpha
+[0.51.0]: https://github.com/Automattic/jetpack-components/compare/0.50.5...0.51.0
 [0.50.5]: https://github.com/Automattic/jetpack-components/compare/0.50.4...0.50.5
 [0.50.4]: https://github.com/Automattic/jetpack-components/compare/0.50.3...0.50.4
 [0.50.3]: https://github.com/Automattic/jetpack-components/compare/0.50.2...0.50.3
