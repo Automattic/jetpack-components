@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Added connected card to the A4A plugin.
+- Jetpack Components: add a new prop for custom classes for the ActionButton component
 
 ## [0.51.0] - 2024-04-08
 ### Added
