@@ -2,13 +2,10 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.52.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [0.52.0] - 2024-04-11
 ### Added
-- Added connected card to the A4A plugin.
-- Jetpack Components: add a new prop for custom classes for the ActionButton component
+- Added connected card to the A4A plugin. [#36747]
+- Jetpack Components: add a new prop for custom classes for the ActionButton component [#36771]
 
 ## [0.51.0] - 2024-04-08
 ### Added
@@ -1011,7 +1008,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.52.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.51.0...0.52.0-alpha
+[0.52.0]: https://github.com/Automattic/jetpack-components/compare/0.51.0...0.52.0
 [0.51.0]: https://github.com/Automattic/jetpack-components/compare/0.50.5...0.51.0
 [0.50.5]: https://github.com/Automattic/jetpack-components/compare/0.50.4...0.50.5
 [0.50.4]: https://github.com/Automattic/jetpack-components/compare/0.50.3...0.50.4
