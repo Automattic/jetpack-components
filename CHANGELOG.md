@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Added
+- Social: Added add connection modal
+
 ### Changed
 - Jetpack Backup: Add a LoadingPlaceholder while waiting for Jetpack Backup price
 
