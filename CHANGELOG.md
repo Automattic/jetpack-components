@@ -2,15 +2,12 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.53.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [0.53.0] - 2024-05-08
 ### Added
-- Social: Added add connection modal
+- Social: Added add connection modal [#37211]
 
 ### Changed
-- Jetpack Backup: Add a LoadingPlaceholder while waiting for Jetpack Backup price
+- Jetpack Backup: Add a LoadingPlaceholder while waiting for Jetpack Backup price [#37238]
 
 ## [0.52.1] - 2024-05-06
 ### Changed
@@ -1022,7 +1019,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.53.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.52.1...0.53.0-alpha
+[0.53.0]: https://github.com/Automattic/jetpack-components/compare/0.52.1...0.53.0
 [0.52.1]: https://github.com/Automattic/jetpack-components/compare/0.52.0...0.52.1
 [0.52.0]: https://github.com/Automattic/jetpack-components/compare/0.51.0...0.52.0
 [0.51.0]: https://github.com/Automattic/jetpack-components/compare/0.50.5...0.51.0
