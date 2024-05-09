@@ -2,12 +2,9 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.53.1-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [0.53.1] - 2024-05-09
 ### Added
-- Added GlobalNotices component and useGlobalNotices hook
+- Added GlobalNotices component and useGlobalNotices hook [#37286]
 
 ## [0.53.0] - 2024-05-08
 ### Added
@@ -1026,7 +1023,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.53.1-alpha]: https://github.com/Automattic/jetpack-components/compare/0.53.0...0.53.1-alpha
+[0.53.1]: https://github.com/Automattic/jetpack-components/compare/0.53.0...0.53.1
 [0.53.0]: https://github.com/Automattic/jetpack-components/compare/0.52.1...0.53.0
 [0.52.1]: https://github.com/Automattic/jetpack-components/compare/0.52.0...0.52.1
 [0.52.0]: https://github.com/Automattic/jetpack-components/compare/0.51.0...0.52.0
