@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Added --jp-gray-5 as an alias of --jp-gray to the theme
 
+### Fixed
+- Fixed notices z-index for global notices when modal is open
+
 ## [0.53.1] - 2024-05-09
 ### Added
 - Added GlobalNotices component and useGlobalNotices hook [#37286]
