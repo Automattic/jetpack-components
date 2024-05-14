@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.53.3-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Updated package dependencies.
+
 ## [0.53.2] - 2024-05-13
 ### Added
 - Added --jp-gray-5 as an alias of --jp-gray to the theme [#37327]
@@ -1030,6 +1037,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.53.3-alpha]: https://github.com/Automattic/jetpack-components/compare/0.53.2...0.53.3-alpha
 [0.53.2]: https://github.com/Automattic/jetpack-components/compare/0.53.1...0.53.2
 [0.53.1]: https://github.com/Automattic/jetpack-components/compare/0.53.0...0.53.1
 [0.53.0]: https://github.com/Automattic/jetpack-components/compare/0.52.1...0.53.0
