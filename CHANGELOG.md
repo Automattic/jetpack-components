@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Added
+- Social | Wired up confirmation UI with connect button
+
 ### Changed
 - Updated package dependencies.
 
