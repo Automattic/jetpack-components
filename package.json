@@ -1,6 +1,6 @@
 {
 	"name": "@automattic/jetpack-components",
-	"version": "0.53.3-alpha",
+	"version": "0.53.3",
 	"description": "Jetpack Components Package",
 	"author": "Automattic",
 	"license": "GPL-2.0-or-later",
@@ -15,7 +15,7 @@
 	},
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
-		"@automattic/jetpack-boost-score-api": "^0.1.30-alpha",
+		"@automattic/jetpack-boost-score-api": "^0.1.30",
 		"@babel/runtime": "^7",
 		"@wordpress/browserslist-config": "5.40.0",
 		"@wordpress/components": "27.5.0",
@@ -35,7 +35,7 @@
 		"uplot-react": "1.1.4"
 	},
 	"devDependencies": {
-		"@automattic/jetpack-base-styles": "^0.6.25-alpha",
+		"@automattic/jetpack-base-styles": "^0.6.25",
 		"@babel/core": "7.24.0",
 		"@babel/preset-react": "7.23.3",
 		"@jest/globals": "29.4.3",
