@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.53.8-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Change codebase to use clsx instead of classnames.
+
 ## [0.53.7] - 2024-06-05
 ### Changed
 - Updated package dependencies. [#37669]
@@ -1055,6 +1062,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.53.8-alpha]: https://github.com/Automattic/jetpack-components/compare/0.53.7...0.53.8-alpha
 [0.53.7]: https://github.com/Automattic/jetpack-components/compare/0.53.6...0.53.7
 [0.53.6]: https://github.com/Automattic/jetpack-components/compare/0.53.5...0.53.6
 [0.53.5]: https://github.com/Automattic/jetpack-components/compare/0.53.4...0.53.5
