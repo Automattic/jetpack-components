@@ -15,7 +15,7 @@
 	},
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
-		"@automattic/jetpack-boost-score-api": "^0.1.32-alpha",
+		"@automattic/jetpack-boost-score-api": "^0.1.32",
 		"@babel/runtime": "^7",
 		"@wordpress/browserslist-config": "6.0.0",
 		"@wordpress/components": "28.0.0",
@@ -30,7 +30,7 @@
 		"prop-types": "^15.7.2",
 		"qrcode.react": "3.1.0",
 		"react-slider": "2.0.5",
-		"social-logos": "^3.1.0-alpha",
+		"social-logos": "^3.1.0",
 		"uplot": "1.6.24",
 		"uplot-react": "1.1.4"
 	},
