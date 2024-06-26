@@ -30,7 +30,7 @@
 		"prop-types": "^15.7.2",
 		"qrcode.react": "3.1.0",
 		"react-slider": "2.0.5",
-		"social-logos": "^3.1.3-alpha",
+		"social-logos": "^3.1.3",
 		"uplot": "1.6.24",
 		"uplot-react": "1.1.4"
 	},
