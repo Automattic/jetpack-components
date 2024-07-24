@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Added `className` prop to `Alert` component
 
+### Changed
+- React compatibility: Ensuring createRoot is not called more than once.
+
 ## [0.55.0] - 2024-07-22
 ### Removed
 - Remove compatibility with WordPress 6.4. [#38386]
