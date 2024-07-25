@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.55.2-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Added
+- Export button props type to be used elsewhere
+
 ## [0.55.1] - 2024-07-25
 ### Added
 - Added `className` prop to `Alert` component [#38450]
@@ -1098,6 +1105,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.55.2-alpha]: https://github.com/Automattic/jetpack-components/compare/0.55.1...0.55.2-alpha
 [0.55.1]: https://github.com/Automattic/jetpack-components/compare/0.55.0...0.55.1
 [0.55.0]: https://github.com/Automattic/jetpack-components/compare/0.54.4...0.55.0
 [0.54.4]: https://github.com/Automattic/jetpack-components/compare/0.54.3...0.54.4
