@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.55.5-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Fixed
+- Fixed TS types for Notice components by marking optional props as such
+
 ## [0.55.4] - 2024-08-01
 ### Added
 - Update Welcome Banner and set async site-only connection [#38534]
@@ -1110,6 +1117,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.55.5-alpha]: https://github.com/Automattic/jetpack-components/compare/0.55.4...0.55.5-alpha
 [0.55.4]: https://github.com/Automattic/jetpack-components/compare/0.55.3...0.55.4
 [0.55.3]: https://github.com/Automattic/jetpack-components/compare/0.55.2...0.55.3
 [0.55.2]: https://github.com/Automattic/jetpack-components/compare/0.55.1...0.55.2
