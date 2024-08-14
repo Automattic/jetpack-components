@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.55.7-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Updated package dependencies.
+
 ## [0.55.6] - 2024-08-09
 ### Removed
 - Tests: Removed react-test-renderer. [#38755]
@@ -1118,6 +1125,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.55.7-alpha]: https://github.com/Automattic/jetpack-components/compare/0.55.6...0.55.7-alpha
 [0.55.6]: https://github.com/Automattic/jetpack-components/compare/0.55.5...0.55.6
 [0.55.5]: https://github.com/Automattic/jetpack-components/compare/0.55.4...0.55.5
 [0.55.4]: https://github.com/Automattic/jetpack-components/compare/0.55.3...0.55.4
