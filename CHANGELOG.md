@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Updated package dependencies.
 
+### Fixed
+- Lossless image optimization for images (should improve performance with no visible changes).
+
 ## [0.55.7] - 2024-08-15
 ### Changed
 - Updated package dependencies. [#38665]
