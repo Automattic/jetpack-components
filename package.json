@@ -15,7 +15,7 @@
 	},
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
-		"@automattic/jetpack-boost-score-api": "^0.1.35",
+		"@automattic/jetpack-boost-score-api": "^0.1.36-alpha",
 		"@babel/runtime": "^7",
 		"@wordpress/browserslist-config": "6.5.0",
 		"@wordpress/components": "28.5.0",
@@ -35,7 +35,7 @@
 		"uplot-react": "1.1.4"
 	},
 	"devDependencies": {
-		"@automattic/jetpack-base-styles": "^0.6.29",
+		"@automattic/jetpack-base-styles": "^0.6.30-alpha",
 		"@babel/core": "7.24.7",
 		"@babel/preset-react": "7.24.7",
 		"@jest/globals": "29.4.3",
