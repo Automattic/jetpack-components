@@ -1,6 +1,6 @@
 {
 	"name": "@automattic/jetpack-components",
-	"version": "0.55.10-alpha",
+	"version": "0.55.10",
 	"description": "Jetpack Components Package",
 	"author": "Automattic",
 	"license": "GPL-2.0-or-later",
@@ -15,7 +15,7 @@
 	},
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
-		"@automattic/jetpack-boost-score-api": "^0.1.36-alpha",
+		"@automattic/jetpack-boost-score-api": "^0.1.36",
 		"@babel/runtime": "^7",
 		"@wordpress/browserslist-config": "6.5.0",
 		"@wordpress/components": "28.5.0",
@@ -30,12 +30,12 @@
 		"prop-types": "^15.7.2",
 		"qrcode.react": "3.1.0",
 		"react-slider": "2.0.5",
-		"social-logos": "^3.1.7-alpha",
+		"social-logos": "^3.1.7",
 		"uplot": "1.6.24",
 		"uplot-react": "1.1.4"
 	},
 	"devDependencies": {
-		"@automattic/jetpack-base-styles": "^0.6.30-alpha",
+		"@automattic/jetpack-base-styles": "^0.6.30",
 		"@babel/core": "7.24.7",
 		"@babel/preset-react": "7.24.7",
 		"@jest/globals": "29.4.3",
