@@ -7,6 +7,7 @@
 This is an alpha version! The changes listed here are not final.
 
 ### Changed
+- Components - getRedirectUrl: use file extension on import for linter to find definitions
 - Updated package dependencies.
 
 ## [0.56.2] - 2024-10-07
