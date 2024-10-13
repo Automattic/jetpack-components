@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Add JetpackProtectLogo component
+- Add MarkedLines component
 
 ## [0.56.3] - 2024-10-10
 ### Changed
