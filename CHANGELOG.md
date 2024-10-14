@@ -2,13 +2,10 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.57.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [0.57.0] - 2024-10-14
 ### Added
-- Add JetpackProtectLogo component
-- Add MarkedLines component
+- Add JetpackProtectLogo component. [#39703]
+- Add MarkedLines component. [#39674]
 
 ## [0.56.3] - 2024-10-10
 ### Changed
@@ -1193,7 +1190,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.57.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.56.3...0.57.0-alpha
+[0.57.0]: https://github.com/Automattic/jetpack-components/compare/0.56.3...0.57.0
 [0.56.3]: https://github.com/Automattic/jetpack-components/compare/0.56.2...0.56.3
 [0.56.2]: https://github.com/Automattic/jetpack-components/compare/0.56.1...0.56.2
 [0.56.1]: https://github.com/Automattic/jetpack-components/compare/0.56.0...0.56.1
