@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Add DiffViewer component
+- Add ThreatSeverityBadge component
 
 ## [0.57.0] - 2024-10-14
 ### Added
