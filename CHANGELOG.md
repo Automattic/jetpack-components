@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.58.1-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Added
+- Enable test coverage.
+
 ## [0.58.0] - 2024-10-15
 ### Added
 - Add DiffViewer component [#39672]
@@ -1195,6 +1202,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.58.1-alpha]: https://github.com/Automattic/jetpack-components/compare/0.58.0...0.58.1-alpha
 [0.58.0]: https://github.com/Automattic/jetpack-components/compare/0.57.0...0.58.0
 [0.57.0]: https://github.com/Automattic/jetpack-components/compare/0.56.3...0.57.0
 [0.56.3]: https://github.com/Automattic/jetpack-components/compare/0.56.2...0.56.3
