@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Enable test coverage.
 
+### Fixed
+- Fixed tooltip behavior
+
 ## [0.58.0] - 2024-10-15
 ### Added
 - Add DiffViewer component [#39672]
