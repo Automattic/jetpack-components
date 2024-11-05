@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Components: add ref for container component
 
+### Changed
+- Updated package dependencies.
+
 ## [0.58.1] - 2024-11-04
 ### Added
 - Enable test coverage. [#39961]
