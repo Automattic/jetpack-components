@@ -9,6 +9,7 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Add ThreatsDataViews component
 - Components: add ref for container component
+- IconTooltip: add support for showing tooltip on hover.
 
 ### Changed
 - Updated package dependencies.
