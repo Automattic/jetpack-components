@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.60.0-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Added
+- Adds tooltips for each ThreatFixerButton state
+
 ## [0.59.0] - 2024-11-11
 ### Added
 - Add ThreatsDataViews component [#39754]
@@ -1214,6 +1221,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.60.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.59.0...0.60.0-alpha
 [0.59.0]: https://github.com/Automattic/jetpack-components/compare/0.58.1...0.59.0
 [0.58.1]: https://github.com/Automattic/jetpack-components/compare/0.58.0...0.58.1
 [0.58.0]: https://github.com/Automattic/jetpack-components/compare/0.57.0...0.58.0
