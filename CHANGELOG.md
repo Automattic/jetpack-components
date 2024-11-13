@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Adds tooltips for each ThreatFixerButton state
 
+### Fixed
+- Fixes the loading placeholder that didn't disappear when the price loads.
+
 ## [0.59.0] - 2024-11-11
 ### Added
 - Add ThreatsDataViews component [#39754]
