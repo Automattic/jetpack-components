@@ -4,7 +4,7 @@
 	"license": "GPL-2.0-or-later",
 	"require": {},
 	"require-dev": {
-		"automattic/jetpack-changelogger": "^4.2.4"
+		"automattic/jetpack-changelogger": "^5.0.0"
 	},
 	"scripts": {
 		"build-production": [
@@ -15,6 +15,9 @@
 		],
 		"test-js": [
 			"pnpm run test"
+		],
+		"test-coverage": [
+			"pnpm run test-coverage"
 		]
 	},
 	"extra": {
