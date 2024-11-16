@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.61.0-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Added
+- Gridicon Component: Add support for help-outline icon.
+
 ## [0.60.0] - 2024-11-14
 ### Added
 - Adds tooltips for each ThreatFixerButton state [#40111]
@@ -1221,6 +1228,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.61.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.60.0...0.61.0-alpha
 [0.60.0]: https://github.com/Automattic/jetpack-components/compare/0.59.0...0.60.0
 [0.59.0]: https://github.com/Automattic/jetpack-components/compare/0.58.1...0.59.0
 [0.58.1]: https://github.com/Automattic/jetpack-components/compare/0.58.0...0.58.1
