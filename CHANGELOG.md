@@ -7,6 +7,7 @@
 This is an alpha version! The changes listed here are not final.
 
 ### Added
+- Add Stats icon
 - Adds ThreatModal component and stories
 
 ## [0.61.0] - 2024-11-18
