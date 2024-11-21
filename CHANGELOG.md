@@ -10,6 +10,9 @@ This is an alpha version! The changes listed here are not final.
 - Add Stats icon
 - Adds ThreatModal component and stories
 
+### Changed
+- Updated package dependencies.
+
 ## [0.61.0] - 2024-11-18
 ### Added
 - Gridicon Component: Add support for help-outline icon. [#39867]
