@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Changed text domain from 'jetpack' to 'jetpack-components'.
+- Minor enhancements to the ThreatsDataViews component
 - Updated package dependencies.
 
 ## [0.63.0] - 2024-11-26
