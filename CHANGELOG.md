@@ -2,14 +2,11 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.64.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [0.64.0] - 2024-12-04
 ### Changed
-- Changed text domain from 'jetpack' to 'jetpack-components'.
-- Minor enhancements to the ThreatsDataViews component
-- Updated package dependencies.
+- Changed text domain from 'jetpack' to 'jetpack-components'. [#40368]
+- Minor enhancements to the ThreatsDataViews component [#40398]
+- Updated package dependencies. [#40363]
 
 ## [0.63.0] - 2024-11-26
 ### Changed
@@ -1239,7 +1236,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.64.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.63.0...0.64.0-alpha
+[0.64.0]: https://github.com/Automattic/jetpack-components/compare/0.63.0...0.64.0
 [0.63.0]: https://github.com/Automattic/jetpack-components/compare/0.62.0...0.63.0
 [0.62.0]: https://github.com/Automattic/jetpack-components/compare/0.61.0...0.62.0
 [0.61.0]: https://github.com/Automattic/jetpack-components/compare/0.60.0...0.61.0
