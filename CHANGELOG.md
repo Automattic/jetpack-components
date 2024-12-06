@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Removed
+- Remove bulk action support from the ThreatsDataViews component
+
 ## [0.64.0] - 2024-12-04
 ### Changed
 - Changed text domain from 'jetpack' to 'jetpack-components'. [#40368]
