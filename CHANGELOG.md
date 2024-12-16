@@ -2,9 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.64.2-alpha] - unreleased
+## [0.65.0-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Fixes ThreatsDataViews defaultLayouts
+- Updated package dependencies.
 
 ### Fixed
 - Fix ToggleControl's help text indent to align with label text.
@@ -1250,7 +1254,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.64.2-alpha]: https://github.com/Automattic/jetpack-components/compare/0.64.1...0.64.2-alpha
+[0.65.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.64.1...0.65.0-alpha
 [0.64.1]: https://github.com/Automattic/jetpack-components/compare/0.64.0...0.64.1
 [0.64.0]: https://github.com/Automattic/jetpack-components/compare/0.63.0...0.64.0
 [0.63.0]: https://github.com/Automattic/jetpack-components/compare/0.62.0...0.63.0
