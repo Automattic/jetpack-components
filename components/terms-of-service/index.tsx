@@ -1,6 +1,6 @@
 import { createInterpolateElement } from '@wordpress/element';
 import { __, sprintf } from '@wordpress/i18n';
-import classNames from 'classnames';
+import clsx from 'clsx';
 import { getRedirectUrl } from '../../../components';
 import Text from '../text';
 import type { TermsOfServiceProps } from './types';
@@ -10,8 +10,9 @@ const TermsOfService: React.FC< TermsOfServiceProps > = ( {
 	className,
 	multipleButtons,
 	agreeButtonLabel,
+	...textProps
 } ) => (
-	<Text className={ classNames( className, 'terms-of-service' ) }>
+	<Text className={ clsx( className, 'terms-of-service' ) } { ...textProps }>
 		{ multipleButtons ? (
 			<MultipleButtonsText multipleButtonsLabels={ multipleButtons } />
 		) : (
@@ -27,7 +28,7 @@ const MultipleButtonsText = ( { multipleButtonsLabels } ) => {
 				/* translators: %1$s is button label 1 and %2$s is button label 2 */
 				__(
 					'By clicking <strong>%1$s</strong> or <strong>%2$s</strong>, you agree to our <tosLink>Terms of Service</tosLink> and to <shareDetailsLink>sync your site‘s data</shareDetailsLink> with us.',
-					'jetpack'
+					'jetpack-components'
 				),
 				multipleButtonsLabels[ 0 ],
 				multipleButtonsLabels[ 1 ]
@@ -43,7 +44,7 @@ const MultipleButtonsText = ( { multipleButtonsLabels } ) => {
 	return createInterpolateElement(
 		__(
 			'By clicking the buttons above, you agree to our <tosLink>Terms of Service</tosLink> and to <shareDetailsLink>sync your site‘s data</shareDetailsLink> with us.',
-			'jetpack'
+			'jetpack-components'
 		),
 		{
 			tosLink: <Link slug="wpcom-tos" />,
@@ -58,7 +59,7 @@ const SingleButtonText = ( { agreeButtonLabel } ) =>
 			/* translators: %s is a button label */
 			__(
 				'By clicking <strong>%s</strong>, you agree to our <tosLink>Terms of Service</tosLink> and to <shareDetailsLink>sync your site‘s data</shareDetailsLink> with us.',
-				'jetpack'
+				'jetpack-components'
 			),
 			agreeButtonLabel
 		),
