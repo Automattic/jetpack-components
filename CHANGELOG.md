@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.65.4-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Added
+- Add an optional sandboxed tag to show if the current user is sandboxing their API. This is mostly for devs
+
 ## [0.65.3] - 2025-01-09
 ### Changed
 - Updated social-logos import from default to named. [#40816]
@@ -1263,6 +1270,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.65.4-alpha]: https://github.com/Automattic/jetpack-components/compare/0.65.3...0.65.4-alpha
 [0.65.3]: https://github.com/Automattic/jetpack-components/compare/0.65.2...0.65.3
 [0.65.2]: https://github.com/Automattic/jetpack-components/compare/0.65.1...0.65.2
 [0.65.1]: https://github.com/Automattic/jetpack-components/compare/0.65.0...0.65.1
