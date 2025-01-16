@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Add an optional sandboxed tag to show if the current user is sandboxing their API. This is mostly for devs
+- Add option for additional custom footer elements
 
 ## [0.65.3] - 2025-01-09
 ### Changed
