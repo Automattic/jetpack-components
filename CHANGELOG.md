@@ -10,6 +10,9 @@ This is an alpha version! The changes listed here are not final.
 - Add an optional sandboxed tag to show if the current user is sandboxing their API. This is mostly for devs
 - Add option for additional custom footer elements
 
+### Changed
+- Updated package dependencies.
+
 ## [0.65.3] - 2025-01-09
 ### Changed
 - Updated social-logos import from default to named. [#40816]
