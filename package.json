@@ -15,9 +15,9 @@
 	},
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
-		"@automattic/jetpack-boost-score-api": "^0.1.52-alpha",
+		"@automattic/jetpack-boost-score-api": "^0.1.52",
 		"@automattic/jetpack-api": "^0.17.22",
-		"@automattic/jetpack-scan": "^0.5.5-alpha",
+		"@automattic/jetpack-scan": "^0.5.5",
 		"@babel/runtime": "^7",
 		"@wordpress/browserslist-config": "6.16.0",
 		"@wordpress/components": "29.2.0",
@@ -38,7 +38,7 @@
 		"uplot-react": "1.1.4"
 	},
 	"devDependencies": {
-		"@automattic/jetpack-base-styles": "^0.6.41-alpha",
+		"@automattic/jetpack-base-styles": "^0.6.41",
 		"@babel/core": "7.26.0",
 		"@babel/preset-react": "7.26.3",
 		"@jest/globals": "29.4.3",
