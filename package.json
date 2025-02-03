@@ -1,6 +1,6 @@
 {
 	"name": "@automattic/jetpack-components",
-	"version": "0.65.5-alpha",
+	"version": "0.65.5",
 	"description": "Jetpack Components Package",
 	"author": "Automattic",
 	"license": "GPL-2.0-or-later",
@@ -15,7 +15,7 @@
 	},
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
-		"@automattic/jetpack-boost-score-api": "^0.1.54-alpha",
+		"@automattic/jetpack-boost-score-api": "^0.1.54",
 		"@automattic/jetpack-api": "^0.17.22",
 		"@automattic/jetpack-scan": "^0.5.5",
 		"@babel/runtime": "^7",
