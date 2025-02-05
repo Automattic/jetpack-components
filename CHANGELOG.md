@@ -2,9 +2,12 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.65.6-alpha] - unreleased
+## [0.66.0-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
+
+### Added
+- jetpack-components: Export the getRedirectUrl function with subpath
 
 ### Changed
 - Updated package dependencies.
@@ -1282,7 +1285,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.65.6-alpha]: https://github.com/Automattic/jetpack-components/compare/0.65.5...0.65.6-alpha
+[0.66.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.65.5...0.66.0-alpha
 [0.65.5]: https://github.com/Automattic/jetpack-components/compare/0.65.4...0.65.5
 [0.65.4]: https://github.com/Automattic/jetpack-components/compare/0.65.3...0.65.4
 [0.65.3]: https://github.com/Automattic/jetpack-components/compare/0.65.2...0.65.3
