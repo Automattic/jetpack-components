@@ -16,7 +16,7 @@
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
 		"@automattic/jetpack-boost-score-api": "^0.1.57",
-		"@automattic/jetpack-api": "^0.19.0",
+		"@automattic/jetpack-api": "^0.20.0-alpha",
 		"@automattic/jetpack-scan": "^0.5.7",
 		"@babel/runtime": "^7",
 		"@wordpress/browserslist-config": "6.17.0",
