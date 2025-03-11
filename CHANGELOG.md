@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Add role to Jetpack footer
+- Provide connection data to footer component.
 
 ## [0.68.1] - 2025-03-05
 ### Changed
