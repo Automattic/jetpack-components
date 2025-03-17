@@ -1,0 +1,31 @@
+import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
+import clsx from 'clsx';
+import Col from '../layout/col/index.js';
+import Container from '../layout/container/index.js';
+import useBreakpointMatch from '../layout/use-breakpoint-match/index.js';
+import styles from './style.module.scss';
+/**
+ * Dialog component.
+ *
+ * @param {object}          props                - React component props.
+ * @param {React.ReactNode} props.primary        - Primary-section content.
+ * @param {React.ReactNode} props.secondary      - Secondary-section content.
+ * @param {boolean}         props.isTwoSections  - Handle two sections layout when true.
+ * @param {object}          props.containerProps - Props to pass to the container component.
+ * @return {React.ReactNode}                 Rendered dialog
+ */
+const Dialog = ({ primary, secondary, isTwoSections = false, ...containerProps }) => {
+    const [isSmall, isLowerThanLarge] = useBreakpointMatch(['sm', 'lg'], [null, '<']);
+    /*
+     * By convention, secondary section is not shown when:
+     * - layout is a two-sections setup
+     * - on mobile breakpoint (sm)
+     */
+    const hideSecondarySection = !isTwoSections && isSmall;
+    const classNames = clsx({
+        [styles['one-section-style']]: !isTwoSections,
+        [styles['is-viewport-small']]: isSmall,
+    });
+    return (_jsxs(Container, { className: classNames, horizontalSpacing: 0, horizontalGap: 0, fluid: false, ...containerProps, children: [!hideSecondarySection && (_jsxs(_Fragment, { children: [_jsx(Col, { sm: 4, md: isLowerThanLarge ? 4 : 5, lg: 7, className: styles.primary, children: primary }), _jsx(Col, { sm: 4, md: isLowerThanLarge ? 4 : 3, lg: 5, className: styles.secondary, children: secondary })] })), hideSecondarySection && _jsx(Col, { children: primary })] }));
+};
+export default Dialog;
