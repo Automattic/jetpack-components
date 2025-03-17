@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Add build.
 
+### Changed
+- Update package dependencies.
+
 ## [0.68.2] - 2025-03-12
 ### Added
 - Add role to Jetpack footer. [#42156]
