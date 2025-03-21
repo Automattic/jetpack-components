@@ -8,6 +8,7 @@ type MultipleButtonsProps = {
      * The text label of the button someone would click to agree to the terms.
      */
     agreeButtonLabel?: undefined;
+    isTextOnly?: false;
 };
 type SingleButtonProps = {
     /**
@@ -18,6 +19,15 @@ type SingleButtonProps = {
      * The text label of the button someone would click to agree to the terms.
      */
     agreeButtonLabel: string;
+    isTextOnly?: false;
 };
-export type TermsOfServiceProps = Pick<TextProps, 'variant' | 'm' | 'mt' | 'mr' | 'mb' | 'ml' | 'mx' | 'my' | 'p' | 'pt' | 'pr' | 'pb' | 'pl' | 'px' | 'py' | 'className' | 'component'> & (MultipleButtonsProps | SingleButtonProps);
+type OnlyTextProps = {
+    /**
+     * If true, displays a simpler version of the terms without button references
+     */
+    isTextOnly: true;
+    multipleButtons?: undefined;
+    agreeButtonLabel?: undefined;
+};
+export type TermsOfServiceProps = Pick<TextProps, 'variant' | 'm' | 'mt' | 'mr' | 'mb' | 'ml' | 'mx' | 'my' | 'p' | 'pt' | 'pr' | 'pb' | 'pl' | 'px' | 'py' | 'className' | 'component'> & (MultipleButtonsProps | SingleButtonProps | OnlyTextProps);
 export {};

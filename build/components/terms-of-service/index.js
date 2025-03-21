@@ -5,7 +5,18 @@ import clsx from 'clsx';
 import { getRedirectUrl } from '../../../components/index.js';
 import Text from '../text/index.js';
 import './styles.scss';
-const TermsOfService = ({ className, multipleButtons, agreeButtonLabel, ...textProps }) => (_jsx(Text, { className: clsx(className, 'terms-of-service'), ...textProps, children: multipleButtons ? (_jsx(MultipleButtonsText, { multipleButtonsLabels: multipleButtons })) : (_jsx(SingleButtonText, { agreeButtonLabel: agreeButtonLabel })) }));
+const TermsOfService = ({ className, multipleButtons, agreeButtonLabel, isTextOnly, ...textProps }) => {
+    const getTOSContent = () => {
+        if (isTextOnly) {
+            return _jsx(TermsOfServiceTextOnly, {});
+        }
+        if (multipleButtons) {
+            return _jsx(MultipleButtonsText, { multipleButtonsLabels: multipleButtons });
+        }
+        return _jsx(SingleButtonText, { agreeButtonLabel: agreeButtonLabel });
+    };
+    return (_jsx(Text, { className: clsx(className, 'terms-of-service'), ...textProps, children: getTOSContent() }));
+};
 const MultipleButtonsText = ({ multipleButtonsLabels }) => {
     if (Array.isArray(multipleButtonsLabels) && multipleButtonsLabels.length > 1) {
         return createInterpolateElement(sprintf(
@@ -25,6 +36,10 @@ const SingleButtonText = ({ agreeButtonLabel }) => createInterpolateElement(spri
 /* translators: %s is a button label */
 __('By clicking <strong>%s</strong>, you agree to our <tosLink>Terms of Service</tosLink> and to <shareDetailsLink>sync your site‘s data</shareDetailsLink> with us.', 'jetpack-components'), agreeButtonLabel), {
     strong: _jsx("strong", {}),
+    tosLink: _jsx(Link, { slug: "wpcom-tos" }),
+    shareDetailsLink: _jsx(Link, { slug: "jetpack-support-what-data-does-jetpack-sync" }),
+});
+const TermsOfServiceTextOnly = () => createInterpolateElement(__('By continuing you agree to our <tosLink>Terms of Service</tosLink> and to <shareDetailsLink>sync your site’s data</shareDetailsLink> with us. We’ll check if that email is linked to an existing WordPress.com account or create a new one instantly.', 'jetpack-components'), {
     tosLink: _jsx(Link, { slug: "wpcom-tos" }),
     shareDetailsLink: _jsx(Link, { slug: "jetpack-support-what-data-does-jetpack-sync" }),
 });
