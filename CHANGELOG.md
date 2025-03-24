@@ -2,12 +2,9 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.70.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [0.70.0] - 2025-03-24
 ### Changed
-- Update component that render the terms of service to have a text-only version
+- Update component that renders the terms of service to have a text-only version. [#42600]
 
 ## [0.69.1] - 2025-03-18
 ### Changed
@@ -1325,7 +1322,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.70.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.69.1...0.70.0-alpha
+[0.70.0]: https://github.com/Automattic/jetpack-components/compare/0.69.1...0.70.0
 [0.69.1]: https://github.com/Automattic/jetpack-components/compare/0.69.0...0.69.1
 [0.69.0]: https://github.com/Automattic/jetpack-components/compare/0.68.2...0.69.0
 [0.68.2]: https://github.com/Automattic/jetpack-components/compare/0.68.1...0.68.2
