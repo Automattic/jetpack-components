@@ -11,6 +11,6 @@ TextControl, } from '@wordpress/components';
  */
 const NumberControl = ExperimentalNumberControl ||
     function CustomNumberControl(props) {
-        return _jsx(TextControl, { type: "number", inputMode: "numeric", ...props });
+        return (_jsx(TextControl, { type: "number", inputMode: "numeric", ...props, __next40pxDefaultSize: true }));
     };
 export default NumberControl;
