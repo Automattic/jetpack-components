@@ -2,9 +2,12 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.71.1-alpha] - unreleased
+## [0.72.0-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
+
+### Added
+- Add dot-page component
 
 ### Fixed
 - Components: Add __next40pxDefaultSize to controls, preventing deprecation notices.
@@ -1340,7 +1343,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.71.1-alpha]: https://github.com/Automattic/jetpack-components/compare/0.71.0...0.71.1-alpha
+[0.72.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.71.0...0.72.0-alpha
 [0.71.0]: https://github.com/Automattic/jetpack-components/compare/0.70.1...0.71.0
 [0.70.1]: https://github.com/Automattic/jetpack-components/compare/0.70.0...0.70.1
 [0.70.0]: https://github.com/Automattic/jetpack-components/compare/0.69.1...0.70.0
