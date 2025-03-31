@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Add dot-page component
 
+### Changed
+- Implement a continuous loop in testimonial slider
+
 ### Fixed
 - Components: Add __next40pxDefaultSize to controls, preventing deprecation notices.
 
