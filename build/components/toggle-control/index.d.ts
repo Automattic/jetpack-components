@@ -1,4 +1,3 @@
-/// <reference types="react" resolution-mode="require"/>
 interface ToggleControlProps {
     /** Whether or not the toggle is currently enabled. */
     checked?: boolean;

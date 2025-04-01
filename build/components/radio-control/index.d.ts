@@ -1,4 +1,3 @@
-/// <reference types="react" resolution-mode="require"/>
 interface RadioControlProps {
     /** The current value. */
     selected: string;

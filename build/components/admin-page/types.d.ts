@@ -1,4 +1,3 @@
-/// <reference types="react" resolution-mode="require"/>
 import type { JetpackFooterMenuItem } from '../jetpack-footer/types.js';
 export type AdminPageProps = {
     /**

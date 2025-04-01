@@ -20,7 +20,7 @@ import styles from './style.module.scss';
  * It is useful to async actions when the user has to wait the result of a request or process.
  *
  * @param {object} props - The properties.
- * @return {React.Component} The `ActionButton` component.
+ * @return {React.ReactNode} The `ActionButton` component.
  */
 const ActionButton = props => {
     const { label, onClick, isLoading = false, loadingText, isDisabled, displayError = false, errorMessage = __('An error occurred. Please try again.', 'jetpack-components'), variant = 'primary', isExternalLink = false, customClass, } = props;

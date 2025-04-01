@@ -1,4 +1,3 @@
-/// <reference types="react" resolution-mode="require"/>
 export type StatCardProps = {
     /**
      * Custom className to be inserted.

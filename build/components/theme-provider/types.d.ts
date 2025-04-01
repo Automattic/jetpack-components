@@ -1,4 +1,3 @@
-/// <reference types="react" resolution-mode="require"/>
 export type ThemeProviderProps = {
     /**
      * An optional id to register and identify the provider instance.

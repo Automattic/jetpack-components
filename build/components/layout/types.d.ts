@@ -1,4 +1,3 @@
-/// <reference types="react" resolution-mode="require"/>
 type ColSpan = number | {
     start: number;
     end: number;

@@ -1,4 +1,3 @@
-/// <reference types="react" resolution-mode="require"/>
 import { ProductPriceProps } from '../product-price/types.js';
 import type { JetpackIconSlug } from '../icons/index.js';
 export type ProductOfferProps = {

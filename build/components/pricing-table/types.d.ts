@@ -1,4 +1,3 @@
-/// <reference types="react" resolution-mode="require"/>
 import type { Placement } from '../icon-tooltip/types.js';
 export type PricingTableProps = {
     /**

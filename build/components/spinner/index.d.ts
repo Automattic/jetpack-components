@@ -6,8 +6,8 @@ declare function Spinner({ color, className, size }: {
 }): import("react/jsx-runtime").JSX.Element;
 declare namespace Spinner {
     namespace propTypes {
-        const color: any;
-        const className: any;
-        const size: any;
+        let color: any;
+        let className: any;
+        let size: any;
     }
 }

@@ -39,7 +39,7 @@ const IconTooltip = ({ className = '', iconClassName = '', placement = 'bottom-e
         noArrow: false,
         resize: false,
         flip: false,
-        offset,
+        offset, // The distance (in px) between the anchor and the popover.
         focusOnMount: 'container',
         onClose: hideTooltip,
         className: 'icon-tooltip-container',
