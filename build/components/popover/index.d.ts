@@ -1,4 +1,3 @@
-/// <reference types="react" resolution-mode="require"/>
 import './style.scss';
 type PopoverProps = {
     action: React.ReactNode;

@@ -7,19 +7,19 @@ export default ActionButton;
  * It is useful to async actions when the user has to wait the result of a request or process.
  *
  * @param {object} props - The properties.
- * @return {React.Component} The `ActionButton` component.
+ * @return {React.ReactNode} The `ActionButton` component.
  */
-declare function ActionButton(props: object): React.Component;
+declare function ActionButton(props: object): React.ReactNode;
 declare namespace ActionButton {
     namespace propTypes {
-        const label: any;
-        const onClick: any;
-        const isLoading: any;
-        const isDisabled: any;
-        const displayError: any;
-        const errorMessage: any;
-        const variant: any;
-        const isExternalLink: any;
+        let label: any;
+        let onClick: any;
+        let isLoading: any;
+        let isDisabled: any;
+        let displayError: any;
+        let errorMessage: any;
+        let variant: any;
+        let isExternalLink: any;
     }
 }
 import React from 'react';

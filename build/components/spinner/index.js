@@ -7,7 +7,7 @@ const Spinner = ({ color = '#FFFFFF', className = '', size = 20 }) => {
     const styleOuter = {
         width: size,
         height: size,
-        fontSize: size,
+        fontSize: size, // allows border-width to be specified in em units
         borderTopColor: color,
     };
     const styleInner = {

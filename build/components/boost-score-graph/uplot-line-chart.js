@@ -33,7 +33,7 @@ function createSerieInfo(label, score) {
             gradient.addColorStop(0, getColor(score, '44'));
             gradient.addColorStop(1, getColor(score, '11'));
             return gradient;
-        },
+        }, // use the gradient as fill for the series
         width: 2,
         paths: (u, seriesIdx, idx0, idx1) => {
             return spline?.()(u, seriesIdx, idx0, idx1) || null;
@@ -115,7 +115,7 @@ export default function UplotLineChart({ range, periods, annotations = [] }) {
                     space: 100,
                     size: 30,
                     grid: {
-                        stroke: 'rgba(220, 220, 222, 0.5)',
+                        stroke: 'rgba(220, 220, 222, 0.5)', // #DCDCDE with 0.5 opacity
                         width: 1,
                     },
                     ticks: {

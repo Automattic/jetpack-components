@@ -1,4 +1,3 @@
-/// <reference types="react" resolution-mode="require"/>
 interface StatusProps {
     status?: 'active' | 'error' | 'inactive' | 'action' | 'initializing';
     label?: string;
