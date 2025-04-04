@@ -1,6 +1,6 @@
 {
 	"name": "@automattic/jetpack-components",
-	"version": "0.72.2",
+	"version": "0.72.3-alpha",
 	"description": "Jetpack Components Package",
 	"author": "Automattic",
 	"license": "GPL-2.0-or-later",
@@ -37,7 +37,7 @@
 		"uplot-react": "1.1.4"
 	},
 	"devDependencies": {
-		"@automattic/jetpack-base-styles": "^0.6.45",
+		"@automattic/jetpack-base-styles": "^0.6.46-alpha",
 		"@babel/core": "7.26.10",
 		"@babel/preset-react": "7.26.3",
 		"@jest/globals": "29.4.3",
