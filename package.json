@@ -15,7 +15,7 @@
 	},
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
-		"@automattic/jetpack-boost-score-api": "^0.1.62",
+		"@automattic/jetpack-boost-score-api": "^0.1.63-alpha",
 		"@automattic/jetpack-api": "^0.20.1",
 		"@automattic/jetpack-script-data": "^0.3.0",
 		"@babel/runtime": "^7",
