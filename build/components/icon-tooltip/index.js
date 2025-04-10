@@ -2,8 +2,8 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Popover } from '@wordpress/components';
 import clsx from 'clsx';
 import { useCallback, useState } from 'react';
-import Button from '../button/index.js';
-import Gridicon from '../gridicon/index.js';
+import Button from "../button/index.js";
+import Gridicon from "../gridicon/index.js";
 import './style.scss';
 const placementsToPositions = (placement) => {
     const mapping = {

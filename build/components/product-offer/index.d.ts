@@ -1,4 +1,4 @@
-import { ProductOfferProps } from './types.js';
+import { ProductOfferProps } from './types.ts';
 import type React from 'react';
 /**
  * Product Detail component.
@@ -8,4 +8,4 @@ import type React from 'react';
  */
 declare const ProductOffer: React.FC<ProductOfferProps>;
 export default ProductOffer;
-export * from './icons-card.js';
+export * from './icons-card.tsx';

@@ -1,8 +1,8 @@
 import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
 import clsx from 'clsx';
-import Col from '../layout/col/index.js';
-import Container from '../layout/container/index.js';
-import useBreakpointMatch from '../layout/use-breakpoint-match/index.js';
+import Col from "../layout/col/index.js";
+import Container from "../layout/container/index.js";
+import useBreakpointMatch from "../layout/use-breakpoint-match/index.js";
 import styles from './style.module.scss';
 /**
  * Dialog component.

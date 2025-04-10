@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconTooltipProps } from './types.js';
+import { IconTooltipProps } from './types.ts';
 import './style.scss';
 /**
  * Generate Icon Tooltip

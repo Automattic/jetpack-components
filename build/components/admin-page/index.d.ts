@@ -1,4 +1,4 @@
-import type { AdminPageProps } from './types.js';
+import type { AdminPageProps } from './types.ts';
 import type React from 'react';
 /**
  * This is the base structure for any admin page. It comes with Header and Footer.

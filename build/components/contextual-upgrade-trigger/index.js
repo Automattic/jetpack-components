@@ -1,8 +1,8 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Icon, arrowRight } from '@wordpress/icons';
 import clsx from 'clsx';
-import IconTooltip from '../icon-tooltip/index.js';
-import Text from '../text/index.js';
+import IconTooltip from "../icon-tooltip/index.js";
+import Text from "../text/index.js";
 import styles from './style.module.scss';
 const ContextualUpgradeTrigger = ({ description, cta, onClick, href, openInNewTab = false, className, tooltipText = '', }) => {
     const Tag = href !== undefined ? 'a' : 'button';

@@ -2,12 +2,12 @@ import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-run
 import { __, _x } from '@wordpress/i18n';
 import { Icon, external } from '@wordpress/icons';
 import clsx from 'clsx';
-import { getRedirectUrl } from '../../index.js';
-import getSiteAdminUrl from '../../tools/get-site-admin-url/index.js';
-import AutomatticBylineLogo from '../automattic-byline-logo/index.js';
+import { getRedirectUrl } from "../../index.js";
+import getSiteAdminUrl from "../../tools/get-site-admin-url/index.js";
+import AutomatticBylineLogo from "../automattic-byline-logo/index.js";
 import './style.scss';
-import JetpackLogo from '../jetpack-logo/index.js';
-import useBreakpointMatch from '../layout/use-breakpoint-match/index.js';
+import JetpackLogo from "../jetpack-logo/index.js";
+import useBreakpointMatch from "../layout/use-breakpoint-match/index.js";
 const JetpackIcon = () => (_jsx(JetpackLogo, { logoColor: "#000", showText: false, height: 16, "aria-hidden": "true" }));
 const ExternalIcon = () => (_jsxs(_Fragment, { children: [_jsx(Icon, { icon: external, size: 16 }), _jsx("span", { className: "jp-dashboard-footer__accessible-external-link", children: 
             /* translators: accessibility text */

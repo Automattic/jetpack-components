@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { __ } from '@wordpress/i18n';
 import clsx from 'clsx';
-import Gridicon from '../gridicon/index.js';
+import Gridicon from "../gridicon/index.js";
 import './style.scss';
 export const BoostScoreBar = ({ score, isLoading, showPrevScores, active, prevScore = 0, scoreBarType, noBoostScoreTooltip, }) => {
     if (!active) {

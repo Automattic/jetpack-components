@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
  * Internal dependencies
  */
 import React from 'react';
-import Button from '../button/index.js';
+import Button from "../button/index.js";
 import styles from './style.module.scss';
 /**
  * The Jetpack Action button.

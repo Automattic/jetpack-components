@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Icon, plus } from '@wordpress/icons';
 import { Fragment } from 'react';
-import { getIconBySlug } from '../icons/index.js';
+import { getIconBySlug } from "../icons/index.js";
 import styles from './style.module.scss';
 /**
  * Icons composition for a bundle product,

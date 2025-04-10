@@ -2,8 +2,8 @@ import { jsx as _jsx } from "react/jsx-runtime";
 import { useCopyToClipboard } from '@wordpress/compose';
 import { useState, useRef, useEffect } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
-import Button from '../button/index.js';
-import { ClipboardIcon, CheckmarkIcon } from '../icons/index.js';
+import Button from "../button/index.js";
+import { ClipboardIcon, CheckmarkIcon } from "../icons/index.js";
 export const CopyToClipboard = ({ buttonStyle = 'icon', textToCopy, onCopy, ...buttonProps }) => {
     const [hasCopied, setHasCopied] = useState(false);
     const copyTimer = useRef();

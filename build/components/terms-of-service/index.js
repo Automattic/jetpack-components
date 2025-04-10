@@ -2,8 +2,8 @@ import { jsx as _jsx } from "react/jsx-runtime";
 import { createInterpolateElement } from '@wordpress/element';
 import { __, sprintf } from '@wordpress/i18n';
 import clsx from 'clsx';
-import { getRedirectUrl } from '../../../components/index.js';
-import Text from '../text/index.js';
+import { getRedirectUrl } from "../../index.js";
+import Text from "../text/index.js";
 import './styles.scss';
 const TermsOfService = ({ className, multipleButtons, agreeButtonLabel, isTextOnly, ...textProps }) => {
     const getTOSContent = () => {

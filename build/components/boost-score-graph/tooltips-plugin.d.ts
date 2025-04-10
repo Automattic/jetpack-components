@@ -1,5 +1,5 @@
 import uPlot from 'uplot';
-import { Period } from './index.js';
+import { Period } from './index.tsx';
 /**
  * Custom tooltips plugin for uPlot.
  *

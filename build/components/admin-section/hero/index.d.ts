@@ -1,5 +1,5 @@
 import React from 'react';
-import type { AdminSectionBaseProps } from '../types.js';
+import type { AdminSectionBaseProps } from '../types.ts';
 /**
  * The wrapper component for a Hero Section to be used in admin pages.
  *

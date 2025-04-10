@@ -1,5 +1,5 @@
 import { SocialLogo } from 'social-logos';
-import { BaseIconProps } from './types.js';
+import { BaseIconProps } from './types.ts';
 import type React from 'react';
 export declare const AntiSpamIcon: React.FC<BaseIconProps>;
 export declare const BackupIcon: React.FC<BaseIconProps>;

@@ -2,7 +2,7 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { __ } from '@wordpress/i18n';
 import clsx from 'clsx';
 import { useMemo } from 'react';
-import numberFormat from '../number-format/index.js';
+import numberFormat from "../number-format/index.js";
 import './style.scss';
 /**
  * Generate Record Meter bar

@@ -1,4 +1,4 @@
-import { StatCardProps } from './types.js';
+import { StatCardProps } from './types.ts';
 /**
  * StatCard component
  *

@@ -1,4 +1,4 @@
-import { ColProps } from '../types.js';
+import { ColProps } from '../types.ts';
 import type React from 'react';
 /**
  * The basic Col component.

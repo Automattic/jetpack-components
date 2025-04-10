@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client';
-import { Tooltip } from './tooltip.js';
+import { Tooltip } from "./tooltip.js";
 /**
  * Custom tooltips plugin for uPlot.
  *

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeProviderProps } from './types.js';
+import { ThemeProviderProps } from './types.ts';
 export declare const typography: {
     '--font-headline-medium': string;
     '--font-headline-small': string;

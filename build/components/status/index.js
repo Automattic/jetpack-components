@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { __ } from '@wordpress/i18n';
 import clsx from 'clsx';
-import Text from '../text/index.js';
+import Text from "../text/index.js";
 import styles from './style.module.scss';
 const Status = ({ className, label, status = 'inactive' }) => {
     const defaultLabels = {

@@ -1,4 +1,4 @@
-import { ProductOfferHeaderProps } from './types.js';
+import { ProductOfferHeaderProps } from './types.ts';
 import type React from 'react';
 /**
  * Product Detail Card Header component.

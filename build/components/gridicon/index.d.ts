@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import './style.scss';
-import { GridiconProps } from './types.js';
+import { GridiconProps } from './types.ts';
 declare class Gridicon extends Component<GridiconProps> {
     static defaultProps: {
         'aria-hidden': string;

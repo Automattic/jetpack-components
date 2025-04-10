@@ -3,7 +3,7 @@ import { Button } from '@wordpress/components';
 import { __, sprintf } from '@wordpress/i18n';
 import clsx from 'clsx';
 import { Children, useState, useEffect, useCallback, useMemo } from 'react';
-import { Swipeable } from '../swipeable/index.js';
+import { Swipeable } from "../swipeable/index.js";
 import './style.scss';
 const Controls = ({ currentPage, numberOfPages, setCurrentPage, tracksPrefix, tracksFn, }) => {
     // Create a map of memoized handlers for each page

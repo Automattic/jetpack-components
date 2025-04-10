@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.scss';
-import type { JetpackFooterProps } from './types.js';
+import type { JetpackFooterProps } from './types.ts';
 /**
  * JetpackFooter component displays a tiny Jetpack logo with the product name on the left and the Automattic Airline "by line" on the right.
  *

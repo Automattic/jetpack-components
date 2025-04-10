@@ -1,5 +1,5 @@
 import React from 'react';
-import { UpsellBannerProps } from './types.js';
+import { UpsellBannerProps } from './types.ts';
 import './style.scss';
 /**
  * Upsell banner component.

@@ -5,13 +5,13 @@ import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-run
 import { Popover } from '@wordpress/components';
 import { __, sprintf } from '@wordpress/i18n';
 import { close } from '@wordpress/icons';
-import Button from '../button/index.js';
-import useBreakpointMatch from '../layout/use-breakpoint-match/index.js';
-import Text from '../text/index.js';
+import Button from "../button/index.js";
+import useBreakpointMatch from "../layout/use-breakpoint-match/index.js";
+import Text from "../text/index.js";
 /**
  * Internal dependencies
  */
-import ThemeProvider from '../theme-provider/index.js';
+import ThemeProvider from "../theme-provider/index.js";
 import styles from './styles.module.scss';
 const ActionPopover = ({ hideCloseButton = false, title, children, step = null, totalSteps = null, buttonContent = null, buttonDisabled = false, buttonHref = null, buttonExternalLink = false, offset = 32, onClose, onClick, ...otherPopoverProps }) => {
     const [isSm] = useBreakpointMatch('sm');

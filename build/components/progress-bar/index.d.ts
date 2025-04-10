@@ -1,4 +1,4 @@
-import { ProgressBarProps } from './types.js';
+import { ProgressBarProps } from './types.ts';
 import type React from 'react';
 /**
  * Progress Bar component

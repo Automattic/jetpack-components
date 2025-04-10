@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Fragment } from 'react';
-import parseFilename from './parse-filename.js';
-import parsePatch from './parse-patch.js';
+import parseFilename from "./parse-filename.js";
+import parsePatch from "./parse-patch.js";
 import styles from './styles.module.scss';
 const filename = ({ oldFileName, newFileName, }) => {
     const { prev, next } = parseFilename(oldFileName, newFileName);

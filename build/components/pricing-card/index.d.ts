@@ -1,4 +1,4 @@
-import type { PricingCardProps } from './types.js';
+import type { PricingCardProps } from './types.ts';
 import type React from 'react';
 import './style.scss';
 /**

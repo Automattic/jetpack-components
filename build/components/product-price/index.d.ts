@@ -1,4 +1,4 @@
-import type { ProductPriceProps } from './types.js';
+import type { ProductPriceProps } from './types.ts';
 import type React from 'react';
 /**
  * React component to render the price.
@@ -8,4 +8,4 @@ import type React from 'react';
  */
 declare const ProductPrice: React.FC<ProductPriceProps>;
 export default ProductPrice;
-export * from './price.js';
+export * from './price.tsx';

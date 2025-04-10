@@ -3,7 +3,7 @@ import { getCurrencyObject } from '@automattic/format-currency';
 import { Button } from '@wordpress/components';
 import { sprintf, __ } from '@wordpress/i18n';
 import { LoadingPlaceholder } from '@automattic/jetpack-components';
-import TermsOfService from '../terms-of-service/index.js';
+import TermsOfService from "../terms-of-service/index.js";
 import './style.scss';
 /**
  * Whether or not to display a price's decimal part in the UI.

@@ -1,5 +1,5 @@
 import React from 'react';
-import type { H3Props, TextProps, TitleProps } from './types.js';
+import type { H3Props, TextProps, TitleProps } from './types.ts';
 /**
  * Text component.
  *
@@ -29,4 +29,4 @@ export declare const H3: React.FC<H3Props>;
  * @return {React.ReactElement} - JSX.Element
  */
 export declare const Title: React.FC<TitleProps>;
-export * from './constants.js';
+export * from './constants.ts';

@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import Text from '../text/index.js';
-import Background from './background.js';
-import UplotLineChart from './uplot-line-chart.js';
+import Text from "../text/index.js";
+import Background from "./background.js";
+import UplotLineChart from "./uplot-line-chart.js";
 import './style.scss';
 /**
  * BoostScoreGraph component composed by the chart and the legend.

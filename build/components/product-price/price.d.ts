@@ -1,4 +1,4 @@
-import type { PriceProps } from './types.js';
+import type { PriceProps } from './types.ts';
 import type React from 'react';
 /**
  * React component to render a Price composition.

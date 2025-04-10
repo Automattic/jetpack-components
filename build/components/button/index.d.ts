@@ -1,5 +1,5 @@
 import React from 'react';
-import type { ButtonProps } from './types.js';
+import type { ButtonProps } from './types.ts';
 /**
  * Button component
  *

@@ -7,8 +7,8 @@ import clsx from 'clsx';
 /**
  * Internal dependencies
  */
-import numberFormat from '../number-format/index.js';
-import Text from '../text/index.js';
+import numberFormat from "../number-format/index.js";
+import Text from "../text/index.js";
 import styles from './style.module.scss';
 /**
  * StatCard component

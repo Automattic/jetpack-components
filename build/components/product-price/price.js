@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { getCurrencyObject } from '@automattic/format-currency';
 import clsx from 'clsx';
-import Text from '../text/index.js';
+import Text from "../text/index.js";
 import styles from './style.module.scss';
 /**
  * React component to render a Price composition.

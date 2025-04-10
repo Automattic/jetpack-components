@@ -1,5 +1,5 @@
 import React from 'react';
-import { NumberSliderProps } from './types.js';
+import { NumberSliderProps } from './types.ts';
 import './style.scss';
 /**
  * Generate Number Slider

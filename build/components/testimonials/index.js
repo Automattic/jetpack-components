@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { useState, useCallback } from '@wordpress/element';
-import Gridicon from '../gridicon/index.js';
-import { Testimonial } from './testimonial.js';
+import Gridicon from "../gridicon/index.js";
+import { Testimonial } from "./testimonial.js";
 const Testimonials = ({ testimonials }) => {
     const [currentTestimonialIndex, setcurrentTestimonialIndex] = useState(0);
     const incrementTestimonial = useCallback(() => {

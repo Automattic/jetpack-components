@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconsCardProps } from './types.js';
+import { IconsCardProps } from './types.ts';
 /**
  * Icons composition for a bundle product,
  * based on the list of supported products.

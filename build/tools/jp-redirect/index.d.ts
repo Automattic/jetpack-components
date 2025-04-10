@@ -1,4 +1,4 @@
-import { GetRedirectUrlArgs } from './types.js';
+import { GetRedirectUrlArgs } from './types.ts';
 /**
  * Builds an URL using the jetpack.com/redirect/ service
  *

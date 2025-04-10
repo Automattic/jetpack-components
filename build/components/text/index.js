@@ -1,7 +1,7 @@
 import { jsx as _jsx } from "react/jsx-runtime";
 import clsx from 'clsx';
 import { forwardRef, useMemo } from 'react';
-import { BOX_MODEL_VALUES, VARIANTS_MAPPING } from './constants.js';
+import { BOX_MODEL_VALUES, VARIANTS_MAPPING } from "./constants.js";
 import styles from './style.module.scss';
 /**
  * Text component.
@@ -50,4 +50,4 @@ export const H3 = ({ children, weight = 'bold', ...componentProps }) => {
  * @return {React.ReactElement} - JSX.Element
  */
 export const Title = ({ children, size = 'medium', ...componentProps }) => (_jsx(Text, { variant: `title-${size}`, mb: 1, ...componentProps, children: children }));
-export * from './constants.js';
+export * from "./constants.js";
