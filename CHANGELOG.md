@@ -2,22 +2,18 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [0.72.4-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [0.72.4] - 2025-04-14
 ### Changed
-- Adjust relative imports in TypeScript sources to use correct extensions after enabling TypeScript's new `rewriteRelativeImportExtensions` option. The built JS should be unaffected, so this is not a breaking change.
+- Adjust relative imports in TypeScript sources to use correct extensions after enabling TypeScript's new `rewriteRelativeImportExtensions` option. [#42990]
 
 ### Fixed
-- Code: Update stylesheets to use hex instead of named colors.
-- Code: Update stylesheets to use WordPress font styles.
-- Linting: Format SCSS imports consistently.
-- Linting: Use double colon notation for pseudo-element selectors.
+- Linting: Update stylesheets to use WordPress rules for fonts and colors. [#42920] [#42928]
+- Linting: Format SCSS imports consistently. [#43018]
+- Linting: Use double colon notation for pseudo-element selectors. [#43019]
 
 ## [0.72.3] - 2025-04-07
 ### Changed
-- Code: First pass of style coding standards. [#42734]
+- Linting: First pass of style coding standards. [#42734]
 
 ### Fixed
 - Fix TypeScript type checking in the monorepo. [#42817]
@@ -1371,7 +1367,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[0.72.4-alpha]: https://github.com/Automattic/jetpack-components/compare/0.72.3...0.72.4-alpha
+[0.72.4]: https://github.com/Automattic/jetpack-components/compare/0.72.3...0.72.4
 [0.72.3]: https://github.com/Automattic/jetpack-components/compare/0.72.2...0.72.3
 [0.72.2]: https://github.com/Automattic/jetpack-components/compare/0.72.1...0.72.2
 [0.72.1]: https://github.com/Automattic/jetpack-components/compare/0.72.0...0.72.1
