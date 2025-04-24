@@ -39,6 +39,7 @@ export type TextProps = {
     component?: React.FC<{
         [prop: string]: unknown;
     }> | React.ElementType;
+    style?: React.CSSProperties;
 };
 export type H3Props = TextProps & {
     /** Font weight: 'bold' (default) | 'regular'. */
