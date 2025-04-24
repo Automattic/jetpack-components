@@ -7,6 +7,7 @@
 This is an alpha version! The changes listed here are not final.
 
 ### Fixed
+- Code: Use modern font MIME types for inline fonts.
 - Linting: Fix more Stylelint violations.
 - My Jetpack: Fix TS type checking and the corresponding errors
 
