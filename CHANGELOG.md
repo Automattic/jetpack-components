@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Changed
+- Connection: mark external links as external
+
 ### Fixed
 - Code: Use modern font MIME types for inline fonts.
 - Linting: Fix more Stylelint violations.

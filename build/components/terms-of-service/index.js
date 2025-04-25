@@ -1,4 +1,5 @@
 import { jsx as _jsx } from "react/jsx-runtime";
+import { ExternalLink } from '@wordpress/components';
 import { createInterpolateElement } from '@wordpress/element';
 import { __, sprintf } from '@wordpress/i18n';
 import clsx from 'clsx';
@@ -43,5 +44,5 @@ const TermsOfServiceTextOnly = () => createInterpolateElement(__('By continuing 
     tosLink: _jsx(Link, { slug: "wpcom-tos" }),
     shareDetailsLink: _jsx(Link, { slug: "jetpack-support-what-data-does-jetpack-sync" }),
 });
-const Link = ({ slug, children }) => (_jsx("a", { className: "terms-of-service__link", href: getRedirectUrl(slug), rel: "noopener noreferrer", target: "_blank", children: children }));
+const Link = ({ slug, children }) => (_jsx(ExternalLink, { className: "terms-of-service__link", href: getRedirectUrl(slug), children: children }));
 export default TermsOfService;
