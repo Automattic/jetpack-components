@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.72.6-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Fixed
+- Linting: Do additional stylesheet cleanup.
+
 ## [0.72.5] - 2025-04-28
 ### Changed
 - Connection: Mark external links as external. [#43152]
@@ -1376,6 +1383,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.72.6-alpha]: https://github.com/Automattic/jetpack-components/compare/0.72.5...0.72.6-alpha
 [0.72.5]: https://github.com/Automattic/jetpack-components/compare/0.72.4...0.72.5
 [0.72.4]: https://github.com/Automattic/jetpack-components/compare/0.72.3...0.72.4
 [0.72.3]: https://github.com/Automattic/jetpack-components/compare/0.72.2...0.72.3
