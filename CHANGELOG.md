@@ -7,6 +7,7 @@
 This is an alpha version! The changes listed here are not final.
 
 ### Fixed
+- Linting: Address final rules in WordPress Stylelint config.
 - Linting: Do additional stylesheet cleanup.
 
 ## [0.72.5] - 2025-04-28
