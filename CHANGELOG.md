@@ -10,6 +10,7 @@ This is an alpha version! The changes listed here are not final.
 - Update package dependencies.
 
 ### Fixed
+- JS Packages: Decrease CSS priority of global styles to prevent them from applying within the editor
 - Linting: Address final rules in WordPress Stylelint config.
 - Linting: Do additional stylesheet cleanup.
 
