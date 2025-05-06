@@ -1,5 +1,5 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { getCurrencyObject } from '@automattic/format-currency';
+import { getCurrencyObject } from '@automattic/number-formatters';
 import clsx from 'clsx';
 import Text from "../text/index.js";
 import styles from './style.module.scss';

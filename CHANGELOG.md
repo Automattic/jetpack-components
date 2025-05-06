@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.73.0-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Number-formatters: update formatCurrency() and getCurrencyObejct() calls to go through number-formatters package
+
 ## [0.72.6] - 2025-05-05
 ### Changed
 - Update package dependencies. [#43320] [#43326]
@@ -1385,6 +1392,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.73.0-alpha]: https://github.com/Automattic/jetpack-components/compare/0.72.6...0.73.0-alpha
 [0.72.6]: https://github.com/Automattic/jetpack-components/compare/0.72.5...0.72.6
 [0.72.5]: https://github.com/Automattic/jetpack-components/compare/0.72.4...0.72.5
 [0.72.4]: https://github.com/Automattic/jetpack-components/compare/0.72.3...0.72.4
