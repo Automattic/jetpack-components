@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Number-formatters: update formatCurrency() and getCurrencyObejct() calls to go through number-formatters package
 
+### Removed
+- BREAKING: Removed `numberFormat` function. Use the `@automattic/number-formatters` package instead.
+
 ## [0.72.6] - 2025-05-05
 ### Changed
 - Update package dependencies. [#43320] [#43326]
