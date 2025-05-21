@@ -1,4 +1,5 @@
 import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+import { createElement as _createElement } from "react";
 import clsx from 'clsx';
 import { Children, useState, useLayoutEffect, useRef, useCallback, useEffect } from 'react';
 import './style.scss';
@@ -274,7 +275,10 @@ export const Swipeable = ({ hasDynamicHeight = false, children, currentPage = 0,
         return null;
     }, [handleDragStart, handleDrag, handleDragEnd]);
     const offset = getOffset(currentPage);
-    return (_jsxs(_Fragment, { children: [_jsx("div", { ...getTouchEvents(), className: "swipeable__container", ref: pagesRef, ...otherProps, children: _jsxs("div", { className: clsx('swipeable__pages', containerClassName), style: {
+    return (_jsxs(_Fragment, { children: [_createElement("div", { ...getTouchEvents(), className: "swipeable__container", ref: pagesRef, ...otherProps, 
+                // Ensure that state is reset when the window is resized
+                key: containerWidth?.toString() },
+                _jsxs("div", { className: clsx('swipeable__pages', containerClassName), style: {
                         ...pagesStyle,
                         width: getPagesWidth(containerWidth, numPages + 2),
                         transform: `translate3d(${offset}px, 0px, 0px)`,
@@ -288,6 +292,6 @@ export const Swipeable = ({ hasDynamicHeight = false, children, currentPage = 0,
                             }), "data-testid": `swipeable-page-${index + 1}`, children: child }, `page-${index}`))), _jsx("div", { style: { width: `${containerWidth}px` }, className: clsx('swipeable__page', pageClassName, {
                                 'is-clone': true,
                                 'is-next': currentPage === numPages - 1,
-                            }), children: Children.toArray(children)[0] }, `clone-next-0`)] }) }), _jsx("div", { ref: resizeObserverRef, className: "swipeable__resize-observer" })] }));
+                            }), children: Children.toArray(children)[0] }, `clone-next-0`)] })), _jsx("div", { ref: resizeObserverRef, className: "swipeable__resize-observer" })] }));
 };
 export default Swipeable;
