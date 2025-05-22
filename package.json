@@ -17,7 +17,7 @@
 		"@automattic/format-currency": "1.0.1",
 		"@automattic/jetpack-boost-score-api": "^0.1.65",
 		"@automattic/jetpack-api": "^0.20.2",
-		"@automattic/jetpack-script-data": "^0.4.1",
+		"@automattic/jetpack-script-data": "^0.4.2-alpha",
 		"@automattic/number-formatters": "^1.0.2",
 		"@babel/runtime": "^7",
 		"@wordpress/browserslist-config": "6.22.0",
