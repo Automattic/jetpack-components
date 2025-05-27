@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Changed
+- sass: `@use` rather than `@import` for `@automattic/jetpack-base-styles/gutenberg-base-styles`.
+
 ## [0.73.3] - 2025-05-26
 ### Changed
 - Update package dependencies. [#43578]
