@@ -16,12 +16,12 @@ import styles from './style.module.scss';
  * @param {AdminPageProps} props - Component properties.
  * @return {React.ReactNode} AdminPage component.
  */
-const AdminPage = ({ children, moduleName = __('Jetpack', 'jetpack-components'), moduleNameHref, showHeader = true, showFooter = true, useInternalLinks = false, showBackground = true, sandboxedDomain = '', apiRoot = '', apiNonce = '', optionalMenuItems, header, }) => {
+const AdminPage = ({ children, className, moduleName = __('Jetpack', 'jetpack-components'), moduleNameHref, showHeader = true, showFooter = true, useInternalLinks = false, showBackground = true, sandboxedDomain = '', apiRoot = '', apiNonce = '', optionalMenuItems, header, }) => {
     useEffect(() => {
         restApi.setApiRoot(apiRoot);
         restApi.setApiNonce(apiNonce);
     }, [apiRoot, apiNonce]);
-    const rootClassName = clsx(styles['admin-page'], {
+    const rootClassName = clsx(styles['admin-page'], className, {
         [styles.background]: showBackground,
     });
     const testConnection = useCallback(async () => {

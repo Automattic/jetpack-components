@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Added
+- Added className prop to AdminPage component.
+
 ### Changed
 - sass: `@use` rather than `@import` for `@automattic/jetpack-base-styles/gutenberg-base-styles`.
 
