@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [0.73.5-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Update package dependencies.
+
 ## [0.73.4] - 2025-06-02
 ### Added
 - Added className prop to AdminPage component. [#43592]
@@ -1411,6 +1418,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[0.73.5-alpha]: https://github.com/Automattic/jetpack-components/compare/0.73.4...0.73.5-alpha
 [0.73.4]: https://github.com/Automattic/jetpack-components/compare/0.73.3...0.73.4
 [0.73.3]: https://github.com/Automattic/jetpack-components/compare/0.73.2...0.73.3
 [0.73.2]: https://github.com/Automattic/jetpack-components/compare/0.73.1...0.73.2
