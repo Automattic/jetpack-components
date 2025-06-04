@@ -76,4 +76,5 @@ export { default as RadioControl } from "./components/radio-control/index.js";
 export { default as StatCard } from "./components/stat-card/index.js";
 export { default as DiffViewer } from "./components/diff-viewer/index.js";
 export { default as MarkedLines } from "./components/marked-lines/index.js";
+export { default as DetailsViewer } from "./components/details-viewer/index.js";
 export * from "./components/global-notices/index.js";
