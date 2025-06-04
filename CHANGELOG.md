@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Added functionalty to correctly display database threats in the Protect UI.
 
+### Changed
+- Update package dependencies.
+
 ## [1.0.0] - 2025-06-03
 ### Changed
 - Update package dependencies. [#43718] [#43734]
