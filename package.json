@@ -1,6 +1,6 @@
 {
 	"name": "@automattic/jetpack-components",
-	"version": "1.1.2-alpha",
+	"version": "1.1.2",
 	"description": "Jetpack Components Package",
 	"author": "Automattic",
 	"license": "GPL-2.0-or-later",
@@ -33,7 +33,7 @@
 		"prop-types": "^15.7.2",
 		"qrcode.react": "4.2.0",
 		"react-slider": "2.0.5",
-		"social-logos": "^3.2.3-alpha",
+		"social-logos": "^3.2.3",
 		"uplot": "1.6.31",
 		"uplot-react": "1.1.4"
 	},
