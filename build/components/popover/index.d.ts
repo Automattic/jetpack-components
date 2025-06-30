@@ -1,8 +1,9 @@
 import './style.scss';
+import type { FC, ReactNode } from 'react';
 type PopoverProps = {
-    action: React.ReactNode;
-    icon?: React.ReactNode;
-    children?: React.ReactNode;
+    action: ReactNode;
+    icon?: ReactNode;
+    children?: ReactNode;
 };
-declare const Popover: React.FC<PopoverProps>;
+declare const Popover: FC<PopoverProps>;
 export default Popover;

@@ -1,12 +1,12 @@
-import React from 'react';
 import uPlot from 'uplot';
 import { type Annotation, Period } from './index.tsx';
 import './style-uplot.scss';
+import type { RefObject } from 'react';
 interface UplotChartProps {
     periods: Period[];
     annotations?: Annotation[];
     options?: Partial<uPlot.Options>;
-    legendContainer?: React.RefObject<HTMLDivElement>;
+    legendContainer?: RefObject<HTMLDivElement>;
     solidFill?: boolean;
     period?: string;
     range?: {
@@ -21,7 +21,7 @@ interface UplotChartProps {
  * @param {{ startDate: number, endDate: number }} props.range       - The date range of the chart.
  * @param {Period[]}                               props.periods     - The periods to display in the chart.
  * @param {Annotation[]}                           props.annotations - The annotations to display in the chart.
- * @return {React.Element} The JSX element representing the UplotLineChart component.
+ * @return {ReactElement} The JSX element representing the UplotLineChart component.
  */
 export default function UplotLineChart({ range, periods, annotations }: UplotChartProps): import("react/jsx-runtime").JSX.Element;
 export {};

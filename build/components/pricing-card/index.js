@@ -20,7 +20,7 @@ const showPriceDecimals = (currencyObject) => {
  * The Pricing card component.
  *
  * @param {PricingCardProps} props -- The component props.
- * @return {React.ReactNode} The rendered component.
+ * @return {ReactNode} The rendered component.
  */
 const PricingCard = ({ currencyCode = 'USD', priceDetails = __('/month, paid yearly', 'jetpack-components'), ...props }) => {
     const currencyObjectBefore = getCurrencyObject(props.priceBefore, currencyCode);

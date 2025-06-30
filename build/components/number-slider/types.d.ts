@@ -1,4 +1,4 @@
-import type { HTMLProps, RefCallback } from 'react';
+import type { HTMLProps, RefCallback, JSX } from 'react';
 interface HTMLPropsWithRefCallback<T> extends HTMLProps<T> {
     ref: RefCallback<T>;
 }
@@ -45,6 +45,6 @@ export type NumberSliderProps = {
         index: number;
         value: number | ReadonlyArray<number>;
         valueNow: number;
-    }) => React.JSX.Element | null;
+    }) => JSX.Element | null;
 };
 export {};

@@ -73,7 +73,7 @@ function getColor(score, opacity = 'FF') {
  * @param {{ startDate: number, endDate: number }} props.range       - The date range of the chart.
  * @param {Period[]}                               props.periods     - The periods to display in the chart.
  * @param {Annotation[]}                           props.annotations - The annotations to display in the chart.
- * @return {React.Element} The JSX element representing the UplotLineChart component.
+ * @return {ReactElement} The JSX element representing the UplotLineChart component.
  */
 export default function UplotLineChart({ range, periods, annotations = [] }) {
     const uplot = useRef(null);

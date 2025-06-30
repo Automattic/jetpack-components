@@ -14,7 +14,7 @@ import styles from './style.module.scss';
  * Product Detail component.
  *
  * @param {ProductOfferProps} props - Component props.
- * @return {React.ReactNode} - ProductOffer react component.
+ * @return {ReactNode} - ProductOffer react component.
  */
 const ProductOffer = ({ addProductUrl, buttonDisclaimer, buttonText = '', className, description, error = '', features, hasRequiredPlan, icon, isBundle = false, isCard, isLoading, onAdd, pricing = {}, slug, subTitle = '', supportedProducts, title = '', }) => {
     const { isFree, price, currency, offPrice } = pricing;

@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 export type Placement = 'top' | 'top-start' | 'top-end' | 'bottom' | 'bottom-start' | 'bottom-end';
 export type Position = 'top left' | 'top center' | 'top right' | 'bottom left' | 'bottom center' | 'bottom right';
 export type IconTooltipProps = {
@@ -32,7 +33,7 @@ export type IconTooltipProps = {
     /**
      * The main body content of Popover.
      */
-    children?: React.ReactNode;
+    children?: ReactNode;
     /**
      * The icon square width and height size (in px) also calculate the Popover shift.
      */

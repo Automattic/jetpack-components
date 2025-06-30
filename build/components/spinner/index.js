@@ -1,6 +1,5 @@
 import { jsx as _jsx } from "react/jsx-runtime";
 import PropTypes from 'prop-types';
-import React from 'react';
 import './style.scss';
 const Spinner = ({ color = '#FFFFFF', className = '', size = 20 }) => {
     const theClassName = className + ' jp-components-spinner';

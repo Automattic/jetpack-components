@@ -14,7 +14,7 @@ import styles from './style.module.scss';
  * All content must be passed as children wrapped in as many <AdminSection> elements as needed.
  *
  * @param {AdminPageProps} props - Component properties.
- * @return {React.ReactNode} AdminPage component.
+ * @return {ReactNode} AdminPage component.
  */
 const AdminPage = ({ children, className, moduleName = __('Jetpack', 'jetpack-components'), moduleNameHref, showHeader = true, showFooter = true, useInternalLinks = false, showBackground = true, sandboxedDomain = '', apiRoot = '', apiNonce = '', optionalMenuItems, header, }) => {
     useEffect(() => {

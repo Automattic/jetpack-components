@@ -11,7 +11,7 @@ import styles from './style.module.scss';
  * Progress Bar component
  *
  * @param {ProgressBarProps} props - Component props.
- * @return {React.ReactNode} - ProgressBar react component.
+ * @return {ReactNode} - ProgressBar react component.
  */
 const ProgressBar = ({ className, progressClassName, progress, size = 'normal', }) => {
     if (progress == null) {

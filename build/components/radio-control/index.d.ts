@@ -1,3 +1,4 @@
+import type { FC, ReactNode } from 'react';
 interface RadioControlProps {
     /** The current value. */
     selected: string;
@@ -6,9 +7,9 @@ interface RadioControlProps {
     /** Whether or not the radio control is currently disabled. */
     disabled?: boolean;
     /** Additional information to display below the radio control. */
-    help?: React.ReactNode;
+    help?: ReactNode;
     /** The label for the radio control. */
-    label?: React.ReactNode;
+    label?: ReactNode;
     /** If true, the label will only be visible to screen readers. */
     hideLabelFromVision?: boolean;
     /** A list of options to show. */
@@ -19,5 +20,5 @@ interface RadioControlProps {
     /** A callback function invoked when the value is changed. */
     onChange: (value: string) => void;
 }
-declare const RadioControl: React.FC<RadioControlProps>;
+declare const RadioControl: FC<RadioControlProps>;
 export default RadioControl;

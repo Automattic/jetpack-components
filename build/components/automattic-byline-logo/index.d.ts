@@ -1,10 +1,10 @@
-import React from 'react';
 import { AutomatticBylineLogoProps } from './types.ts';
+import type { FC } from 'react';
 /**
  * Automattic "By line" Logo component.
  *
  * @param {AutomatticBylineLogoProps} props - Component properties.
- * @return {React.ReactNode} AutomatticBylineLogo component.
+ * @return {ReactNode} AutomatticBylineLogo component.
  */
-declare const AutomatticBylineLogo: React.FC<AutomatticBylineLogoProps>;
+declare const AutomatticBylineLogo: FC<AutomatticBylineLogoProps>;
 export default AutomatticBylineLogo;

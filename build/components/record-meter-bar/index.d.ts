@@ -1,4 +1,4 @@
-import React from 'react';
+import type { FC } from 'react';
 import './style.scss';
 type RecordMeterBarItem = {
     /**
@@ -56,7 +56,7 @@ export type RecordMeterBarProps = {
  * Generate Record Meter bar
  *
  * @param {RecordMeterBarProps} props - Props
- * @return {React.ReactElement} - JSX element
+ * @return {ReactElement} - JSX element
  */
-declare const RecordMeterBar: React.FC<RecordMeterBarProps>;
+declare const RecordMeterBar: FC<RecordMeterBarProps>;
 export default RecordMeterBar;

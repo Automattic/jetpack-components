@@ -1,4 +1,4 @@
-import React from 'react';
 import { JetpackSearchLogoProps } from './types.ts';
-declare const JetpackSearchLogo: React.FC<JetpackSearchLogoProps>;
+import type { FC } from 'react';
+declare const JetpackSearchLogo: FC<JetpackSearchLogoProps>;
 export default JetpackSearchLogo;

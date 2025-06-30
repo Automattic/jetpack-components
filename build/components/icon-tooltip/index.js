@@ -20,7 +20,7 @@ const placementsToPositions = (placement) => {
  * Generate Icon Tooltip
  *
  * @param {IconTooltipProps} props - Props
- * @return {React.ReactElement} - JSX element
+ * @return {ReactElement} - JSX element
  */
 const IconTooltip = ({ className = '', iconClassName = '', placement = 'bottom-end', animate = true, iconCode = 'info-outline', iconSize = 18, offset = 10, title, children, popoverAnchorStyle = 'icon', forceShow = false, hoverShow = false, wide = false, inline = true, shift = false, }) => {
     const POPOVER_HELPER_WIDTH = 124;

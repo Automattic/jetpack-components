@@ -1,12 +1,12 @@
-import React from 'react';
 import { NumberSliderProps } from './types.ts';
+import type { FC } from 'react';
 import './style.scss';
 /**
  * Generate Number Slider
  * More support from the original ReactSlider component: https://zillow.github.io/react-slider/
  *
  * @param {NumberSliderProps} props - Props
- * @return {React.ReactElement} - JSX element
+ * @return {ReactElement} - JSX element
  */
-declare const NumberSlider: React.FC<NumberSliderProps>;
+declare const NumberSlider: FC<NumberSliderProps>;
 export default NumberSlider;

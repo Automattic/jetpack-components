@@ -10,7 +10,7 @@ import './style.scss';
  * @param {string}               props.title             - Title for the chart.
  * @param {Period[]}             props.periods           - The periods to display in the chart.
  * @param {boolean}              [props.isLoading=false] - Whether the component is in a loading state.
- * @return {React.ReactElement} The JSX element representing the BoostScoreGraph component, or null if loading.
+ * @return {ReactElement} The JSX element representing the BoostScoreGraph component, or null if loading.
  */
 export const BoostScoreGraph = ({ periods = [], annotations = [], startDate = 0, endDate = 0, title, isPlaceholder = false, }) => {
     // Sort periods by timestamp

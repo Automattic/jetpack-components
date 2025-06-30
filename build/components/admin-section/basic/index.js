@@ -4,7 +4,7 @@ import styles from './style.module.scss';
  * This is the wrapper component to build sections within your admin page.
  *
  * @param {AdminSectionBaseProps} props - Component properties.
- * @return {React.ReactNode} AdminSection component.
+ * @return {ReactNode} AdminSection component.
  */
 const AdminSection = ({ children }) => {
     return _jsx("div", { className: styles.section, children: children });

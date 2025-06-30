@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 export type ThemeProviderProps = {
     /**
      * An optional id to register and identify the provider instance.
@@ -10,7 +11,7 @@ export type ThemeProviderProps = {
     /**
      * Content
      */
-    children?: React.ReactNode;
+    children?: ReactNode;
     /**
      * Inser global/reset styles
      */

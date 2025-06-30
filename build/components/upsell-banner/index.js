@@ -10,7 +10,7 @@ import './style.scss';
  * - The secondary CTA is the first button, at the left position.
  *
  * @param {UpsellBannerProps} props - Component props.
- * @return {React.ReactNode} - UpsellBanner component.
+ * @return {ReactNode} - UpsellBanner component.
  */
 const UpsellBanner = props => {
     const { icon, title, description, primaryCtaLabel, primaryCtaURL, primaryCtaIsExternalLink, primaryCtaOnClick, secondaryCtaLabel, secondaryCtaURL, secondaryCtaIsExternalLink, secondaryCtaOnClick, } = props;

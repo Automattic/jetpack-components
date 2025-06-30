@@ -1,5 +1,5 @@
-import React from 'react';
 import './style.scss';
+import type { FC } from 'react';
 export type DonutMeterProps = {
     /**
      * Total number of items for the donut meter.
@@ -52,7 +52,7 @@ export type DonutMeterProps = {
  * Generate record meter donut bar
  *
  * @param {DonutMeterProps} props - Props
- * @return {React.ReactElement} - JSX element
+ * @return {ReactElement} - JSX element
  */
-declare const DonutMeter: React.FC<DonutMeterProps>;
+declare const DonutMeter: FC<DonutMeterProps>;
 export default DonutMeter;

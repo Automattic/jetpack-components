@@ -10,7 +10,7 @@ const TRANSITION_DURATION = '300ms';
 /**
  * Custom hook to observe and handle resize events on a DOM element.
  *
- * @return {[React.Dispatch<React.SetStateAction<HTMLElement | null>>, ResizeObserverEntry | null]} Tuple containing setter and entry
+ * @return {[Dispatch<SetStateAction<HTMLElement | null>>, ResizeObserverEntry | null]} Tuple containing setter and entry
  */
 function useResizeObserver() {
     const [observerEntry, setObserverEntry] = useState(null);

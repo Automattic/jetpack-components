@@ -1,15 +1,8 @@
 import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
-/**
- * External dependencies
- */
 import { Spinner } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
-/**
- * Internal dependencies
- */
-import React from 'react';
 import Button from "../button/index.js";
 import styles from './style.module.scss';
 /**
@@ -20,7 +13,7 @@ import styles from './style.module.scss';
  * It is useful to async actions when the user has to wait the result of a request or process.
  *
  * @param {object} props - The properties.
- * @return {React.ReactNode} The `ActionButton` component.
+ * @return {import('react').ReactNode} The `ActionButton` component.
  */
 const ActionButton = props => {
     const { label, onClick, isLoading = false, loadingText, isDisabled, displayError = false, errorMessage = __('An error occurred. Please try again.', 'jetpack-components'), variant = 'primary', isExternalLink = false, customClass, } = props;

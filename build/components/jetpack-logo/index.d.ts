@@ -1,4 +1,4 @@
-import React from 'react';
 import { JetpackLogoProps } from './types.ts';
-declare const JetpackLogo: React.FC<JetpackLogoProps>;
+import type { FC } from 'react';
+declare const JetpackLogo: FC<JetpackLogoProps>;
 export default JetpackLogo;

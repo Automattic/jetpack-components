@@ -7,7 +7,7 @@ import styles from './style.module.scss';
  * Product Detail Card Header component.
  *
  * @param {ProductOfferHeaderProps} props - Component props.
- * @return {React.ReactNode}  ProductOfferHeader react component.
+ * @return {ReactNode}  ProductOfferHeader react component.
  */
 export const ProductOfferHeader = ({ title = __('Popular upgrade', 'jetpack-components'), }) => {
     return (_jsxs("div", { className: styles['card-header'], children: [_jsx(Icon, { icon: star, className: styles['product-bundle-icon'], size: 24 }), _jsx(Text, { variant: "label", children: title })] }));

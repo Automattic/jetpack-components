@@ -1,7 +1,8 @@
+import type { ReactNode } from 'react';
 export type AdminSectionBaseProps = {
     /**
      * The section content
      */
-    children: React.ReactNode;
+    children: ReactNode;
     className?: string;
 };

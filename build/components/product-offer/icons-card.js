@@ -8,7 +8,7 @@ import styles from './style.module.scss';
  * based on the list of supported products.
  *
  * @param {IconsCardProps} props - Component props.
- * @return {React.ReactNode}      Bundle product icons react component.
+ * @return {ReactNode}      Bundle product icons react component.
  */
 export const IconsCard = ({ products, icon, size = 24 }) => {
     if (icon) {

@@ -7,7 +7,7 @@ import styles from './style.module.scss';
  * Text component.
  *
  * @param {TextProps} props - Component props.
- * @return {React.ReactElement} - JSX.Element
+ * @return {ReactElement} - JSX.Element
  */
 const Text = forwardRef(({ variant = 'body', children, component, className, ...componentProps }, ref) => {
     const Component = component || VARIANTS_MAPPING[variant] || 'span';
@@ -30,14 +30,14 @@ export default Text;
  * Heading component - Medium size.
  *
  * @param {TextProps} props - Component props.
- * @return {React.ReactElement} - JSX.Element
+ * @return {ReactElement} - JSX.Element
  */
 export const H2 = ({ children, ...componentProps }) => (_jsx(Text, { variant: "headline-medium", mb: 3, ...componentProps, children: children }));
 /**
  * Heading component - Small size,
  *
  * @param {H3Props} props - Component props.
- * @return {React.ReactElement} - JSX.Element
+ * @return {ReactElement} - JSX.Element
  */
 export const H3 = ({ children, weight = 'bold', ...componentProps }) => {
     const variant = `headline-small${weight === 'bold' ? '' : `-${weight}`}`;
@@ -47,7 +47,7 @@ export const H3 = ({ children, weight = 'bold', ...componentProps }) => {
  * Title component, based on Text component.
  *
  * @param {TitleProps} props - Component props.
- * @return {React.ReactElement} - JSX.Element
+ * @return {ReactElement} - JSX.Element
  */
 export const Title = ({ children, size = 'medium', ...componentProps }) => (_jsx(Text, { variant: `title-${size}`, mb: 1, ...componentProps, children: children }));
 export * from "./constants.js";

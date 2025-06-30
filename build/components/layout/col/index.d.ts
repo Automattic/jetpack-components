@@ -1,10 +1,10 @@
 import { ColProps } from '../types.ts';
-import type React from 'react';
+import type { FC } from 'react';
 /**
  * The basic Col component.
  *
  * @param {ColProps} props - Component properties.
- * @return {React.ReactElement}   Col component.
+ * @return {ReactElement}   Col component.
  */
-declare const Col: React.FC<ColProps>;
+declare const Col: FC<ColProps>;
 export default Col;

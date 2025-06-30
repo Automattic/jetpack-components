@@ -7,7 +7,7 @@ import styles from './style.module.scss';
  * React component to render a Price composition.
  *
  * @param {PriceProps} props - Component props.
- * @return {React.ReactNode} -Price react component.
+ * @return {ReactNode} -Price react component.
  */
 export const Price = ({ value, currency, isOff, hidePriceFraction }) => {
     const classNames = clsx(styles.price, 'product-price_price', {

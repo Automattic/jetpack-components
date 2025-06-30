@@ -4,9 +4,9 @@ import styles from './style.module.scss';
 /**
  * JP Container
  *
- * @param {ContainerProps}         props - Component properties.
- * @param {React.MutableRefObject} ref   - Ref to the component
- * @return {React.ReactElement}   Container component.
+ * @param {ContainerProps}   props - Component properties.
+ * @param {MutableRefObject} ref   - Ref to the component
+ * @return {ReactElement}   Container component.
  */
 const Container = ({ children, fluid = false, tagName = 'div', className, horizontalGap = 1, horizontalSpacing = 1, }, ref) => {
     const containerStyle = useMemo(() => {

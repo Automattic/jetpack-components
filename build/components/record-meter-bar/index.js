@@ -8,7 +8,7 @@ import './style.scss';
  * Generate Record Meter bar
  *
  * @param {RecordMeterBarProps} props - Props
- * @return {React.ReactElement} - JSX element
+ * @return {ReactElement} - JSX element
  */
 const RecordMeterBar = ({ totalCount, items = [], showLegendLabelBeforeCount = false, sortByCount, className, tableCaption, legendTitle, recordTypeLabel, recordCountLabel, }) => {
     const total = useMemo(() => {

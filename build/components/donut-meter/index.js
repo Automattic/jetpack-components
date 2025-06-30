@@ -13,7 +13,7 @@ const getAdaptiveType = (percentage) => {
  * Generate record meter donut bar
  *
  * @param {DonutMeterProps} props - Props
- * @return {React.ReactElement} - JSX element
+ * @return {ReactElement} - JSX element
  */
 const DonutMeter = ({ className = '', description = '', donutWidth = '64px', segmentCount, thickness = '3.5', title = '', totalCount, type, useAdaptiveColors, }) => {
     const validDivisor = totalCount === 0 ? 1 : totalCount;

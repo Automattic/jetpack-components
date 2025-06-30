@@ -1,4 +1,5 @@
 import type { Placement } from '../icon-tooltip/types.ts';
+import type { ReactElement, ReactNode } from 'react';
 export type PricingTableProps = {
     /**
      * Title of the pricing table.
@@ -9,14 +10,14 @@ export type PricingTableProps = {
      */
     items: {
         name: string;
-        tooltipInfo?: React.ReactNode;
+        tooltipInfo?: ReactNode;
         tooltipTitle?: string;
         tooltipPlacement?: Placement;
     }[];
     /**
      * The columns to add to the table.
      */
-    children: React.ReactNode;
+    children: ReactNode;
     /**
      * Whether to show the intro offer disclaimer text with the ToS.
      */
@@ -30,13 +31,13 @@ export type PricingTableColumnProps = {
     /**
      * Items to show in a column.
      */
-    children: React.ReactElement[];
+    children: ReactElement[];
 };
 export type PricingTableHeaderProps = {
     /**
      * Items to show in a header.
      */
-    children: React.ReactNode;
+    children: ReactNode;
 };
 export type PricingTableItemProps = {
     /**
@@ -50,12 +51,12 @@ export type PricingTableItemProps = {
     /**
      * A custom label to display instead of the default one.
      */
-    label?: string | number | React.ReactElement;
+    label?: string | number | ReactElement;
     /**
      * Index of the item, relative to other PricingTableItem components. Internal use only.
      */
     index?: number;
-    tooltipInfo?: React.ReactNode;
+    tooltipInfo?: ReactNode;
     /**
      * Title for the popover, not required.
      */

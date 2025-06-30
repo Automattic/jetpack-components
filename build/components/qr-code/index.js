@@ -4,7 +4,7 @@ import { QRCodeCanvas, QRCodeSVG } from 'qrcode.react';
  * Renders a QR Code.
  *
  * @param {QRCodeProps} props - Component props
- * @return {React.ReactNode} - React component.
+ * @return {ReactNode} - React component.
  */
 const QRCode = ({ value = 'https://jetpack.com', size = 248, bgColor, fgColor, level, includeMargin, imageSettings, renderAs = 'canvas', }) => {
     const commonProps = {

@@ -7,7 +7,7 @@ import styles from './style.module.scss';
  * @param {object} props      - The component properties.
  * @param {string} props.type - The type new or info
  * @param {string} props.text - Chip text
- * @return {React.ReactElement} The `Chip` component.
+ * @return {ReactElement} The `Chip` component.
  */
 const Chip = ({ type = 'info', text }) => {
     const classes = clsx(styles.chip, styles[`is-${type}`]);

@@ -1,3 +1,4 @@
+import type { FC, ReactNode } from 'react';
 interface ToggleControlProps {
     /** Whether or not the toggle is currently enabled. */
     checked?: boolean;
@@ -6,15 +7,15 @@ interface ToggleControlProps {
     /** Whether or not the toggle is currently disabled. */
     disabled?: boolean;
     /** Additional information to display below the toggle. */
-    help?: React.ReactNode;
+    help?: ReactNode;
     /** Whether or not the toggling is currently toggling. */
     toggling?: boolean;
     /** The label for the toggle. */
-    label?: React.ReactNode;
+    label?: ReactNode;
     /** The size of the toggle. */
     size?: 'small' | 'normal';
     /** A callback function invoked when the toggle is clicked. */
     onChange: (value: boolean) => void;
 }
-declare const ToggleControl: React.FC<ToggleControlProps>;
+declare const ToggleControl: FC<ToggleControlProps>;
 export default ToggleControl;

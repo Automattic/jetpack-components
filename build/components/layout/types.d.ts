@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 type ColSpan = number | {
     start: number;
     end: number;
@@ -26,7 +27,7 @@ export type ColProps = {
     /**
      * Children to be inserted.
      */
-    children?: React.ReactNode;
+    children?: ReactNode;
 };
 export type ContainerProps = {
     /**
@@ -52,6 +53,6 @@ export type ContainerProps = {
     /**
      * Children to be inserted.
      */
-    children?: React.ReactNode;
+    children?: ReactNode;
 };
 export {};

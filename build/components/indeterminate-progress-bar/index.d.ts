@@ -1,10 +1,10 @@
 import { IndeterminateProgressBarProps } from './types.ts';
-import type React from 'react';
+import type { FC } from 'react';
 /**
  * Indeterminate Progress Bar component
  *
  * @param {IndeterminateProgressBarProps} props - Component props.
- * @return {React.ReactNode} - IndeterminateProgressBar react component.
+ * @return {ReactNode} - IndeterminateProgressBar react component.
  */
-declare const IndeterminateProgressBar: React.FC<IndeterminateProgressBarProps>;
+declare const IndeterminateProgressBar: FC<IndeterminateProgressBarProps>;
 export default IndeterminateProgressBar;

@@ -1,9 +1,9 @@
 import type { PriceProps } from './types.ts';
-import type React from 'react';
+import type { FC } from 'react';
 /**
  * React component to render a Price composition.
  *
  * @param {PriceProps} props - Component props.
- * @return {React.ReactNode} -Price react component.
+ * @return {ReactNode} -Price react component.
  */
-export declare const Price: React.FC<PriceProps>;
+export declare const Price: FC<PriceProps>;

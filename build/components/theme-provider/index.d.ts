@@ -1,5 +1,5 @@
-import React from 'react';
 import { ThemeProviderProps } from './types.ts';
+import type { FC } from 'react';
 export declare const typography: {
     '--font-headline-medium': string;
     '--font-headline-small': string;
@@ -74,7 +74,7 @@ export declare const spacing: {
  * ThemeProvider React component.
  *
  * @param {ThemeProviderProps} props - Component properties.
- * @return {React.ReactNode}        ThemeProvider component.
+ * @return {ReactNode}        ThemeProvider component.
  */
-declare const ThemeProvider: React.FC<ThemeProviderProps>;
+declare const ThemeProvider: FC<ThemeProviderProps>;
 export default ThemeProvider;

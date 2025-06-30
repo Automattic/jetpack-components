@@ -14,7 +14,7 @@ import styles from './style.module.scss';
  * React component to render the price.
  *
  * @param {ProductPriceProps} props - Component props.
- * @return {React.ReactNode} Price react component.
+ * @return {ReactNode} Price react component.
  */
 const ProductPrice = ({ price, offPrice, currency = '', showNotOffPrice = true, hideDiscountLabel = true, promoLabel = '', legend = __('/month, paid yearly', 'jetpack-components'), isNotConvenientPrice = false, hidePriceFraction = false, children, }) => {
     if ((price == null && offPrice == null) || !currency) {

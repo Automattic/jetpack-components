@@ -1,3 +1,4 @@
+import type { JSX } from 'react';
 export type StatCardProps = {
     /**
      * Custom className to be inserted.
@@ -10,7 +11,7 @@ export type StatCardProps = {
     /**
      * The stat card icon.
      */
-    icon: React.JSX.Element;
+    icon: JSX.Element;
     /**
      * The stat label.
      */

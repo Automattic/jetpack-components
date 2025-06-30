@@ -1,9 +1,10 @@
 import type { JetpackFooterMenuItem } from '../jetpack-footer/types.ts';
+import type { ReactNode } from 'react';
 export type AdminPageProps = {
     /**
      * The page content
      */
-    children: React.ReactNode;
+    children: ReactNode;
     /**
      * Name of the module, e.g. 'Jetpack Search' that will be displayed in the footer.
      */
@@ -15,7 +16,7 @@ export type AdminPageProps = {
     /**
      * Custom header. Optional
      */
-    header?: React.ReactNode;
+    header?: ReactNode;
     /**
      * Whether or not to display the Footer
      */

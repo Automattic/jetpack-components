@@ -19,14 +19,14 @@ const getIconByLevel = (level) => {
 /**
  * Alert component
  *
- * @param {object}          props           - The component properties.
- * @param {string}          props.level     - The alert level: error, warning, info, success.
- * @param {boolean}         props.showIcon  - Whether to show the alert icon.
- * @param {string}          props.className - The wrapper class name.
- * @param {React.Component} props.children  - The alert content.
- * @return {React.ReactElement}             The `Alert` component.
+ * @param {object}    props           - The component properties.
+ * @param {string}    props.level     - The alert level: error, warning, info, success.
+ * @param {boolean}   props.showIcon  - Whether to show the alert icon.
+ * @param {string}    props.className - The wrapper class name.
+ * @param {Component} props.children  - The alert content.
+ * @return {ReactElement}             The `Alert` component.
  */
-const Alert = ({ level = 'warning', children, showIcon = true, className, }) => {
+const Alert = ({ level = 'warning', children, showIcon = true, className }) => {
     const classes = clsx(styles.container, styles[`is-${level}`], className);
     return (_jsxs("div", { className: classes, children: [showIcon && (_jsx("div", { className: styles['icon-wrapper'], children: _jsx(Icon, { icon: getIconByLevel(level), className: styles.icon }) })), _jsx("div", { children: children })] }));
 };

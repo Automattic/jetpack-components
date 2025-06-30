@@ -1,21 +1,15 @@
 import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
-/**
- * External dependencies
- */
 import { Button as WPButton, Spinner, VisuallyHidden } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 import { Icon, external } from '@wordpress/icons';
 import clsx from 'clsx';
 import { forwardRef } from 'react';
-/**
- * Internal dependencies
- */
 import styles from './style.module.scss';
 /**
  * Button component
  *
  * @param {ButtonProps} props - Component Props
- * @return {React.ReactNode} Rendered button
+ * @return {ReactNode} Rendered button
  */
 const Button = forwardRef((props, ref) => {
     const { children, variant = 'primary', size = 'normal', weight = 'bold', icon, iconSize, disabled, isDestructive, isLoading, isExternalLink, className: propsClassName, text, fullWidth, ...componentProps } = props;

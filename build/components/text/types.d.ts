@@ -1,5 +1,5 @@
 import { VARIANTS_MAPPING } from './constants.ts';
-import type React from 'react';
+import type { CSSProperties, ElementType, FC, ReactNode } from 'react';
 export type SpacingValue = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
 export type TextProps = {
     variant?: keyof typeof VARIANTS_MAPPING;
@@ -34,12 +34,12 @@ export type TextProps = {
     /** HTML Class */
     className?: string;
     /** The text itself that will be rendered. */
-    children: React.ReactNode;
+    children: ReactNode;
     /** Force an specific tag (span, div) or use a custom component that will receive className and children */
-    component?: React.FC<{
+    component?: FC<{
         [prop: string]: unknown;
-    }> | React.ElementType;
-    style?: React.CSSProperties;
+    }> | ElementType;
+    style?: CSSProperties;
 };
 export type H3Props = TextProps & {
     /** Font weight: 'bold' (default) | 'regular'. */

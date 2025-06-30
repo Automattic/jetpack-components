@@ -1,10 +1,9 @@
-import React from 'react';
 import type { ButtonProps } from './types.ts';
 /**
  * Button component
  *
  * @param {ButtonProps} props - Component Props
- * @return {React.ReactNode} Rendered button
+ * @return {ReactNode} Rendered button
  */
-declare const Button: React.ForwardRefExoticComponent<Omit<ButtonProps, "ref"> & React.RefAttributes<HTMLInputElement>>;
+declare const Button: import("react").ForwardRefExoticComponent<Omit<ButtonProps, "ref"> & import("react").RefAttributes<HTMLInputElement>>;
 export default Button;

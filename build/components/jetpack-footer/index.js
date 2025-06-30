@@ -16,7 +16,7 @@ const ExternalIcon = () => (_jsxs(_Fragment, { children: [_jsx(Icon, { icon: ext
  * JetpackFooter component displays a tiny Jetpack logo with the product name on the left and the Automattic Airline "by line" on the right.
  *
  * @param {JetpackFooterProps} props - Component properties.
- * @return {React.ReactNode} JetpackFooter component.
+ * @return {ReactNode} JetpackFooter component.
  */
 const JetpackFooter = ({ moduleName = __('Jetpack', 'jetpack-components'), className, moduleNameHref = 'https://jetpack.com', menu, useInternalLinks, onAboutClick, onPrivacyClick, onTermsClick, ...otherProps }) => {
     const [isSm] = useBreakpointMatch('sm', '<=');

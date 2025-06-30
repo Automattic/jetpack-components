@@ -1,5 +1,5 @@
-import React from 'react';
 import { UpsellBannerProps } from './types.ts';
+import type { FC } from 'react';
 import './style.scss';
 /**
  * Upsell banner component.
@@ -8,7 +8,7 @@ import './style.scss';
  * - The secondary CTA is the first button, at the left position.
  *
  * @param {UpsellBannerProps} props - Component props.
- * @return {React.ReactNode} - UpsellBanner component.
+ * @return {ReactNode} - UpsellBanner component.
  */
-declare const UpsellBanner: React.FC<UpsellBannerProps>;
+declare const UpsellBanner: FC<UpsellBannerProps>;
 export default UpsellBanner;

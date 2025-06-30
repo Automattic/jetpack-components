@@ -102,7 +102,7 @@ const setup = (root, id, withGlobalStyles) => {
  * ThemeProvider React component.
  *
  * @param {ThemeProviderProps} props - Component properties.
- * @return {React.ReactNode}        ThemeProvider component.
+ * @return {ReactNode}        ThemeProvider component.
  */
 const ThemeProvider = ({ children = null, targetDom, id, withGlobalStyles = true, }) => {
     const themeWrapperRef = useRef();

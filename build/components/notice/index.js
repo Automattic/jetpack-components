@@ -19,14 +19,14 @@ const getIconByLevel = (level) => {
 /**
  * Notice component
  *
- * @param {object}            props                 - The component properties.
- * @param {string}            props.level           - The notice level: error, warning, info, success.
- * @param {boolean}           props.hideCloseButton - Whether to hide the close button.
- * @param {Function}          props.onClose         - The function to call when the close button is clicked.
- * @param {string}            props.title           - The title of the notice.
- * @param {React.ReactNode[]} props.actions         - Actions to show across the bottom of the bar.
- * @param {React.Component}   props.children        - The notice content.
- * @return {React.ReactElement}              The `Notice` component.
+ * @param {object}      props                 - The component properties.
+ * @param {string}      props.level           - The notice level: error, warning, info, success.
+ * @param {boolean}     props.hideCloseButton - Whether to hide the close button.
+ * @param {Function}    props.onClose         - The function to call when the close button is clicked.
+ * @param {string}      props.title           - The title of the notice.
+ * @param {ReactNode[]} props.actions         - Actions to show across the bottom of the bar.
+ * @param {Component}   props.children        - The notice content.
+ * @return {ReactElement}              The `Notice` component.
  */
 const Notice = ({ level = 'info', title, children, actions, hideCloseButton = false, onClose, }) => {
     const classes = clsx(styles.container, styles[`is-${level}`]);

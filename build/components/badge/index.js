@@ -9,7 +9,7 @@ import styles from './style.module.scss';
  * @param {JSX.Element} props.children  - Badge text or content.
  * @param {string}      props.className - Additional class name to pass to the Badge component.
  *
- * @return {React.ReactElement} The `Badge` component.
+ * @return {ReactElement} The `Badge` component.
  */
 const Badge = ({ children, className, variant, ...props }) => {
     const classes = clsx(styles.badge, {

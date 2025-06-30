@@ -1,4 +1,4 @@
-import React from 'react';
+import type { FC } from 'react';
 type ChipProps = {
     text?: string;
     type?: 'new' | 'info';
@@ -9,7 +9,7 @@ type ChipProps = {
  * @param {object} props      - The component properties.
  * @param {string} props.type - The type new or info
  * @param {string} props.text - Chip text
- * @return {React.ReactElement} The `Chip` component.
+ * @return {ReactElement} The `Chip` component.
  */
-declare const Chip: React.FC<ChipProps>;
+declare const Chip: FC<ChipProps>;
 export default Chip;

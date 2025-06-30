@@ -1,4 +1,4 @@
-import { type FunctionComponent } from 'react';
+import type { FunctionComponent } from 'react';
 import './style.scss';
 export interface Period {
     timestamp: number;
@@ -38,7 +38,7 @@ export type ScoreGraphAlignedData = [
  * @param {string}               props.title             - Title for the chart.
  * @param {Period[]}             props.periods           - The periods to display in the chart.
  * @param {boolean}              [props.isLoading=false] - Whether the component is in a loading state.
- * @return {React.ReactElement} The JSX element representing the BoostScoreGraph component, or null if loading.
+ * @return {ReactElement} The JSX element representing the BoostScoreGraph component, or null if loading.
  */
 export declare const BoostScoreGraph: FunctionComponent<BoostScoreGraphProps>;
 export default BoostScoreGraph;

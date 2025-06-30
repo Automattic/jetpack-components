@@ -1,6 +1,6 @@
-import React from 'react';
+import type { ReactNode } from 'react';
 declare const LoadingPlaceholder: ({ children, width, height, className, }: {
-    children?: React.ReactNode;
+    children?: ReactNode;
     width?: number | string;
     height?: number;
     className?: string;

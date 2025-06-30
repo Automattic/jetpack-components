@@ -1,7 +1,7 @@
 import { QRCodeCanvas, QRCodeSVG } from 'qrcode.react';
-import type React from 'react';
-type QRCodeCanvasProps = React.ComponentProps<typeof QRCodeCanvas>;
-type QRCodeSVGProps = React.ComponentProps<typeof QRCodeSVG>;
+import type { ComponentProps, FC } from 'react';
+type QRCodeCanvasProps = ComponentProps<typeof QRCodeCanvas>;
+type QRCodeSVGProps = ComponentProps<typeof QRCodeSVG>;
 export type QRCodeProps = {
     /**
      * The value to encode.
@@ -40,7 +40,7 @@ export type QRCodeProps = {
  * Renders a QR Code.
  *
  * @param {QRCodeProps} props - Component props
- * @return {React.ReactNode} - React component.
+ * @return {ReactNode} - React component.
  */
-declare const QRCode: React.FC<QRCodeProps>;
+declare const QRCode: FC<QRCodeProps>;
 export default QRCode;

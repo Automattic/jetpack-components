@@ -1,10 +1,10 @@
 import { ProgressBarProps } from './types.ts';
-import type React from 'react';
+import type { FC } from 'react';
 /**
  * Progress Bar component
  *
  * @param {ProgressBarProps} props - Component props.
- * @return {React.ReactNode} - ProgressBar react component.
+ * @return {ReactNode} - ProgressBar react component.
  */
-declare const ProgressBar: React.FC<ProgressBarProps>;
+declare const ProgressBar: FC<ProgressBarProps>;
 export default ProgressBar;

@@ -14,7 +14,7 @@ import styles from './style.module.scss';
  * StatCard component
  *
  * @param {StatCardProps} props - Component props.
- * @return {React.ReactNode} - StatCard react component.
+ * @return {ReactNode} - StatCard react component.
  */
 const StatCard = ({ className, hideValue, icon, label, value, variant = 'square', }) => {
     const formattedValue = formatNumber(value);
