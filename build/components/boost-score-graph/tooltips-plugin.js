@@ -1,4 +1,4 @@
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import { Tooltip } from "./tooltip.js";
 /**
  * Custom tooltips plugin for uPlot.
@@ -18,7 +18,7 @@ export function tooltipsPlugin(periods) {
     function init(u) {
         container.classList.add('jb-score-tooltips-container');
         if (!reactDom) {
-            reactDom = ReactDOM.createRoot(reactRoot);
+            reactDom = createRoot(reactRoot);
         }
         reactRoot.classList.add('jb-score-tooltip-react-root');
         container.appendChild(reactRoot);
