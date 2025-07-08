@@ -1,5 +1,5 @@
 import type { JSX } from 'react';
-interface StatusProps {
+export interface StatusProps {
     status?: 'active' | 'error' | 'inactive' | 'action' | 'initializing';
     label?: string;
     className?: string;

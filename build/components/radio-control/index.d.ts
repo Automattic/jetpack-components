@@ -1,5 +1,5 @@
 import type { FC, ReactNode } from 'react';
-interface RadioControlProps {
+export interface RadioControlProps {
     /** The current value. */
     selected: string;
     /** Custom class name to append to the component. */

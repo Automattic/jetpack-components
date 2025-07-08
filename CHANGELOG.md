@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update package dependencies.
 
+### Fixed
+- TypeScript: Fix config to include all the TS files for type checking.
+
 ## [1.1.10] - 2025-07-07
 ### Changed
 - Internal updates.

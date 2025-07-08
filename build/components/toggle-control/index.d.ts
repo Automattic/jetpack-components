@@ -1,5 +1,5 @@
 import type { FC, ReactNode } from 'react';
-interface ToggleControlProps {
+export interface ToggleControlProps {
     /** Whether or not the toggle is currently enabled. */
     checked?: boolean;
     /** Custom class name to append to the component. */
