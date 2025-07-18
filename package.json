@@ -18,7 +18,7 @@
 		"@automattic/jetpack-api": "^1.0.5",
 		"@automattic/jetpack-boost-score-api": "^1.0.6",
 		"@automattic/jetpack-script-data": "^0.5.0",
-		"@automattic/number-formatters": "^1.0.8",
+		"@automattic/number-formatters": "^1.0.9-alpha",
 		"@babel/runtime": "^7",
 		"@wordpress/browserslist-config": "6.26.0",
 		"@wordpress/components": "29.12.0",
@@ -39,7 +39,7 @@
 	},
 	"devDependencies": {
 		"@automattic/jetpack-base-styles": "^1.0.5-alpha",
-		"@babel/core": "7.27.7",
+		"@babel/core": "7.28.0",
 		"@babel/preset-react": "7.27.1",
 		"@jest/globals": "30.0.4",
 		"@storybook/addon-docs": "9.0.15",
