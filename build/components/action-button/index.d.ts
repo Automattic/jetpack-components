@@ -20,5 +20,7 @@ declare namespace ActionButton {
         let errorMessage: any;
         let variant: any;
         let isExternalLink: any;
+        let customClass: any;
+        let loadingText: any;
     }
 }
