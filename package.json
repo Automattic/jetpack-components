@@ -33,12 +33,12 @@
 		"prop-types": "^15.7.2",
 		"qrcode.react": "4.2.0",
 		"react-slider": "2.0.5",
-		"social-logos": "^3.2.6",
+		"social-logos": "^3.2.7-alpha",
 		"uplot": "1.6.31",
 		"uplot-react": "1.1.4"
 	},
 	"devDependencies": {
-		"@automattic/jetpack-base-styles": "^1.0.5",
+		"@automattic/jetpack-base-styles": "^1.0.6-alpha",
 		"@babel/core": "7.28.0",
 		"@babel/preset-react": "7.27.1",
 		"@jest/globals": "30.0.4",
