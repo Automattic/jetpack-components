@@ -1,24 +1,50 @@
 {
 	"name": "@automattic/jetpack-components",
-	"version": "1.1.16",
+	"version": "1.1.17-alpha",
 	"description": "Jetpack Components Package",
-	"author": "Automattic",
-	"license": "GPL-2.0-or-later",
 	"homepage": "https://github.com/Automattic/jetpack/tree/HEAD/projects/js-packages/components/#readme",
+	"bugs": {
+		"url": "https://github.com/Automattic/jetpack/labels/[JS Package] Components"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Automattic/jetpack.git",
 		"directory": "projects/js-packages/components"
 	},
-	"bugs": {
-		"url": "https://github.com/Automattic/jetpack/labels/[JS Package] Components"
+	"license": "GPL-2.0-or-later",
+	"author": "Automattic",
+	"sideEffects": [
+		"*.css",
+		"*.scss"
+	],
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./build/index.d.ts",
+			"default": "./build/index.js"
+		},
+		"./tools/jp-redirect": {
+			"types": "./build/tools/jp-redirect/index.d.ts",
+			"default": "./build/tools/jp-redirect/index.js"
+		}
 	},
+	"scripts": {
+		"build": "pnpm run clean && pnpm run compile-ts",
+		"clean": "rm -rf build/",
+		"compile-ts": "tsc --pretty --project tsconfig.build.json",
+		"test": "NODE_OPTIONS=--experimental-vm-modules jest",
+		"test-coverage": "pnpm run test --coverage",
+		"typecheck": "tsc --noEmit"
+	},
+	"browserslist": [
+		"extends @wordpress/browserslist-config"
+	],
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
-		"@automattic/jetpack-api": "^1.0.5",
-		"@automattic/jetpack-boost-score-api": "^1.0.7",
-		"@automattic/jetpack-script-data": "^0.5.0",
-		"@automattic/number-formatters": "^1.0.9",
+		"@automattic/jetpack-api": "^1.0.6-alpha",
+		"@automattic/jetpack-boost-score-api": "^1.0.8-alpha",
+		"@automattic/jetpack-script-data": "^0.5.1-alpha",
+		"@automattic/number-formatters": "^1.0.10-alpha",
 		"@babel/runtime": "^7",
 		"@wordpress/browserslist-config": "6.26.0",
 		"@wordpress/components": "29.12.0",
@@ -33,7 +59,7 @@
 		"prop-types": "^15.7.2",
 		"qrcode.react": "4.2.0",
 		"react-slider": "2.0.5",
-		"social-logos": "^3.2.7",
+		"social-logos": "^3.2.8-alpha",
 		"uplot": "1.6.31",
 		"uplot-react": "1.1.4"
 	},
@@ -65,31 +91,5 @@
 	"peerDependencies": {
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0"
-	},
-	"type": "module",
-	"browserslist": [
-		"extends @wordpress/browserslist-config"
-	],
-	"exports": {
-		".": {
-			"types": "./build/index.d.ts",
-			"default": "./build/index.js"
-		},
-		"./tools/jp-redirect": {
-			"types": "./build/tools/jp-redirect/index.d.ts",
-			"default": "./build/tools/jp-redirect/index.js"
-		}
-	},
-	"sideEffects": [
-		"*.css",
-		"*.scss"
-	],
-	"scripts": {
-		"build": "pnpm run clean && pnpm run compile-ts",
-		"clean": "rm -rf build/",
-		"compile-ts": "tsc --pretty --project tsconfig.build.json",
-		"test": "NODE_OPTIONS=--experimental-vm-modules jest",
-		"test-coverage": "pnpm run test --coverage",
-		"typecheck": "tsc --noEmit"
 	}
 }
