@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update package dependencies.
 
+### Fixed
+- I18n: Improve context hints in comments for translators.
+
 ## [1.1.17] - 2025-08-04
 ### Changed
 - Internal updates.

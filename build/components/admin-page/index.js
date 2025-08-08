@@ -33,7 +33,7 @@ const AdminPage = ({ children, className, moduleName = __('Jetpack', 'jetpack-co
         catch (error) {
             // eslint-disable-next-line no-alert
             window.alert(sprintf(
-            /* translators: placeholder is an error message. */
+            /* translators: %s: an error message. */
             __('There was an error testing Jetpack. Error: %s', 'jetpack-components'), error.message));
         }
     }, []);

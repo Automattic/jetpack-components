@@ -20,7 +20,7 @@ const ProductOffer = ({ addProductUrl, buttonDisclaimer, buttonText = '', classN
     const { isFree, price, currency, offPrice } = pricing;
     const needsPurchase = !isFree && !hasRequiredPlan;
     const defautlButtonText = sprintf(
-    /* translators: placeholder is product name. */
+    /* translators: %s: the product name. */
     __('Add %s', 'jetpack-components'), title);
     return (_jsxs("div", { className: clsx(styles.wrapper, className, {
             [styles['is-bundle-card']]: isBundle,
