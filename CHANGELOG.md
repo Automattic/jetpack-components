@@ -2,15 +2,12 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [1.1.18-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [1.1.18] - 2025-08-11
 ### Changed
-- Update package dependencies.
+- Update package dependencies. [#44677]
 
 ### Fixed
-- I18n: Improve context hints in comments for translators.
+- I18n: Improve context hints in comments for translators. [#44686]
 
 ## [1.1.17] - 2025-08-04
 ### Changed
@@ -1503,7 +1500,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[1.1.18-alpha]: https://github.com/Automattic/jetpack-components/compare/1.1.17...1.1.18-alpha
+[1.1.18]: https://github.com/Automattic/jetpack-components/compare/1.1.17...1.1.18
 [1.1.17]: https://github.com/Automattic/jetpack-components/compare/1.1.16...1.1.17
 [1.1.16]: https://github.com/Automattic/jetpack-components/compare/1.1.15...1.1.16
 [1.1.15]: https://github.com/Automattic/jetpack-components/compare/1.1.14...1.1.15
