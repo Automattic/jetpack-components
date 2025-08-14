@@ -6,6 +6,10 @@ export type PricingTableProps = {
      */
     title: string;
     /**
+     * Optional header logo to display above the title.
+     */
+    headerLogo?: ReactNode;
+    /**
      * Array of items to display in the pricing table.
      */
     items: {
@@ -32,8 +36,16 @@ export type PricingTableColumnProps = {
      * Items to show in a column.
      */
     children: ReactElement[];
+    /**
+     * Additional CSS class name to apply to the column.
+     */
+    className?: string;
 };
 export type PricingTableHeaderProps = {
+    /**
+     * Title of the header.
+     */
+    title?: string;
     /**
      * Items to show in a header.
      */

@@ -41,10 +41,10 @@ export const PricingTableItem = ({ isIncluded = false, isComingSoon = false, ind
     const defaultLabel = isLg ? labels.lg : labels.default;
     return (_jsxs("div", { className: clsx(styles.item, styles.value), children: [_jsx(Icon, { className: clsx(styles.icon, showTick ? styles['icon-check'] : styles['icon-cross']), size: 32, icon: showTick ? check : closeSmall }), _jsx(Text, { variant: "body-small", children: label || defaultLabel }), showTooltip && (_jsx(IconTooltip, { title: tooltipTitle ? tooltipTitle : defaultTooltipTitle, iconClassName: styles['popover-icon'], className: clsx(styles.popover, tooltipClassName), placement: 'bottom-end', iconSize: 14, offset: 4, wide: Boolean(tooltipTitle && tooltipInfo), children: _jsx(Text, { variant: "body-small", component: "div", children: tooltipInfo || defaultTooltipInfo }) }))] }));
 };
-export const PricingTableHeader = ({ children }) => (_jsx("div", { className: styles.header, children: children }));
-export const PricingTableColumn = ({ primary = false, children, }) => {
+export const PricingTableHeader = ({ title, children }) => (_jsxs("div", { className: styles.headerContainer, children: [title && (_jsx(Text, { variant: "headline-small", className: styles.title, children: title })), _jsx("div", { className: styles.header, children: children })] }));
+export const PricingTableColumn = ({ primary = false, children, className, }) => {
     let index = 0;
-    return (_jsx("div", { className: clsx(styles.card, { [styles['is-primary']]: primary }), children: Children.map(children, child => {
+    return (_jsx("div", { className: clsx(styles.card, { [styles['is-primary']]: primary }, className), children: Children.map(children, child => {
             const item = child;
             if (item.type === PricingTableItem) {
                 index++;
@@ -53,13 +53,13 @@ export const PricingTableColumn = ({ primary = false, children, }) => {
             return item;
         }) }));
 };
-const PricingTable = ({ title, items, children, showIntroOfferDisclaimer = false, }) => {
+const PricingTable = ({ title, headerLogo, items, children, showIntroOfferDisclaimer = false, }) => {
     const [isLg] = useBreakpointMatch('lg');
     return (_jsxs(PricingTableContext.Provider, { value: items, children: [_jsx("div", { className: clsx(styles.container, { [styles['is-viewport-large']]: isLg }), style: {
                     '--rows': items.length + 1,
                     '--columns': Children.toArray(children).length + 1,
-                }, children: _jsxs("div", { className: styles.table, children: [_jsx(Text, { variant: "headline-small", children: title }), isLg &&
-                            items.map((item, i) => (_jsxs("div", { className: clsx(styles.item, {
+                }, children: _jsxs("div", { className: styles.table, children: [_jsxs("div", { children: [headerLogo && _jsx("div", { className: styles['header-logo'], children: headerLogo }), _jsx(Text, { variant: "headline-small", children: title })] }), isLg &&
+                            items.map((item, i) => (_jsxs("div", { className: clsx(styles.item, styles.feature, {
                                     [styles['last-feature']]: i === items.length - 1,
                                 }), children: [_jsx(Text, { variant: "body-small", children: _jsx("strong", { children: item.name }) }), item.tooltipInfo && (_jsx(IconTooltip, { title: item.tooltipTitle, iconClassName: styles['popover-icon'], className: styles.popover, placement: item.tooltipPlacement ? item.tooltipPlacement : 'bottom-end', iconSize: 14, offset: 4, wide: Boolean(item.tooltipTitle && item.tooltipInfo), children: _jsx(Text, { variant: "body-small", children: item.tooltipInfo }) }))] }, i))), children] }) }), _jsx("div", { className: styles['tos-container'], children: _jsxs("div", { className: styles.tos, children: [showIntroOfferDisclaimer && (_jsx(Text, { variant: "body-small", children: __('Reduced pricing is a limited offer for the first year and renews at regular price.', 'jetpack-components') })), _jsx(TermsOfService, { multipleButtons: true })] }) })] }));
 };

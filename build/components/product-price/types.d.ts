@@ -40,6 +40,10 @@ export type ProductPriceProps = {
      * Alternative legend with HTML syntax
      */
     children?: ReactNode;
+    /**
+     * Component variant
+     */
+    variant?: 'default' | 'simple';
 };
 export type PriceProps = {
     /**
@@ -58,4 +62,8 @@ export type PriceProps = {
      * Hides the price fraction if fraction is zero.
      */
     hidePriceFraction?: boolean;
+    /**
+     * Inline layout - symbol same size and positioned inline with the number.
+     */
+    inline?: boolean;
 };
