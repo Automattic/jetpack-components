@@ -42,8 +42,8 @@
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
 		"@automattic/jetpack-api": "^1.0.8",
-		"@automattic/jetpack-boost-score-api": "^1.0.10",
-		"@automattic/jetpack-script-data": "^0.5.1",
+		"@automattic/jetpack-boost-score-api": "^1.0.11-alpha",
+		"@automattic/jetpack-script-data": "^0.5.2-alpha",
 		"@automattic/number-formatters": "^1.0.10",
 		"@babel/runtime": "^7",
 		"@wordpress/browserslist-config": "6.28.0",
@@ -59,7 +59,7 @@
 		"prop-types": "^15.7.2",
 		"qrcode.react": "4.2.0",
 		"react-slider": "2.0.5",
-		"social-logos": "^3.2.8",
+		"social-logos": "^3.2.9-alpha",
 		"uplot": "1.6.31",
 		"uplot-react": "1.1.4"
 	},
