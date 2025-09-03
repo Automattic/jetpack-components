@@ -11,7 +11,7 @@ import getDateFormat from "./get-date-format.js";
 import { tooltipsPlugin } from "./tooltips-plugin.js";
 import { useBoostScoreTransform } from "./use-boost-score-transform.js";
 import useResize from "./use-resize.js";
-import './style-uplot.scss';
+import 'uplot/dist/uPlot.min.css';
 const DEFAULT_DIMENSIONS = {
     height: 300,
     width: 600,

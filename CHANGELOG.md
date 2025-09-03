@@ -2,6 +2,10 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [1.3.2-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
 ## [1.3.1] - 2025-09-01
 ### Changed
 - My Jetpack: Add product interstitials state management. [#44772]
@@ -1524,6 +1528,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[1.3.2-alpha]: https://github.com/Automattic/jetpack-components/compare/1.3.1...1.3.2-alpha
 [1.3.1]: https://github.com/Automattic/jetpack-components/compare/1.3.0...1.3.1
 [1.3.0]: https://github.com/Automattic/jetpack-components/compare/1.2.2...1.3.0
 [1.2.2]: https://github.com/Automattic/jetpack-components/compare/1.2.1...1.2.2

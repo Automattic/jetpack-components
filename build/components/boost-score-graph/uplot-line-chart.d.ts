@@ -1,6 +1,6 @@
 import uPlot from 'uplot';
 import { type Annotation, Period } from './index.tsx';
-import './style-uplot.scss';
+import 'uplot/dist/uPlot.min.css';
 import type { RefObject } from 'react';
 interface UplotChartProps {
     periods: Period[];
