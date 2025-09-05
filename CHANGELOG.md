@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Changed
+- Update package dependencies.
+
 ## [1.3.1] - 2025-09-01
 ### Changed
 - My Jetpack: Add product interstitials state management. [#44772]
