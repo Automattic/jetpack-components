@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [1.3.9-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Update package dependencies.
+
 ## [1.3.8] - 2025-11-03
 ### Added
 - Add domains icon to the Gridicon component. [#45716]
@@ -1553,6 +1560,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[1.3.9-alpha]: https://github.com/Automattic/jetpack-components/compare/1.3.8...1.3.9-alpha
 [1.3.8]: https://github.com/Automattic/jetpack-components/compare/1.3.7...1.3.8
 [1.3.7]: https://github.com/Automattic/jetpack-components/compare/1.3.6...1.3.7
 [1.3.6]: https://github.com/Automattic/jetpack-components/compare/1.3.5...1.3.6
