@@ -1,5 +1,5 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { Icon, warning, info, check } from '@wordpress/icons';
+import { Icon, cautionFilled as warning, info, check } from '@wordpress/icons';
 import clsx from 'clsx';
 import styles from './style.module.scss';
 const getIconByLevel = (level) => {

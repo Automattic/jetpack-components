@@ -7,6 +7,7 @@
 This is an alpha version! The changes listed here are not final.
 
 ### Changed
+- Replace icons removed from @wordpress/icons with alternatives.
 - Update package dependencies.
 
 ## [1.3.8] - 2025-11-03
