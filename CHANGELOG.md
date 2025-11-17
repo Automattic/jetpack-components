@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [1.3.10-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Update package dependencies.
+
 ## [1.3.9] - 2025-11-10
 ### Changed
 - Replace icons removed from @wordpress/icons with alternatives. [#45760]
@@ -1558,6 +1565,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[1.3.10-alpha]: https://github.com/Automattic/jetpack-components/compare/1.3.9...1.3.10-alpha
 [1.3.9]: https://github.com/Automattic/jetpack-components/compare/1.3.8...1.3.9
 [1.3.8]: https://github.com/Automattic/jetpack-components/compare/1.3.7...1.3.8
 [1.3.7]: https://github.com/Automattic/jetpack-components/compare/1.3.6...1.3.7
