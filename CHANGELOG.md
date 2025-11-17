@@ -2,12 +2,10 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [1.3.10-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [1.3.10] - 2025-11-17
 ### Changed
-- Update package dependencies.
+- Update package dependencies. [#45915]
+- Update package dependencies. [#45958]
 
 ## [1.3.9] - 2025-11-10
 ### Changed
@@ -1565,7 +1563,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[1.3.10-alpha]: https://github.com/Automattic/jetpack-components/compare/1.3.9...1.3.10-alpha
+[1.3.10]: https://github.com/Automattic/jetpack-components/compare/1.3.9...1.3.10
 [1.3.9]: https://github.com/Automattic/jetpack-components/compare/1.3.8...1.3.9
 [1.3.8]: https://github.com/Automattic/jetpack-components/compare/1.3.7...1.3.8
 [1.3.7]: https://github.com/Automattic/jetpack-components/compare/1.3.6...1.3.7
