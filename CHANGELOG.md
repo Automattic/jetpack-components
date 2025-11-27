@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [1.3.13-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Added
+- Add NavigatorModal component.
+
 ## [1.3.12] - 2025-11-20
 ### Changed
 - Update package dependencies. [#46022]
@@ -1569,6 +1576,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[1.3.13-alpha]: https://github.com/Automattic/jetpack-components/compare/1.3.12...1.3.13-alpha
 [1.3.12]: https://github.com/Automattic/jetpack-components/compare/1.3.11...1.3.12
 [1.3.11]: https://github.com/Automattic/jetpack-components/compare/1.3.10...1.3.11
 [1.3.10]: https://github.com/Automattic/jetpack-components/compare/1.3.9...1.3.10
