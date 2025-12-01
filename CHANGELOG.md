@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Add NavigatorModal component.
 
+### Changed
+- Update package dependencies.
+
 ## [1.3.12] - 2025-11-20
 ### Changed
 - Update package dependencies. [#46022]
