@@ -10,6 +10,7 @@ This is an alpha version! The changes listed here are not final.
 - Add NavigatorModal component.
 
 ### Changed
+- Make NavigatorModal responsive using container queries.
 - Update package dependencies.
 
 ## [1.3.12] - 2025-11-20
