@@ -1,6 +1,6 @@
 {
 	"name": "@automattic/jetpack-components",
-	"version": "1.4.0-alpha",
+	"version": "1.4.0",
 	"description": "Jetpack Components Package",
 	"homepage": "https://github.com/Automattic/jetpack/tree/HEAD/projects/js-packages/components/#readme",
 	"bugs": {
@@ -42,7 +42,7 @@
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
 		"@automattic/jetpack-api": "^1.0.12",
-		"@automattic/jetpack-boost-score-api": "^1.0.19",
+		"@automattic/jetpack-boost-score-api": "^1.0.20",
 		"@automattic/jetpack-script-data": "^0.5.4",
 		"@automattic/number-formatters": "^1.0.15",
 		"@babel/runtime": "^7",
@@ -59,7 +59,7 @@
 		"prop-types": "^15.7.2",
 		"qrcode.react": "4.2.0",
 		"react-slider": "2.0.5",
-		"social-logos": "^3.3.5-alpha",
+		"social-logos": "^3.3.5",
 		"uplot": "1.6.31",
 		"uplot-react": "1.1.4"
 	},
