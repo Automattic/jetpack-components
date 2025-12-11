@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [1.4.1-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Improve scrolling for navigator modal sidebar and content.
+
 ## [1.4.0] - 2025-12-08
 ### Added
 - Jetpack Logo: Add support for customized title in shared component. [#46162]
@@ -1583,6 +1590,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[1.4.1-alpha]: https://github.com/Automattic/jetpack-components/compare/1.4.0...1.4.1-alpha
 [1.4.0]: https://github.com/Automattic/jetpack-components/compare/1.3.13...1.4.0
 [1.3.13]: https://github.com/Automattic/jetpack-components/compare/1.3.12...1.3.13
 [1.3.12]: https://github.com/Automattic/jetpack-components/compare/1.3.11...1.3.12
