@@ -11,11 +11,11 @@ import styles from './styles.module.scss';
  *
  * @return component
  */
-export function Header({ title, isScreenLocked }) {
+export function Header({ icon, title, isScreenLocked }) {
     const context = useContext(NavigatorModalContext);
     const navigator = useNavigator();
     const onGoBack = useCallback(() => {
         navigator.goBack();
     }, [navigator]);
-    return (_jsxs("div", { className: styles.header, children: [_jsxs("div", { className: styles['title-wrap'], children: [!isScreenLocked ? (_jsx(Button, { label: __('Go back', 'jetpack-components'), icon: isRTL() ? chevronRight : chevronLeft, onClick: onGoBack, variant: "tertiary", size: "compact" })) : null, _jsx("h1", { children: title })] }), context.isDismissible ? (_jsx(Button, { size: "compact", onClick: context.onClose, icon: close, label: __('Close', 'jetpack-components'), variant: "tertiary" })) : null] }));
+    return (_jsxs("div", { className: styles.header, children: [_jsxs("div", { className: styles['title-wrap'], children: [!isScreenLocked ? (_jsx(Button, { label: __('Go back', 'jetpack-components'), icon: isRTL() ? chevronRight : chevronLeft, onClick: onGoBack, variant: "tertiary", size: "compact" })) : null, icon, _jsx("h1", { children: title })] }), context.isDismissible ? (_jsx(Button, { size: "compact", onClick: context.onClose, icon: close, label: __('Close', 'jetpack-components'), variant: "tertiary" })) : null] }));
 }

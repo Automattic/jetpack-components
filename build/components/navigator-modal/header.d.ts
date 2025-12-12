@@ -7,6 +7,10 @@ export type HeaderProps = {
      * Whether the screen is locked, in which case to hide the back button.
      */
     isScreenLocked?: boolean;
+    /**
+     * Optional icon to display in the header.
+     */
+    icon?: React.ReactNode;
 };
 /**
  * Renders a header for the NavigatorModal.
@@ -14,4 +18,4 @@ export type HeaderProps = {
  *
  * @return component
  */
-export declare function Header({ title, isScreenLocked }: HeaderProps): import("react/jsx-runtime").JSX.Element;
+export declare function Header({ icon, title, isScreenLocked }: HeaderProps): import("react/jsx-runtime").JSX.Element;

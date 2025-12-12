@@ -5,6 +5,10 @@ export type ScreenProps = {
      */
     title?: string;
     /**
+     * Optional icon to display in the header.
+     */
+    headerIcon?: React.ReactNode;
+    /**
      * The path of the screen.
      */
     path: string;
@@ -48,4 +52,4 @@ export type ScreenProps = {
  *
  * @return The rendered screen.
  */
-export declare function Screen({ path, className, title, sidebar, isScreenLocked, footerContent, footerActions, ...props }: ScreenProps): import("react/jsx-runtime").JSX.Element;
+export declare function Screen({ path, className, title, sidebar, headerIcon, isScreenLocked, footerContent, footerActions, ...props }: ScreenProps): import("react/jsx-runtime").JSX.Element;
