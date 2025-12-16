@@ -1,7 +1,9 @@
 import { Button } from '@wordpress/components';
 import { SharedProps } from './types.ts';
 export type FooterProps = SharedProps & {
-    actions?: Array<React.ComponentProps<typeof Button>>;
+    actions?: Array<((props: {
+        navigate: VoidFunction;
+    }) => React.ReactElement) | React.ComponentProps<typeof Button>>;
     isScreenLocked?: boolean;
 };
 /**

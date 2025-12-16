@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - NavigatorModal: Add header icon support for Screen component.
+- NavigatorModal: Add support for dynamic footer actions.
 
 ## [1.4.1] - 2025-12-11
 ### Changed
