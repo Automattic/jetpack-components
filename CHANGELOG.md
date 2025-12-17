@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - NavigatorModal: Add support for dynamic footer actions.
 
+### Fixed
+- NavigatorModal: Remove extra padding for screen component following recent Gutenberg changes.
+
 ## [1.4.2] - 2025-12-15
 ### Added
 - NavigatorModal: Add header icon support for Screen component. [#46265]
