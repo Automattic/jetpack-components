@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - NavigatorModal: Add support for dynamic footer actions.
 
+### Changed
+- Update package dependencies.
+
 ### Fixed
 - NavigatorModal: Remove extra padding for screen component following recent Gutenberg changes.
 
