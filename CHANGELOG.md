@@ -7,6 +7,7 @@
 This is an alpha version! The changes listed here are not final.
 
 ### Added
+- Added subpath export for jetpack-logo component
 - NavigatorModal: Add support for dynamic footer actions.
 
 ### Changed

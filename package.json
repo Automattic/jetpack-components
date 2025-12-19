@@ -23,6 +23,10 @@
 			"types": "./build/index.d.ts",
 			"default": "./build/index.js"
 		},
+		"./jetpack-logo": {
+			"types": "./build/components/jetpack-logo/index.d.ts",
+			"default": "./build/components/jetpack-logo/index.js"
+		},
 		"./tools/jp-redirect": {
 			"types": "./build/tools/jp-redirect/index.d.ts",
 			"default": "./build/tools/jp-redirect/index.js"
