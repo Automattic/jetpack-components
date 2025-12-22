@@ -46,7 +46,7 @@
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
 		"@automattic/jetpack-api": "^1.0.12",
-		"@automattic/jetpack-boost-score-api": "^1.0.21",
+		"@automattic/jetpack-boost-score-api": "^1.0.22-alpha",
 		"@automattic/jetpack-script-data": "^0.5.4",
 		"@automattic/number-formatters": "^1.0.15",
 		"@babel/runtime": "^7",
