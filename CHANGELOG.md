@@ -11,6 +11,7 @@ This is an alpha version! The changes listed here are not final.
 - NavigatorModal: Add support for dynamic footer actions.
 
 ### Changed
+- Fix navigator modal height and z-index.
 - NavigatorModal: Make the modal full size by default.
 - Update package dependencies.
 
