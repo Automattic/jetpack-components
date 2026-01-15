@@ -3,7 +3,6 @@ import { __, _x } from '@wordpress/i18n';
 import { Icon, external } from '@wordpress/icons';
 import clsx from 'clsx';
 import { getRedirectUrl } from "../../index.js";
-import getSiteAdminUrl from "../../tools/get-site-admin-url/index.js";
 import AutomatticBylineLogo from "../automattic-byline-logo/index.js";
 import './style.scss';
 import JetpackLogo from "../jetpack-logo/index.js";
@@ -18,28 +17,25 @@ const ExternalIcon = () => (_jsxs(_Fragment, { children: [_jsx(Icon, { icon: ext
  * @param {JetpackFooterProps} props - Component properties.
  * @return {ReactNode} JetpackFooter component.
  */
-const JetpackFooter = ({ moduleName = __('Jetpack', 'jetpack-components'), className, moduleNameHref = 'https://jetpack.com', menu, useInternalLinks, onAboutClick, onPrivacyClick, onTermsClick, ...otherProps }) => {
+const JetpackFooter = ({ moduleName = __('Jetpack', 'jetpack-components'), className, moduleNameHref = 'https://jetpack.com', menu, 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars -- Prop kept for backwards compatibility. Remove after consumers of this component have updated.
+useInternalLinks, onAboutClick, onPrivacyClick, onTermsClick, ...otherProps }) => {
     const [isSm] = useBreakpointMatch('sm', '<=');
     const [isMd] = useBreakpointMatch('md', '<=');
     const [isLg] = useBreakpointMatch('lg', '>');
-    const siteAdminUrl = getSiteAdminUrl();
     let items = [
         {
             label: _x('About', 'Link to learn more about Jetpack.', 'jetpack-components'),
             title: __('About Jetpack', 'jetpack-components'),
-            href: useInternalLinks
-                ? new URL('admin.php?page=jetpack_about', siteAdminUrl).href
-                : getRedirectUrl('jetpack-about'),
-            target: useInternalLinks ? '_self' : '_blank',
+            href: getRedirectUrl('jetpack-about'),
+            target: '_blank',
             onClick: onAboutClick,
         },
         {
             label: _x('Privacy', 'Shorthand for Privacy Policy.', 'jetpack-components'),
             title: __("Automattic's Privacy Policy", 'jetpack-components'),
-            href: useInternalLinks
-                ? new URL('admin.php?page=jetpack#/privacy', siteAdminUrl).href
-                : getRedirectUrl('a8c-privacy'),
-            target: useInternalLinks ? '_self' : '_blank',
+            href: getRedirectUrl('a8c-privacy'),
+            target: '_blank',
             onClick: onPrivacyClick,
         },
         {
@@ -64,8 +60,6 @@ const JetpackFooter = ({ moduleName = __('Jetpack', 'jetpack-components'), class
                     return (_jsx("li", { children: _jsxs("a", { href: item.href, title: item.title, target: item.target, onClick: item.onClick, onKeyDown: item.onKeyDown, className: clsx('jp-dashboard-footer__menu-item', {
                                 'is-external': isExternalLink,
                             }), role: item.role, rel: isExternalLink ? 'noopener noreferrer' : undefined, tabIndex: isButton ? 0 : undefined, children: [item.label, isExternalLink && _jsx(ExternalIcon, {})] }) }, item.label));
-                }), _jsx("li", { className: "jp-dashboard-footer__a8c-item", children: _jsx("a", { href: useInternalLinks
-                            ? new URL('admin.php?page=jetpack_about', siteAdminUrl).href
-                            : getRedirectUrl('a8c-about'), "aria-label": __('An Automattic Airline', 'jetpack-components'), children: _jsx(AutomatticBylineLogo, { "aria-hidden": "true" }) }) })] }) }));
+                }), _jsx("li", { className: "jp-dashboard-footer__a8c-item", children: _jsx("a", { href: getRedirectUrl('a8c-about'), target: "_blank", "aria-label": __('An Automattic Airline', 'jetpack-components'), rel: "noreferrer", children: _jsx(AutomatticBylineLogo, { "aria-hidden": "true" }) }) })] }) }));
 };
 export default JetpackFooter;
