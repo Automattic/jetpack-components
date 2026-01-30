@@ -1,5 +1,5 @@
 import { Button } from '@wordpress/components';
-import type { ComponentProps, ForwardedRef, ReactNode } from 'react';
+import type { ComponentProps, ForwardedRef, MouseEventHandler, ReactNode } from 'react';
 type JetpackButtonBaseProps = {
     className?: string;
     children?: ReactNode;
@@ -13,7 +13,10 @@ type JetpackButtonBaseProps = {
     weight?: 'bold' | 'regular';
     fullWidth?: boolean;
     ref?: ForwardedRef<unknown>;
+    href?: string;
+    target?: string;
+    onClick?: MouseEventHandler<HTMLButtonElement> | MouseEventHandler<HTMLAnchorElement>;
 };
-type WPButtonProps = Omit<ComponentProps<typeof Button>, 'size' | 'variant'>;
-export type ButtonProps = JetpackButtonBaseProps & WPButtonProps;
+type WPButtonBaseProps = Omit<ComponentProps<typeof Button>, 'size' | 'variant' | 'disabled' | 'href' | 'target' | 'onClick'>;
+export type ButtonProps = JetpackButtonBaseProps & WPButtonBaseProps;
 export {};

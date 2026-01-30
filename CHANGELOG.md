@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - NavigatorModal: Allow customizing the modal via stable BEM class names.
+- Update package dependencies.
 
 ## [1.4.8] - 2026-01-26
 ### Changed

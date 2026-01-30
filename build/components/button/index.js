@@ -22,7 +22,6 @@ const Button = forwardRef((props, ref) => {
         [styles['full-width']]: fullWidth,
         [styles['is-icon-button']]: Boolean(icon) && !children,
     });
-    componentProps.ref = ref;
     const externalIconSize = size === 'normal' ? 20 : 16;
     const externalIcon = isExternalLink && (_jsxs(_Fragment, { children: [_jsx(Icon, { size: externalIconSize, icon: external, className: styles['external-icon'] }), _jsx(VisuallyHidden, { as: "span", children: 
                 /* translators: accessibility text */
@@ -33,7 +32,21 @@ const Button = forwardRef((props, ref) => {
         children[0] !== null &&
         // Tooltip should not considered as a child
         children?.[0]?.props?.className !== 'components-tooltip';
-    return (_jsxs(WPButton, { target: externalTarget, variant: variant, className: clsx(className, { 'has-text': !!icon && hasChildren }), icon: !isExternalLink ? icon : undefined, iconSize: iconSize, disabled: disabled, "aria-disabled": disabled, isDestructive: isDestructive, text: text, ...componentProps, children: [isLoading && _jsx(Spinner, {}), _jsx("span", { children: children }), externalIcon] }));
+    // Cast to work around WPButton's strict union type that can't be satisfied when spreading props
+    const wpButtonProps = {
+        ref,
+        target: externalTarget,
+        variant,
+        className: clsx(className, { 'has-text': !!icon && hasChildren }),
+        icon: !isExternalLink ? icon : undefined,
+        iconSize,
+        disabled,
+        'aria-disabled': disabled,
+        isDestructive,
+        text,
+        ...componentProps,
+    };
+    return (_jsxs(WPButton, { ...wpButtonProps, children: [isLoading && _jsx(Spinner, {}), _jsx("span", { children: children }), externalIcon] }));
 });
 Button.displayName = 'Button';
 export default Button;
