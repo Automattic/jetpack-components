@@ -2,7 +2,6 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Button, Flex, FlexBlock, FlexItem, useNavigator } from '@wordpress/components';
 import { useCallback, useContext } from 'react';
 import { NavigatorModalContext } from "./context.js";
-import styles from './styles.module.scss';
 /**
  * Renders a footer.
  *
@@ -21,7 +20,7 @@ export function Footer({ children, actions, isScreenLocked }) {
             context.onClose?.();
         }
     }, [isScreenLocked, navigator, context]);
-    return (_jsxs(Flex, { className: styles.footer, children: [_jsx(FlexBlock, { children: children }), actions ? (_jsx(FlexItem, { children: _jsx(Flex, { children: actions.map((props, index) => {
+    return (_jsxs(Flex, { className: "jp-navigator-modal__footer", children: [_jsx(FlexBlock, { children: children }), actions ? (_jsx(FlexItem, { children: _jsx(Flex, { children: actions.map((props, index) => {
                         if (typeof props === 'function') {
                             return props({ navigate });
                         }

@@ -1,5 +1,6 @@
 import { Screen } from './screen.tsx';
-import { TNavigatorModalContext, SharedProps } from './types.ts';
+import './styles.scss';
+import { SharedProps, TNavigatorModalContext } from './types.ts';
 /**
  * Renders a modal with navigator capabilities.
  *

@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [1.4.9-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- NavigatorModal: Allow customizing the modal via stable BEM class names.
+
 ## [1.4.8] - 2026-01-26
 ### Changed
 - Update dependencies.
@@ -1624,6 +1631,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[1.4.9-alpha]: https://github.com/Automattic/jetpack-components/compare/1.4.8...1.4.9-alpha
 [1.4.8]: https://github.com/Automattic/jetpack-components/compare/1.4.7...1.4.8
 [1.4.7]: https://github.com/Automattic/jetpack-components/compare/1.4.6...1.4.7
 [1.4.6]: https://github.com/Automattic/jetpack-components/compare/1.4.5...1.4.6

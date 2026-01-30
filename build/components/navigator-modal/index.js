@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { useContext } from 'react';
 import { NavigatorModalContext } from "./context.js";
 import { Screen } from "./screen.js";
-import styles from './styles.module.scss';
+import './styles.scss';
 /**
  * Renders the internal NavigatorModal component.
  *
@@ -14,7 +14,7 @@ import styles from './styles.module.scss';
  */
 function InternalNavigatorModal({ children, className }) {
     const context = useContext(NavigatorModalContext);
-    return (_jsx(Modal, { __experimentalHideHeader: true, onRequestClose: context.onClose, className: clsx(styles.modal, className), children: _jsx(Navigator, { initialPath: context.initialPath, className: styles.navigator, children: children }) }));
+    return (_jsx(Modal, { __experimentalHideHeader: true, onRequestClose: context.onClose, className: clsx('jp-navigator-modal', className), children: _jsx(Navigator, { initialPath: context.initialPath, className: "jp-navigator-modal__navigator", children: children }) }));
 }
 /**
  * Renders a modal with navigator capabilities.
