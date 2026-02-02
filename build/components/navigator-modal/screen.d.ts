@@ -1,5 +1,6 @@
+import { Navigator } from '@wordpress/components';
 import { FooterProps } from './footer.tsx';
-export type ScreenProps = {
+export type ScreenProps = Omit<React.ComponentProps<typeof Navigator.Screen>, 'content' | 'children'> & {
     /**
      * The title of the screen.
      */
@@ -34,17 +35,15 @@ export type ScreenProps = {
      * className to be applied to the modal.
      */
     className?: string;
-} & ({
     /**
      * The content of the screen.
      */
-    children: React.ReactNode;
-} | {
+    content?: React.ReactNode;
     /**
-     * The content of the screen.
+     * The children of the screen. Alternative to `content`.
      */
-    content: React.ReactNode;
-});
+    children?: React.ReactNode;
+};
 /**
  * Renders a screen.
  *
@@ -52,4 +51,4 @@ export type ScreenProps = {
  *
  * @return The rendered screen.
  */
-export declare function Screen({ path, className, title, sidebar, headerIcon, isScreenLocked, footerContent, footerActions, ...props }: ScreenProps): import("react/jsx-runtime").JSX.Element;
+export declare function Screen({ path, className, title, sidebar, headerIcon, isScreenLocked, footerContent, footerActions, children, content, ...props }: ScreenProps): import("react/jsx-runtime").JSX.Element;

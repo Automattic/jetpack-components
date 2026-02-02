@@ -1,5 +1,6 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Button, Flex, FlexBlock, FlexItem, useNavigator } from '@wordpress/components';
+import clsx from 'clsx';
 import { useCallback, useContext } from 'react';
 import { NavigatorModalContext } from "./context.js";
 /**
@@ -9,7 +10,7 @@ import { NavigatorModalContext } from "./context.js";
  *
  * @return The rendered footer.
  */
-export function Footer({ children, actions, isScreenLocked }) {
+export function Footer({ children, actions, isScreenLocked, className, ...props }) {
     const navigator = useNavigator();
     const context = useContext(NavigatorModalContext);
     const navigate = useCallback(() => {
@@ -20,14 +21,14 @@ export function Footer({ children, actions, isScreenLocked }) {
             context.onClose?.();
         }
     }, [isScreenLocked, navigator, context]);
-    return (_jsxs(Flex, { className: "jp-navigator-modal__footer", children: [_jsx(FlexBlock, { children: children }), actions ? (_jsx(FlexItem, { children: _jsx(Flex, { children: actions.map((props, index) => {
-                        if (typeof props === 'function') {
-                            return props({ navigate });
+    return (_jsxs(Flex, { className: clsx('jp-navigator-modal__footer', className), ...props, children: [_jsx(FlexBlock, { children: children }), actions ? (_jsx(FlexItem, { children: _jsx(Flex, { children: actions.map((action, index) => {
+                        if (typeof action === 'function') {
+                            return action({ navigate });
                         }
-                        return (_jsx(Button, { ...props, 
+                        return (_jsx(Button, { ...action, 
                             // eslint-disable-next-line react/jsx-no-bind
                             onClick: event => {
-                                props.onClick?.(event);
+                                action.onClick?.(event);
                                 navigate();
                             } }, index));
                     }) }) })) : null] }));

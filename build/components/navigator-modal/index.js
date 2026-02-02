@@ -8,23 +8,23 @@ import './styles.scss';
 /**
  * Renders the internal NavigatorModal component.
  *
- * @param { SharedProps } props - Props
+ * @param { ModalProps } props - Props
  *
  * @return Component
  */
-function InternalNavigatorModal({ children, className }) {
+function InternalNavigatorModal({ children, className, ...props }) {
     const context = useContext(NavigatorModalContext);
-    return (_jsx(Modal, { __experimentalHideHeader: true, onRequestClose: context.onClose, className: clsx('jp-navigator-modal', className), children: _jsx(Navigator, { initialPath: context.initialPath, className: "jp-navigator-modal__navigator", children: children }) }));
+    return (_jsx(Modal, { __experimentalHideHeader: true, onRequestClose: context.onClose, className: clsx('jp-navigator-modal', className), ...props, children: _jsx(Navigator, { initialPath: context.initialPath, className: "jp-navigator-modal__navigator", children: children }) }));
 }
 /**
  * Renders a modal with navigator capabilities.
  *
- * @param {SharedProps & TNavigatorModalContext} props - Props
+ * @param {NavigatorModalProps} props - Props
  *
  * @return Component
  */
-function NavigatorModalMain({ children, className, initialPath = '/', onClose, isDismissible = true, }) {
-    return (_jsx(NavigatorModalContext.Provider, { value: { onClose, initialPath, isDismissible }, children: _jsx(InternalNavigatorModal, { className: className, children: children }) }));
+function NavigatorModalMain({ children, className, initialPath = '/', onClose, isDismissible = true, ...props }) {
+    return (_jsx(NavigatorModalContext.Provider, { value: { onClose, initialPath, isDismissible }, children: _jsx(InternalNavigatorModal, { className: className, ...props, children: children }) }));
 }
 export const NavigatorModal = Object.assign(NavigatorModalMain, {
     Screen: Object.assign(Screen, {

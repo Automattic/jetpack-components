@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Added
+- NavigatorModal: Allow passing all the props supported by underlying components.
+
 ### Changed
 - NavigatorModal: Allow customizing the modal via stable BEM class names.
 - Update package dependencies.

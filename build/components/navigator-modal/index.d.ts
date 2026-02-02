@@ -1,14 +1,17 @@
+import { Modal } from '@wordpress/components';
 import { Screen } from './screen.tsx';
 import './styles.scss';
-import { SharedProps, TNavigatorModalContext } from './types.ts';
+import { TNavigatorModalContext } from './types.ts';
+type ModalProps = React.ComponentProps<typeof Modal>;
+type NavigatorModalProps = Omit<ModalProps, 'onRequestClose'> & TNavigatorModalContext;
 /**
  * Renders a modal with navigator capabilities.
  *
- * @param {SharedProps & TNavigatorModalContext} props - Props
+ * @param {NavigatorModalProps} props - Props
  *
  * @return Component
  */
-declare function NavigatorModalMain({ children, className, initialPath, onClose, isDismissible, }: SharedProps & TNavigatorModalContext): import("react/jsx-runtime").JSX.Element;
+declare function NavigatorModalMain({ children, className, initialPath, onClose, isDismissible, ...props }: NavigatorModalProps): import("react/jsx-runtime").JSX.Element;
 export declare const NavigatorModal: typeof NavigatorModalMain & {
     Screen: typeof Screen & {
         displayName: string;
