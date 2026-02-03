@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [1.4.10-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Update package dependencies.
+
 ## [1.4.9] - 2026-02-02
 ### Added
 - NavigatorModal: Allow passing all the props supported by underlying components. [#46856]
@@ -1632,6 +1639,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[1.4.10-alpha]: https://github.com/Automattic/jetpack-components/compare/1.4.9...1.4.10-alpha
 [1.4.9]: https://github.com/Automattic/jetpack-components/compare/1.4.8...1.4.9
 [1.4.8]: https://github.com/Automattic/jetpack-components/compare/1.4.7...1.4.8
 [1.4.7]: https://github.com/Automattic/jetpack-components/compare/1.4.6...1.4.7
