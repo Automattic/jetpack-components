@@ -5,10 +5,10 @@ TextControl, } from '@wordpress/components';
  * This uses the experimental NumberControl from the block
  * editor where available, otherwise it falls back to a
  * standard TextControl, limited to numbers.
- * @type {import('react').ComponentType<any>}
+ * @type {ComponentType<NumberControlProps>}
  *
- * @param {any} props - the NumberControl component props
- * @return {import('react').ReactNode} - NumberControl component
+ * @param {NumberControlProps} props - the NumberControl component props
+ * @return {ReactNode} - NumberControl component
  */
 const NumberControl = ExperimentalNumberControl ||
     function CustomNumberControl(props) {

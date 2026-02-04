@@ -1,4 +1,3 @@
-export default ActionButton;
 /**
  * The Jetpack Action button.
  *
@@ -9,18 +8,29 @@ export default ActionButton;
  * @param {object} props - The properties.
  * @return {import('react').ReactNode} The `ActionButton` component.
  */
-declare function ActionButton(props: object): import("react").ReactNode;
-declare namespace ActionButton {
-    namespace propTypes {
-        let label: any;
-        let onClick: any;
-        let isLoading: any;
-        let isDisabled: any;
-        let displayError: any;
-        let errorMessage: any;
-        let variant: any;
-        let isExternalLink: any;
-        let customClass: any;
-        let loadingText: any;
-    }
-}
+declare const ActionButton: {
+    (props: any): import("react/jsx-runtime").JSX.Element;
+    propTypes: {
+        /** The button label. */
+        label: any;
+        /** The callback to be called on click. */
+        onClick: any;
+        /** Will disable the button and display a spinner if set to true. */
+        isLoading: any;
+        /** Will disable the button with no spinner. */
+        isDisabled: any;
+        /** Displays an error message */
+        displayError: any;
+        /** The error message string */
+        errorMessage: any;
+        /** The type/variant of button */
+        variant: any;
+        /** Will display the button as a link with an external icon. */
+        isExternalLink: any;
+        /** Custom CSS class to apply to the button */
+        customClass: any;
+        /** Text to display when loading */
+        loadingText: any;
+    };
+};
+export default ActionButton;

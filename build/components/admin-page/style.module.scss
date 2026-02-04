@@ -1,0 +1,28 @@
+.admin-page {
+	margin-left: -20px; // to neutralize the padding of #wpcontent.
+
+	@media (max-width: 782px) {
+		margin-left: -10px; // to neutralize the padding of #wpcontent.
+	}
+
+	&.background {
+		background-color: var(--jp-white);
+	}
+
+	.admin-page-header {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	.sandbox-domain-badge {
+		background: #d63638;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		text-shadow: none;
+		font-size: 9px;
+		font-weight: 700;
+		cursor: pointer;
+		color: #fff;
+	}
+}
