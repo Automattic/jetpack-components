@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Changed
+- Update package dependencies.
+
 ### Fixed
 - RNA: Fix build folder extensions and copy SCSS assets.
 
