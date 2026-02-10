@@ -2,15 +2,12 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [1.4.12-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [1.4.12] - 2026-02-10
 ### Changed
-- Update package dependencies.
+- Update package dependencies. [#47002]
 
 ### Fixed
-- RNA: Fix build folder extensions and copy SCSS assets.
+- RNA: Fix build folder extensions and copy SCSS assets. [#46938]
 
 ## [1.4.11] - 2026-02-04
 ### Changed
@@ -1650,7 +1647,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[1.4.12-alpha]: https://github.com/Automattic/jetpack-components/compare/1.4.11...1.4.12-alpha
+[1.4.12]: https://github.com/Automattic/jetpack-components/compare/1.4.11...1.4.12
 [1.4.11]: https://github.com/Automattic/jetpack-components/compare/1.4.10...1.4.11
 [1.4.10]: https://github.com/Automattic/jetpack-components/compare/1.4.9...1.4.10
 [1.4.9]: https://github.com/Automattic/jetpack-components/compare/1.4.8...1.4.9
