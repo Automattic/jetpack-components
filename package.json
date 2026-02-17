@@ -8,8 +8,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Automattic/jetpack.git",
-		"directory": "projects/js-packages/components"
+		"url": "git+https://github.com/Automattic/jetpack-components.git"
 	},
 	"license": "GPL-2.0-or-later",
 	"author": "Automattic",
@@ -46,10 +45,10 @@
 	],
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
-		"@automattic/jetpack-api": "^1.0.16",
+		"@automattic/jetpack-api": "^1.0.17-alpha",
 		"@automattic/jetpack-boost-score-api": "^1.0.29-alpha",
-		"@automattic/jetpack-script-data": "^0.5.4",
-		"@automattic/number-formatters": "^1.0.17",
+		"@automattic/jetpack-script-data": "^0.5.5-alpha",
+		"@automattic/number-formatters": "^1.0.18-alpha",
 		"@babel/runtime": "^7",
 		"@wordpress/browserslist-config": "6.39.0",
 		"@wordpress/components": "32.1.0",
