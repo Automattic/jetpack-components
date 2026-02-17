@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Set `.repository.url` in `package.json` to the mirror repo rather than the monorepo. Required for enabling provenance.
+- Update package dependencies.
 
 ## [1.4.13] - 2026-02-16
 ### Changed
