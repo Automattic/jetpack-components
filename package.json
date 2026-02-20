@@ -63,7 +63,7 @@
 		"prop-types": "^15.7.2",
 		"qrcode.react": "4.2.0",
 		"react-slider": "2.0.5",
-		"social-logos": "^3.3.8",
+		"social-logos": "^3.3.9-alpha",
 		"uplot": "1.6.31",
 		"uplot-react": "1.1.4"
 	},
