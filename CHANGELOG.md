@@ -10,6 +10,7 @@ This is an alpha version! The changes listed here are not final.
 - Update package dependencies.
 
 ### Fixed
+- Button: Loosen `ref` type from `HTMLInputElement` to `HTMLElement`.
 - NavigatorModal: Guard against WordPress Modal dismisser mechanism to prevent the modal from being closed when an external modal (e.g. Image Studio) opens.
 
 ## [1.4.15] - 2026-02-23
