@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Changed
+- Update package dependencies.
+
 ### Fixed
 - NavigatorModal: Guard against WordPress Modal dismisser mechanism to prevent the modal from being closed when an external modal (e.g. Image Studio) opens.
 
