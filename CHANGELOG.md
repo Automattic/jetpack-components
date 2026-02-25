@@ -7,6 +7,7 @@
 This is an alpha version! The changes listed here are not final.
 
 ### Changed
+- Container: Adjust maximum width to 1040px
 - Update package dependencies.
 
 ### Fixed
