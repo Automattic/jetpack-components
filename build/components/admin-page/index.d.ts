@@ -1,3 +1,4 @@
+import '@wordpress/admin-ui/build-style/style.css';
 import type { AdminPageProps } from './types.ts';
 import type { FC } from 'react';
 /**

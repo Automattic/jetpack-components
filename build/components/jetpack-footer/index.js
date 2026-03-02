@@ -18,7 +18,7 @@ const ExternalIcon = () => (_jsxs(_Fragment, { children: [_jsx(Icon, { icon: ext
  * @param {JetpackFooterProps} props - Component properties.
  * @return {ReactNode} JetpackFooter component.
  */
-const JetpackFooter = ({ moduleName = __('Jetpack', 'jetpack-components'), className, moduleNameHref = 'https://jetpack.com', menu, useInternalLinks, onAboutClick, onPrivacyClick, onTermsClick, ...otherProps }) => {
+const JetpackFooter = ({ moduleName = 'Jetpack' /** "Jetpack" is a product name, do not translate. */, className, moduleNameHref = 'https://jetpack.com', menu, useInternalLinks, onAboutClick, onPrivacyClick, onTermsClick, ...otherProps }) => {
     const [isSm] = useBreakpointMatch('sm', '<=');
     const [isMd] = useBreakpointMatch('md', '<=');
     const [isLg] = useBreakpointMatch('lg', '>');

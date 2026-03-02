@@ -2,6 +2,22 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [1.5.0-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Added
+- Add AdminHeader component wrapping @wordpress/admin-ui Page for unified admin page headers.
+
+### Changed
+- AdminPage: override admin-ui header position so it's not sticky
+- AdminPage: Remove admin-ui header border via scoped CSS to support unified admin-ui Page layout.
+- AdminPage: Remove header border-bottom for a cleaner unified header appearance.
+- Replace admin-ui CSS proxy file with direct import, now that webpack-config handles bundling centrally.
+
+### Fixed
+- Admin page: Fix Hello Dolly banner display and clear floats on Jetpack admin pages.
+
 ## [1.4.16] - 2026-02-26
 ### Changed
 - Container: Adjust maximum width to 1040px. [#47308]
@@ -1672,6 +1688,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[1.5.0-alpha]: https://github.com/Automattic/jetpack-components/compare/1.4.16...1.5.0-alpha
 [1.4.16]: https://github.com/Automattic/jetpack-components/compare/1.4.15...1.4.16
 [1.4.15]: https://github.com/Automattic/jetpack-components/compare/1.4.14...1.4.15
 [1.4.14]: https://github.com/Automattic/jetpack-components/compare/1.4.13...1.4.14
