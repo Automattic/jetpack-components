@@ -13,6 +13,7 @@ This is an alpha version! The changes listed here are not final.
 - AdminPage: override admin-ui header position so it's not sticky
 - AdminPage: Remove admin-ui header border via scoped CSS to support unified admin-ui Page layout.
 - AdminPage: Remove header border-bottom for a cleaner unified header appearance.
+- Remove padding from admin page header subtitle for consistent spacing.
 - Replace admin-ui CSS proxy file with direct import, now that webpack-config handles bundling centrally.
 
 ### Fixed
