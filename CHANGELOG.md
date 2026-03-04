@@ -18,6 +18,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Fixed
 - Admin page: Fix Hello Dolly banner display and clear floats on Jetpack admin pages.
+- Admin Page: Restore border on header component.
 
 ## [1.4.16] - 2026-02-26
 ### Changed

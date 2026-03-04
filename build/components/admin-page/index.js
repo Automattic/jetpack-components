@@ -21,13 +21,14 @@ import styles from './style.module.scss';
  * @param {AdminPageProps} props - Component properties.
  * @return {ReactNode} AdminPage component.
  */
-const AdminPage = ({ children, className, moduleName = 'Jetpack' /** "Jetpack" is a product name, do not translate. */, moduleNameHref, showHeader = true, showFooter = true, useInternalLinks = false, showBackground = true, sandboxedDomain = '', apiRoot = '', apiNonce = '', optionalMenuItems, header, title, subTitle, logo, actions, tabs, }) => {
+const AdminPage = ({ children, className, moduleName = 'Jetpack' /** "Jetpack" is a product name, do not translate. */, moduleNameHref, showHeader = true, showFooter = true, useInternalLinks = false, showBackground = true, sandboxedDomain = '', apiRoot = '', apiNonce = '', optionalMenuItems, header, title, subTitle, logo, actions, tabs, showBottomBorder = true, }) => {
     useEffect(() => {
         restApi.setApiRoot(apiRoot);
         restApi.setApiNonce(apiNonce);
     }, [apiRoot, apiNonce]);
     const rootClassName = clsx(styles['admin-page'], className, {
         [styles.background]: showBackground,
+        [styles['without-bottom-border']]: tabs || !showBottomBorder,
     });
     const testConnection = useCallback(async () => {
         try {
