@@ -16,6 +16,7 @@ This is an alpha version! The changes listed here are not final.
 - Remove padding from admin page header subtitle for consistent spacing.
 - Replace admin-ui CSS proxy file with direct import, now that webpack-config handles bundling centrally.
 - Switch to Native TypeScript compiler based on Go.
+- Widen AdminPage subTitle prop type from string to ReactNode.
 
 ### Fixed
 - AdminPage: Fix aria-label attribute by passing a string value to the Page component.
