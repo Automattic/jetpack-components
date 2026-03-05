@@ -18,6 +18,7 @@ This is an alpha version! The changes listed here are not final.
 - Switch to Native TypeScript compiler based on Go.
 
 ### Fixed
+- AdminPage: Fix aria-label attribute by passing a string value to the Page component.
 - Admin page: Fix Hello Dolly banner display and clear floats on Jetpack admin pages.
 - Admin Page: Restore border on header component.
 

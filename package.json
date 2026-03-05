@@ -50,7 +50,7 @@
 		"@automattic/jetpack-script-data": "^0.6.1-alpha",
 		"@automattic/number-formatters": "^1.1.1-alpha",
 		"@babel/runtime": "^7",
-		"@wordpress/admin-ui": "1.8.0",
+		"@wordpress/admin-ui": "1.9.0",
 		"@wordpress/browserslist-config": "6.40.0",
 		"@wordpress/components": "32.2.0",
 		"@wordpress/compose": "7.40.0",

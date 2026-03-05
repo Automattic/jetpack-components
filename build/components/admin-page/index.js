@@ -54,7 +54,7 @@ const AdminPage = ({ children, className, moduleName = 'Jetpack' /** "Jetpack" i
     const footer = showFooter && (_jsx(Container, { horizontalSpacing: 5, children: _jsx(Col, { children: _jsx(JetpackFooter, { moduleName: moduleName, moduleNameHref: moduleNameHref, menu: optionalMenuItems, useInternalLinks: useInternalLinks }) }) }));
     // When title is provided, use admin-ui Page for the full page layout.
     if (showHeader && composedTitle) {
-        return (_jsx("div", { className: rootClassName, children: _jsxs(Page, { title: composedTitle, subTitle: subTitle, actions: actions, showSidebarToggle: false, children: [tabs, _jsx(Container, { fluid: true, horizontalSpacing: 0, children: _jsx(Col, { children: children }) }), footer] }) }));
+        return (_jsx("div", { className: rootClassName, children: _jsxs(Page, { ariaLabel: title, title: composedTitle, subTitle: subTitle, actions: actions, showSidebarToggle: false, children: [tabs, _jsx(Container, { fluid: true, horizontalSpacing: 0, children: _jsx(Col, { children: children }) }), footer] }) }));
     }
     // Legacy path: no title provided, render the classic header.
     return (_jsxs("div", { className: rootClassName, children: [showHeader && (_jsx(Container, { horizontalSpacing: 5, children: _jsxs(Col, { className: clsx(styles['admin-page-header'], 'jp-admin-page-header'), children: [header ? header : _jsx(JetpackLogo, {}), sandboxedDomain && (_jsx("code", { className: styles['sandbox-domain-badge'], onClick: testConnection, onKeyDown: testConnection, 
