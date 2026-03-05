@@ -4,13 +4,13 @@ import { __ } from '@wordpress/i18n';
 import { useMemo, useRef, useCallback } from 'react';
 import uPlot from 'uplot';
 import UplotReact from 'uplot-react';
-import { getUserLocale } from "../../lib/locale/index.js";
-import { annotationsPlugin } from "./annotations-plugin.js";
-import { dayHighlightPlugin } from "./day-highlight-plugin.js";
-import getDateFormat from "./get-date-format.js";
-import { tooltipsPlugin } from "./tooltips-plugin.js";
-import { useBoostScoreTransform } from "./use-boost-score-transform.js";
-import useResize from "./use-resize.js";
+import { getUserLocale } from '../../lib/locale/index.js';
+import { annotationsPlugin } from './annotations-plugin.js';
+import { dayHighlightPlugin } from './day-highlight-plugin.js';
+import getDateFormat from './get-date-format.js';
+import { tooltipsPlugin } from './tooltips-plugin.js';
+import { useBoostScoreTransform } from './use-boost-score-transform.js';
+import useResize from './use-resize.js';
 import 'uplot/dist/uPlot.min.css';
 const DEFAULT_DIMENSIONS = {
     height: 300,

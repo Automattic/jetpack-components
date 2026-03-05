@@ -27,14 +27,29 @@ const RecordMeterBar = ({ totalCount, items = [], showLegendLabelBeforeCount = f
         }
         return items;
     }, [items, sortByCount]);
-    return (_jsxs("div", { className: clsx('record-meter-bar', className), children: [_jsx("div", { className: "record-meter-bar__items", "aria-hidden": "true", children: itemsToRender.map(({ count, label, backgroundColor }) => {
+    return (_jsxs("div", { className: clsx('record-meter-bar', className), children: [
+            _jsx("div", { className: "record-meter-bar__items", "aria-hidden": "true", children: itemsToRender.map(({ count, label, backgroundColor }) => {
                     const widthPercent = ((count / total) * 100).toPrecision(2);
                     return (_jsx("div", { style: { backgroundColor, flexBasis: `${widthPercent}%` } }, label));
                 }) }), _jsxs("div", { className: "record-meter-bar__legend", "aria-hidden": "true", children: [legendTitle && _jsx("div", { className: "record-meter-bar__legend--title", children: legendTitle }), _jsx("ul", { className: "record-meter-bar__legend--items", children: itemsToRender.map(({ count, label, backgroundColor }) => {
                             const formattedCount = formatNumber(count);
-                            return (_jsxs("li", { className: "record-meter-bar__legend--item", children: [_jsx("div", { className: "record-meter-bar__legend--item-circle", style: { backgroundColor } }), !showLegendLabelBeforeCount && (_jsxs("span", { children: [_jsx("span", { className: "record-meter-bar__legend--item-count", children: formattedCount }), _jsx("span", { className: "record-meter-bar__legend--item-label", children: label })] })), showLegendLabelBeforeCount && (_jsxs("span", { children: [_jsx("span", { className: "record-meter-bar__legend--item-label record-meter-bar__legend--item-label-first", children: label }), _jsxs("span", { className: "record-meter-bar__legend--item-count", children: ["(", formattedCount, ")"] })] }))] }, label));
-                        }) })] }), _jsxs("table", { className: "screen-reader-text", children: [_jsx("caption", { children: tableCaption || __('Summary of the records', 'jetpack-components') }), _jsxs("tbody", { children: [_jsxs("tr", { children: [_jsx("th", { scope: "col", children: recordTypeLabel || __('Record type', 'jetpack-components') }), _jsx("th", { scope: "col", children: recordCountLabel || __('Record count', 'jetpack-components') })] }), itemsToRender.map(({ label, count }) => {
-                                return (_jsxs("tr", { children: [_jsx("td", { children: label }), _jsx("td", { children: count })] }, label));
-                            })] })] })] }));
+                            return (_jsxs("li", { className: "record-meter-bar__legend--item", children: [
+                                    _jsx("div", { className: "record-meter-bar__legend--item-circle", style: { backgroundColor } }), !showLegendLabelBeforeCount && (_jsxs("span", { children: [
+                                            _jsx("span", { className: "record-meter-bar__legend--item-count", children: formattedCount }), _jsx("span", { className: "record-meter-bar__legend--item-label", children: label })
+                                        ] })), showLegendLabelBeforeCount && (_jsxs("span", { children: [
+                                            _jsx("span", { className: "record-meter-bar__legend--item-label record-meter-bar__legend--item-label-first", children: label }), _jsxs("span", { className: "record-meter-bar__legend--item-count", children: ["(", formattedCount, ")"] })
+                                        ] }))] }, label));
+                        }) })
+                ] }), _jsxs("table", { className: "screen-reader-text", children: [
+                    _jsx("caption", { children: tableCaption || __('Summary of the records', 'jetpack-components') }), _jsxs("tbody", { children: [
+                            _jsxs("tr", { children: [
+                                    _jsx("th", { scope: "col", children: recordTypeLabel || __('Record type', 'jetpack-components') }), _jsx("th", { scope: "col", children: recordCountLabel || __('Record count', 'jetpack-components') })
+                                ] }), itemsToRender.map(({ label, count }) => {
+                                return (_jsxs("tr", { children: [
+                                        _jsx("td", { children: label }), _jsx("td", { children: count })
+                                    ] }, label));
+                            })] })
+                ] })
+        ] }));
 };
 export default RecordMeterBar;

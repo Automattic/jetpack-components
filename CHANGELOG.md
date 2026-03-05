@@ -15,6 +15,7 @@ This is an alpha version! The changes listed here are not final.
 - AdminPage: Remove header border-bottom for a cleaner unified header appearance.
 - Remove padding from admin page header subtitle for consistent spacing.
 - Replace admin-ui CSS proxy file with direct import, now that webpack-config handles bundling centrally.
+- Switch to Native TypeScript compiler based on Go.
 
 ### Fixed
 - Admin page: Fix Hello Dolly banner display and clear floats on Jetpack admin pages.

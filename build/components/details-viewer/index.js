@@ -1,4 +1,4 @@
-import { jsxs as _jsxs, jsx as _jsx } from "react/jsx-runtime";
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import styles from './styles.module.scss';
 /**
  * Converts a camelCase string to snake_case
@@ -39,8 +39,10 @@ const DetailsViewer = ({ details }) => {
     if (!details || typeof details !== 'object') {
         return null;
     }
-    return (_jsx("div", { className: styles['details-viewer'], children: Object.entries(details).map(([key, value]) => (_jsxs("div", { className: styles['details-viewer__item'], children: [_jsxs("div", { className: styles['details-viewer__key'], children: [camelToSnakeCase(key), ":"] }), _jsx("div", { className: styles['details-viewer__value'], children: _jsx("pre", { children: typeof value === 'object' && value !== null
+    return (_jsx("div", { className: styles['details-viewer'], children: Object.entries(details).map(([key, value]) => (_jsxs("div", { className: styles['details-viewer__item'], children: [
+                _jsxs("div", { className: styles['details-viewer__key'], children: [camelToSnakeCase(key), ":"] }), _jsx("div", { className: styles['details-viewer__value'], children: _jsx("pre", { children: typeof value === 'object' && value !== null
                             ? JSON.stringify(convertObjectKeysToSnakeCase(value), null, 2)
-                            : String(value) }) })] }, key))) }));
+                            : String(value) }) })
+            ] }, key))) }));
 };
 export default DetailsViewer;

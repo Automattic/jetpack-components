@@ -2,8 +2,8 @@ import { jsx as _jsx } from "react/jsx-runtime";
 import { Modal, Navigator } from '@wordpress/components';
 import clsx from 'clsx';
 import { useCallback, useContext } from 'react';
-import { NavigatorModalContext } from "./context.js";
-import { Screen } from "./screen.js";
+import { NavigatorModalContext } from './context.js';
+import { Screen } from './screen.js';
 import './styles.scss';
 /**
  * Renders the internal NavigatorModal component.

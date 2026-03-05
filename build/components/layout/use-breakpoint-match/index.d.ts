@@ -1,5 +1,3 @@
-declare const BREAKPOINTS: readonly ["sm", "md", "lg"];
-type Breakpoints = (typeof BREAKPOINTS)[number];
 type Operators = '<' | '<=' | '>' | '>=';
 /**
  * Hook to match if current viewport is equal, greater or less than expected breakpoint
@@ -15,5 +13,5 @@ type Operators = '<' | '<=' | '>' | '>=';
  * useBreakpointMatch([ 'lg', 'sm' ], [ '<', null ])
  * ```
  */
-declare const useBreakpointMatch: (breakpointToMatch: Breakpoints | Array<Breakpoints>, operatorToMatch?: Operators | Array<Operators>) => boolean[];
+declare const useBreakpointMatch: (breakpointToMatch: "lg" | "md" | "sm" | ("lg" | "md" | "sm")[], operatorToMatch?: Operators[] | Operators) => boolean[];
 export default useBreakpointMatch;

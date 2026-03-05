@@ -1,4 +1,4 @@
-import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
+import { Fragment as _Fragment, jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Button as WPButton, Spinner, VisuallyHidden } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 import { Icon, external } from '@wordpress/icons';
@@ -23,9 +23,11 @@ const Button = forwardRef((props, ref) => {
         [styles['is-icon-button']]: Boolean(icon) && !children,
     });
     const externalIconSize = size === 'normal' ? 20 : 16;
-    const externalIcon = isExternalLink && (_jsxs(_Fragment, { children: [_jsx(Icon, { size: externalIconSize, icon: external, className: styles['external-icon'] }), _jsx(VisuallyHidden, { as: "span", children: 
+    const externalIcon = isExternalLink && (_jsxs(_Fragment, { children: [
+            _jsx(Icon, { size: externalIconSize, icon: external, className: styles['external-icon'] }), _jsx(VisuallyHidden, { as: "span", children: 
                 /* translators: accessibility text */
-                __('(opens in a new tab)', 'jetpack-components') })] }));
+                __('(opens in a new tab)', 'jetpack-components') })
+        ] }));
     const externalTarget = isExternalLink ? '_blank' : undefined;
     // ref https://github.com/WordPress/gutenberg/pull/44198
     const hasChildren = children?.[0] &&

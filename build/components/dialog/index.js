@@ -1,8 +1,8 @@
-import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
+import { Fragment as _Fragment, jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import clsx from 'clsx';
-import Col from "../layout/col/index.js";
-import Container from "../layout/container/index.js";
-import useBreakpointMatch from "../layout/use-breakpoint-match/index.js";
+import Col from '../layout/col/index.js';
+import Container from '../layout/container/index.js';
+import useBreakpointMatch from '../layout/use-breakpoint-match/index.js';
 import styles from './style.module.scss';
 /**
  * Dialog component.
@@ -26,6 +26,8 @@ const Dialog = ({ primary, secondary, isTwoSections = false, ...containerProps }
         [styles['one-section-style']]: !isTwoSections,
         [styles['is-viewport-small']]: isSmall,
     });
-    return (_jsxs(Container, { className: classNames, horizontalSpacing: 0, horizontalGap: 0, fluid: false, ...containerProps, children: [!hideSecondarySection && (_jsxs(_Fragment, { children: [_jsx(Col, { sm: 4, md: isLowerThanLarge ? 4 : 5, lg: 7, className: styles.primary, children: primary }), _jsx(Col, { sm: 4, md: isLowerThanLarge ? 4 : 3, lg: 5, className: styles.secondary, children: secondary })] })), hideSecondarySection && _jsx(Col, { children: primary })] }));
+    return (_jsxs(Container, { className: classNames, horizontalSpacing: 0, horizontalGap: 0, fluid: false, ...containerProps, children: [!hideSecondarySection && (_jsxs(_Fragment, { children: [
+                    _jsx(Col, { sm: 4, md: isLowerThanLarge ? 4 : 5, lg: 7, className: styles.primary, children: primary }), _jsx(Col, { sm: 4, md: isLowerThanLarge ? 4 : 3, lg: 5, className: styles.secondary, children: secondary })
+                ] })), hideSecondarySection && _jsx(Col, { children: primary })] }));
 };
 export default Dialog;

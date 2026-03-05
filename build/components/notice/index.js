@@ -30,6 +30,7 @@ const getIconByLevel = (level) => {
  */
 const Notice = ({ level = 'info', title, children, actions, hideCloseButton = false, onClose, }) => {
     const classes = clsx(styles.container, styles[`is-${level}`]);
-    return (_jsxs("div", { className: classes, children: [_jsx("div", { className: styles['icon-wrapper'], children: _jsx(Icon, { icon: getIconByLevel(level), className: styles.icon }) }), _jsxs("div", { className: styles['main-content'], children: [title && _jsx("div", { className: styles.title, children: title }), children, actions && actions.length > 0 && (_jsx("div", { className: styles['action-bar'], children: actions.map((action, index) => (_jsx("div", { className: styles.action, children: action }, index))) }))] }), !hideCloseButton && (_jsx("button", { "aria-label": "close", className: styles['close-button'], onClick: onClose, children: _jsx(Icon, { icon: close }) }))] }));
+    return (_jsxs("div", { className: classes, children: [
+            _jsx("div", { className: styles['icon-wrapper'], children: _jsx(Icon, { icon: getIconByLevel(level), className: styles.icon }) }), _jsxs("div", { className: styles['main-content'], children: [title && _jsx("div", { className: styles.title, children: title }), children, actions && actions.length > 0 && (_jsx("div", { className: styles['action-bar'], children: actions.map((action, index) => (_jsx("div", { className: styles.action, children: action }, index))) }))] }), !hideCloseButton && (_jsx("button", { "aria-label": "close", className: styles['close-button'], onClick: onClose, children: _jsx(Icon, { icon: close }) }))] }));
 };
 export default Notice;

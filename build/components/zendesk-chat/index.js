@@ -1,6 +1,6 @@
 import { jsx as _jsx } from "react/jsx-runtime";
 import { useEffect, useCallback } from 'react';
-import { chatKey } from "./constants.js";
+import { chatKey } from './constants.js';
 export const ZendeskChat = ({ jwt_token }) => {
     const authenticateUser = useCallback(() => {
         if (typeof window !== 'undefined' && typeof window.zE === 'function') {

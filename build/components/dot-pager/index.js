@@ -3,7 +3,7 @@ import { Button } from '@wordpress/components';
 import { __, sprintf } from '@wordpress/i18n';
 import clsx from 'clsx';
 import { Children, useState, useEffect, useCallback, useMemo } from 'react';
-import { Swipeable } from "../swipeable/index.js";
+import { Swipeable } from '../swipeable/index.js';
 import './style.scss';
 const Controls = ({ currentPage, numberOfPages, setCurrentPage, tracksPrefix, tracksFn, }) => {
     // Create a map of memoized handlers for each page
@@ -47,6 +47,8 @@ const DotPager = ({ hasDynamicHeight = false, children, className = '', onPageSe
     const handleMouseLeave = useCallback(() => {
         setIsPaused(false);
     }, []);
-    return (_jsxs("div", { className: clsx('dot-pager', className), onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave, ...props, children: [_jsx(Controls, { currentPage: currentPage, numberOfPages: numPages, setCurrentPage: handleSelectPage, tracksPrefix: tracksPrefix, tracksFn: tracksFn }), _jsx(Swipeable, { hasDynamicHeight: hasDynamicHeight, onPageSelect: handleSelectPage, currentPage: currentPage, pageClassName: "dot-pager__page", containerClassName: "dot-pager__pages", isClickEnabled: isClickEnabled, children: normalizedChildren })] }));
+    return (_jsxs("div", { className: clsx('dot-pager', className), onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave, ...props, children: [
+            _jsx(Controls, { currentPage: currentPage, numberOfPages: numPages, setCurrentPage: handleSelectPage, tracksPrefix: tracksPrefix, tracksFn: tracksFn }), _jsx(Swipeable, { hasDynamicHeight: hasDynamicHeight, onPageSelect: handleSelectPage, currentPage: currentPage, pageClassName: "dot-pager__page", containerClassName: "dot-pager__pages", isClickEnabled: isClickEnabled, children: normalizedChildren })
+        ] }));
 };
 export default DotPager;

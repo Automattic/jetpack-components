@@ -8,10 +8,10 @@ __experimentalHStack as HStack, // eslint-disable-line @wordpress/no-unsafe-wp-a
 import { __, sprintf } from '@wordpress/i18n';
 import clsx from 'clsx';
 import { useEffect, useCallback } from 'react';
-import JetpackFooter from "../jetpack-footer/index.js";
-import JetpackLogo from "../jetpack-logo/index.js";
-import Col from "../layout/col/index.js";
-import Container from "../layout/container/index.js";
+import JetpackFooter from '../jetpack-footer/index.js';
+import JetpackLogo from '../jetpack-logo/index.js';
+import Col from '../layout/col/index.js';
+import Container from '../layout/container/index.js';
 import styles from './style.module.scss';
 /**
  * This is the base structure for any admin page. It comes with Header and Footer.
@@ -49,7 +49,8 @@ const AdminPage = ({ children, className, moduleName = 'Jetpack' /** "Jetpack" i
     // needed until https://github.com/WordPress/gutenberg/pull/75899 fixes
     // non-string title rendering in admin-ui. Once that lands, remove the Heading
     // here and pass the plain HStack with a string child.
-    const composedTitle = title ? (_jsxs(HStack, { spacing: 2, justify: "left", children: [logo || _jsx(JetpackLogo, { showText: false, height: 20 }), _jsx(Heading, { as: "h2", level: 3, weight: 500, truncate: true, children: title })] })) : undefined;
+    const composedTitle = title ? (_jsxs(HStack, { spacing: 2, justify: "left", children: [logo || _jsx(JetpackLogo, { showText: false, height: 20 }), _jsx(Heading, { as: "h2", level: 3, weight: 500, truncate: true, children: title })
+        ] })) : undefined;
     const footer = showFooter && (_jsx(Container, { horizontalSpacing: 5, children: _jsx(Col, { children: _jsx(JetpackFooter, { moduleName: moduleName, moduleNameHref: moduleNameHref, menu: optionalMenuItems, useInternalLinks: useInternalLinks }) }) }));
     // When title is provided, use admin-ui Page for the full page layout.
     if (showHeader && composedTitle) {

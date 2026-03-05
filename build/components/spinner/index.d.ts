@@ -1,11 +1,11 @@
 import './style.scss';
-declare const Spinner: {
-    ({ color, className, size }: {
-        color?: string;
-        className?: string;
-        size?: number;
-    }): import("react/jsx-runtime").JSX.Element;
-    propTypes: {
+declare function Spinner({ color, className, size }: {
+    className?: string;
+    color?: string;
+    size?: number;
+}): import("react/jsx-runtime").JSX.Element;
+declare namespace Spinner {
+    var propTypes: {
         /** The spinner color. */
         color: any;
         /** CSS class names. */
@@ -13,5 +13,5 @@ declare const Spinner: {
         /** The spinner size. */
         size: any;
     };
-};
+}
 export default Spinner;

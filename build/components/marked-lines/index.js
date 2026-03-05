@@ -1,4 +1,4 @@
-import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
+import { Fragment as _Fragment, jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import styles from './styles.module.scss';
 /**
  * Surrounds a text string in a <mark>
@@ -38,13 +38,15 @@ const markup = (marks, content) => {
 };
 const MarkedLines = ({ context }) => {
     const { marks, ...lines } = context;
-    return (_jsxs("div", { className: styles['marked-lines'], children: [_jsx("div", { className: styles['marked-lines__line-numbers'], children: Object.keys(lines).map(lineNumber => {
+    return (_jsxs("div", { className: styles['marked-lines'], children: [
+            _jsx("div", { className: styles['marked-lines__line-numbers'], children: Object.keys(lines).map(lineNumber => {
                     const hasMarks = Object.hasOwn(marks, lineNumber);
                     return (_jsx("div", { className: `${styles['marked-lines__line-number']} ${hasMarks ? styles['marked-lines__marked-line'] : ''}`, children: lineNumber }, lineNumber));
                 }) }), _jsx("div", { className: styles['marked-lines__lines'], children: Object.keys(lines).map(lineNumber => {
                     const lineContent = lines[lineNumber] || ' ';
                     const hasMarks = Object.hasOwn(marks, lineNumber);
                     return (_jsx("div", { className: `${styles['marked-lines__line']} ${hasMarks ? styles['marked-lines__marked-line'] : ''} `, children: _jsx(_Fragment, { children: hasMarks ? markup(marks[lineNumber], lineContent) : lineContent }) }, lineNumber));
-                }) })] }));
+                }) })
+        ] }));
 };
 export default MarkedLines;

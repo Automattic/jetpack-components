@@ -2,8 +2,8 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Popover } from '@wordpress/components';
 import clsx from 'clsx';
 import { useCallback, useState } from 'react';
-import Button from "../button/index.js";
-import Gridicon from "../gridicon/index.js";
+import Button from '../button/index.js';
+import Gridicon from '../gridicon/index.js';
 import './style.scss';
 const placementsToPositions = (placement) => {
     const mapping = {
@@ -70,6 +70,8 @@ const IconTooltip = ({ className = '', iconClassName = '', placement = 'bottom-e
             setHoverTimeout(id);
         }
     }, [hoverShow]);
-    return (_jsxs("div", { className: wrapperClassNames, "data-testid": "icon-tooltip_wrapper", onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave, children: [!isAnchorWrapper && (_jsx(Button, { variant: "link", onMouseDown: toggleTooltip, children: _jsx(Gridicon, { className: iconClassName, icon: iconCode, size: iconSize }) })), _jsx("div", { className: clsx('icon-tooltip-helper', { 'is-wide': wide }), style: iconShiftBySize, children: (isForcedToShow || isVisible) && (_jsx(Popover, { ...args, children: _jsxs("div", { children: [title && _jsx("div", { className: "icon-tooltip-title", children: title }), _jsx("div", { className: "icon-tooltip-content", children: children })] }) })) })] }));
+    return (_jsxs("div", { className: wrapperClassNames, "data-testid": "icon-tooltip_wrapper", onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave, children: [!isAnchorWrapper && (_jsx(Button, { variant: "link", onMouseDown: toggleTooltip, children: _jsx(Gridicon, { className: iconClassName, icon: iconCode, size: iconSize }) })), _jsx("div", { className: clsx('icon-tooltip-helper', { 'is-wide': wide }), style: iconShiftBySize, children: (isForcedToShow || isVisible) && (_jsx(Popover, { ...args, children: _jsxs("div", { children: [title && _jsx("div", { className: "icon-tooltip-title", children: title }), _jsx("div", { className: "icon-tooltip-content", children: children })
+                        ] }) })) })
+        ] }));
 };
 export default IconTooltip;
