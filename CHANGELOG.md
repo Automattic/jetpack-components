@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [1.5.1-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Update dependencies.
+
 ## [1.5.0] - 2026-03-09
 ### Added
 - Add AdminHeader component wrapping @wordpress/admin-ui Page for unified admin page headers. [#47313]
@@ -1690,6 +1697,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[1.5.1-alpha]: https://github.com/Automattic/jetpack-components/compare/1.5.0...1.5.1-alpha
 [1.5.0]: https://github.com/Automattic/jetpack-components/compare/1.4.16...1.5.0
 [1.4.16]: https://github.com/Automattic/jetpack-components/compare/1.4.15...1.4.16
 [1.4.15]: https://github.com/Automattic/jetpack-components/compare/1.4.14...1.4.15
