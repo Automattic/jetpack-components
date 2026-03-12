@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Add support for X connection.
+- AdminPage: Add breadcrumbs prop passthrough to admin-ui Page component.
 
 ### Changed
 - Update dependencies.

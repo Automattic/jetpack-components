@@ -36,6 +36,10 @@ export type AdminPageProps = {
      */
     actions?: ReactNode;
     /**
+     * Breadcrumb navigation displayed next to the title in the unified header.
+     */
+    breadcrumbs?: ReactNode;
+    /**
      * Tab navigation displayed below the title/tagline in the unified header.
      */
     tabs?: ReactNode;
