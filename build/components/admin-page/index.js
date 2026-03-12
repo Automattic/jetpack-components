@@ -51,7 +51,7 @@ const AdminPage = ({ children, className, moduleName = 'Jetpack' /** "Jetpack" i
     // here and pass the plain HStack with a string child.
     const composedTitle = title ? (_jsxs(HStack, { spacing: 2, justify: "left", children: [logo || _jsx(JetpackLogo, { showText: false, height: 20 }), _jsx(Heading, { as: "h2", level: 3, weight: 500, truncate: true, children: title })
         ] })) : undefined;
-    const footer = showFooter && (_jsx(Container, { horizontalSpacing: 5, children: _jsx(Col, { children: _jsx(JetpackFooter, { moduleName: moduleName, moduleNameHref: moduleNameHref, menu: optionalMenuItems, useInternalLinks: useInternalLinks }) }) }));
+    const footer = showFooter && (_jsx(Container, { className: styles['admin-page-footer'], horizontalSpacing: 5, children: _jsx(Col, { children: _jsx(JetpackFooter, { moduleName: moduleName, moduleNameHref: moduleNameHref, menu: optionalMenuItems, useInternalLinks: useInternalLinks }) }) }));
     // When title or breadcrumbs are provided, use admin-ui Page for the full page layout.
     if (showHeader && (composedTitle || breadcrumbs)) {
         return (_jsx("div", { className: rootClassName, children: _jsxs(Page, { ariaLabel: title, breadcrumbs: breadcrumbs, title: composedTitle, subTitle: subTitle, actions: actions, showSidebarToggle: false, children: [tabs, _jsx(Container, { fluid: true, horizontalSpacing: 0, children: _jsx(Col, { children: children }) }), footer] }) }));

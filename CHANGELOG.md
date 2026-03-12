@@ -13,6 +13,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update dependencies.
 
+### Fixed
+- Fix AdminPage footer Container causing horizontal scroll on narrow viewports by explicitly setting box-sizing: border-box.
+
 ## [1.5.0] - 2026-03-09
 ### Added
 - Add AdminHeader component wrapping @wordpress/admin-ui Page for unified admin page headers. [#47313]
