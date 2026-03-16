@@ -2,19 +2,16 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [1.6.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [1.6.0] - 2026-03-16
 ### Added
-- Add support for X connection.
-- AdminPage: Add breadcrumbs prop passthrough to admin-ui Page component.
+- Add support for X connection. [#47538]
+- AdminPage: Add breadcrumbs prop passthrough to admin-ui Page component. [#47493]
 
 ### Changed
-- Update dependencies.
+- Update dependencies. [#47472]
 
 ### Fixed
-- Fix AdminPage footer Container causing horizontal scroll on narrow viewports by explicitly setting box-sizing: border-box.
+- Fix AdminPage footer Container causing horizontal scroll on narrow viewports by explicitly setting box-sizing: border-box. [#47570]
 
 ## [1.5.0] - 2026-03-09
 ### Added
@@ -1704,7 +1701,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[1.6.0-alpha]: https://github.com/Automattic/jetpack-components/compare/1.5.0...1.6.0-alpha
+[1.6.0]: https://github.com/Automattic/jetpack-components/compare/1.5.0...1.6.0
 [1.5.0]: https://github.com/Automattic/jetpack-components/compare/1.4.16...1.5.0
 [1.4.16]: https://github.com/Automattic/jetpack-components/compare/1.4.15...1.4.16
 [1.4.15]: https://github.com/Automattic/jetpack-components/compare/1.4.14...1.4.15
