@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Changed
+- Update package dependencies.
+
 ### Fixed
 - Fix AdminPage footer Container causing horizontal scroll on narrow viewports by explicitly setting box-sizing: border-box.
 
