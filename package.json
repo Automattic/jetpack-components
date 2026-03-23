@@ -45,8 +45,8 @@
 	],
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
-		"@automattic/jetpack-api": "^1.0.20-alpha",
-		"@automattic/jetpack-boost-score-api": "^1.0.34-alpha",
+		"@automattic/jetpack-api": "^1.0.20",
+		"@automattic/jetpack-boost-score-api": "^1.0.34",
 		"@automattic/jetpack-script-data": "^0.6.1",
 		"@automattic/number-formatters": "^1.1.2",
 		"@babel/runtime": "^7",
@@ -69,7 +69,7 @@
 		"uplot-react": "1.1.4"
 	},
 	"devDependencies": {
-		"@automattic/jetpack-base-styles": "^1.0.20-alpha",
+		"@automattic/jetpack-base-styles": "^1.0.20",
 		"@babel/core": "7.29.0",
 		"@babel/preset-react": "7.28.5",
 		"@jest/globals": "30.2.0",
