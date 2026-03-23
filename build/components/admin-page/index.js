@@ -2,8 +2,7 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import restApi from '@automattic/jetpack-api';
 import { Page } from '@wordpress/admin-ui';
 import '@wordpress/admin-ui/build-style/style.css';
-import { __experimentalHeading as Heading, // eslint-disable-line @wordpress/no-unsafe-wp-apis
-__experimentalHStack as HStack, // eslint-disable-line @wordpress/no-unsafe-wp-apis
+import { __experimentalHStack as HStack, // eslint-disable-line @wordpress/no-unsafe-wp-apis
  } from '@wordpress/components';
 import { __, sprintf } from '@wordpress/i18n';
 import clsx from 'clsx';
@@ -44,12 +43,8 @@ const AdminPage = ({ children, className, moduleName = 'Jetpack' /** "Jetpack" i
         }
     }, []);
     // Compose the title with logo for the admin-ui Page header.
-    // Note: The inner Heading causes a double h2 wrapping because Page's Header
-    // also wraps title in a Heading. This is a known issue — the inner Heading is
-    // needed until https://github.com/WordPress/gutenberg/pull/75899 fixes
-    // non-string title rendering in admin-ui. Once that lands, remove the Heading
-    // here and pass the plain HStack with a string child.
-    const composedTitle = title ? (_jsxs(HStack, { spacing: 2, justify: "left", children: [logo || _jsx(JetpackLogo, { showText: false, height: 20 }), _jsx(Heading, { as: "h2", level: 3, weight: 500, truncate: true, children: title })
+    // Page's Header wraps this in an <h2> tag, so we just pass the content directly.
+    const composedTitle = title ? (_jsxs(HStack, { spacing: 2, justify: "left", children: [logo || _jsx(JetpackLogo, { showText: false, height: 20 }), _jsx("span", { children: title })
         ] })) : undefined;
     const footer = showFooter && (_jsx(Container, { className: styles['admin-page-footer'], horizontalSpacing: 5, children: _jsx(Col, { children: _jsx(JetpackFooter, { moduleName: moduleName, moduleNameHref: moduleNameHref, menu: optionalMenuItems, useInternalLinks: useInternalLinks }) }) }));
     // When title or breadcrumbs are provided, use admin-ui Page for the full page layout.
