@@ -10,6 +10,7 @@ This is an alpha version! The changes listed here are not final.
 - Update package dependencies.
 
 ### Fixed
+- Add overflow hidden to AdminSectionHero and z-index to AdminPage header to prevent content from overlapping the page header.
 - Fix AdminPage footer Container causing horizontal scroll on narrow viewports by explicitly setting box-sizing: border-box.
 
 ## [1.6.0] - 2026-03-16
