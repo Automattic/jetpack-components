@@ -2,16 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [1.6.1-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [1.6.1] - 2026-03-23
 ### Changed
-- Update package dependencies.
+- Update package dependencies. [#47684] [#47719]
 
 ### Fixed
-- Add overflow hidden to AdminSectionHero and z-index to AdminPage header to prevent content from overlapping the page header.
-- Fix AdminPage footer Container causing horizontal scroll on narrow viewports by explicitly setting box-sizing: border-box.
+- Prevent content from overlapping the page header. [#47697]
+- Prevent horizontal scroll on narrow viewports. [#47490]
 
 ## [1.6.0] - 2026-03-16
 ### Added
@@ -1712,7 +1709,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[1.6.1-alpha]: https://github.com/Automattic/jetpack-components/compare/1.6.0...1.6.1-alpha
+[1.6.1]: https://github.com/Automattic/jetpack-components/compare/1.6.0...1.6.1
 [1.6.0]: https://github.com/Automattic/jetpack-components/compare/1.5.0...1.6.0
 [1.5.0]: https://github.com/Automattic/jetpack-components/compare/1.4.16...1.5.0
 [1.4.16]: https://github.com/Automattic/jetpack-components/compare/1.4.15...1.4.16
