@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Remove double heading wrapper from AdminPage title, fixing header title sizing across all Jetpack admin pages.
+- Update legacy Node calls.
 
 ## [1.6.1] - 2026-03-23
 ### Changed
