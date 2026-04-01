@@ -2,11 +2,12 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [1.7.1-alpha] - unreleased
+## [1.8.0-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
 
 ### Changed
+- JetpackFooter: Update footer design with Products and Help navigation links, removing About, Privacy, and Terms links and related props.
 - Update package dependencies.
 
 ## [1.7.0] - 2026-03-30
@@ -1722,7 +1723,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[1.7.1-alpha]: https://github.com/Automattic/jetpack-components/compare/1.7.0...1.7.1-alpha
+[1.8.0-alpha]: https://github.com/Automattic/jetpack-components/compare/1.7.0...1.8.0-alpha
 [1.7.0]: https://github.com/Automattic/jetpack-components/compare/1.6.1...1.7.0
 [1.6.1]: https://github.com/Automattic/jetpack-components/compare/1.6.0...1.6.1
 [1.6.0]: https://github.com/Automattic/jetpack-components/compare/1.5.0...1.6.0

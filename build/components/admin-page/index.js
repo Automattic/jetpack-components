@@ -20,7 +20,7 @@ import styles from './style.module.scss';
  * @param {AdminPageProps} props - Component properties.
  * @return {ReactNode} AdminPage component.
  */
-const AdminPage = ({ children, className, moduleName = 'Jetpack' /** "Jetpack" is a product name, do not translate. */, moduleNameHref, showHeader = true, showFooter = true, useInternalLinks = false, showBackground = true, sandboxedDomain = '', apiRoot = '', apiNonce = '', optionalMenuItems, header, title, subTitle, logo, actions, breadcrumbs, tabs, showBottomBorder = true, }) => {
+const AdminPage = ({ children, className, showHeader = true, showFooter = true, showBackground = true, sandboxedDomain = '', apiRoot = '', apiNonce = '', optionalMenuItems, header, title, subTitle, logo, actions, breadcrumbs, tabs, showBottomBorder = true, }) => {
     useEffect(() => {
         restApi.setApiRoot(apiRoot);
         restApi.setApiNonce(apiNonce);
@@ -46,14 +46,13 @@ const AdminPage = ({ children, className, moduleName = 'Jetpack' /** "Jetpack" i
     // Page's Header wraps this in an <h2> tag, so we just pass the content directly.
     const composedTitle = title ? (_jsxs(HStack, { spacing: 2, justify: "left", children: [logo || _jsx(JetpackLogo, { showText: false, height: 20 }), _jsx("span", { children: title })
         ] })) : undefined;
-    const footer = showFooter && (_jsx(Container, { className: styles['admin-page-footer'], horizontalSpacing: 5, children: _jsx(Col, { children: _jsx(JetpackFooter, { moduleName: moduleName, moduleNameHref: moduleNameHref, menu: optionalMenuItems, useInternalLinks: useInternalLinks }) }) }));
     // When title or breadcrumbs are provided, use admin-ui Page for the full page layout.
     if (showHeader && (composedTitle || breadcrumbs)) {
-        return (_jsx("div", { className: rootClassName, children: _jsxs(Page, { ariaLabel: title, breadcrumbs: breadcrumbs, title: composedTitle, subTitle: subTitle, actions: actions, showSidebarToggle: false, children: [tabs, _jsx(Container, { fluid: true, horizontalSpacing: 0, children: _jsx(Col, { children: children }) }), footer] }) }));
+        return (_jsx("div", { className: rootClassName, children: _jsxs(Page, { ariaLabel: title, breadcrumbs: breadcrumbs, title: composedTitle, subTitle: subTitle, actions: actions, showSidebarToggle: false, children: [tabs, _jsx(Container, { fluid: true, horizontalSpacing: 0, children: _jsx(Col, { children: children }) }), showFooter && _jsx(JetpackFooter, { menu: optionalMenuItems })] }) }));
     }
     // Legacy path: no title provided, render the classic header.
     return (_jsxs("div", { className: rootClassName, children: [showHeader && (_jsx(Container, { horizontalSpacing: 5, children: _jsxs(Col, { className: clsx(styles['admin-page-header'], 'jp-admin-page-header'), children: [header ? header : _jsx(JetpackLogo, {}), sandboxedDomain && (_jsx("code", { className: styles['sandbox-domain-badge'], onClick: testConnection, onKeyDown: testConnection, 
                             // eslint-disable-next-line jsx-a11y/no-noninteractive-element-to-interactive-role
-                            role: "button", tabIndex: 0, title: `Sandboxing via ${sandboxedDomain}. Click to test connection.`, children: "API Sandboxed" }))] }) })), _jsx(Container, { fluid: true, horizontalSpacing: 0, children: _jsx(Col, { children: children }) }), footer] }));
+                            role: "button", tabIndex: 0, title: `Sandboxing via ${sandboxedDomain}. Click to test connection.`, children: "API Sandboxed" }))] }) })), _jsx(Container, { fluid: true, horizontalSpacing: 0, children: _jsx(Col, { children: children }) }), showFooter && _jsx(JetpackFooter, { menu: optionalMenuItems })] }));
 };
 export default AdminPage;
