@@ -15,6 +15,9 @@ This is an alpha version! The changes listed here are not final.
 - Update network admin settings visually.
 - Update package dependencies.
 
+### Fixed
+- JetpackFooter: Pin base font-size to design token to prevent page context from leaking into footer layout.
+
 ## [1.7.0] - 2026-03-30
 ### Changed
 - Remove double heading wrapper from AdminPage title, fixing header title sizing across all Jetpack admin pages. [#47696]
