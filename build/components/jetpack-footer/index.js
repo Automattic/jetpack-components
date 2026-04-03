@@ -15,7 +15,7 @@ import JetpackLogo from '../jetpack-logo/index.js';
  */
 const JetpackFooter = ({ className, menu, ...otherProps }) => {
     let items = [];
-    if (!isWpcomPlatformSite()) {
+    if (!isWpcomPlatformSite() && !window?.JetpackNetworkAdminData) {
         items = [
             {
                 label: __('Products', 'jetpack-components'),

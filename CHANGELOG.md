@@ -12,6 +12,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - JetpackFooter: Update footer design with Products and Help navigation links, removing About, Privacy, and Terms links and related props.
 - Remove padding from admin page header subtitle for consistent spacing.
+- Update network admin settings visually.
 - Update package dependencies.
 
 ## [1.7.0] - 2026-03-30
