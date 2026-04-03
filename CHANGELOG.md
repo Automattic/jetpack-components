@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Added
+- Added onGoBack and onClose callback props to NavigatorModal Screen and Header components
+
 ### Changed
 - JetpackFooter: Update footer design with Products and Help navigation links, removing About, Privacy, and Terms links and related props.
 - Remove padding from admin page header subtitle for consistent spacing.

@@ -10,13 +10,18 @@ import { NavigatorModalContext } from './context.js';
  *
  * @return component
  */
-export function Header({ icon, title, isScreenLocked }) {
+export function Header({ icon, title, isScreenLocked, onGoBack: onGoBackProp, onClose: onCloseProp, }) {
     const context = useContext(NavigatorModalContext);
     const navigator = useNavigator();
     const onGoBack = useCallback(() => {
+        onGoBackProp?.();
         navigator.goBack();
-    }, [navigator]);
+    }, [navigator, onGoBackProp]);
+    const onCloseModal = useCallback(() => {
+        onCloseProp?.();
+        context.onClose?.();
+    }, [onCloseProp, context]);
     return (_jsxs("div", { className: "jp-navigator-modal__header", children: [
             _jsxs("div", { className: "jp-navigator-modal__title-wrap", children: [!isScreenLocked ? (_jsx(Button, { label: __('Go back', 'jetpack-components'), icon: isRTL() ? chevronRight : chevronLeft, onClick: onGoBack, variant: "tertiary", size: "compact" })) : null, icon, _jsx("h1", { children: title })
-                ] }), context.isDismissible ? (_jsx(Button, { size: "compact", onClick: context.onClose, icon: close, label: __('Close', 'jetpack-components'), variant: "tertiary" })) : null] }));
+                ] }), context.isDismissible ? (_jsx(Button, { size: "compact", onClick: onCloseModal, icon: close, label: __('Close', 'jetpack-components'), variant: "tertiary" })) : null] }));
 }

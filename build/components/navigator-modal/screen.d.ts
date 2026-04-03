@@ -1,10 +1,7 @@
 import { Navigator } from '@wordpress/components';
 import { FooterProps } from './footer.tsx';
-export type ScreenProps = Omit<React.ComponentProps<typeof Navigator.Screen>, 'content' | 'children'> & {
-    /**
-     * The title of the screen.
-     */
-    title?: string;
+import { HeaderProps } from './header.tsx';
+export type ScreenProps = Omit<React.ComponentProps<typeof Navigator.Screen>, 'content' | 'children'> & Omit<HeaderProps, 'icon'> & {
     /**
      * Optional icon to display in the header.
      */
@@ -17,12 +14,6 @@ export type ScreenProps = Omit<React.ComponentProps<typeof Navigator.Screen>, 'c
      * The sidebar content
      */
     sidebar?: React.ReactNode;
-    /**
-     * Whether the screen is locked or has a parent screen.
-     *
-     * When it's locked, it means there will be no navigation back to a previous screen.
-     */
-    isScreenLocked?: boolean;
     /**
      * The footer content
      */
@@ -51,4 +42,4 @@ export type ScreenProps = Omit<React.ComponentProps<typeof Navigator.Screen>, 'c
  *
  * @return The rendered screen.
  */
-export declare function Screen({ path, className, title, sidebar, headerIcon, isScreenLocked, footerContent, footerActions, children, content, ...props }: ScreenProps): import("react/jsx-runtime").JSX.Element;
+export declare function Screen({ path, className, title, sidebar, headerIcon, isScreenLocked, onGoBack, onClose, footerContent, footerActions, children, content, ...props }: ScreenProps): import("react/jsx-runtime").JSX.Element;

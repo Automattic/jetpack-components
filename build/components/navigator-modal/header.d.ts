@@ -11,6 +11,14 @@ export type HeaderProps = {
      * Optional icon to display in the header.
      */
     icon?: React.ReactNode;
+    /**
+     * Optional callback to run before navigating back.
+     */
+    onGoBack?: VoidFunction;
+    /**
+     * Optional callback to run before closing the modal.
+     */
+    onClose?: VoidFunction;
 };
 /**
  * Renders a header for the NavigatorModal.
@@ -18,4 +26,4 @@ export type HeaderProps = {
  *
  * @return component
  */
-export declare function Header({ icon, title, isScreenLocked }: HeaderProps): import("react/jsx-runtime").JSX.Element;
+export declare function Header({ icon, title, isScreenLocked, onGoBack: onGoBackProp, onClose: onCloseProp }: HeaderProps): import("react/jsx-runtime").JSX.Element;
