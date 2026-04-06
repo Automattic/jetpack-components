@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [1.8.1-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Update package dependencies.
+
 ## [1.8.0] - 2026-04-06
 ### Added
 - Add onGoBack and onClose callback props to NavigatorModal Screen and Header components. [#47896]
@@ -1728,6 +1735,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[1.8.1-alpha]: https://github.com/Automattic/jetpack-components/compare/1.8.0...1.8.1-alpha
 [1.8.0]: https://github.com/Automattic/jetpack-components/compare/1.7.0...1.8.0
 [1.7.0]: https://github.com/Automattic/jetpack-components/compare/1.6.1...1.7.0
 [1.6.1]: https://github.com/Automattic/jetpack-components/compare/1.6.0...1.6.1
