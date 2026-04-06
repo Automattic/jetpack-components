@@ -1,6 +1,6 @@
 {
 	"name": "@automattic/jetpack-components",
-	"version": "1.8.0-alpha",
+	"version": "1.8.0",
 	"description": "Jetpack Components Package",
 	"homepage": "https://github.com/Automattic/jetpack/tree/HEAD/projects/js-packages/components/#readme",
 	"bugs": {
@@ -46,9 +46,9 @@
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
 		"@automattic/jetpack-api": "^1.0.21",
-		"@automattic/jetpack-boost-score-api": "^1.0.35",
+		"@automattic/jetpack-boost-score-api": "^1.0.36",
 		"@automattic/jetpack-script-data": "^0.6.1",
-		"@automattic/number-formatters": "^1.1.4-alpha",
+		"@automattic/number-formatters": "^1.1.4",
 		"@babel/runtime": "^7",
 		"@wordpress/admin-ui": "1.10.0",
 		"@wordpress/browserslist-config": "6.42.0",

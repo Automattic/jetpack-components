@@ -2,21 +2,18 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [1.8.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [1.8.0] - 2026-04-06
 ### Added
-- Added onGoBack and onClose callback props to NavigatorModal Screen and Header components
+- Add onGoBack and onClose callback props to NavigatorModal Screen and Header components. [#47896]
 
 ### Changed
-- JetpackFooter: Update footer design with Products and Help navigation links, removing About, Privacy, and Terms links and related props.
-- Remove padding from admin page header subtitle for consistent spacing.
-- Update network admin settings visually.
-- Update package dependencies.
+- JetpackFooter: Update footer design with Products and Help navigation links, removing About, Privacy, and Terms links and related props. [#47840]
+- Remove padding from admin page header subtitle for consistent spacing. [#47418]
+- Update network admin settings visually. [#47912]
+- Update package dependencies. [#47870]
 
 ### Fixed
-- JetpackFooter: Pin base font-size to design token to prevent page context from leaking into footer layout.
+- JetpackFooter: Pin base font-size to design token to prevent page context from leaking into footer layout. [#47921]
 
 ## [1.7.0] - 2026-03-30
 ### Changed
@@ -1731,7 +1728,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[1.8.0-alpha]: https://github.com/Automattic/jetpack-components/compare/1.7.0...1.8.0-alpha
+[1.8.0]: https://github.com/Automattic/jetpack-components/compare/1.7.0...1.8.0
 [1.7.0]: https://github.com/Automattic/jetpack-components/compare/1.6.1...1.7.0
 [1.6.1]: https://github.com/Automattic/jetpack-components/compare/1.6.0...1.6.1
 [1.6.0]: https://github.com/Automattic/jetpack-components/compare/1.5.0...1.6.0
