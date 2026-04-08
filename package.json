@@ -48,7 +48,7 @@
 		"@automattic/jetpack-api": "^1.0.22-alpha",
 		"@automattic/jetpack-boost-score-api": "^1.0.37-alpha",
 		"@automattic/jetpack-script-data": "^0.6.1",
-		"@automattic/number-formatters": "^1.1.4",
+		"@automattic/number-formatters": "^1.1.5-alpha",
 		"@babel/runtime": "^7",
 		"@wordpress/admin-ui": "1.10.0",
 		"@wordpress/browserslist-config": "6.43.0",
