@@ -7,6 +7,7 @@
 This is an alpha version! The changes listed here are not final.
 
 ### Changed
+- Button, ToggleControl: Remove Jetpack color overrides on core WordPress components.
 - Update package dependencies.
 
 ## [1.8.2] - 2026-04-15
