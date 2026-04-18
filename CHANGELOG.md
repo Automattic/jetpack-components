@@ -10,6 +10,9 @@ This is an alpha version! The changes listed here are not final.
 - Button, ToggleControl: Remove Jetpack color overrides on core WordPress components.
 - Update package dependencies.
 
+### Removed
+- Removed internal Badge component in favor of @wordpress/ui.
+
 ## [1.8.2] - 2026-04-15
 ### Changed
 - Update package dependencies. [#47907]
