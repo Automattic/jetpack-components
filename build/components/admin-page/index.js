@@ -25,7 +25,10 @@ const AdminPage = ({ children, className, showHeader = true, showFooter = true, 
         restApi.setApiRoot(apiRoot);
         restApi.setApiNonce(apiNonce);
     }, [apiRoot, apiNonce]);
-    const rootClassName = clsx(styles['admin-page'], className, {
+    // `jp-admin-page` is a stable, non-hashed hook for global stylesheets and
+    // shared SCSS mixins (notably `jetpack-admin-page-layout` in
+    // @automattic/jetpack-base-styles). Do not rename.
+    const rootClassName = clsx(styles['admin-page'], 'jp-admin-page', className, {
         [styles.background]: showBackground,
         [styles['without-bottom-border']]: tabs || !showBottomBorder,
     });

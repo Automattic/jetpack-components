@@ -7,6 +7,7 @@
 This is an alpha version! The changes listed here are not final.
 
 ### Changed
+- AdminPage: added a stable, non-hashed `jp-admin-page` class on the component root so shared SCSS mixins and global stylesheets can target AdminPage without coupling to the hashed CSS-Modules className.
 - Button, ToggleControl: Remove Jetpack color overrides on core WordPress components.
 - Update package dependencies.
 
