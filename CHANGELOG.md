@@ -2,20 +2,17 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [1.8.3-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [1.8.3] - 2026-04-20
 ### Changed
-- AdminPage: added a stable, non-hashed `jp-admin-page` class on the component root so shared SCSS mixins and global stylesheets can target AdminPage without coupling to the hashed CSS-Modules className.
-- Button, ToggleControl: Remove Jetpack color overrides on core WordPress components.
-- Update package dependencies.
+- AdminPage: Add a stable, non-hashed `jp-admin-page` class on the component root so shared SCSS mixins and global stylesheets can target AdminPage without coupling to the hashed CSS-Modules className. [#48109]
+- Button, ToggleControl: Remove Jetpack color overrides on core WordPress components. [#47317]
+- Update package dependencies. [#48106] [#48126] [#48141]
 
 ### Removed
-- Removed internal Badge component in favor of @wordpress/ui.
+- Remove internal Badge component in favor of @wordpress/ui. [#48156]
 
 ### Fixed
-- Navigator modal: allow overlay closing when users click it.
+- Navigator modal: Allow overlay closing when users click it. [#48121]
 
 ## [1.8.2] - 2026-04-15
 ### Changed
@@ -1751,7 +1748,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[1.8.3-alpha]: https://github.com/Automattic/jetpack-components/compare/1.8.2...1.8.3-alpha
+[1.8.3]: https://github.com/Automattic/jetpack-components/compare/1.8.2...1.8.3
 [1.8.2]: https://github.com/Automattic/jetpack-components/compare/1.8.1...1.8.2
 [1.8.1]: https://github.com/Automattic/jetpack-components/compare/1.8.0...1.8.1
 [1.8.0]: https://github.com/Automattic/jetpack-components/compare/1.7.0...1.8.0
