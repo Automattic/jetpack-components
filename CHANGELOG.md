@@ -14,6 +14,9 @@ This is an alpha version! The changes listed here are not final.
 ### Removed
 - Removed internal Badge component in favor of @wordpress/ui.
 
+### Fixed
+- Navigator modal: allow overlay closing when users click it.
+
 ## [1.8.2] - 2026-04-15
 ### Changed
 - Update package dependencies. [#47907]
