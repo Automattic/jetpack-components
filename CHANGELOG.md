@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [1.9.1-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Internal: No longer require automattic/jetpack-changelogger as a per-project dev dependency.
+
 ## [1.9.0] - 2026-04-27
 ### Deprecated
 - Componentry: Deprecate the Chip component. Use Badge from @wordpress/ui instead — map type="new" to intent="stable". [#48162]
@@ -1752,6 +1759,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[1.9.1-alpha]: https://github.com/Automattic/jetpack-components/compare/1.9.0...1.9.1-alpha
 [1.9.0]: https://github.com/Automattic/jetpack-components/compare/1.8.3...1.9.0
 [1.8.3]: https://github.com/Automattic/jetpack-components/compare/1.8.2...1.8.3
 [1.8.2]: https://github.com/Automattic/jetpack-components/compare/1.8.1...1.8.2
