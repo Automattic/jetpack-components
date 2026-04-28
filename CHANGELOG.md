@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Internal: No longer require automattic/jetpack-changelogger as a per-project dev dependency.
+- Remove "new" style variant from the Chip component.
 
 ### Deprecated
 - Mark the Spinner component as deprecated in favor of the WordPress Core Spinner from @wordpress/components.
