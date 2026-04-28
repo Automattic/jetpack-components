@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Internal: No longer require automattic/jetpack-changelogger as a per-project dev dependency.
 
+### Deprecated
+- Mark the Spinner component as deprecated in favor of the WordPress Core Spinner from @wordpress/components.
+
 ## [1.9.0] - 2026-04-27
 ### Deprecated
 - Componentry: Deprecate the Chip component. Use Badge from @wordpress/ui instead — map type="new" to intent="stable". [#48162]

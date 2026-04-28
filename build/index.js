@@ -24,6 +24,7 @@ export { default as AutomatticBylineLogo } from './components/automattic-byline-
 export { default as AutomatticIconLogo } from './components/automattic-icon-logo/index.js';
 export { default as AutomatticForAgenciesLogo } from './components/automattic-for-agencies-logo/index.js';
 export { default as JetpackFooter } from './components/jetpack-footer/index.js';
+/** @deprecated Use `Spinner` from `@wordpress/components` instead. */
 export { default as Spinner } from './components/spinner/index.js';
 export { default as Gridicon } from './components/gridicon/index.js';
 export { default as IconTooltip } from './components/icon-tooltip/index.js';
