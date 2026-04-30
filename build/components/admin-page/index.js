@@ -20,7 +20,7 @@ import styles from './style.module.scss';
  * @param {AdminPageProps} props - Component properties.
  * @return {ReactNode} AdminPage component.
  */
-const AdminPage = ({ children, className, showHeader = true, showFooter = true, showBackground = true, sandboxedDomain = '', apiRoot = '', apiNonce = '', optionalMenuItems, header, title, subTitle, logo, actions, breadcrumbs, tabs, showBottomBorder = true, }) => {
+const AdminPage = ({ children, className, showHeader = true, showFooter = true, showBackground = true, sandboxedDomain = '', apiRoot = '', apiNonce = '', optionalMenuItems, header, title, subTitle, logo, actions, breadcrumbs, tabs, showBottomBorder = true, unwrapped = false, }) => {
     useEffect(() => {
         restApi.setApiRoot(apiRoot);
         restApi.setApiNonce(apiNonce);
@@ -51,7 +51,7 @@ const AdminPage = ({ children, className, showHeader = true, showFooter = true, 
         ] })) : undefined;
     // When title or breadcrumbs are provided, use admin-ui Page for the full page layout.
     if (showHeader && (composedTitle || breadcrumbs)) {
-        return (_jsx("div", { className: rootClassName, children: _jsxs(Page, { ariaLabel: title, breadcrumbs: breadcrumbs, title: composedTitle, subTitle: subTitle, actions: actions, showSidebarToggle: false, children: [tabs, _jsx(Container, { fluid: true, horizontalSpacing: 0, children: _jsx(Col, { children: children }) }), showFooter && _jsx(JetpackFooter, { menu: optionalMenuItems })] }) }));
+        return (_jsx("div", { className: rootClassName, children: _jsxs(Page, { ariaLabel: title, breadcrumbs: breadcrumbs, title: composedTitle, subTitle: subTitle, actions: actions, showSidebarToggle: false, children: [tabs, unwrapped ? (children) : (_jsx(Container, { fluid: true, horizontalSpacing: 0, children: _jsx(Col, { children: children }) })), showFooter && _jsx(JetpackFooter, { menu: optionalMenuItems })] }) }));
     }
     // Legacy path: no title provided, render the classic header.
     return (_jsxs("div", { className: rootClassName, children: [showHeader && (_jsx(Container, { horizontalSpacing: 5, children: _jsxs(Col, { className: clsx(styles['admin-page-header'], 'jp-admin-page-header'), children: [header ? header : _jsx(JetpackLogo, {}), sandboxedDomain && (_jsx("code", { className: styles['sandbox-domain-badge'], onClick: testConnection, onKeyDown: testConnection, 

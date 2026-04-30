@@ -2,9 +2,12 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [1.9.1-alpha] - unreleased
+## [1.10.0-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
+
+### Added
+- AdminPage: add `unwrapped` prop to render children directly inside the admin-ui Page, skipping the default Container/Col grid wrap. Use for full-bleed pages (DataViews-based admin surfaces) that own their own scroll/layout model.
 
 ### Changed
 - Internal: No longer require automattic/jetpack-changelogger as a per-project dev dependency.
@@ -1763,7 +1766,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[1.9.1-alpha]: https://github.com/Automattic/jetpack-components/compare/1.9.0...1.9.1-alpha
+[1.10.0-alpha]: https://github.com/Automattic/jetpack-components/compare/1.9.0...1.10.0-alpha
 [1.9.0]: https://github.com/Automattic/jetpack-components/compare/1.8.3...1.9.0
 [1.8.3]: https://github.com/Automattic/jetpack-components/compare/1.8.2...1.8.3
 [1.8.2]: https://github.com/Automattic/jetpack-components/compare/1.8.1...1.8.2
