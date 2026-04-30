@@ -12,6 +12,8 @@ export interface ToggleControlProps {
     toggling?: boolean;
     /** The label for the toggle. */
     label?: ReactNode;
+    /** Accessible name for the underlying checkbox. Use when no visible `label` is rendered. */
+    'aria-label'?: string;
     /** The size of the toggle. */
     size?: 'small' | 'normal';
     /** A callback function invoked when the toggle is clicked. */

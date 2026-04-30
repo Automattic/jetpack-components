@@ -71,7 +71,7 @@
 		"uplot-react": "1.1.4"
 	},
 	"devDependencies": {
-		"@automattic/jetpack-base-styles": "^1.1.1-alpha",
+		"@automattic/jetpack-base-styles": "^1.2.0-alpha",
 		"@babel/core": "7.29.0",
 		"@babel/preset-react": "7.28.5",
 		"@jest/globals": "30.3.0",

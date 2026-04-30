@@ -3,7 +3,7 @@ import { ToggleControl as WPToggleControl } from '@wordpress/components';
 import clsx from 'clsx';
 import { useCallback } from 'react';
 import styles from './styles.module.scss';
-const ToggleControl = ({ checked, className, disabled, help, toggling, label, size = 'normal', onChange, }) => {
+const ToggleControl = ({ checked, className, disabled, help, toggling, label, 'aria-label': ariaLabel, size = 'normal', onChange, }) => {
     const showChecked = toggling !== undefined ? (checked && !toggling) || (!checked && toggling) : checked;
     const handleOnChange = useCallback((value) => {
         // Don't toggle if the toggle is already toggling.
@@ -16,6 +16,6 @@ const ToggleControl = ({ checked, className, disabled, help, toggling, label, si
             [styles['is-toggling']]: toggling,
             [styles['is-small']]: size === 'small',
             [styles['no-label']]: !label,
-        }), disabled: disabled, help: help, label: label, onChange: handleOnChange }));
+        }), disabled: disabled, help: help, label: label, "aria-label": ariaLabel, onChange: handleOnChange }));
 };
 export default ToggleControl;
