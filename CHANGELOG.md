@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Add admin-page and jetpack-footer sub-path exports for use in wp-build dashboards.
 
+### Changed
+- Components: Use Link from `@wordpress/ui` instead of ExternalLink.
+
 ## [1.10.0] - 2026-05-04
 ### Added
 - AdminPage: Add `unwrapped` prop to render children directly inside the admin-ui Page, skipping the default Container/Col grid wrap. Use for full-bleed pages (DataViews-based admin surfaces) that own their own scroll/layout model. [#48244]
