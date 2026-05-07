@@ -1,9 +1,6 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import restApi from '@automattic/jetpack-api';
 import { Page } from '@wordpress/admin-ui';
-import '@wordpress/admin-ui/build-style/style.css';
-import { __experimentalHStack as HStack, // eslint-disable-line @wordpress/no-unsafe-wp-apis
- } from '@wordpress/components';
 import { __, sprintf } from '@wordpress/i18n';
 import clsx from 'clsx';
 import { useEffect, useCallback } from 'react';
@@ -45,13 +42,9 @@ const AdminPage = ({ children, className, showHeader = true, showFooter = true, 
             __('There was an error testing Jetpack. Error: %s', 'jetpack-components'), error.message));
         }
     }, []);
-    // Compose the title with logo for the admin-ui Page header.
-    // Page's Header wraps this in an <h2> tag, so we just pass the content directly.
-    const composedTitle = title ? (_jsxs(HStack, { spacing: 2, justify: "left", children: [logo || _jsx(JetpackLogo, { showText: false, height: 20 }), _jsx("span", { children: title })
-        ] })) : undefined;
     // When title or breadcrumbs are provided, use admin-ui Page for the full page layout.
-    if (showHeader && (composedTitle || breadcrumbs)) {
-        return (_jsx("div", { className: rootClassName, children: _jsxs(Page, { ariaLabel: title, breadcrumbs: breadcrumbs, title: composedTitle, subTitle: subTitle, actions: actions, showSidebarToggle: false, children: [tabs, unwrapped ? (children) : (_jsx(Container, { fluid: true, horizontalSpacing: 0, children: _jsx(Col, { children: children }) })), showFooter && _jsx(JetpackFooter, { menu: optionalMenuItems })] }) }));
+    if (showHeader && (title || breadcrumbs)) {
+        return (_jsx("div", { className: rootClassName, children: _jsxs(Page, { className: "jp-admin-page__page", visual: logo || _jsx(JetpackLogo, { showText: false, height: 20 }), breadcrumbs: breadcrumbs, title: title, subTitle: subTitle, actions: actions, showSidebarToggle: false, children: [tabs, unwrapped ? (children) : (_jsx(Container, { fluid: true, horizontalSpacing: 0, children: _jsx(Col, { children: children }) })), showFooter && _jsx(JetpackFooter, { menu: optionalMenuItems })] }) }));
     }
     // Legacy path: no title provided, render the classic header.
     return (_jsxs("div", { className: rootClassName, children: [showHeader && (_jsx(Container, { horizontalSpacing: 5, children: _jsxs(Col, { className: clsx(styles['admin-page-header'], 'jp-admin-page-header'), children: [header ? header : _jsx(JetpackLogo, {}), sandboxedDomain && (_jsx("code", { className: styles['sandbox-domain-badge'], onClick: testConnection, onKeyDown: testConnection, 

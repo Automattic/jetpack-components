@@ -11,7 +11,11 @@ This is an alpha version! The changes listed here are not final.
 - Add a `Gravatar` component (with hovercard support) at the `./gravatar` subpath, shared across products that render subscriber or response avatars.
 
 ### Changed
+- AdminPage: Update to @wordpress/admin-ui 2.0.0 and use the new `visual` prop to render the Jetpack logo alongside the page title.
 - Components: Use Link from `@wordpress/ui` instead of ExternalLink.
+
+### Fixed
+- AdminPage: pass a stable `jp-admin-page__page` className to admin-ui's Page so layout overrides survive admin-ui 2.0.0's switch to CSS Modules; pin the header heading level to `<h2>` and center the new `visual` slot to keep the Jetpack logo aligned with the title.
 
 ## [1.10.0] - 2026-05-04
 ### Added
