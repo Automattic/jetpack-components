@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { __ } from '@wordpress/i18n';
+import { Icon, desktop, mobile } from '@wordpress/icons';
 import clsx from 'clsx';
-import Gridicon from '../gridicon/index.js';
 import './style.scss';
 export const BoostScoreBar = ({ score, isLoading, showPrevScores, active, prevScore = 0, scoreBarType, noBoostScoreTooltip, }) => {
     if (!active) {
@@ -12,9 +12,9 @@ export const BoostScoreBar = ({ score, isLoading, showPrevScores, active, prevSc
     const mobileIconLabel = __('Mobile score', 'jetpack-components');
     const getIcon = () => {
         if (scoreBarType === 'desktop') {
-            return _jsx(Gridicon, { icon: "computer", size: 24 });
+            return _jsx(Icon, { icon: desktop, size: 24 });
         }
-        return _jsx(Gridicon, { icon: "phone", size: 24 });
+        return _jsx(Icon, { icon: mobile, size: 24 });
     };
     const getFillColor = () => {
         // This shows the loading color unless a score already exists.

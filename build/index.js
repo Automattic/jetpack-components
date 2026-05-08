@@ -27,7 +27,6 @@ export { default as JetpackFooter } from './components/jetpack-footer/index.js';
 /** @deprecated Use `Spinner` from `@wordpress/components` instead. */
 export { default as Spinner } from './components/spinner/index.js';
 export { default as Gravatar } from './components/gravatar/index.js';
-export { default as Gridicon } from './components/gridicon/index.js';
 export { default as IconTooltip } from './components/icon-tooltip/index.js';
 export { default as ActionButton } from './components/action-button/index.js';
 export { default as PricingCard } from './components/pricing-card/index.js';
