@@ -26,6 +26,10 @@
 			"types": "./build/components/admin-page/index.d.ts",
 			"default": "./build/components/admin-page/index.js"
 		},
+		"./global-notices": {
+			"types": "./build/components/global-notices/index.d.ts",
+			"default": "./build/components/global-notices/index.js"
+		},
 		"./gravatar": {
 			"types": "./build/components/gravatar/index.d.ts",
 			"default": "./build/components/gravatar/index.js"

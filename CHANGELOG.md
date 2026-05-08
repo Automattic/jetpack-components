@@ -9,6 +9,7 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Add admin-page and jetpack-footer sub-path exports for use in wp-build dashboards.
 - Add a `Gravatar` component (with hovercard support) at the `./gravatar` subpath, shared across products that render subscriber or response avatars.
+- Add global-notices sub-path export for use in wp-build dashboards.
 
 ### Changed
 - AdminPage: Update to @wordpress/admin-ui 2.0.0 and use the new `visual` prop to render the Jetpack logo alongside the page title.
