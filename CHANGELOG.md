@@ -14,6 +14,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - AdminPage: Update to @wordpress/admin-ui 2.0.0 and use the new `visual` prop to render the Jetpack logo alongside the page title.
 - Components: Use Link from `@wordpress/ui` instead of ExternalLink.
+- Update package dependencies.
 
 ### Removed
 - Remove Gridicon component. Use Icon and named icon exports from `@wordpress/icons` instead.
