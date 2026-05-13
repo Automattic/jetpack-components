@@ -1,6 +1,6 @@
 {
 	"name": "@automattic/jetpack-components",
-	"version": "1.11.0-alpha",
+	"version": "1.11.1-alpha",
 	"description": "Jetpack Components Package",
 	"homepage": "https://github.com/Automattic/jetpack/tree/HEAD/projects/js-packages/components/#readme",
 	"bugs": {
@@ -62,7 +62,7 @@
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
 		"@automattic/jetpack-api": "^1.0.24",
-		"@automattic/jetpack-boost-score-api": "^1.0.39",
+		"@automattic/jetpack-boost-score-api": "^1.0.40",
 		"@automattic/jetpack-script-data": "^0.6.3",
 		"@automattic/number-formatters": "^1.1.7",
 		"@babel/runtime": "^7",
@@ -89,7 +89,7 @@
 		"uplot-react": "1.1.4"
 	},
 	"devDependencies": {
-		"@automattic/jetpack-base-styles": "^1.2.1-alpha",
+		"@automattic/jetpack-base-styles": "^1.2.2-alpha",
 		"@babel/core": "7.29.0",
 		"@babel/preset-react": "7.28.5",
 		"@jest/globals": "30.3.0",
