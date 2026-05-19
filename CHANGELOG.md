@@ -2,13 +2,16 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [1.11.2-alpha] - unreleased
+## [1.11.3-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
 
 ### Changed
-- Components: deprecate Status; inline @wordpress/ui Text in consumers.
 - Mark ContextualUpgradeTrigger as @deprecated. Use Notice from @wordpress/ui instead. The implementation is unchanged.
+
+## [1.11.2] - 2026-05-19
+### Changed
+- Deprecate Status; inline @wordpress/ui Text in consumers. [#48711]
 
 ## [1.11.1] - 2026-05-14
 ### Changed
@@ -1792,7 +1795,8 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[1.11.2-alpha]: https://github.com/Automattic/jetpack-components/compare/1.11.1...1.11.2-alpha
+[1.11.3-alpha]: https://github.com/Automattic/jetpack-components/compare/1.11.2...1.11.3-alpha
+[1.11.2]: https://github.com/Automattic/jetpack-components/compare/1.11.1...1.11.2
 [1.11.1]: https://github.com/Automattic/jetpack-components/compare/1.11.0...1.11.1
 [1.11.0]: https://github.com/Automattic/jetpack-components/compare/1.10.0...1.11.0
 [1.10.0]: https://github.com/Automattic/jetpack-components/compare/1.9.0...1.10.0
