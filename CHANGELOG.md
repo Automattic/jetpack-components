@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Components: deprecate Status; inline @wordpress/ui Text in consumers.
+- Mark ContextualUpgradeTrigger as @deprecated. Use Notice from @wordpress/ui instead. The implementation is unchanged.
 
 ## [1.11.1] - 2026-05-14
 ### Changed
