@@ -35,8 +35,7 @@ const JetpackFooter = ({ className, menu, ...otherProps }) => {
             _jsxs(Stack, { className: "jetpack-footer__logo", direction: "row", gap: "sm", align: "center", children: [
                     _jsx(JetpackLogo, { showText: false, height: 16, "aria-hidden": "true" }), _jsx(Text, { variant: "body-md", children: "Jetpack" })
                 ] }), _jsx(Stack, { render: _jsx("ul", {}), direction: "row", gap: "lg", wrap: "wrap", children: items.map(item => {
-                    const isButton = item.role === 'button';
-                    return (_jsx("li", { children: _jsx(Text, { variant: "body-md", className: "jetpack-footer__menu-item", render: isButton ? (_jsx(Link, { render: _jsx("span", {}), tone: "neutral", variant: "default", role: item.role, tabIndex: 0, onClick: item.onClick || undefined, onKeyDown: item.onKeyDown || undefined })) : (_jsx(Link, { tone: "neutral", variant: "default", href: item.href || '', title: item.title || '', role: item.role, onClick: item.onClick || undefined, onKeyDown: item.onKeyDown || undefined })), children: item.label }) }, item.label));
+                    return (_jsx("li", { children: _jsx(Text, { variant: "body-md", className: "jetpack-footer__menu-item", render: !item.href ? (_jsx(Link, { render: _jsx("span", {}), tabIndex: 0, title: item.title || '', onClick: item.onClick || undefined, onKeyDown: item.onKeyDown || undefined, role: "button" })) : (_jsx(Link, { href: item.href, title: item.title || '', onClick: item.onClick || undefined, onKeyDown: item.onKeyDown || undefined })), children: item.label }) }, item.label));
                 }) }), _jsx("a", { className: "jetpack-footer__a8c", href: getRedirectUrl('a8c-about'), rel: "noopener noreferrer", target: "_blank", children: _jsx(AutomatticBylineLogo, { height: 8 }) })
         ] }));
 };
