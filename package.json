@@ -64,7 +64,7 @@
 		"@automattic/jetpack-api": "^1.0.26",
 		"@automattic/jetpack-boost-score-api": "^1.0.43",
 		"@automattic/jetpack-script-data": "^0.6.4",
-		"@automattic/number-formatters": "^1.1.10",
+		"@automattic/number-formatters": "^1.2.0-alpha",
 		"@babel/runtime": "^7",
 		"@gravatar-com/hovercards": "0.16.0",
 		"@wordpress/admin-ui": "2.0.0",
