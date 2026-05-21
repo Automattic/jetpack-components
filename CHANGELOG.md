@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [1.12.0-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Added
+- Add subpath exports for Button, PricingTable, and ProductPrice so they can be imported directly (e.g. from wp-build bundles that cannot import the package barrel).
+
 ## [1.11.3] - 2026-05-21
 ### Changed
 - Mark ContextualUpgradeTrigger as @deprecated. Use Notice from @wordpress/ui instead. The implementation is unchanged. [#48909]
@@ -1794,6 +1801,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[1.12.0-alpha]: https://github.com/Automattic/jetpack-components/compare/1.11.3...1.12.0-alpha
 [1.11.3]: https://github.com/Automattic/jetpack-components/compare/1.11.2...1.11.3
 [1.11.2]: https://github.com/Automattic/jetpack-components/compare/1.11.1...1.11.2
 [1.11.1]: https://github.com/Automattic/jetpack-components/compare/1.11.0...1.11.1
