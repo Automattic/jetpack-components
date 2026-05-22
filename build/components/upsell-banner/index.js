@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Card, CardBody } from '@wordpress/components';
 import { createInterpolateElement } from '@wordpress/element';
-import { Button } from '@automattic/jetpack-components';
+import Button from '../button/index.js';
 import './style.scss';
 /**
  * Upsell banner component.

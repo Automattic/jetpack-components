@@ -2,7 +2,7 @@ import { Fragment as _Fragment, jsx as _jsx, jsxs as _jsxs } from "react/jsx-run
 import { getCurrencyObject } from '@automattic/number-formatters';
 import { Button } from '@wordpress/components';
 import { sprintf, __ } from '@wordpress/i18n';
-import { LoadingPlaceholder } from '@automattic/jetpack-components';
+import LoadingPlaceholder from '../loading-placeholder/index.js';
 import TermsOfService from '../terms-of-service/index.js';
 import './style.scss';
 /**
