@@ -13,6 +13,7 @@ This is an alpha version! The changes listed here are not final.
 - Components: Replace self-imports via package name with relative imports for clarity and to remove circular-dep risk.
 
 ### Fixed
+- AdminPage: keep header height consistent across tabs so the tab strip no longer shifts vertically when switching tabs
 - Components: AdminPage SCSS module — replace `> header` selectors with `> :first-child` so they keep matching after `@wordpress/admin-ui` 2.1 changed the page header element from `<header>` to `<div>`. Mirrors the fix shipped in #49006 for the shared admin-page-layout mixin; together they resolve the publicize page header spacing regression flagged on PR #48404.
 
 ## [1.11.3] - 2026-05-21
