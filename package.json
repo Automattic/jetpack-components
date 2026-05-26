@@ -73,7 +73,7 @@
 	],
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
-		"@automattic/jetpack-api": "^1.0.26",
+		"@automattic/jetpack-api": "^1.1.0-alpha",
 		"@automattic/jetpack-boost-score-api": "^1.0.43",
 		"@automattic/jetpack-script-data": "^0.6.4",
 		"@automattic/number-formatters": "^1.2.0",
