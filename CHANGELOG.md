@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update package dependencies.
 
+### Fixed
+- PricingCard: render the CTA with the @wordpress/ui Button (solid variant) so it shows correct button styling instead of unstyled text.
+
 ## [1.12.0] - 2026-05-25
 ### Added
 - Add subpath exports for `Button`, `PricingTable`, and `ProductPrice` so they can be imported directly from bundles that cannot import the package barrel. [#49063]

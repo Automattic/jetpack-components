@@ -1,7 +1,7 @@
 import { Fragment as _Fragment, jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { getCurrencyObject } from '@automattic/number-formatters';
-import { Button } from '@wordpress/components';
 import { sprintf, __ } from '@wordpress/i18n';
+import { Button } from '@wordpress/ui';
 import LoadingPlaceholder from '../loading-placeholder/index.js';
 import TermsOfService from '../terms-of-service/index.js';
 import './style.scss';
@@ -32,7 +32,7 @@ const PricingCard = ({ currencyCode = 'USD', priceDetails = __('/month, paid yea
                         ] })), props.priceAfter > 0 && (_jsxs(_Fragment, { children: [
                             _jsxs("div", { className: "jp-components__pricing-card__price-after", children: [
                                     _jsx("span", { className: "jp-components__pricing-card__currency", children: currencyObjectAfter.symbol }), _jsx("span", { className: "jp-components__pricing-card__price", children: currencyObjectAfter.integer }), showPriceDecimals(currencyObjectAfter) && (_jsx("span", { className: "jp-components__pricing-card__price-decimal", children: currencyObjectAfter.fraction }))] }), _jsx("span", { className: "jp-components__pricing-card__price-details", children: priceDetails })
-                        ] }))] }), props.children && (_jsx("div", { className: "jp-components__pricing-card__extra-content-wrapper", children: props.children })), props.tosText && _jsx("div", { className: "jp-components__pricing-card__tos", children: props.tosText }), props.ctaText && (_jsxs(_Fragment, { children: [!props.tosText && (_jsx("div", { className: "jp-components__pricing-card__tos", children: _jsx(TermsOfService, { agreeButtonLabel: props.ctaText }) })), _jsx("div", { className: "jp-components__pricing-card__cta", children: _jsx(Button, { className: "jp-components__pricing-card__button", label: props.ctaText, onClick: props.onCtaClick, children: props.ctaText }) })
+                        ] }))] }), props.children && (_jsx("div", { className: "jp-components__pricing-card__extra-content-wrapper", children: props.children })), props.tosText && _jsx("div", { className: "jp-components__pricing-card__tos", children: props.tosText }), props.ctaText && (_jsxs(_Fragment, { children: [!props.tosText && (_jsx("div", { className: "jp-components__pricing-card__tos", children: _jsx(TermsOfService, { agreeButtonLabel: props.ctaText }) })), _jsx("div", { className: "jp-components__pricing-card__cta", children: _jsx(Button, { variant: "solid", className: "jp-components__pricing-card__button", onClick: props.onCtaClick, children: props.ctaText }) })
                 ] })), props.infoText && (_jsx("div", { className: "jp-components__pricing-card__info", children: props.infoText }))] }));
 };
 export default PricingCard;
