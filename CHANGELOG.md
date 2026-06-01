@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [1.12.2-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Fixed
+- Pricing table: render feature tooltips as a portal so they are no longer hidden behind the admin sidebar
+
 ## [1.12.1] - 2026-06-01
 ### Changed
 - Update package dependencies. [#48404]
@@ -1813,6 +1820,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[1.12.2-alpha]: https://github.com/Automattic/jetpack-components/compare/1.12.1...1.12.2-alpha
 [1.12.1]: https://github.com/Automattic/jetpack-components/compare/1.12.0...1.12.1
 [1.12.0]: https://github.com/Automattic/jetpack-components/compare/1.11.3...1.12.0
 [1.11.3]: https://github.com/Automattic/jetpack-components/compare/1.11.2...1.11.3
