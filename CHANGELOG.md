@@ -2,15 +2,12 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [1.12.1-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [1.12.1] - 2026-06-01
 ### Changed
-- Update package dependencies.
+- Update package dependencies. [#48404]
 
 ### Fixed
-- PricingCard: render the CTA with the @wordpress/ui Button (solid variant) so it shows correct button styling instead of unstyled text.
+- PricingCard: Render the CTA with the @wordpress/ui Button (solid variant) so it shows correct button styling instead of unstyled text. [#49197]
 
 ## [1.12.0] - 2026-05-25
 ### Added
@@ -1816,7 +1813,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[1.12.1-alpha]: https://github.com/Automattic/jetpack-components/compare/1.12.0...1.12.1-alpha
+[1.12.1]: https://github.com/Automattic/jetpack-components/compare/1.12.0...1.12.1
 [1.12.0]: https://github.com/Automattic/jetpack-components/compare/1.11.3...1.12.0
 [1.11.3]: https://github.com/Automattic/jetpack-components/compare/1.11.2...1.11.3
 [1.11.2]: https://github.com/Automattic/jetpack-components/compare/1.11.1...1.11.2

@@ -1,6 +1,6 @@
 {
 	"name": "@automattic/jetpack-components",
-	"version": "1.12.1-alpha",
+	"version": "1.12.1",
 	"description": "Jetpack Components Package",
 	"homepage": "https://github.com/Automattic/jetpack/tree/HEAD/projects/js-packages/components/#readme",
 	"bugs": {
@@ -101,7 +101,7 @@
 		"uplot-react": "1.1.4"
 	},
 	"devDependencies": {
-		"@automattic/jetpack-base-styles": "^1.2.5-alpha",
+		"@automattic/jetpack-base-styles": "^1.2.5",
 		"@babel/core": "7.29.0",
 		"@babel/preset-react": "7.28.5",
 		"@jest/globals": "30.4.1",
