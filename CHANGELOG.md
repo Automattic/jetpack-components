@@ -2,6 +2,10 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [1.12.3-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
 ## [1.12.2] - 2026-06-02
 ### Changed
 - AdminPage: expand the Hello Dolly normalize rule (was a single `background-color`) to cover the full visual treatment (italic, gray text, white background, right-aligned, hidden under 660px) so individual plugins don't need their own per-page overrides. No position/offsets are set so per-page `position: absolute` overrides (e.g. My Jetpack) keep working. [#48472]
@@ -1820,6 +1824,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[1.12.3-alpha]: https://github.com/Automattic/jetpack-components/compare/1.12.2...1.12.3-alpha
 [1.12.2]: https://github.com/Automattic/jetpack-components/compare/1.12.1...1.12.2
 [1.12.1]: https://github.com/Automattic/jetpack-components/compare/1.12.0...1.12.1
 [1.12.0]: https://github.com/Automattic/jetpack-components/compare/1.11.3...1.12.0
