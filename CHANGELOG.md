@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Changed
+- AdminPage: expand the Hello Dolly normalize rule (was a single `background-color`) to cover the full visual treatment (italic, gray text, white background, right-aligned, hidden under 660px) so individual plugins don't need their own per-page overrides. No position/offsets are set so per-page `position: absolute` overrides (e.g. My Jetpack) keep working.
+
 ### Fixed
 - Pricing table: render feature tooltips as a portal so they are no longer hidden behind the admin sidebar
 
