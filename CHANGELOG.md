@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [1.12.5-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Fixed
+- NavigatorModal: Don't close when a control inside the modal opens an external WP Modal (e.g. Image Studio from the Social preview Generate image button); only true overlay/backdrop clicks dismiss the modal.
+
 ## [1.12.4] - 2026-06-08
 ### Changed
 - Internal updates.
@@ -1828,6 +1835,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[1.12.5-alpha]: https://github.com/Automattic/jetpack-components/compare/1.12.4...1.12.5-alpha
 [1.12.4]: https://github.com/Automattic/jetpack-components/compare/1.12.3...1.12.4
 [1.12.3]: https://github.com/Automattic/jetpack-components/compare/1.12.2...1.12.3
 [1.12.2]: https://github.com/Automattic/jetpack-components/compare/1.12.1...1.12.2
