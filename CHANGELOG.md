@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Changed
+- Update package dependencies.
+
 ### Fixed
 - NavigatorModal: Don't close when a control inside the modal opens an external WP Modal (e.g. Image Studio from the Social preview Generate image button); only true overlay/backdrop clicks dismiss the modal.
 
