@@ -2,15 +2,16 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [1.12.5-alpha] - unreleased
+## [1.12.6-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Update package dependencies.
 
+## [1.12.5] - 2026-06-08
 ### Fixed
-- NavigatorModal: Don't close when a control inside the modal opens an external WP Modal (e.g. Image Studio from the Social preview Generate image button); only true overlay/backdrop clicks dismiss the modal.
+- NavigatorModal: Keep the modal open when the control inside opens an external WP Modal. [#49389]
 
 ## [1.12.4] - 2026-06-08
 ### Changed
@@ -22,10 +23,10 @@ This is an alpha version! The changes listed here are not final.
 
 ## [1.12.2] - 2026-06-02
 ### Changed
-- AdminPage: expand the Hello Dolly normalize rule (was a single `background-color`) to cover the full visual treatment (italic, gray text, white background, right-aligned, hidden under 660px) so individual plugins don't need their own per-page overrides. No position/offsets are set so per-page `position: absolute` overrides (e.g. My Jetpack) keep working. [#48472]
+- AdminPage: Ensure Hello Dolly doesn't require per-page overrides. [#48472]
 
 ### Fixed
-- Pricing table: render feature tooltips as a portal so they are no longer hidden behind the admin sidebar [#49318]
+- Pricing table: Render feature tooltips as a portal so they are no longer hidden behind the admin sidebar. [#49318]
 
 ## [1.12.1] - 2026-06-01
 ### Changed
@@ -1838,7 +1839,8 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[1.12.5-alpha]: https://github.com/Automattic/jetpack-components/compare/1.12.4...1.12.5-alpha
+[1.12.6-alpha]: https://github.com/Automattic/jetpack-components/compare/1.12.5...1.12.6-alpha
+[1.12.5]: https://github.com/Automattic/jetpack-components/compare/1.12.4...1.12.5
 [1.12.4]: https://github.com/Automattic/jetpack-components/compare/1.12.3...1.12.4
 [1.12.3]: https://github.com/Automattic/jetpack-components/compare/1.12.2...1.12.3
 [1.12.2]: https://github.com/Automattic/jetpack-components/compare/1.12.1...1.12.2
