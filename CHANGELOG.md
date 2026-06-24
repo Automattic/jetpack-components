@@ -2,12 +2,9 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [1.12.11-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [1.12.11] - 2026-06-24
 ### Removed
-- Remove deprecated Spinner component. Use Spinner from @wordpress/components instead.
+- Remove deprecated Spinner component. Use Spinner from @wordpress/components instead. [#49856]
 
 ## [1.12.10] - 2026-06-23
 ### Changed
@@ -1859,7 +1856,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[1.12.11-alpha]: https://github.com/Automattic/jetpack-components/compare/1.12.10...1.12.11-alpha
+[1.12.11]: https://github.com/Automattic/jetpack-components/compare/1.12.10...1.12.11
 [1.12.10]: https://github.com/Automattic/jetpack-components/compare/1.12.9...1.12.10
 [1.12.9]: https://github.com/Automattic/jetpack-components/compare/1.12.8...1.12.9
 [1.12.8]: https://github.com/Automattic/jetpack-components/compare/1.12.7...1.12.8
