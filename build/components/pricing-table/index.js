@@ -1,10 +1,10 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { useViewportMatch } from '@wordpress/compose';
 import { __, sprintf } from '@wordpress/i18n';
 import { Icon, check, closeSmall } from '@wordpress/icons';
 import clsx from 'clsx';
 import { createContext, useContext, Children, cloneElement, } from 'react';
 import IconTooltip from '../icon-tooltip/index.js';
-import useBreakpointMatch from '../layout/use-breakpoint-match/index.js';
 import TermsOfService from '../terms-of-service/index.js';
 import Text from '../text/index.js';
 import styles from './styles.module.scss';
@@ -30,7 +30,7 @@ const getItemLabels = (isComingSoon, isIncluded, featureNameLabel) => {
     };
 };
 export const PricingTableItem = ({ isIncluded = false, isComingSoon = false, index = 0, label = null, tooltipInfo, tooltipTitle, tooltipClassName = '', }) => {
-    const [isLg] = useBreakpointMatch('lg');
+    const isLg = useViewportMatch('large');
     const item = useContext(PricingTableContext)[index];
     const isExplicitlyEmpty = label === '';
     const showTick = isComingSoon || isIncluded;
@@ -61,7 +61,7 @@ export const PricingTableColumn = ({ primary = false, children, className, }) =>
         }) }));
 };
 const PricingTable = ({ title, headerLogo, items, children, showIntroOfferDisclaimer = false, }) => {
-    const [isLg] = useBreakpointMatch('lg');
+    const isLg = useViewportMatch('large');
     return (_jsxs(PricingTableContext.Provider, { value: items, children: [
             _jsx("div", { className: clsx(styles.container, { [styles['is-viewport-large']]: isLg }), style: {
                     '--rows': items.length + 1,

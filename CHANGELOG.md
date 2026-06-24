@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [1.12.12-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Fixed
+- Icon tooltip: type `iconCode` as `ReactElement` so it matches the `@wordpress/icons` Icon and `@wordpress/ui` 0.15 type definitions.
+
 ## [1.12.11] - 2026-06-24
 ### Removed
 - Remove deprecated Spinner component. Use Spinner from @wordpress/components instead. [#49856]
@@ -1856,6 +1863,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[1.12.12-alpha]: https://github.com/Automattic/jetpack-components/compare/1.12.11...1.12.12-alpha
 [1.12.11]: https://github.com/Automattic/jetpack-components/compare/1.12.10...1.12.11
 [1.12.10]: https://github.com/Automattic/jetpack-components/compare/1.12.9...1.12.10
 [1.12.9]: https://github.com/Automattic/jetpack-components/compare/1.12.8...1.12.9

@@ -36,7 +36,6 @@ export { default as DecorativeCard } from './components/decorative-card/index.js
 export { default as Col } from './components/layout/col/index.js';
 export { default as Testimonials } from './components/testimonials/index.js';
 export { default as Container } from './components/layout/container/index.js';
-export { default as useBreakpointMatch } from './components/layout/use-breakpoint-match/index.js';
 export { default as CopyToClipboard } from './components/copy-to-clipboard/index.js';
 export * from './components/icons/index.js';
 export { default as SplitButton } from './components/split-button/index.js';

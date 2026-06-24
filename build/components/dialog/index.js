@@ -1,8 +1,8 @@
 import { Fragment as _Fragment, jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { useViewportMatch } from '@wordpress/compose';
 import clsx from 'clsx';
 import Col from '../layout/col/index.js';
 import Container from '../layout/container/index.js';
-import useBreakpointMatch from '../layout/use-breakpoint-match/index.js';
 import styles from './style.module.scss';
 /**
  * Dialog component.
@@ -15,7 +15,8 @@ import styles from './style.module.scss';
  * @return {ReactNode}                 Rendered dialog
  */
 const Dialog = ({ primary, secondary, isTwoSections = false, ...containerProps }) => {
-    const [isSmall, isLowerThanLarge] = useBreakpointMatch(['sm', 'lg'], [null, '<']);
+    const isSmall = useViewportMatch('small', '<');
+    const isLowerThanLarge = useViewportMatch('large', '<');
     /*
      * By convention, secondary section is not shown when:
      * - layout is a two-sections setup
