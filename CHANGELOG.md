@@ -2,13 +2,10 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [1.12.15-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [1.12.15] - 2026-07-09
 ### Changed
-- Update package dependencies.
-- Update WPDS design tokens to the @wordpress/theme 0.16/0.17 names (see https://github.com/WordPress/gutenberg/blob/trunk/packages/theme/CHANGELOG.md#0160-2026-06-24 ).
+- Update package dependencies. [#49272]
+- Update WPDS design tokens to the @wordpress/theme 0.16/0.17 names (see https://github.com/WordPress/gutenberg/blob/trunk/packages/theme/CHANGELOG.md#0160-2026-06-24 ). [#49272]
 
 ## [1.12.14] - 2026-07-06
 ### Changed
@@ -1876,7 +1873,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[1.12.15-alpha]: https://github.com/Automattic/jetpack-components/compare/1.12.14...1.12.15-alpha
+[1.12.15]: https://github.com/Automattic/jetpack-components/compare/1.12.14...1.12.15
 [1.12.14]: https://github.com/Automattic/jetpack-components/compare/1.12.13...1.12.14
 [1.12.13]: https://github.com/Automattic/jetpack-components/compare/1.12.12...1.12.13
 [1.12.12]: https://github.com/Automattic/jetpack-components/compare/1.12.11...1.12.12
