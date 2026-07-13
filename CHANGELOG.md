@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Changed
+- Comment: Prefix --color-* variables into --jetpack-social-logo-color-* CSS variables to avoid name collisions.
+
 ### Fixed
 - Pricing table: align the highlighted column's gradient background to the right edge of the card.
 

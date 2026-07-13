@@ -1,4 +1,5 @@
 import { SocialLogo } from 'social-logos';
+import 'social-logos/colors.css';
 import { BaseIconProps } from './types.ts';
 import type { ComponentProps, FC } from 'react';
 export declare const AntiSpamIcon: FC<BaseIconProps>;

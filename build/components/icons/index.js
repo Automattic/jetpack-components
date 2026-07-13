@@ -2,6 +2,7 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Path, SVG, G, Polygon } from '@wordpress/components';
 import clsx from 'clsx';
 import { SocialLogo } from 'social-logos';
+import 'social-logos/colors.css';
 import styles from './style.module.scss';
 /**
  * Icon Wrapper component.
