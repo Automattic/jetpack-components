@@ -21,7 +21,5 @@ export function Header({ icon, title, isScreenLocked, onGoBack: onGoBackProp, on
         onCloseProp?.();
         context.onClose?.();
     }, [onCloseProp, context]);
-    return (_jsxs("div", { className: "jp-navigator-modal__header", children: [
-            _jsxs("div", { className: "jp-navigator-modal__title-wrap", children: [!isScreenLocked ? (_jsx(Button, { label: __('Go back', 'jetpack-components'), icon: isRTL() ? chevronRight : chevronLeft, onClick: onGoBack, variant: "tertiary", size: "compact" })) : null, icon, _jsx("h1", { children: title })
-                ] }), context.isDismissible ? (_jsx(Button, { size: "compact", onClick: onCloseModal, icon: close, label: __('Close', 'jetpack-components'), variant: "tertiary" })) : null] }));
+    return (_jsxs("div", { className: "jp-navigator-modal__header", children: [_jsxs("div", { className: "jp-navigator-modal__title-wrap", children: [!isScreenLocked ? (_jsx(Button, { label: __('Go back', 'jetpack-components'), icon: isRTL() ? chevronRight : chevronLeft, onClick: onGoBack, variant: "tertiary", size: "compact" })) : null, icon, _jsx("h1", { children: title })] }), context.isDismissible ? (_jsx(Button, { size: "compact", onClick: onCloseModal, icon: close, label: __('Close', 'jetpack-components'), variant: "tertiary" })) : null] }));
 }

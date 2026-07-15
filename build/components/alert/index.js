@@ -28,7 +28,6 @@ const getIconByLevel = (level) => {
  */
 const Alert = ({ level = 'warning', children, showIcon = true, className }) => {
     const classes = clsx(styles.container, styles[`is-${level}`], className);
-    return (_jsxs("div", { className: classes, children: [showIcon && (_jsx("div", { className: styles['icon-wrapper'], children: _jsx(Icon, { icon: getIconByLevel(level), className: styles.icon }) })), _jsx("div", { children: children })
-        ] }));
+    return (_jsxs("div", { className: classes, children: [showIcon && (_jsx("div", { className: styles['icon-wrapper'], children: _jsx(Icon, { icon: getIconByLevel(level), className: styles.icon }) })), _jsx("div", { children: children })] }));
 };
 export default Alert;

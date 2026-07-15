@@ -27,8 +27,6 @@ const Dialog = ({ primary, secondary, isTwoSections = false, ...containerProps }
         [styles['one-section-style']]: !isTwoSections,
         [styles['is-viewport-small']]: isSmall,
     });
-    return (_jsxs(Container, { className: classNames, horizontalSpacing: 0, horizontalGap: 0, fluid: false, ...containerProps, children: [!hideSecondarySection && (_jsxs(_Fragment, { children: [
-                    _jsx(Col, { sm: 4, md: isLowerThanLarge ? 4 : 5, lg: 7, className: styles.primary, children: primary }), _jsx(Col, { sm: 4, md: isLowerThanLarge ? 4 : 3, lg: 5, className: styles.secondary, children: secondary })
-                ] })), hideSecondarySection && _jsx(Col, { children: primary })] }));
+    return (_jsxs(Container, { className: classNames, horizontalSpacing: 0, horizontalGap: 0, fluid: false, ...containerProps, children: [!hideSecondarySection && (_jsxs(_Fragment, { children: [_jsx(Col, { sm: 4, md: isLowerThanLarge ? 4 : 5, lg: 7, className: styles.primary, children: primary }), _jsx(Col, { sm: 4, md: isLowerThanLarge ? 4 : 3, lg: 5, className: styles.secondary, children: secondary })] })), hideSecondarySection && _jsx(Col, { children: primary })] }));
 };
 export default Dialog;

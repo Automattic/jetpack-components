@@ -6,6 +6,6 @@ import type { ReactElement } from 'react';
  * @param {string} props.color - Color code for the logo text
  * @return {ReactElement} Component template
  */
-export default function AutomatticForAgenciesLogo({ color }: {
+export default function AutomatticForAgenciesLogo({ color, }: {
     color: string;
 }): ReactElement;

@@ -7,7 +7,7 @@ import type { ReactElement } from 'react';
  * @param {string} props.outerColor - Color code for the logo's outer
  * @return {ReactElement} Component template
  */
-export default function AutomatticIconLogo({ innerColor, outerColor }: {
+export default function AutomatticIconLogo({ innerColor, outerColor, }: {
     innerColor: string;
     outerColor: string;
 }): ReactElement;

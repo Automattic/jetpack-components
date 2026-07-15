@@ -33,10 +33,6 @@ const ActionPopover = ({ hideCloseButton = false, title, children, step = null, 
         /* translators: 1 Current step, 2 Total steps */
         __('%1$d of %2$d', 'jetpack-components'), step, totalSteps);
     }
-    return (_jsx(Popover, { ...popoverProps, children: _jsx(ThemeProvider, { children: _jsxs("div", { className: styles.wrapper, children: [
-                    _jsxs("div", { className: styles.header, children: [
-                            _jsx(Text, { variant: "title-small", className: styles.title, children: title }), !hideCloseButton && (_jsx(_Fragment, { children: _jsx(Button, { size: "small", variant: "tertiary", "aria-label": "close", className: styles['close-button'], icon: close, iconSize: 16, onClick: onClose }) }))] }), children, _jsxs("div", { className: styles.footer, children: [showSteps && (_jsx(Text, { variant: "body", className: styles.steps, children: stepsText })), _jsx(Button, { variant: "primary", className: styles['action-button'], disabled: buttonDisabled, onClick: onClick, isExternalLink: buttonExternalLink, href: buttonHref, children: buttonContent })
-                        ] })
-                ] }) }) }));
+    return (_jsx(Popover, { ...popoverProps, children: _jsx(ThemeProvider, { children: _jsxs("div", { className: styles.wrapper, children: [_jsxs("div", { className: styles.header, children: [_jsx(Text, { variant: "title-small", className: styles.title, children: title }), !hideCloseButton && (_jsx(_Fragment, { children: _jsx(Button, { size: "small", variant: "tertiary", "aria-label": "close", className: styles['close-button'], icon: close, iconSize: 16, onClick: onClose }) }))] }), children, _jsxs("div", { className: styles.footer, children: [showSteps && (_jsx(Text, { variant: "body", className: styles.steps, children: stepsText })), _jsx(Button, { variant: "primary", className: styles['action-button'], disabled: buttonDisabled, onClick: onClick, isExternalLink: buttonExternalLink, href: buttonHref, children: buttonContent })] })] }) }) }));
 };
 export default ActionPopover;

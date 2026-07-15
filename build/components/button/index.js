@@ -23,11 +23,9 @@ const Button = forwardRef((props, ref) => {
         [styles['is-icon-button']]: Boolean(icon) && !children,
     });
     const externalIconSize = size === 'normal' ? 20 : 16;
-    const externalIcon = isExternalLink && (_jsxs(_Fragment, { children: [
-            _jsx(Icon, { size: externalIconSize, icon: external, className: styles['external-icon'] }), _jsx(VisuallyHidden, { as: "span", children: 
+    const externalIcon = isExternalLink && (_jsxs(_Fragment, { children: [_jsx(Icon, { size: externalIconSize, icon: external, className: styles['external-icon'] }), _jsx(VisuallyHidden, { as: "span", children: 
                 /* translators: accessibility text */
-                __('(opens in a new tab)', 'jetpack-components') })
-        ] }));
+                __('(opens in a new tab)', 'jetpack-components') })] }));
     const externalTarget = isExternalLink ? '_blank' : undefined;
     // ref https://github.com/WordPress/gutenberg/pull/44198
     const hasChildren = children?.[0] &&

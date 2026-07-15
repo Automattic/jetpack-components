@@ -47,8 +47,6 @@ const DotPager = ({ hasDynamicHeight = false, children, className = '', onPageSe
     const handleMouseLeave = useCallback(() => {
         setIsPaused(false);
     }, []);
-    return (_jsxs("div", { className: clsx('dot-pager', className), onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave, ...props, children: [
-            _jsx(Controls, { currentPage: currentPage, numberOfPages: numPages, setCurrentPage: handleSelectPage, tracksPrefix: tracksPrefix, tracksFn: tracksFn }), _jsx(Swipeable, { hasDynamicHeight: hasDynamicHeight, onPageSelect: handleSelectPage, currentPage: currentPage, pageClassName: "dot-pager__page", containerClassName: "dot-pager__pages", isClickEnabled: isClickEnabled, children: normalizedChildren })
-        ] }));
+    return (_jsxs("div", { className: clsx('dot-pager', className), onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave, ...props, children: [_jsx(Controls, { currentPage: currentPage, numberOfPages: numPages, setCurrentPage: handleSelectPage, tracksPrefix: tracksPrefix, tracksFn: tracksFn }), _jsx(Swipeable, { hasDynamicHeight: hasDynamicHeight, onPageSelect: handleSelectPage, currentPage: currentPage, pageClassName: "dot-pager__page", containerClassName: "dot-pager__pages", isClickEnabled: isClickEnabled, children: normalizedChildren })] }));
 };
 export default DotPager;

@@ -54,5 +54,5 @@ export type GravatarProps = {
  * @param props.useHovercard - Whether to attach the Gravatar profile hovercard.
  * @return The Gravatar avatar `<img>`, or null when no email is available.
  */
-export default function Gravatar({ defaultImage, displayName, email, size, className, useHovercard }: GravatarProps): JSX.Element | null;
+export default function Gravatar({ defaultImage, displayName, email, size, className, useHovercard, }: GravatarProps): JSX.Element | null;
 export {};

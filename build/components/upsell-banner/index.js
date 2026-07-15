@@ -14,13 +14,8 @@ import './style.scss';
  */
 const UpsellBanner = props => {
     const { icon, title, description, primaryCtaLabel, primaryCtaURL, primaryCtaIsExternalLink, primaryCtaOnClick, secondaryCtaLabel, secondaryCtaURL, secondaryCtaIsExternalLink, secondaryCtaOnClick, } = props;
-    return (_jsx(Card, { isRounded: true, size: "large", children: _jsxs(CardBody, { className: "upsell-banner", size: "large", children: [icon && (_jsx("div", { className: "upsell-banner--icon", children: _jsx("img", { src: icon, alt: "" }) })), _jsxs("div", { className: "upsell-banner--content", children: [
-                        _jsxs("div", { className: "upsell-banner--content-info", children: [
-                                _jsx("h3", { children: title }), _jsx("p", { children: createInterpolateElement(description, {
+    return (_jsx(Card, { isRounded: true, size: "large", children: _jsxs(CardBody, { className: "upsell-banner", size: "large", children: [icon && (_jsx("div", { className: "upsell-banner--icon", children: _jsx("img", { src: icon, alt: "" }) })), _jsxs("div", { className: "upsell-banner--content", children: [_jsxs("div", { className: "upsell-banner--content-info", children: [_jsx("h3", { children: title }), _jsx("p", { children: createInterpolateElement(description, {
                                         br: _jsx("br", {}),
-                                    }) })
-                            ] }), _jsxs("div", { className: "upsell-banner--content-cta", children: [secondaryCtaLabel && secondaryCtaURL && (_jsx(Button, { className: "upsell-banner--content-cta-button secondary", href: secondaryCtaURL, onClick: secondaryCtaOnClick ?? undefined, isExternalLink: secondaryCtaIsExternalLink, children: secondaryCtaLabel })), primaryCtaLabel && primaryCtaURL && (_jsx(Button, { className: "upsell-banner--content-cta-button primary", href: primaryCtaURL, onClick: primaryCtaOnClick ?? undefined, isExternalLink: primaryCtaIsExternalLink, children: primaryCtaLabel }))] })
-                    ] })
-            ] }) }));
+                                    }) })] }), _jsxs("div", { className: "upsell-banner--content-cta", children: [secondaryCtaLabel && secondaryCtaURL && (_jsx(Button, { className: "upsell-banner--content-cta-button secondary", href: secondaryCtaURL, onClick: secondaryCtaOnClick ?? undefined, isExternalLink: secondaryCtaIsExternalLink, children: secondaryCtaLabel })), primaryCtaLabel && primaryCtaURL && (_jsx(Button, { className: "upsell-banner--content-cta-button primary", href: primaryCtaURL, onClick: primaryCtaOnClick ?? undefined, isExternalLink: primaryCtaIsExternalLink, children: primaryCtaLabel }))] })] })] }) }));
 };
 export default UpsellBanner;

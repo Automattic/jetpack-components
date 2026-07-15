@@ -21,8 +21,7 @@ export function Footer({ children, actions, isScreenLocked, className, ...props 
             context.onClose?.();
         }
     }, [isScreenLocked, navigator, context]);
-    return (_jsxs(Flex, { className: clsx('jp-navigator-modal__footer', className), ...props, children: [
-            _jsx(FlexBlock, { children: children }), actions ? (_jsx(FlexItem, { children: _jsx(Flex, { children: actions.map((action, index) => {
+    return (_jsxs(Flex, { className: clsx('jp-navigator-modal__footer', className), ...props, children: [_jsx(FlexBlock, { children: children }), actions ? (_jsx(FlexItem, { children: _jsx(Flex, { children: actions.map((action, index) => {
                         if (typeof action === 'function') {
                             return action({ navigate });
                         }

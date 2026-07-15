@@ -9,8 +9,6 @@ const SplitButton = ({ variant, controls, popoverProps, toggleProps, label, ...b
         className: styles.button,
         ...buttonProps,
     };
-    return (_jsx(Flex, { className: styles['split-button'], children: _jsxs("div", { role: "group", className: "components-button-group", children: [
-                _jsx(Button, { ...wpButtonProps }), _jsx(DropdownMenu, { toggleProps: { variant, className: styles.button, ...toggleProps }, popoverProps: { noArrow: false, ...popoverProps }, icon: _jsx(DownIcon, {}), disableOpenOnArrowDown: true, controls: controls, label: label })
-            ] }) }));
+    return (_jsx(Flex, { className: styles['split-button'], children: _jsxs("div", { role: "group", className: "components-button-group", children: [_jsx(Button, { ...wpButtonProps }), _jsx(DropdownMenu, { toggleProps: { variant, className: styles.button, ...toggleProps }, popoverProps: { noArrow: false, ...popoverProps }, icon: _jsx(DownIcon, {}), disableOpenOnArrowDown: true, controls: controls, label: label })] }) }));
 };
 export default SplitButton;

@@ -24,8 +24,6 @@ const Status = ({ className, label, status = 'inactive' }) => {
     };
     return (_jsxs(Text, { variant: "body-extra-small", className: clsx(styles.status, {
             [styles[`is-${status}`]]: status,
-        }, className), children: [
-            _jsx("span", { className: styles.status__indicator }), _jsx("span", { className: styles.status__label, children: label || label === '' ? label : defaultLabels[status] })
-        ] }));
+        }, className), children: [_jsx("span", { className: styles.status__indicator }), _jsx("span", { className: styles.status__label, children: label || label === '' ? label : defaultLabels[status] })] }));
 };
 export default Status;

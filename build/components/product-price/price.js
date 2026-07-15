@@ -16,6 +16,5 @@ export const Price = ({ value, currency, isOff, hidePriceFraction, inline = fals
     });
     const { symbol, integer, fraction } = getCurrencyObject(value, currency);
     const showPriceFraction = !hidePriceFraction || !fraction.endsWith('00');
-    return (_jsxs(Text, { className: classNames, variant: "headline-medium", component: "p", children: [inline ? (_jsxs(_Fragment, { children: [symbol, integer] })) : (_jsxs(_Fragment, { children: [
-                    _jsx(Text, { className: styles.symbol, component: "sup", variant: "title-medium", children: symbol }), integer] })), showPriceFraction && (_jsx(Text, { component: "sup", variant: "body-small", "data-testid": "PriceFraction", children: _jsx("strong", { children: fraction }) }))] }));
+    return (_jsxs(Text, { className: classNames, variant: "headline-medium", component: "p", children: [inline ? (_jsxs(_Fragment, { children: [symbol, integer] })) : (_jsxs(_Fragment, { children: [_jsx(Text, { className: styles.symbol, component: "sup", variant: "title-medium", children: symbol }), integer] })), showPriceFraction && (_jsx(Text, { component: "sup", variant: "body-small", "data-testid": "PriceFraction", children: _jsx("strong", { children: fraction }) }))] }));
 };

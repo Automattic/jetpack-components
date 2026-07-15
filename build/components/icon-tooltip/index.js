@@ -70,8 +70,6 @@ const IconTooltip = ({ className = '', iconClassName = '', placement = 'bottom-e
             setHoverTimeout(id);
         }
     }, [hoverShow]);
-    return (_jsxs("div", { className: wrapperClassNames, "data-testid": "icon-tooltip_wrapper", onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave, children: [!isAnchorWrapper && (_jsx(Button, { variant: "link", onMouseDown: toggleTooltip, children: _jsx(Icon, { className: iconClassName, icon: iconCode, size: iconSize }) })), _jsx("div", { className: clsx('icon-tooltip-helper', { 'is-wide': wide }), style: iconShiftBySize, children: (isForcedToShow || isVisible) && (_jsx(Popover, { ...args, children: _jsxs("div", { children: [title && _jsx("div", { className: "icon-tooltip-title", children: title }), _jsx("div", { className: "icon-tooltip-content", children: children })
-                        ] }) })) })
-        ] }));
+    return (_jsxs("div", { className: wrapperClassNames, "data-testid": "icon-tooltip_wrapper", onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave, children: [!isAnchorWrapper && (_jsx(Button, { variant: "link", onMouseDown: toggleTooltip, children: _jsx(Icon, { className: iconClassName, icon: iconCode, size: iconSize }) })), _jsx("div", { className: clsx('icon-tooltip-helper', { 'is-wide': wide }), style: iconShiftBySize, children: (isForcedToShow || isVisible) && (_jsx(Popover, { ...args, children: _jsxs("div", { children: [title && _jsx("div", { className: "icon-tooltip-title", children: title }), _jsx("div", { className: "icon-tooltip-content", children: children })] }) })) })] }));
 };
 export default IconTooltip;

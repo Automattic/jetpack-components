@@ -275,16 +275,14 @@ export const Swipeable = ({ hasDynamicHeight = false, children, currentPage = 0,
         return null;
     }, [handleDragStart, handleDrag, handleDragEnd]);
     const offset = getOffset(currentPage);
-    return (_jsxs(_Fragment, { children: [
-            _createElement("div", { ...getTouchEvents(), className: "swipeable__container", ref: pagesRef, ...otherProps, 
+    return (_jsxs(_Fragment, { children: [_createElement("div", { ...getTouchEvents(), className: "swipeable__container", ref: pagesRef, ...otherProps, 
                 // Ensure that state is reset when the window is resized
                 key: containerWidth?.toString() },
                 _jsxs("div", { className: clsx('swipeable__pages', containerClassName), style: {
                         ...pagesStyle,
                         width: getPagesWidth(containerWidth, numPages + 2),
                         transform: `translate3d(${offset}px, 0px, 0px)`,
-                    }, onTransitionEnd: handleTransitionEnd, children: [
-                        _jsx("div", { style: { width: `${containerWidth}px` }, className: clsx('swipeable__page', pageClassName, {
+                    }, onTransitionEnd: handleTransitionEnd, children: [_jsx("div", { style: { width: `${containerWidth}px` }, className: clsx('swipeable__page', pageClassName, {
                                 'is-clone': true,
                                 'is-prev': currentPage === 0,
                             }), children: Children.toArray(children)[numPages - 1] }, `clone-prev-${numPages - 1}`), Children.map(children, (child, index) => (_jsx("div", { style: { width: `${containerWidth}px` }, className: clsx('swipeable__page', pageClassName, {
@@ -294,8 +292,6 @@ export const Swipeable = ({ hasDynamicHeight = false, children, currentPage = 0,
                             }), "data-testid": `swipeable-page-${index + 1}`, children: child }, `page-${index}`))), _jsx("div", { style: { width: `${containerWidth}px` }, className: clsx('swipeable__page', pageClassName, {
                                 'is-clone': true,
                                 'is-next': currentPage === numPages - 1,
-                            }), children: Children.toArray(children)[0] }, `clone-next-0`)
-                    ] })), _jsx("div", { ref: resizeObserverRef, className: "swipeable__resize-observer" })
-        ] }));
+                            }), children: Children.toArray(children)[0] }, `clone-next-0`)] })), _jsx("div", { ref: resizeObserverRef, className: "swipeable__resize-observer" })] }));
 };
 export default Swipeable;
