@@ -10,6 +10,9 @@ This is an alpha version! The changes listed here are not final.
 - PricingTable: add optional `breakpoint` prop to control the viewport width at which offers switch from columns to stacked blocks (defaults to 'large').
 - Update package dependencies.
 
+### Fixed
+- Jetpack Footer: add explicit `display: flex` so the footer lays out horizontally on WordPress.com Simple sites instead of stacking vertically.
+
 ## [1.12.16] - 2026-07-13
 ### Fixed
 - Pricing table: Align the highlighted column's gradient background to the right edge of the card. [#50346]
