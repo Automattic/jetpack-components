@@ -30,8 +30,8 @@ const getItemLabels = (isComingSoon, isIncluded, featureNameLabel) => {
     };
 };
 export const PricingTableItem = ({ isIncluded = false, isComingSoon = false, index = 0, label = null, tooltipInfo, tooltipTitle, tooltipClassName = '', }) => {
-    const isLg = useViewportMatch('large');
-    const item = useContext(PricingTableContext)[index];
+    const { items, isLg } = useContext(PricingTableContext);
+    const item = items[index];
     const isExplicitlyEmpty = label === '';
     const showTick = isComingSoon || isIncluded;
     const featureNameLabel = item.name;
@@ -58,9 +58,9 @@ export const PricingTableColumn = ({ primary = false, children, className, }) =>
             return item;
         }) }));
 };
-const PricingTable = ({ title, headerLogo, items, children, showIntroOfferDisclaimer = false, }) => {
-    const isLg = useViewportMatch('large');
-    return (_jsxs(PricingTableContext.Provider, { value: items, children: [_jsx("div", { className: clsx(styles.container, { [styles['is-viewport-large']]: isLg }), style: {
+const PricingTable = ({ title, headerLogo, items, children, showIntroOfferDisclaimer = false, breakpoint = 'large', }) => {
+    const isLg = useViewportMatch(breakpoint);
+    return (_jsxs(PricingTableContext.Provider, { value: { items, isLg }, children: [_jsx("div", { className: clsx(styles.container, { [styles['is-viewport-large']]: isLg }), style: {
                     '--rows': items.length + 1,
                     '--columns': Children.toArray(children).length + 1,
                 }, children: _jsxs("div", { className: styles.table, children: [_jsxs("div", { children: [headerLogo && _jsx("div", { className: styles['header-logo'], children: headerLogo }), _jsx(Text, { variant: "headline-small", className: styles.tableTitle, children: title })] }), isLg &&
