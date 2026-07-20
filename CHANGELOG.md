@@ -2,16 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [1.12.17-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [1.12.17] - 2026-07-20
 ### Changed
-- PricingTable: add optional `breakpoint` prop to control the viewport width at which offers switch from columns to stacked blocks (defaults to 'large').
-- Update package dependencies.
+- PricingTable: Add optional `breakpoint` prop to control the viewport width at which offers switch from columns to stacked blocks (defaults to 'large'). [#50567]
+- Update package dependencies. [#50510] [#50529]
 
 ### Fixed
-- Jetpack Footer: add explicit `display: flex` so the footer lays out horizontally on WordPress.com Simple sites instead of stacking vertically.
+- Jetpack Footer: Add explicit `display: flex` so the footer lays out horizontally on WordPress.com Simple sites instead of stacking vertically. [#50637]
 
 ## [1.12.16] - 2026-07-13
 ### Fixed
@@ -1888,7 +1885,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[1.12.17-alpha]: https://github.com/Automattic/jetpack-components/compare/1.12.16...1.12.17-alpha
+[1.12.17]: https://github.com/Automattic/jetpack-components/compare/1.12.16...1.12.17
 [1.12.16]: https://github.com/Automattic/jetpack-components/compare/1.12.15...1.12.16
 [1.12.15]: https://github.com/Automattic/jetpack-components/compare/1.12.14...1.12.15
 [1.12.14]: https://github.com/Automattic/jetpack-components/compare/1.12.13...1.12.14
