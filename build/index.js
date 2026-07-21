@@ -28,7 +28,6 @@ export { default as Gravatar } from './components/gravatar/index.js';
 export { default as IconTooltip } from './components/icon-tooltip/index.js';
 export { default as ActionButton } from './components/action-button/index.js';
 export { default as PricingCard } from './components/pricing-card/index.js';
-export { default as NumberSlider } from './components/number-slider/index.js';
 export { default as AdminSection } from './components/admin-section/basic/index.js';
 export { default as AdminSectionHero } from './components/admin-section/hero/index.js';
 export { default as AdminPage } from './components/admin-page/index.js';

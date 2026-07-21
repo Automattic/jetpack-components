@@ -2,13 +2,16 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [1.12.17-alpha] - unreleased
+## [2.0.0-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - PricingTable: add optional `breakpoint` prop to control the viewport width at which offers switch from columns to stacked blocks (defaults to 'large').
 - Update package dependencies.
+
+### Removed
+- Number Slider: remove the NumberSlider component. It wrapped the unmaintained react-slider dependency (which blocked React 19) and had a single consumer; use the WordPress RangeControl component from @wordpress/components directly instead.
 
 ### Fixed
 - Jetpack Footer: add explicit `display: flex` so the footer lays out horizontally on WordPress.com Simple sites instead of stacking vertically.
@@ -1888,7 +1891,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[1.12.17-alpha]: https://github.com/Automattic/jetpack-components/compare/1.12.16...1.12.17-alpha
+[2.0.0-alpha]: https://github.com/Automattic/jetpack-components/compare/1.12.16...2.0.0-alpha
 [1.12.16]: https://github.com/Automattic/jetpack-components/compare/1.12.15...1.12.16
 [1.12.15]: https://github.com/Automattic/jetpack-components/compare/1.12.14...1.12.15
 [1.12.14]: https://github.com/Automattic/jetpack-components/compare/1.12.13...1.12.14
