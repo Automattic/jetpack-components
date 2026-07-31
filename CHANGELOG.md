@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [2.1.0-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Decorative card: build on the shared Card component, inline the unlink glyph, and hide the card from assistive technology.
+
 ## [2.0.1] - 2026-07-27
 ### Changed
 - Update package dependencies. [#50751]
@@ -1893,6 +1900,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[2.1.0-alpha]: https://github.com/Automattic/jetpack-components/compare/2.0.1...2.1.0-alpha
 [2.0.1]: https://github.com/Automattic/jetpack-components/compare/2.0.0...2.0.1
 [2.0.0]: https://github.com/Automattic/jetpack-components/compare/1.12.17...2.0.0
 [1.12.17]: https://github.com/Automattic/jetpack-components/compare/1.12.16...1.12.17
