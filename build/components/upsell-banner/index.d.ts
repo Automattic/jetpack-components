@@ -6,6 +6,7 @@ import './style.scss';
  *
  * - The primary CTA is the second button, at the right position.
  * - The secondary CTA is the first button, at the left position.
+ * - Passing `onDismiss` renders a close button in the top corner of the banner.
  *
  * @param {UpsellBannerProps} props - Component props.
  * @return {ReactNode} - UpsellBanner component.

@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [2.3.0-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Added
+- Upsell Banner: Add an optional dismiss button.
+
 ## [2.2.0] - 2026-08-19
 ### Added
 - Gravatar: pick a stable Color Studio background color per email for initials identity avatars via bg_color [#50578]
@@ -1905,6 +1912,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[2.3.0-alpha]: https://github.com/Automattic/jetpack-components/compare/2.2.0...2.3.0-alpha
 [2.2.0]: https://github.com/Automattic/jetpack-components/compare/2.1.1...2.2.0
 [2.1.1]: https://github.com/Automattic/jetpack-components/compare/2.1.0...2.1.1
 [2.1.0]: https://github.com/Automattic/jetpack-components/compare/2.0.1...2.1.0
