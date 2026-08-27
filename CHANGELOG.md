@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Upsell Banner: Add an optional dismiss button.
 
+### Changed
+- Update package dependencies.
+
 ## [2.2.0] - 2026-08-19
 ### Added
 - Gravatar: pick a stable Color Studio background color per email for initials identity avatars via bg_color [#50578]
