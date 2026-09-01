@@ -20,5 +20,5 @@ export interface DecorativeCardProps extends Omit<ComponentProps<'div'>, 'childr
  * @param {DecorativeCardProps} props - The properties.
  * @return {import('react').ReactNode} - The DecorativeCard component.
  */
-declare function DecorativeCard({ format, icon, imageUrl, className, ...rest }: DecorativeCardProps): import("react/jsx-runtime").JSX.Element;
+declare function DecorativeCard({ format, icon, imageUrl, className, ...rest }: DecorativeCardProps): import("react").JSX.Element;
 export default DecorativeCard;

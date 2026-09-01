@@ -42,4 +42,4 @@ export type ScreenProps = Omit<React.ComponentProps<typeof Navigator.Screen>, 'c
  *
  * @return The rendered screen.
  */
-export declare function Screen({ path, className, title, sidebar, headerIcon, isScreenLocked, onGoBack, onClose, footerContent, footerActions, children, content, ...props }: ScreenProps): import("react/jsx-runtime").JSX.Element;
+export declare function Screen({ path, className, title, sidebar, headerIcon, isScreenLocked, onGoBack, onClose, footerContent, footerActions, children, content, ...props }: ScreenProps): import("react").JSX.Element;

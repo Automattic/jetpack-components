@@ -10,5 +10,5 @@ type DotPagerProps = {
     tracksPrefix?: string;
     tracksFn?: (eventName: string, data?: Record<string, unknown>) => void;
 };
-declare const DotPager: ({ hasDynamicHeight, children, className, onPageSelected, isClickEnabled, rotateTime, tracksPrefix, tracksFn, ...props }: DotPagerProps) => import("react/jsx-runtime").JSX.Element;
+declare const DotPager: ({ hasDynamicHeight, children, className, onPageSelected, isClickEnabled, rotateTime, tracksPrefix, tracksFn, ...props }: DotPagerProps) => import("react").JSX.Element;
 export default DotPager;

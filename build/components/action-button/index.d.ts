@@ -1,4 +1,4 @@
-declare function ActionButton(props: any): import("react/jsx-runtime").JSX.Element;
+declare function ActionButton(props: any): import("react").JSX.Element;
 declare namespace ActionButton {
     var propTypes: {
         /** The button label. */

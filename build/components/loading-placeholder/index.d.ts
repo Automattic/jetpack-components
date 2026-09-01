@@ -4,5 +4,5 @@ declare const LoadingPlaceholder: ({ children, width, height, className, }: {
     width?: number | string;
     height?: number;
     className?: string;
-}) => import("react/jsx-runtime").JSX.Element;
+}) => import("react").JSX.Element;
 export default LoadingPlaceholder;

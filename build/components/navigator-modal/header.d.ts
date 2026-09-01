@@ -26,4 +26,4 @@ export type HeaderProps = {
  *
  * @return component
  */
-export declare function Header({ icon, title, isScreenLocked, onGoBack: onGoBackProp, onClose: onCloseProp, }: HeaderProps): import("react/jsx-runtime").JSX.Element;
+export declare function Header({ icon, title, isScreenLocked, onGoBack: onGoBackProp, onClose: onCloseProp, }: HeaderProps): import("react").JSX.Element;

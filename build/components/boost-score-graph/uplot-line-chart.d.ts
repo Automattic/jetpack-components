@@ -23,5 +23,5 @@ interface UplotChartProps {
  * @param {Annotation[]}                           props.annotations - The annotations to display in the chart.
  * @return {ReactElement} The JSX element representing the UplotLineChart component.
  */
-export default function UplotLineChart({ range, periods, annotations }: UplotChartProps): import("react/jsx-runtime").JSX.Element;
+export default function UplotLineChart({ range, periods, annotations }: UplotChartProps): import("react").JSX.Element;
 export {};

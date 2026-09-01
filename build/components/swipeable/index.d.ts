@@ -8,5 +8,5 @@ export declare const Swipeable: ({ hasDynamicHeight, children, currentPage, onPa
     isClickEnabled: any;
     onPageSelect: any;
     pageClassName: any;
-}) => import("react/jsx-runtime").JSX.Element;
+}) => import("react").JSX.Element;
 export default Swipeable;

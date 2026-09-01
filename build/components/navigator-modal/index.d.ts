@@ -11,7 +11,7 @@ type NavigatorModalProps = Omit<ModalProps, 'onRequestClose'> & TNavigatorModalC
  *
  * @return Component
  */
-declare function NavigatorModalMain({ children, className, initialPath, onClose, isDismissible, ...props }: NavigatorModalProps): import("react/jsx-runtime").JSX.Element;
+declare function NavigatorModalMain({ children, className, initialPath, onClose, isDismissible, ...props }: NavigatorModalProps): import("react").JSX.Element;
 export declare const NavigatorModal: typeof NavigatorModalMain & {
     Screen: typeof Screen & {
         displayName: string;

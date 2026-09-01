@@ -12,4 +12,4 @@ export type FooterProps = React.HTMLAttributes<HTMLDivElement> & {
  *
  * @return The rendered footer.
  */
-export declare function Footer({ children, actions, isScreenLocked, className, ...props }: FooterProps): import("react/jsx-runtime").JSX.Element;
+export declare function Footer({ children, actions, isScreenLocked, className, ...props }: FooterProps): import("react").JSX.Element;

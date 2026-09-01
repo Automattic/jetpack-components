@@ -1,4 +1,4 @@
 declare const MarkedLines: ({ context }: {
     context: any;
-}) => import("react/jsx-runtime").JSX.Element;
+}) => import("react").JSX.Element;
 export default MarkedLines;
