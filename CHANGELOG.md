@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [2.3.1-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Update package dependencies.
+
 ## [2.3.0] - 2026-09-01
 ### Added
 - Upsell Banner: Add an optional dismiss button. [#51441]
@@ -1912,6 +1919,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[2.3.1-alpha]: https://github.com/Automattic/jetpack-components/compare/2.3.0...2.3.1-alpha
 [2.3.0]: https://github.com/Automattic/jetpack-components/compare/2.2.0...2.3.0
 [2.2.0]: https://github.com/Automattic/jetpack-components/compare/2.1.1...2.2.0
 [2.1.1]: https://github.com/Automattic/jetpack-components/compare/2.1.0...2.1.1
