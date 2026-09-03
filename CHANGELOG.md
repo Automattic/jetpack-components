@@ -2,12 +2,15 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [2.3.1-alpha] - unreleased
+## [3.0.0-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Update package dependencies.
+
+### Removed
+- Remove the deprecated Chip component. Use Badge from @wordpress/ui instead.
 
 ## [2.3.0] - 2026-09-01
 ### Added
@@ -1919,7 +1922,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[2.3.1-alpha]: https://github.com/Automattic/jetpack-components/compare/2.3.0...2.3.1-alpha
+[3.0.0-alpha]: https://github.com/Automattic/jetpack-components/compare/2.3.0...3.0.0-alpha
 [2.3.0]: https://github.com/Automattic/jetpack-components/compare/2.2.0...2.3.0
 [2.2.0]: https://github.com/Automattic/jetpack-components/compare/2.1.1...2.2.0
 [2.1.1]: https://github.com/Automattic/jetpack-components/compare/2.1.0...2.1.1

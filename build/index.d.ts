@@ -34,7 +34,6 @@ export { default as Button } from './components/button/index.tsx';
 export type { ButtonProps } from './components/button/types.ts';
 export { default as LoadingPlaceholder } from './components/loading-placeholder/index.tsx';
 export { default as TermsOfService } from './components/terms-of-service/index.tsx';
-export { default as Chip } from './components/chip/index.tsx';
 export { default as PricingTable, PricingTableColumn, PricingTableHeader, PricingTableItem, } from './components/pricing-table/index.tsx';
 export { default as BoostScoreBar } from './components/boost-score-bar/index.tsx';
 export { default as BoostScoreGraph } from './components/boost-score-graph/index.tsx';

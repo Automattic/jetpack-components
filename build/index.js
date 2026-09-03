@@ -46,7 +46,6 @@ export { default as QRCode } from './components/qr-code/index.js';
 export { default as Button } from './components/button/index.js';
 export { default as LoadingPlaceholder } from './components/loading-placeholder/index.js';
 export { default as TermsOfService } from './components/terms-of-service/index.js';
-export { default as Chip } from './components/chip/index.js';
 export { default as PricingTable, PricingTableColumn, PricingTableHeader, PricingTableItem, } from './components/pricing-table/index.js';
 export { default as BoostScoreBar } from './components/boost-score-bar/index.js';
 export { default as BoostScoreGraph } from './components/boost-score-graph/index.js';
