@@ -2,19 +2,16 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [3.0.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [3.0.0] - 2026-09-08
 ### Changed
-- Update package dependencies.
+- Update package dependencies. [#51701]
 
 ### Removed
-- Remove the deprecated Chip component. Use Badge from @wordpress/ui instead.
-- Remove unused Alert, ContextualUpgradeTrigger, Dialog, IconsCard, JetpackProtectLogo, JetpackSearchLogo, JetpackVideoPressLogo, ProductOffer, RadioControl, SplitButton, Status, and ToggleControl components.
+- Remove the deprecated Chip component in favor of Badge from @wordpress/ui. [#51927]
+- Remove unused components. [#51976]
 
 ### Fixed
-- Admin page: Fix the page overlapping the admin menu in right-to-left languages.
+- Admin page: Fix the page overlapping the admin menu in right-to-left languages. [#51963]
 
 ## [2.3.0] - 2026-09-01
 ### Added
@@ -1926,7 +1923,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[3.0.0-alpha]: https://github.com/Automattic/jetpack-components/compare/2.3.0...3.0.0-alpha
+[3.0.0]: https://github.com/Automattic/jetpack-components/compare/2.3.0...3.0.0
 [2.3.0]: https://github.com/Automattic/jetpack-components/compare/2.2.0...2.3.0
 [2.2.0]: https://github.com/Automattic/jetpack-components/compare/2.1.1...2.2.0
 [2.1.1]: https://github.com/Automattic/jetpack-components/compare/2.1.0...2.1.1
