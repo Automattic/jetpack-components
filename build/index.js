@@ -13,10 +13,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, see <https://www.gnu.org/licenses/>.
 */
 export { default as JetpackLogo } from './components/jetpack-logo/index.js';
-export { default as JetpackSearchLogo } from './components/jetpack-search-logo/index.js';
-export { default as JetpackProtectLogo } from './components/jetpack-protect-logo/index.js';
 export { default as JetpackVaultPressBackupLogo } from './components/jetpack-vaultpress-backup-logo/index.js';
-export { default as JetpackVideoPressLogo } from './components/jetpack-videopress-logo/index.js';
 export { default as getRedirectUrl } from './tools/jp-redirect/index.js';
 export { default as getProductCheckoutUrl } from './tools/get-product-checkout-url/index.js';
 export { isFirstMonthTrial } from './tools/pricing-utils/index.js';
@@ -37,10 +34,8 @@ export { default as Testimonials } from './components/testimonials/index.js';
 export { default as Container } from './components/layout/container/index.js';
 export { default as CopyToClipboard } from './components/copy-to-clipboard/index.js';
 export * from './components/icons/index.js';
-export { default as SplitButton } from './components/split-button/index.js';
 export { default as ThemeProvider } from './components/theme-provider/index.js';
 export { default as Text, H2, H3, Title } from './components/text/index.js';
-export { default as ToggleControl } from './components/toggle-control/index.js';
 export { default as NumberControl } from './components/number-control/index.js';
 export { default as QRCode } from './components/qr-code/index.js';
 export { default as Button } from './components/button/index.js';
@@ -50,23 +45,17 @@ export { default as PricingTable, PricingTableColumn, PricingTableHeader, Pricin
 export { default as BoostScoreBar } from './components/boost-score-bar/index.js';
 export { default as BoostScoreGraph } from './components/boost-score-graph/index.js';
 export { default as ProductPrice } from './components/product-price/index.js';
-export { default as ProductOffer, IconsCard } from './components/product-offer/index.js';
-export { default as Dialog } from './components/dialog/index.js';
 export { default as DotPager } from './components/dot-pager/index.js';
 export { default as DonutMeter } from './components/donut-meter/index.js';
 export { default as RecordMeterBar } from './components/record-meter-bar/index.js';
-export { default as ContextualUpgradeTrigger } from './components/contextual-upgrade-trigger/index.js';
-export { default as Alert } from './components/alert/index.js';
 export { default as Notice } from './components/notice/index.js';
 export { default as Popover } from './components/popover/index.js';
-export { default as Status } from './components/status/index.js';
 export { default as IndeterminateProgressBar } from './components/indeterminate-progress-bar/index.js';
 export { default as ActionPopover } from './components/action-popover/index.js';
 export { default as ZendeskChat } from './components/zendesk-chat/index.js';
 export { default as ProgressBar } from './components/progress-bar/index.js';
 export { default as UpsellBanner } from './components/upsell-banner/index.js';
 export { getUserLocale, cleanLocale } from './lib/locale/index.js';
-export { default as RadioControl } from './components/radio-control/index.js';
 export { default as StatCard } from './components/stat-card/index.js';
 export { default as DiffViewer } from './components/diff-viewer/index.js';
 export { default as MarkedLines } from './components/marked-lines/index.js';

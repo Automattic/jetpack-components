@@ -11,6 +11,10 @@ This is an alpha version! The changes listed here are not final.
 
 ### Removed
 - Remove the deprecated Chip component. Use Badge from @wordpress/ui instead.
+- Remove unused Alert, ContextualUpgradeTrigger, Dialog, IconsCard, JetpackProtectLogo, JetpackSearchLogo, JetpackVideoPressLogo, ProductOffer, RadioControl, SplitButton, Status, and ToggleControl components.
+
+### Fixed
+- Admin page: Fix the page overlapping the admin menu in right-to-left languages.
 
 ## [2.3.0] - 2026-09-01
 ### Added
