@@ -75,7 +75,7 @@
 		"@automattic/format-currency": "1.0.1",
 		"@automattic/jetpack-api": "^1.0.34-alpha",
 		"@automattic/jetpack-boost-score-api": "^1.0.59-alpha",
-		"@automattic/jetpack-script-data": "^0.6.6",
+		"@automattic/jetpack-script-data": "^0.6.7-alpha",
 		"@automattic/number-formatters": "^1.2.9-alpha",
 		"@babel/runtime": "^7",
 		"@gravatar-com/hovercards": "0.16.0",

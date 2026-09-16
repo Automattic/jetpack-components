@@ -1,5 +1,5 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { isWpcomPlatformSite, getAdminUrl } from '@automattic/jetpack-script-data';
+import { isWpcomPlatformSite, getAdminUrl, getScriptData } from '@automattic/jetpack-script-data';
 import { __ } from '@wordpress/i18n';
 import { Stack, Text, Link } from '@wordpress/ui';
 import clsx from 'clsx';
@@ -16,10 +16,12 @@ import JetpackLogo from '../jetpack-logo/index.js';
 const JetpackFooter = ({ className, menu, ...otherProps }) => {
     let items = [];
     if (!isWpcomPlatformSite() && !window?.JetpackNetworkAdminData) {
+        // Published by My Jetpack, whose products tab can be renamed Features.
+        const productsSection = getScriptData()?.myJetpack?.productsSection;
         items = [
             {
-                label: __('Products', 'jetpack-components'),
-                href: getAdminUrl('admin.php?page=my-jetpack#/products'),
+                label: productsSection?.label ?? __('Products', 'jetpack-components'),
+                href: getAdminUrl(`admin.php?page=my-jetpack#/${productsSection?.slug ?? 'products'}`),
             },
             {
                 label: __('Help', 'jetpack-components'),

@@ -7,6 +7,7 @@
 This is an alpha version! The changes listed here are not final.
 
 ### Changed
+- JetpackFooter: Link to the My Jetpack Features tab when it replaces the Products tab.
 - Update package dependencies.
 
 ### Fixed
