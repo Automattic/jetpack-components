@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update package dependencies.
 
+### Fixed
+- Notice, PricingTable: Keep the icons colored now that @wordpress/icons 16 draws them as strokes.
+
 ## [3.0.2] - 2026-09-14
 ### Changed
 - Update dependencies.
