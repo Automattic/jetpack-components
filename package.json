@@ -1,6 +1,6 @@
 {
 	"name": "@automattic/jetpack-components",
-	"version": "3.0.3-alpha",
+	"version": "3.0.4-alpha",
 	"description": "Jetpack Components Package",
 	"homepage": "https://github.com/Automattic/jetpack/tree/HEAD/projects/js-packages/components/#readme",
 	"bugs": {
@@ -73,10 +73,10 @@
 	],
 	"dependencies": {
 		"@automattic/format-currency": "1.0.1",
-		"@automattic/jetpack-api": "^1.0.34-alpha",
-		"@automattic/jetpack-boost-score-api": "^1.0.59-alpha",
+		"@automattic/jetpack-api": "^1.0.35-alpha",
+		"@automattic/jetpack-boost-score-api": "^1.0.60-alpha",
 		"@automattic/jetpack-script-data": "^0.6.7-alpha",
-		"@automattic/number-formatters": "^1.2.9-alpha",
+		"@automattic/number-formatters": "^1.2.9",
 		"@babel/runtime": "^7",
 		"@gravatar-com/hovercards": "0.16.0",
 		"@wordpress/admin-ui": "2.10.0",
