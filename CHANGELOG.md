@@ -2,9 +2,12 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [3.0.4-alpha] - unreleased
+## [3.1.0-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
+
+### Added
+- IconTooltip: Add a `popoverClassName` prop to style the popover when it renders outside its wrapper.
 
 ### Changed
 - JetpackFooter: Link to the My Jetpack Features tab when it replaces the Products tab.
@@ -1946,7 +1949,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[3.0.4-alpha]: https://github.com/Automattic/jetpack-components/compare/3.0.3...3.0.4-alpha
+[3.1.0-alpha]: https://github.com/Automattic/jetpack-components/compare/3.0.3...3.1.0-alpha
 [3.0.3]: https://github.com/Automattic/jetpack-components/compare/3.0.2...3.0.3
 [3.0.2]: https://github.com/Automattic/jetpack-components/compare/3.0.1...3.0.2
 [3.0.1]: https://github.com/Automattic/jetpack-components/compare/3.0.0...3.0.1
