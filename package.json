@@ -1,6 +1,6 @@
 {
 	"name": "@automattic/jetpack-components",
-	"version": "3.1.0",
+	"version": "3.1.1-alpha",
 	"description": "Jetpack Components Package",
 	"homepage": "https://github.com/Automattic/jetpack/tree/HEAD/projects/js-packages/components/#readme",
 	"bugs": {
@@ -75,7 +75,7 @@
 		"@automattic/format-currency": "1.0.1",
 		"@automattic/jetpack-api": "^2.0.0-alpha",
 		"@automattic/jetpack-boost-score-api": "^1.1.0-alpha",
-		"@automattic/jetpack-script-data": "^0.6.7",
+		"@automattic/jetpack-script-data": "^0.6.8-alpha",
 		"@automattic/number-formatters": "^1.2.9",
 		"@babel/runtime": "^7",
 		"@gravatar-com/hovercards": "0.16.0",

@@ -15,7 +15,9 @@ import JetpackLogo from '../jetpack-logo/index.js';
  */
 const JetpackFooter = ({ className, menu, ...otherProps }) => {
     let items = [];
-    if (!isWpcomPlatformSite() && !window?.JetpackNetworkAdminData) {
+    if (getScriptData()?.myJetpack?.isAvailable === true &&
+        !isWpcomPlatformSite() &&
+        !window?.JetpackNetworkAdminData) {
         // Published by My Jetpack, whose products tab can be renamed Features.
         const productsSection = getScriptData()?.myJetpack?.productsSection;
         items = [
