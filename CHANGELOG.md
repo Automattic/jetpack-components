@@ -7,6 +7,7 @@
 This is an alpha version! The changes listed here are not final.
 
 ### Fixed
+- DiffViewer: Fix some inefficient regular expressions.
 - Footer: Hide Products and Help links when My Jetpack is unavailable.
 
 ## [3.1.1] - 2026-09-21
