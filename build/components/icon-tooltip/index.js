@@ -1,8 +1,9 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Popover } from '@wordpress/components';
+import { focus } from '@wordpress/dom';
 import { Icon, info } from '@wordpress/icons';
 import clsx from 'clsx';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useRef, useState, } from 'react';
 import Button from '../button/index.js';
 import './style.scss';
 const placementsToPositions = (placement) => {
@@ -26,11 +27,47 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
     const POPOVER_HELPER_WIDTH = 124;
     const [isVisible, setIsVisible] = useState(false);
     const [hoverTimeout, setHoverTimeout] = useState(null);
+    const wrapperRef = useRef(null);
+    const popoverRef = useRef(null);
+    // Where focus should land after Tab leaves the tooltip. The effect below applies it, rather
+    // than the handler, because Popover puts focus back on the trigger as it unmounts.
+    const focusAfterClose = useRef(null);
+    // Opening on hover must not pull focus off whatever the visitor is using.
+    const openedByHover = useRef(false);
     const hideTooltip = useCallback(() => setIsVisible(false), [setIsVisible]);
     const toggleTooltip = useCallback(e => {
         e.preventDefault();
+        openedByHover.current = false;
         setIsVisible(!isVisible);
     }, [isVisible, setIsVisible]);
+    const isAnchorWrapper = popoverAnchorStyle === 'wrapper';
+    const isForcedToShow = isAnchorWrapper && forceShow;
+    const handlePopoverKeyDown = useCallback((event) => {
+        const wrapper = wrapperRef.current;
+        const popover = popoverRef.current;
+        if (event.key !== 'Tab' || !wrapper || !popover) {
+            return;
+        }
+        const tabbables = focus.tabbable.find(popover);
+        const boundary = event.shiftKey ? tabbables[0] : tabbables[tabbables.length - 1];
+        const leaving = !tabbables.length ||
+            event.target === boundary ||
+            (event.shiftKey && event.target === popover);
+        if (!leaving) {
+            return;
+        }
+        // A popover rendered in a portal sits at the end of the document, so Tab out of it has
+        // to resume from the trigger's place in the page instead of the popover's.
+        const step = event.shiftKey ? focus.tabbable.findPrevious : focus.tabbable.findNext;
+        let destination = step(wrapper);
+        while (destination &&
+            (wrapper.contains(destination) || popover.contains(destination))) {
+            destination = step(destination);
+        }
+        event.preventDefault();
+        focusAfterClose.current = destination ?? null;
+        hideTooltip();
+    }, [hideTooltip]);
     const args = {
         // To be compatible with deprecating prop `position`.
         position: placementsToPositions(placement),
@@ -40,24 +77,44 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
         resize: false,
         flip: false,
         offset, // The distance (in px) between the anchor and the popover.
-        focusOnMount: 'firstElement',
+        // Focusing the popover itself puts Escape in reach even with nothing tabbable inside.
+        // A caller-controlled popover keeps the old behaviour until it can report dismissal.
+        focusOnMount: isForcedToShow ? 'firstElement' : !openedByHover.current,
+        // Tab moves through the popover in document order rather than cycling inside it, and
+        // handlePopoverKeyDown decides where it lands on the way out.
+        constrainTabbing: false,
+        onKeyDownCapture: handlePopoverKeyDown,
+        ref: popoverRef,
         onClose: hideTooltip,
+        onFocusOutside: (event) => {
+            // A pointer press on our own trigger dismisses through that trigger instead.
+            if (!wrapperRef.current?.contains(event.relatedTarget)) {
+                hideTooltip();
+            }
+        },
         className: clsx('icon-tooltip-container', popoverClassName),
         inline,
         shift,
     };
-    const isAnchorWrapper = popoverAnchorStyle === 'wrapper';
     const wrapperClassNames = clsx('icon-tooltip-wrapper', className);
     const iconShiftBySize = {
         left: isAnchorWrapper ? 0 : -(POPOVER_HELPER_WIDTH / 2 - iconSize / 2) + 'px',
     };
-    const isForcedToShow = isAnchorWrapper && forceShow;
+    useEffect(() => {
+        if (isForcedToShow || isVisible) {
+            return;
+        }
+        const destination = focusAfterClose.current;
+        focusAfterClose.current = null;
+        destination?.focus();
+    }, [isForcedToShow, isVisible]);
     const handleMouseEnter = useCallback(() => {
         if (hoverShow) {
             if (hoverTimeout) {
                 clearTimeout(hoverTimeout);
                 setHoverTimeout(null);
             }
+            openedByHover.current = true;
             setIsVisible(true);
         }
     }, [hoverShow, hoverTimeout]);
@@ -70,6 +127,6 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
             setHoverTimeout(id);
         }
     }, [hoverShow]);
-    return (_jsxs("div", { className: wrapperClassNames, "data-testid": "icon-tooltip_wrapper", onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave, children: [!isAnchorWrapper && (_jsx(Button, { variant: "link", onMouseDown: toggleTooltip, children: _jsx(Icon, { className: iconClassName, icon: iconCode, size: iconSize }) })), _jsx("div", { className: clsx('icon-tooltip-helper', { 'is-wide': wide }), style: iconShiftBySize, children: (isForcedToShow || isVisible) && (_jsx(Popover, { ...args, children: _jsxs("div", { children: [title && _jsx("div", { className: "icon-tooltip-title", children: title }), _jsx("div", { className: "icon-tooltip-content", children: children })] }) })) })] }));
+    return (_jsxs("div", { ref: wrapperRef, className: wrapperClassNames, "data-testid": "icon-tooltip_wrapper", onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave, children: [!isAnchorWrapper && (_jsx(Button, { variant: "link", "aria-expanded": isVisible, onClick: toggleTooltip, children: _jsx(Icon, { className: iconClassName, icon: iconCode, size: iconSize }) })), _jsx("div", { className: clsx('icon-tooltip-helper', { 'is-wide': wide }), style: iconShiftBySize, children: (isForcedToShow || isVisible) && (_jsx(Popover, { ...args, children: _jsxs("div", { children: [title && _jsx("div", { className: "icon-tooltip-title", children: title }), _jsx("div", { className: "icon-tooltip-content", children: children })] }) })) })] }));
 };
 export default IconTooltip;
