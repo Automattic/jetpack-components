@@ -2,9 +2,12 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [3.1.3-alpha] - unreleased
+## [3.2.0-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
+
+### Added
+- IconTooltip: Add a `trigger` prop that renders a text trigger in place of the icon, and a `closeOnClickOutside` prop to keep a tooltip open while the visitor works elsewhere on the page.
 
 ### Fixed
 - Tooltips: Open info tooltips with Enter or Space, close them with Escape, and keep hover tooltips from taking focus.
@@ -1963,7 +1966,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[3.1.3-alpha]: https://github.com/Automattic/jetpack-components/compare/3.1.2...3.1.3-alpha
+[3.2.0-alpha]: https://github.com/Automattic/jetpack-components/compare/3.1.2...3.2.0-alpha
 [3.1.2]: https://github.com/Automattic/jetpack-components/compare/3.1.1...3.1.2
 [3.1.1]: https://github.com/Automattic/jetpack-components/compare/3.1.0...3.1.1
 [3.1.0]: https://github.com/Automattic/jetpack-components/compare/3.0.3...3.1.0

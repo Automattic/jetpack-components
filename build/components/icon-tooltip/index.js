@@ -1,4 +1,4 @@
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Fragment as _Fragment, jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Popover } from '@wordpress/components';
 import { focus } from '@wordpress/dom';
 import { Icon, info } from '@wordpress/icons';
@@ -23,12 +23,14 @@ const placementsToPositions = (placement) => {
  * @param {IconTooltipProps} props - Props
  * @return {ReactElement} - JSX element
  */
-const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', placement = 'bottom-end', animate = true, iconCode = info, iconSize = 18, offset = 10, title, children, popoverAnchorStyle = 'icon', forceShow = false, hoverShow = false, wide = false, inline = true, shift = false, }) => {
+const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', placement = 'bottom-end', animate = true, iconCode = info, iconSize = 18, offset = 10, title, children, popoverAnchorStyle = 'icon', trigger, onTriggerClick, closeOnClickOutside = true, forceShow = false, hoverShow = false, wide = false, inline = true, shift = false, }) => {
     const POPOVER_HELPER_WIDTH = 124;
     const [isVisible, setIsVisible] = useState(false);
     const [hoverTimeout, setHoverTimeout] = useState(null);
     const wrapperRef = useRef(null);
     const popoverRef = useRef(null);
+    const triggerRef = useRef(null);
+    const hasTextTrigger = trigger !== undefined;
     // Where focus should land after Tab leaves the tooltip. The effect below applies it, rather
     // than the handler, because Popover puts focus back on the trigger as it unmounts.
     const focusAfterClose = useRef(null);
@@ -37,9 +39,38 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
     const hideTooltip = useCallback(() => setIsVisible(false), [setIsVisible]);
     const toggleTooltip = useCallback(e => {
         e.preventDefault();
+        onTriggerClick?.();
         openedByHover.current = false;
         setIsVisible(!isVisible);
-    }, [isVisible, setIsVisible]);
+    }, [isVisible, setIsVisible, onTriggerClick]);
+    // Focus can stay on a text trigger while its tooltip is open, so it handles the dialog keys too.
+    const handleTriggerKeyDown = useCallback((event) => {
+        // A link only activates on Enter; a button also activates on Space.
+        if (event.key === ' ') {
+            if (!event.repeat) {
+                toggleTooltip(event);
+            }
+            return;
+        }
+        if (!isVisible) {
+            return;
+        }
+        if (event.key === 'Escape') {
+            event.preventDefault();
+            hideTooltip();
+        }
+        else if (event.key === 'Tab') {
+            // Step into the popover even when it is portaled away from the trigger.
+            const first = event.shiftKey ? null : focus.tabbable.find(popoverRef.current)[0];
+            if (first) {
+                event.preventDefault();
+                first.focus();
+            }
+            else {
+                hideTooltip();
+            }
+        }
+    }, [isVisible, hideTooltip, toggleTooltip]);
     const isAnchorWrapper = popoverAnchorStyle === 'wrapper';
     const isForcedToShow = isAnchorWrapper && forceShow;
     const handlePopoverKeyDown = useCallback((event) => {
@@ -56,6 +87,11 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
         if (!leaving) {
             return;
         }
+        if (event.shiftKey && triggerRef.current) {
+            event.preventDefault();
+            triggerRef.current.focus();
+            return;
+        }
         // A popover rendered in a portal sits at the end of the document, so Tab out of it has
         // to resume from the trigger's place in the page instead of the popover's.
         const step = event.shiftKey ? focus.tabbable.findPrevious : focus.tabbable.findNext;
@@ -68,6 +104,9 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
         focusAfterClose.current = destination ?? null;
         hideTooltip();
     }, [hideTooltip]);
+    const focusOnOpen = isForcedToShow || (hasTextTrigger && !openedByHover.current)
+        ? 'firstElement'
+        : !openedByHover.current;
     const args = {
         // To be compatible with deprecating prop `position`.
         position: placementsToPositions(placement),
@@ -77,18 +116,24 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
         resize: false,
         flip: false,
         offset, // The distance (in px) between the anchor and the popover.
-        // Focusing the popover itself puts Escape in reach even with nothing tabbable inside.
-        // A caller-controlled popover keeps the old behaviour until it can report dismissal.
-        focusOnMount: isForcedToShow ? 'firstElement' : !openedByHover.current,
+        // Focusing the popover itself puts Escape in reach even with nothing tabbable inside. A text
+        // trigger or caller-controlled popover moves focus to its first link, if it has one.
+        focusOnMount: focusOnOpen,
         // Tab moves through the popover in document order rather than cycling inside it, and
         // handlePopoverKeyDown decides where it lands on the way out.
         constrainTabbing: false,
         onKeyDownCapture: handlePopoverKeyDown,
         ref: popoverRef,
-        onClose: hideTooltip,
+        onClose: () => {
+            const popover = popoverRef.current;
+            if (hasTextTrigger && popover?.contains(popover.ownerDocument.activeElement)) {
+                focusAfterClose.current = triggerRef.current;
+            }
+            hideTooltip();
+        },
         onFocusOutside: (event) => {
             // A pointer press on our own trigger dismisses through that trigger instead.
-            if (!wrapperRef.current?.contains(event.relatedTarget)) {
+            if (closeOnClickOutside && !wrapperRef.current?.contains(event.relatedTarget)) {
                 hideTooltip();
             }
         },
@@ -96,10 +141,25 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
         inline,
         shift,
     };
-    const wrapperClassNames = clsx('icon-tooltip-wrapper', className);
+    const wrapperClassNames = clsx('icon-tooltip-wrapper', { 'has-text-trigger': hasTextTrigger }, className);
     const iconShiftBySize = {
         left: isAnchorWrapper ? 0 : -(POPOVER_HELPER_WIDTH / 2 - iconSize / 2) + 'px',
     };
+    // Focus may never enter the popover, so outside presses are watched directly.
+    useEffect(() => {
+        if (!isVisible || isForcedToShow || !closeOnClickOutside) {
+            return;
+        }
+        const doc = wrapperRef.current?.ownerDocument;
+        const handlePointerDown = (event) => {
+            const target = event.target;
+            if (!wrapperRef.current?.contains(target) && !popoverRef.current?.contains(target)) {
+                hideTooltip();
+            }
+        };
+        doc?.addEventListener('pointerdown', handlePointerDown);
+        return () => doc?.removeEventListener('pointerdown', handlePointerDown);
+    }, [isVisible, isForcedToShow, closeOnClickOutside, hideTooltip]);
     useEffect(() => {
         if (isForcedToShow || isVisible) {
             return;
@@ -127,6 +187,7 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
             setHoverTimeout(id);
         }
     }, [hoverShow]);
-    return (_jsxs("div", { ref: wrapperRef, className: wrapperClassNames, "data-testid": "icon-tooltip_wrapper", onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave, children: [!isAnchorWrapper && (_jsx(Button, { variant: "link", "aria-expanded": isVisible, onClick: toggleTooltip, children: _jsx(Icon, { className: iconClassName, icon: iconCode, size: iconSize }) })), _jsx("div", { className: clsx('icon-tooltip-helper', { 'is-wide': wide }), style: iconShiftBySize, children: (isForcedToShow || isVisible) && (_jsx(Popover, { ...args, children: _jsxs("div", { children: [title && _jsx("div", { className: "icon-tooltip-title", children: title }), _jsx("div", { className: "icon-tooltip-content", children: children })] }) })) })] }));
+    const helper = (_jsx("div", { className: clsx('icon-tooltip-helper', { 'is-wide': wide }), style: iconShiftBySize, children: (isForcedToShow || isVisible) && (_jsx(Popover, { ...args, children: _jsxs("div", { children: [title && _jsx("div", { className: "icon-tooltip-title", children: title }), _jsx("div", { className: "icon-tooltip-content", children: children })] }) })) }));
+    return (_jsxs("div", { ref: wrapperRef, className: wrapperClassNames, "data-testid": "icon-tooltip_wrapper", onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave, children: [hasTextTrigger && (_jsxs(_Fragment, { children: [_jsx("a", { ref: triggerRef, href: "#", role: "button", className: "icon-tooltip-trigger", "aria-expanded": isVisible, onClick: toggleTooltip, onKeyDown: handleTriggerKeyDown, children: trigger }), _jsx("span", { className: "icon-tooltip-anchor", children: _jsx("span", { children: helper }) })] })), !hasTextTrigger && !isAnchorWrapper && (_jsx(Button, { variant: "link", "aria-expanded": isVisible, onClick: toggleTooltip, children: _jsx(Icon, { className: iconClassName, icon: iconCode, size: iconSize }) })), !hasTextTrigger && helper] }));
 };
 export default IconTooltip;
