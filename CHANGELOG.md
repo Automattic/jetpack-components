@@ -2,13 +2,10 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [3.1.2-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [3.1.2] - 2026-09-23
 ### Fixed
-- DiffViewer: Fix some inefficient regular expressions.
-- Footer: Hide Products and Help links when My Jetpack is unavailable.
+- DiffViewer: Fix some inefficient regular expressions. [#52582]
+- Footer: Hide Products and Help links when My Jetpack is unavailable. [#52557]
 
 ## [3.1.1] - 2026-09-21
 ### Changed
@@ -1958,7 +1955,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[3.1.2-alpha]: https://github.com/Automattic/jetpack-components/compare/3.1.1...3.1.2-alpha
+[3.1.2]: https://github.com/Automattic/jetpack-components/compare/3.1.1...3.1.2
 [3.1.1]: https://github.com/Automattic/jetpack-components/compare/3.1.0...3.1.1
 [3.1.0]: https://github.com/Automattic/jetpack-components/compare/3.0.3...3.1.0
 [3.0.3]: https://github.com/Automattic/jetpack-components/compare/3.0.2...3.0.3
