@@ -1,4 +1,5 @@
 import { Fragment as _Fragment, jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { speak } from '@wordpress/a11y';
 import { Popover } from '@wordpress/components';
 import { focus } from '@wordpress/dom';
 import { Icon, info } from '@wordpress/icons';
@@ -43,13 +44,16 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
         openedByHover.current = false;
         setIsVisible(!isVisible);
     }, [isVisible, setIsVisible, onTriggerClick]);
-    // Focus can stay on a text trigger while its tooltip is open, so it handles the dialog keys too.
+    // Focus can stay on the trigger while its tooltip is open, so it handles the dialog keys too.
     const handleTriggerKeyDown = useCallback((event) => {
+        // A held key repeats activation, so only its first press toggles.
+        if (event.repeat && (event.key === 'Enter' || event.key === ' ')) {
+            event.preventDefault();
+            return;
+        }
         // A link only activates on Enter; a button also activates on Space.
-        if (event.key === ' ') {
-            if (!event.repeat) {
-                toggleTooltip(event);
-            }
+        if (hasTextTrigger && event.key === ' ') {
+            toggleTooltip(event);
             return;
         }
         if (!isVisible) {
@@ -70,7 +74,7 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
                 hideTooltip();
             }
         }
-    }, [isVisible, hideTooltip, toggleTooltip]);
+    }, [hasTextTrigger, isVisible, hideTooltip, toggleTooltip]);
     const isAnchorWrapper = popoverAnchorStyle === 'wrapper';
     const isForcedToShow = isAnchorWrapper && forceShow;
     const handlePopoverKeyDown = useCallback((event) => {
@@ -104,9 +108,6 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
         focusAfterClose.current = destination ?? null;
         hideTooltip();
     }, [hideTooltip]);
-    const focusOnOpen = isForcedToShow || (hasTextTrigger && !openedByHover.current)
-        ? 'firstElement'
-        : !openedByHover.current;
     const args = {
         // To be compatible with deprecating prop `position`.
         position: placementsToPositions(placement),
@@ -116,9 +117,9 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
         resize: false,
         flip: false,
         offset, // The distance (in px) between the anchor and the popover.
-        // Focusing the popover itself puts Escape in reach even with nothing tabbable inside. A text
-        // trigger or caller-controlled popover moves focus to its first link, if it has one.
-        focusOnMount: focusOnOpen,
+        // Focus stays on the trigger, which handles the dialog keys; a caller-controlled popover
+        // has no trigger, so it focuses its first button instead.
+        focusOnMount: isForcedToShow ? 'firstElement' : false,
         // Tab moves through the popover in document order rather than cycling inside it, and
         // handlePopoverKeyDown decides where it lands on the way out.
         constrainTabbing: false,
@@ -126,7 +127,7 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
         ref: popoverRef,
         onClose: () => {
             const popover = popoverRef.current;
-            if (hasTextTrigger && popover?.contains(popover.ownerDocument.activeElement)) {
+            if (popover?.contains(popover.ownerDocument.activeElement)) {
                 focusAfterClose.current = triggerRef.current;
             }
             hideTooltip();
@@ -168,6 +169,13 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
         focusAfterClose.current = null;
         destination?.focus();
     }, [isForcedToShow, isVisible]);
+    // Focus stays on the trigger, so a screen reader hears the popover through an announcement.
+    useEffect(() => {
+        const popover = popoverRef.current;
+        if (isVisible && !openedByHover.current && popover) {
+            speak(popover.innerText ?? popover.textContent, 'polite');
+        }
+    }, [isVisible]);
     const handleMouseEnter = useCallback(() => {
         if (hoverShow) {
             if (hoverTimeout) {
@@ -188,6 +196,6 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
         }
     }, [hoverShow]);
     const helper = (_jsx("div", { className: clsx('icon-tooltip-helper', { 'is-wide': wide }), style: iconShiftBySize, children: (isForcedToShow || isVisible) && (_jsx(Popover, { ...args, children: _jsxs("div", { children: [title && _jsx("div", { className: "icon-tooltip-title", children: title }), _jsx("div", { className: "icon-tooltip-content", children: children })] }) })) }));
-    return (_jsxs("div", { ref: wrapperRef, className: wrapperClassNames, "data-testid": "icon-tooltip_wrapper", onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave, children: [hasTextTrigger && (_jsxs(_Fragment, { children: [_jsx("a", { ref: triggerRef, href: "#", role: "button", className: "icon-tooltip-trigger", "aria-expanded": isVisible, onClick: toggleTooltip, onKeyDown: handleTriggerKeyDown, children: trigger }), _jsx("span", { className: "icon-tooltip-anchor", children: _jsx("span", { children: helper }) })] })), !hasTextTrigger && !isAnchorWrapper && (_jsx(Button, { variant: "link", "aria-expanded": isVisible, onClick: toggleTooltip, children: _jsx(Icon, { className: iconClassName, icon: iconCode, size: iconSize }) })), !hasTextTrigger && helper] }));
+    return (_jsxs("div", { ref: wrapperRef, className: wrapperClassNames, "data-testid": "icon-tooltip_wrapper", onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave, children: [hasTextTrigger && (_jsxs(_Fragment, { children: [_jsx("a", { ref: triggerRef, href: "#", role: "button", className: "icon-tooltip-trigger", "aria-expanded": isVisible, onClick: toggleTooltip, onKeyDown: handleTriggerKeyDown, children: trigger }), _jsx("span", { className: "icon-tooltip-anchor", children: _jsx("span", { children: helper }) })] })), !hasTextTrigger && !isAnchorWrapper && (_jsx(Button, { ref: triggerRef, variant: "link", "aria-expanded": isVisible, onClick: toggleTooltip, onKeyDown: handleTriggerKeyDown, children: _jsx(Icon, { className: iconClassName, icon: iconCode, size: iconSize }) })), !hasTextTrigger && helper] }));
 };
 export default IconTooltip;

@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [3.2.1-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- IconTooltip: Keep focus on the trigger when a tooltip opens, announce its content to screen readers, and show the trigger's focus ring the way other WordPress buttons do.
+
 ## [3.2.0] - 2026-09-23
 ### Added
 - IconTooltip: Add a `trigger` prop that renders a text trigger in place of the icon, and a `closeOnClickOutside` prop to keep a tooltip open while the visitor works elsewhere on the page. [#52704]
@@ -1963,6 +1970,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[3.2.1-alpha]: https://github.com/Automattic/jetpack-components/compare/3.2.0...3.2.1-alpha
 [3.2.0]: https://github.com/Automattic/jetpack-components/compare/3.1.2...3.2.0
 [3.1.2]: https://github.com/Automattic/jetpack-components/compare/3.1.1...3.1.2
 [3.1.1]: https://github.com/Automattic/jetpack-components/compare/3.1.0...3.1.1
