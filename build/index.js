@@ -33,6 +33,7 @@ export { default as Col } from './components/layout/col/index.js';
 export { default as Testimonials } from './components/testimonials/index.js';
 export { default as Container } from './components/layout/container/index.js';
 export { default as CopyToClipboard } from './components/copy-to-clipboard/index.js';
+export { default as JitmSlot } from './components/jitm-slot/index.js';
 export * from './components/icons/index.js';
 export { default as ThemeProvider } from './components/theme-provider/index.js';
 export { default as Text, H2, H3, Title } from './components/text/index.js';

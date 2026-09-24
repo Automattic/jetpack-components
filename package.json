@@ -1,6 +1,6 @@
 {
 	"name": "@automattic/jetpack-components",
-	"version": "3.2.1-alpha",
+	"version": "3.3.0-alpha",
 	"description": "Jetpack Components Package",
 	"homepage": "https://github.com/Automattic/jetpack/tree/HEAD/projects/js-packages/components/#readme",
 	"bugs": {
@@ -45,6 +45,10 @@
 		"./jetpack-logo": {
 			"types": "./build/components/jetpack-logo/index.d.ts",
 			"default": "./build/components/jetpack-logo/index.js"
+		},
+		"./jitm-slot": {
+			"types": "./build/components/jitm-slot/index.d.ts",
+			"default": "./build/components/jitm-slot/index.js"
 		},
 		"./pricing-table": {
 			"types": "./build/components/pricing-table/index.d.ts",
@@ -101,7 +105,7 @@
 		"uplot-react": "1.1.4"
 	},
 	"devDependencies": {
-		"@automattic/jetpack-base-styles": "^1.2.14",
+		"@automattic/jetpack-base-styles": "^1.2.15-alpha",
 		"@babel/core": "7.29.7",
 		"@jest/globals": "30.5.1",
 		"@storybook/addon-docs": "10.4.6",
