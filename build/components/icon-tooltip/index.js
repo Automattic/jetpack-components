@@ -161,6 +161,20 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
         doc?.addEventListener('pointerdown', handlePointerDown);
         return () => doc?.removeEventListener('pointerdown', handlePointerDown);
     }, [isVisible, isForcedToShow, closeOnClickOutside, hideTooltip]);
+    // Hover leaves focus elsewhere, so Escape is watched directly to keep the content dismissible.
+    useEffect(() => {
+        if (!isVisible || !openedByHover.current) {
+            return;
+        }
+        const doc = wrapperRef.current?.ownerDocument;
+        const handleKeyDown = (event) => {
+            if (event.key === 'Escape') {
+                hideTooltip();
+            }
+        };
+        doc?.addEventListener('keydown', handleKeyDown);
+        return () => doc?.removeEventListener('keydown', handleKeyDown);
+    }, [isVisible, hideTooltip]);
     useEffect(() => {
         if (isForcedToShow || isVisible) {
             return;
