@@ -7,11 +7,11 @@ export type TextProps = {
     m?: SpacingValue;
     /** margin-top */
     mt?: SpacingValue;
-    /** margin-right */
+    /** margin-inline-end (right in LTR) */
     mr?: SpacingValue;
     /** margin-bottom */
     mb?: SpacingValue;
-    /** margin-left */
+    /** margin-inline-start (left in LTR) */
     ml?: SpacingValue;
     /** margin left and right */
     mx?: SpacingValue;
@@ -21,11 +21,11 @@ export type TextProps = {
     p?: SpacingValue;
     /** padding-top */
     pt?: SpacingValue;
-    /** padding-right */
+    /** padding-inline-end (right in LTR) */
     pr?: SpacingValue;
     /** padding-bottom */
     pb?: SpacingValue;
-    /** padding-left */
+    /** padding-inline-start (left in LTR) */
     pl?: SpacingValue;
     /** padding left and right */
     px?: SpacingValue;
