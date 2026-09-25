@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Add a JitmSlot component so every dashboard renders the Jetpack in-dashboard message slot the same way, and keeps the message across route changes.
+- IconTooltip: Add a `label` prop to give the icon trigger an accessible name.
 
 ### Changed
 - IconTooltip: Keep focus on the trigger when a tooltip opens, announce its content to screen readers, and show the trigger's focus ring the way other WordPress buttons do.

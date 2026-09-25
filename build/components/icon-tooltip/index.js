@@ -24,7 +24,7 @@ const placementsToPositions = (placement) => {
  * @param {IconTooltipProps} props - Props
  * @return {ReactElement} - JSX element
  */
-const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', placement = 'bottom-end', animate = true, iconCode = info, iconSize = 18, offset = 10, title, children, popoverAnchorStyle = 'icon', trigger, onTriggerClick, closeOnClickOutside = true, forceShow = false, hoverShow = false, wide = false, inline = true, shift = false, }) => {
+const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', placement = 'bottom-end', animate = true, iconCode = info, label, iconSize = 18, offset = 10, title, children, popoverAnchorStyle = 'icon', trigger, onTriggerClick, closeOnClickOutside = true, forceShow = false, hoverShow = false, wide = false, inline = true, shift = false, }) => {
     const POPOVER_HELPER_WIDTH = 124;
     const [isVisible, setIsVisible] = useState(false);
     const [hoverTimeout, setHoverTimeout] = useState(null);
@@ -210,6 +210,6 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
         }
     }, [hoverShow]);
     const helper = (_jsx("div", { className: clsx('icon-tooltip-helper', { 'is-wide': wide }), style: iconShiftBySize, children: (isForcedToShow || isVisible) && (_jsx(Popover, { ...args, children: _jsxs("div", { children: [title && _jsx("div", { className: "icon-tooltip-title", children: title }), _jsx("div", { className: "icon-tooltip-content", children: children })] }) })) }));
-    return (_jsxs("div", { ref: wrapperRef, className: wrapperClassNames, "data-testid": "icon-tooltip_wrapper", onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave, children: [hasTextTrigger && (_jsxs(_Fragment, { children: [_jsx("a", { ref: triggerRef, href: "#", role: "button", className: "icon-tooltip-trigger", "aria-expanded": isVisible, onClick: toggleTooltip, onKeyDown: handleTriggerKeyDown, children: trigger }), _jsx("span", { className: "icon-tooltip-anchor", children: _jsx("span", { children: helper }) })] })), !hasTextTrigger && !isAnchorWrapper && (_jsx(Button, { ref: triggerRef, variant: "link", "aria-expanded": isVisible, onClick: toggleTooltip, onKeyDown: handleTriggerKeyDown, children: _jsx(Icon, { className: iconClassName, icon: iconCode, size: iconSize }) })), !hasTextTrigger && helper] }));
+    return (_jsxs("div", { ref: wrapperRef, className: wrapperClassNames, "data-testid": "icon-tooltip_wrapper", onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave, children: [hasTextTrigger && (_jsxs(_Fragment, { children: [_jsx("a", { ref: triggerRef, href: "#", role: "button", className: "icon-tooltip-trigger", "aria-expanded": isVisible, onClick: toggleTooltip, onKeyDown: handleTriggerKeyDown, children: trigger }), _jsx("span", { className: "icon-tooltip-anchor", children: _jsx("span", { children: helper }) })] })), !hasTextTrigger && !isAnchorWrapper && (_jsx(Button, { ref: triggerRef, variant: "link", "aria-label": label, "aria-expanded": isVisible, onClick: toggleTooltip, onKeyDown: handleTriggerKeyDown, children: _jsx(Icon, { className: iconClassName, icon: iconCode, size: iconSize }) })), !hasTextTrigger && helper] }));
 };
 export default IconTooltip;
