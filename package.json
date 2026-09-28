@@ -100,7 +100,7 @@
 		"js-sha256": "0.11.1",
 		"prop-types": "^15.7.2",
 		"qrcode.react": "4.2.0",
-		"social-logos": "^3.3.19",
+		"social-logos": "^3.4.0-alpha",
 		"uplot": "1.6.31",
 		"uplot-react": "1.1.4"
 	},
