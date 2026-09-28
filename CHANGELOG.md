@@ -2,23 +2,20 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [3.3.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [3.3.0] - 2026-09-28
 ### Added
-- Add a JitmSlot component so every dashboard renders the Jetpack in-dashboard message slot the same way, and keeps the message across route changes.
-- IconTooltip: Add a `label` prop to give the icon trigger an accessible name.
+- Add a JitmSlot component so every dashboard renders the Jetpack in-dashboard message slot the same way, and keeps the message across route changes. [#52641]
+- IconTooltip: Add a `label` prop to give the icon trigger an accessible name. [#52800]
 
 ### Changed
-- IconTooltip: Keep focus on the trigger when a tooltip opens, announce its content to screen readers, and show the trigger's focus ring the way other WordPress buttons do.
-- Use logical CSS properties so layouts mirror in right-to-left languages.
+- IconTooltip: Keep focus on the trigger when a tooltip opens, announce its content to screen readers, and show the trigger's focus ring the way other WordPress buttons do. [#52736]
+- Use logical CSS properties so layouts mirror in right-to-left languages. [#52749]
 
 ### Deprecated
-- Deprecate GlobalNotices and useGlobalNotices. Use SnackbarNotices from @wordpress/notices instead.
+- Deprecate GlobalNotices and useGlobalNotices. Use SnackbarNotices from @wordpress/notices instead. [#52193]
 
 ### Fixed
-- IconTooltip: Close a tooltip opened on hover when Escape is pressed, without moving focus.
+- IconTooltip: Close a tooltip opened on hover when Escape is pressed, without moving focus. [#52799]
 
 ## [3.2.0] - 2026-09-23
 ### Added
@@ -1981,7 +1978,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[3.3.0-alpha]: https://github.com/Automattic/jetpack-components/compare/3.2.0...3.3.0-alpha
+[3.3.0]: https://github.com/Automattic/jetpack-components/compare/3.2.0...3.3.0
 [3.2.0]: https://github.com/Automattic/jetpack-components/compare/3.1.2...3.2.0
 [3.1.2]: https://github.com/Automattic/jetpack-components/compare/3.1.1...3.1.2
 [3.1.1]: https://github.com/Automattic/jetpack-components/compare/3.1.0...3.1.1
