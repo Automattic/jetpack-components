@@ -14,6 +14,9 @@ This is an alpha version! The changes listed here are not final.
 - IconTooltip: Keep focus on the trigger when a tooltip opens, announce its content to screen readers, and show the trigger's focus ring the way other WordPress buttons do.
 - Use logical CSS properties so layouts mirror in right-to-left languages.
 
+### Deprecated
+- Deprecate GlobalNotices and useGlobalNotices. Use SnackbarNotices from @wordpress/notices instead.
+
 ### Fixed
 - IconTooltip: Close a tooltip opened on hover when Escape is pressed, without moving focus.
 
