@@ -1,4 +1,5 @@
+import type { JSX } from 'react';
 export declare const DiffViewer: ({ diff }: {
     diff: any;
-}) => import("react").JSX.Element;
+}) => JSX.Element;
 export default DiffViewer;

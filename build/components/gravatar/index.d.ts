@@ -1,5 +1,6 @@
 import '@gravatar-com/hovercards/dist/style.css';
 import './style.scss';
+import type { JSX } from 'react';
 /**
  * Gravatar `defaultImage` styles, mirroring https://docs.gravatar.com/sdk/images/#default-image
  */
