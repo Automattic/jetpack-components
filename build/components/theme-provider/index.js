@@ -105,7 +105,7 @@ const setup = (root, id, withGlobalStyles) => {
  * @return {ReactNode}        ThemeProvider component.
  */
 const ThemeProvider = ({ children = null, targetDom, id, withGlobalStyles = true, }) => {
-    const themeWrapperRef = useRef();
+    const themeWrapperRef = useRef(undefined);
     // Check whether the theme provider instance is already registered.
     const isAlreadyProvided = globalThemeInstances?.[id]?.provided;
     useLayoutEffect(() => {

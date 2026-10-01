@@ -6,7 +6,7 @@ import Button from '../button/index.js';
 import { ClipboardIcon, CheckmarkIcon } from '../icons/index.js';
 export const CopyToClipboard = ({ buttonStyle = 'icon', textToCopy, onCopy, ...buttonProps }) => {
     const [hasCopied, setHasCopied] = useState(false);
-    const copyTimer = useRef();
+    const copyTimer = useRef(undefined);
     const copyRef = useCopyToClipboard(textToCopy, () => {
         if (copyTimer.current) {
             clearTimeout(copyTimer.current);
