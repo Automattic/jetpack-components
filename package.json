@@ -76,7 +76,7 @@
 		"extends @wordpress/browserslist-config"
 	],
 	"dependencies": {
-		"@automattic/jetpack-api": "^2.0.0",
+		"@automattic/jetpack-api": "^2.1.0-alpha",
 		"@automattic/jetpack-boost-score-api": "^1.2.0-alpha",
 		"@automattic/jetpack-script-data": "^0.6.8",
 		"@automattic/number-formatters": "^1.2.10",
