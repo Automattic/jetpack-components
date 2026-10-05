@@ -10,6 +10,7 @@ This is an alpha version! The changes listed here are not final.
 - Update package dependencies.
 
 ### Removed
+- Remove the Notice component; use Notice from @wordpress/ui instead.
 - Remove the unused ZendeskChat component.
 
 ## [3.3.0] - 2026-09-28

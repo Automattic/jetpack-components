@@ -49,7 +49,6 @@ export { default as ProductPrice } from './components/product-price/index.js';
 export { default as DotPager } from './components/dot-pager/index.js';
 export { default as DonutMeter } from './components/donut-meter/index.js';
 export { default as RecordMeterBar } from './components/record-meter-bar/index.js';
-export { default as Notice } from './components/notice/index.js';
 export { default as Popover } from './components/popover/index.js';
 export { default as IndeterminateProgressBar } from './components/indeterminate-progress-bar/index.js';
 export { default as ActionPopover } from './components/action-popover/index.js';
