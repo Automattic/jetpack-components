@@ -2,16 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [4.0.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [4.0.0] - 2026-10-05
 ### Changed
-- Update package dependencies.
+- Update package dependencies. [#52999]
 
 ### Removed
-- Remove the Notice component; use Notice from @wordpress/ui instead.
-- Remove the unused ZendeskChat component.
+- Remove the Notice component; use Notice from @wordpress/ui instead. [#52932]
+- Remove the unused ZendeskChat component. [#52074]
 
 ## [3.3.0] - 2026-09-28
 ### Added
@@ -1990,7 +1987,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[4.0.0-alpha]: https://github.com/Automattic/jetpack-components/compare/3.3.0...4.0.0-alpha
+[4.0.0]: https://github.com/Automattic/jetpack-components/compare/3.3.0...4.0.0
 [3.3.0]: https://github.com/Automattic/jetpack-components/compare/3.2.0...3.3.0
 [3.2.0]: https://github.com/Automattic/jetpack-components/compare/3.1.2...3.2.0
 [3.1.2]: https://github.com/Automattic/jetpack-components/compare/3.1.1...3.1.2
