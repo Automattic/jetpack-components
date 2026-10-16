@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [4.1.0-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Added
+- AdminPage: Add a `globalControls` slot for Jetpack-wide controls, shown after the page actions in the header.
+
 ## [4.0.4] - 2026-10-15
 ### Changed
 - Update package dependencies. [#53004]
@@ -2003,6 +2010,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[4.1.0-alpha]: https://github.com/Automattic/jetpack-components/compare/4.0.4...4.1.0-alpha
 [4.0.4]: https://github.com/Automattic/jetpack-components/compare/4.0.3...4.0.4
 [4.0.3]: https://github.com/Automattic/jetpack-components/compare/4.0.2...4.0.3
 [4.0.2]: https://github.com/Automattic/jetpack-components/compare/4.0.1...4.0.2
