@@ -2,7 +2,7 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [4.1.0-alpha] - unreleased
+## [5.0.0-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
 
@@ -12,6 +12,9 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Update package dependencies.
+
+### Removed
+- Remove ProgressBar component. Use Progress or Meter from @wordpress/ui instead.
 
 ## [4.0.4] - 2026-10-15
 ### Changed
@@ -2014,7 +2017,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[4.1.0-alpha]: https://github.com/Automattic/jetpack-components/compare/4.0.4...4.1.0-alpha
+[5.0.0-alpha]: https://github.com/Automattic/jetpack-components/compare/4.0.4...5.0.0-alpha
 [4.0.4]: https://github.com/Automattic/jetpack-components/compare/4.0.3...4.0.4
 [4.0.3]: https://github.com/Automattic/jetpack-components/compare/4.0.2...4.0.3
 [4.0.2]: https://github.com/Automattic/jetpack-components/compare/4.0.1...4.0.2

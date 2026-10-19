@@ -53,7 +53,6 @@ export { default as RecordMeterBar } from './components/record-meter-bar/index.j
 export { default as Popover } from './components/popover/index.js';
 export { default as IndeterminateProgressBar } from './components/indeterminate-progress-bar/index.js';
 export { default as ActionPopover } from './components/action-popover/index.js';
-export { default as ProgressBar } from './components/progress-bar/index.js';
 export { default as UpsellBanner } from './components/upsell-banner/index.js';
 export { getUserLocale, cleanLocale } from './lib/locale/index.js';
 export { default as StatCard } from './components/stat-card/index.js';
