@@ -11,6 +11,7 @@ This is an alpha version! The changes listed here are not final.
 - AdminPage: Add a `globalControls` slot for Jetpack-wide controls, shown after the page actions in the header.
 
 ### Changed
+- Gravatar: Use the WordPress Design System neutral surface color token for the placeholder background.
 - Update package dependencies.
 
 ### Removed
