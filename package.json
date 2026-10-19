@@ -30,6 +30,10 @@
 			"types": "./build/components/button/index.d.ts",
 			"default": "./build/components/button/index.js"
 		},
+		"./checkbox-card": {
+			"types": "./build/components/checkbox-card/index.d.ts",
+			"default": "./build/components/checkbox-card/index.js"
+		},
 		"./global-notices": {
 			"types": "./build/components/global-notices/index.d.ts",
 			"default": "./build/components/global-notices/index.js"

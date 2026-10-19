@@ -7,6 +7,7 @@
 This is an alpha version! The changes listed here are not final.
 
 ### Added
+- Add a CheckboxCard component.
 - AdminPage: Add a `globalControls` slot for Jetpack-wide controls, shown after the page actions in the header.
 
 ## [4.0.4] - 2026-10-15
