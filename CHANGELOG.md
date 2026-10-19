@@ -2,20 +2,17 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [5.0.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [5.0.0] - 2026-10-19
 ### Added
-- Add a CheckboxCard component.
-- AdminPage: Add a `globalControls` slot for Jetpack-wide controls, shown after the page actions in the header.
+- Add a CheckboxCard component. [#53733]
+- AdminPage: Add a `globalControls` slot for Jetpack-wide controls, shown after the page actions in the header. [#53631]
 
 ### Changed
-- Gravatar: Use the WordPress Design System neutral surface color token for the placeholder background.
-- Update package dependencies.
+- Gravatar: Use the WordPress Design System neutral surface color token for the placeholder background. [#53800]
+- Update package dependencies. [#53806]
 
 ### Removed
-- Remove ProgressBar component. Use Progress or Meter from @wordpress/ui instead.
+- Remove ProgressBar component. Use Progress or Meter from @wordpress/ui instead. [#53801]
 
 ## [4.0.4] - 2026-10-15
 ### Changed
@@ -2018,7 +2015,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[5.0.0-alpha]: https://github.com/Automattic/jetpack-components/compare/4.0.4...5.0.0-alpha
+[5.0.0]: https://github.com/Automattic/jetpack-components/compare/4.0.4...5.0.0
 [4.0.4]: https://github.com/Automattic/jetpack-components/compare/4.0.3...4.0.4
 [4.0.3]: https://github.com/Automattic/jetpack-components/compare/4.0.2...4.0.3
 [4.0.2]: https://github.com/Automattic/jetpack-components/compare/4.0.1...4.0.2
