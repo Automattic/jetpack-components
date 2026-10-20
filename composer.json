@@ -14,7 +14,6 @@
 		"test-js-coverage": "pnpm run test-coverage"
 	},
 	"extra": {
-		"autotagger": true,
 		"npmjs-autopublish": true,
 		"mirror-repo": "Automattic/jetpack-components",
 		"textdomain": "jetpack-components",
