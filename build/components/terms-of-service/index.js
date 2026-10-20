@@ -1,16 +1,15 @@
 import { jsx as _jsx } from "react/jsx-runtime";
 import { createInterpolateElement } from '@wordpress/element';
 import { __, sprintf } from '@wordpress/i18n';
-import { Link } from '@wordpress/ui';
+import { Link, Text } from '@wordpress/ui';
 import clsx from 'clsx';
 // Deep import rather than the package barrel (`../../index.ts`): the barrel
 // pulls in heavy, asset-importing components (e.g. boost-score-graph) that the
 // wp-build esbuild pipeline can't bundle, which breaks any wp-build dashboard
 // that deep-imports pricing-table (which renders TermsOfService).
 import getRedirectUrl from '../../tools/jp-redirect/index.js';
-import Text from '../text/index.js';
 import './styles.scss';
-const TermsOfService = ({ className, multipleButtons, agreeButtonLabel, isTextOnly, ...textProps }) => {
+const TermsOfService = ({ className, variant = 'body-lg', multipleButtons, agreeButtonLabel, isTextOnly, }) => {
     const getTOSContent = () => {
         if (isTextOnly) {
             return _jsx(TermsOfServiceTextOnly, {});
@@ -20,7 +19,7 @@ const TermsOfService = ({ className, multipleButtons, agreeButtonLabel, isTextOn
         }
         return _jsx(SingleButtonText, { agreeButtonLabel: agreeButtonLabel });
     };
-    return (_jsx(Text, { className: clsx(className, 'terms-of-service'), ...textProps, children: getTOSContent() }));
+    return (_jsx(Text, { variant: variant, render: _jsx("p", {}), className: clsx(className, 'terms-of-service'), children: getTOSContent() }));
 };
 const MultipleButtonsText = ({ multipleButtonsLabels }) => {
     if (Array.isArray(multipleButtonsLabels) && multipleButtonsLabels.length > 1) {
