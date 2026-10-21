@@ -12,6 +12,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - TermsOfService: Render with Text from @wordpress/ui. The `variant` prop now takes a @wordpress/ui Text variant, and the legacy Text spacing and `component` props are removed.
+- Update package dependencies.
 
 ## [5.0.1] - 2026-10-20
 ### Changed
