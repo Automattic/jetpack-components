@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Added
+- AdminPage: Add a page action button that shows only its icon on screens 480px wide or narrower.
+
 ### Changed
 - TermsOfService: Render with Text from @wordpress/ui. The `variant` prop now takes a @wordpress/ui Text variant, and the legacy Text spacing and `component` props are removed.
 

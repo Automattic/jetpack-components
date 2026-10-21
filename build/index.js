@@ -29,6 +29,7 @@ export { default as PricingCard } from './components/pricing-card/index.js';
 export { default as AdminSection } from './components/admin-section/basic/index.js';
 export { default as AdminSectionHero } from './components/admin-section/hero/index.js';
 export { default as AdminPage } from './components/admin-page/index.js';
+export { default as PageActionButton } from './components/admin-page/page-action-button.js';
 export { default as DecorativeCard } from './components/decorative-card/index.js';
 export { default as Col } from './components/layout/col/index.js';
 export { default as Testimonials } from './components/testimonials/index.js';

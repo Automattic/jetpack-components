@@ -52,3 +52,4 @@ const AdminPage = ({ children, className, showHeader = true, showFooter = true, 
                             role: "button", tabIndex: 0, title: `Sandboxing via ${sandboxedDomain}. Click to test connection.`, children: "API Sandboxed" }))] }) })), _jsx(Container, { fluid: true, horizontalSpacing: 0, children: _jsx(Col, { children: children }) }), showFooter && _jsx(JetpackFooter, { menu: optionalMenuItems })] }));
 };
 export default AdminPage;
+export { default as PageActionButton } from './page-action-button.js';

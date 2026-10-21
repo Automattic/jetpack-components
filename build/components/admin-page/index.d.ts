@@ -10,3 +10,4 @@ import type { FC } from 'react';
  */
 declare const AdminPage: FC<AdminPageProps>;
 export default AdminPage;
+export { default as PageActionButton } from './page-action-button.tsx';
