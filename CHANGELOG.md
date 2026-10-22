@@ -14,6 +14,9 @@ This is an alpha version! The changes listed here are not final.
 - TermsOfService: Render with Text from @wordpress/ui. The `variant` prop now takes a @wordpress/ui Text variant, and the legacy Text spacing and `component` props are removed.
 - Update package dependencies.
 
+### Fixed
+- AdminPage: Stop clearing the shared REST API nonce and root when a page doesn't pass them.
+
 ## [5.0.1] - 2026-10-20
 ### Changed
 - Internal updates.

@@ -18,9 +18,14 @@ import styles from './style.module.scss';
  * @return {ReactNode} AdminPage component.
  */
 const AdminPage = ({ children, className, showHeader = true, showFooter = true, showBackground = true, sandboxedDomain = '', apiRoot = '', apiNonce = '', optionalMenuItems, header, title, subTitle, logo, actions, globalControls, breadcrumbs, tabs, showBottomBorder = true, unwrapped = false, }) => {
+    // Only set what was passed: the client is shared, so an empty default would wipe what the page set.
     useEffect(() => {
-        restApi.setApiRoot(apiRoot);
-        restApi.setApiNonce(apiNonce);
+        if (apiRoot) {
+            restApi.setApiRoot(apiRoot);
+        }
+        if (apiNonce) {
+            restApi.setApiNonce(apiNonce);
+        }
     }, [apiRoot, apiNonce]);
     // `jp-admin-page` is a stable, non-hashed hook for global stylesheets and
     // shared SCSS mixins (notably `jetpack-admin-page-layout` in
