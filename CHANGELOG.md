@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - AdminPage: Add a page action button that shows only its icon on screens 480px wide or narrower.
+- JetpackFooter: Add an entry without the stylesheet, and export the stylesheet on its own, so script-module builds can bundle the footer.
 - Support React 19.
 
 ### Changed

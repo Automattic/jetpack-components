@@ -46,6 +46,11 @@
 			"types": "./build/components/jetpack-footer/index.d.ts",
 			"default": "./build/components/jetpack-footer/index.js"
 		},
+		"./jetpack-footer/style.scss": "./build/components/jetpack-footer/style.scss",
+		"./jetpack-footer/unstyled": {
+			"types": "./build/components/jetpack-footer/jetpack-footer.d.ts",
+			"default": "./build/components/jetpack-footer/jetpack-footer.js"
+		},
 		"./jetpack-logo": {
 			"types": "./build/components/jetpack-logo/index.d.ts",
 			"default": "./build/components/jetpack-logo/index.js"
