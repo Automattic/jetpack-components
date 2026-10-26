@@ -39,7 +39,6 @@ export { default as JitmSlot } from './components/jitm-slot/index.js';
 export * from './components/icons/index.js';
 export { default as ThemeProvider } from './components/theme-provider/index.js';
 export { default as Text, H2, H3, Title } from './components/text/index.js';
-export { default as NumberControl } from './components/number-control/index.js';
 export { default as QRCode } from './components/qr-code/index.js';
 export { default as Button } from './components/button/index.js';
 export { default as LoadingPlaceholder } from './components/loading-placeholder/index.js';
