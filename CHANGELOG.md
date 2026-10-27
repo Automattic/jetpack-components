@@ -6,6 +6,9 @@
 
 This is an alpha version! The changes listed here are not final.
 
+### Added
+- AdminPage: Add a `jp-admin-page__content` class to the content container.
+
 ### Changed
 - Update package dependencies.
 
