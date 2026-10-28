@@ -2,20 +2,17 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [6.1.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [6.1.0] - 2026-10-28
 ### Added
-- Add a PeriodSelector component: a dropdown of period presets with optional previous and next buttons.
-- Add a RadioCard component.
-- AdminPage: Add a `jp-admin-page__content` class to the content container.
-- PeriodSelector: Add a disabled prop.
-- Period Selector: Add a label that screen readers announce with the selected period.
+- Add a PeriodSelector component: a dropdown of period presets with optional previous and next buttons. [#54149]
+- Add a RadioCard component. [#54212]
+- AdminPage: Add a `jp-admin-page__content` class to the content container. [#54105]
+- PeriodSelector: Add a disabled prop. [#54202]
+- Period Selector: Add a label that screen readers announce with the selected period. [#54209]
 
 ### Changed
-- AutomatticIconLogo: Use the black Automattic symbol by default, without blue.
-- Update package dependencies.
+- AutomatticIconLogo: Use the black Automattic symbol by default, without blue. [#54208]
+- Update package dependencies. [#54118]
 
 ## [6.0.0] - 2026-10-26
 ### Added
@@ -2051,7 +2048,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[6.1.0-alpha]: https://github.com/Automattic/jetpack-components/compare/6.0.0...6.1.0-alpha
+[6.1.0]: https://github.com/Automattic/jetpack-components/compare/6.0.0...6.1.0
 [6.0.0]: https://github.com/Automattic/jetpack-components/compare/5.0.1...6.0.0
 [5.0.1]: https://github.com/Automattic/jetpack-components/compare/5.0.0...5.0.1
 [5.0.0]: https://github.com/Automattic/jetpack-components/compare/4.0.4...5.0.0
