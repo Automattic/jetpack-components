@@ -12,6 +12,7 @@ This is an alpha version! The changes listed here are not final.
 - PeriodSelector: Add a disabled prop.
 
 ### Changed
+- AutomatticIconLogo: Use the black Automattic symbol by default, without blue.
 - Update package dependencies.
 
 ## [6.0.0] - 2026-10-26
