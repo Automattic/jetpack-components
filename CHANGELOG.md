@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Add a PeriodSelector component: a dropdown of period presets with optional previous and next buttons.
+- Add a RadioCard component.
 - AdminPage: Add a `jp-admin-page__content` class to the content container.
 - PeriodSelector: Add a disabled prop.
 - Period Selector: Add a label that screen readers announce with the selected period.

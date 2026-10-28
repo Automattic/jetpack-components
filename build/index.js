@@ -23,6 +23,7 @@ export { default as AutomatticForAgenciesLogo } from './components/automattic-fo
 export { default as JetpackFooter } from './components/jetpack-footer/index.js';
 export { default as Gravatar } from './components/gravatar/index.js';
 export { default as CheckboxCard, CheckboxCardGrid } from './components/checkbox-card/index.js';
+export { default as RadioCard, RadioCardGrid } from './components/radio-card/index.js';
 export { default as IconTooltip } from './components/icon-tooltip/index.js';
 export { default as ActionButton } from './components/action-button/index.js';
 export { default as PricingCard } from './components/pricing-card/index.js';

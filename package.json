@@ -67,6 +67,10 @@
 			"types": "./build/components/product-price/index.d.ts",
 			"default": "./build/components/product-price/index.js"
 		},
+		"./radio-card": {
+			"types": "./build/components/radio-card/index.d.ts",
+			"default": "./build/components/radio-card/index.js"
+		},
 		"./tools/jp-redirect": {
 			"types": "./build/tools/jp-redirect/index.d.ts",
 			"default": "./build/tools/jp-redirect/index.js"
