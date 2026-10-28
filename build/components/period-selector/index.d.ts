@@ -6,4 +6,4 @@ import type { JSX } from 'react';
  * @param {PeriodSelectorProps} props - Component props.
  * @return {JSX.Element} The selector.
  */
-export default function PeriodSelector<Value extends string>({ presets, value, onChange, onPrevious, onNext, isPreviousDisabled, isNextDisabled, disabled, className, }: PeriodSelectorProps<Value>): JSX.Element;
+export default function PeriodSelector<Value extends string>({ presets, value, label, onChange, onPrevious, onNext, isPreviousDisabled, isNextDisabled, disabled, className, }: PeriodSelectorProps<Value>): JSX.Element;

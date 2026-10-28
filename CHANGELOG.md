@@ -10,6 +10,7 @@ This is an alpha version! The changes listed here are not final.
 - Add a PeriodSelector component: a dropdown of period presets with optional previous and next buttons.
 - AdminPage: Add a `jp-admin-page__content` class to the content container.
 - PeriodSelector: Add a disabled prop.
+- Period Selector: Add a label that screen readers announce with the selected period.
 
 ### Changed
 - AutomatticIconLogo: Use the black Automattic symbol by default, without blue.
