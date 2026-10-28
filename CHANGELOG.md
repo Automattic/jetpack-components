@@ -9,6 +9,7 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Add a PeriodSelector component: a dropdown of period presets with optional previous and next buttons.
 - AdminPage: Add a `jp-admin-page__content` class to the content container.
+- PeriodSelector: Add a disabled prop.
 
 ### Changed
 - Update package dependencies.
