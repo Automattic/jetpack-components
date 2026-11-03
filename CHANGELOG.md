@@ -9,6 +9,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Add a SidebarFooter component for actions pinned to the bottom of a sidebar.
 
+### Changed
+- Gravatar Hovercards: Update @gravatar-com/hovercards to 0.17.0, which adds defensive escaping of Gravatar profile data.
+
 ## [6.1.1] - 2026-11-02
 ### Changed
 - Update package dependencies. [#53869]
