@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [6.2.0-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Added
+- Add a SidebarFooter component for actions pinned to the bottom of a sidebar.
+
 ## [6.1.1] - 2026-11-02
 ### Changed
 - Update package dependencies. [#53869]
@@ -2051,6 +2058,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[6.2.0-alpha]: https://github.com/Automattic/jetpack-components/compare/6.1.1...6.2.0-alpha
 [6.1.1]: https://github.com/Automattic/jetpack-components/compare/6.1.0...6.1.1
 [6.1.0]: https://github.com/Automattic/jetpack-components/compare/6.0.0...6.1.0
 [6.0.0]: https://github.com/Automattic/jetpack-components/compare/5.0.1...6.0.0
