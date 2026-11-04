@@ -7,12 +7,12 @@ import getRedirectUrl from '../../tools/jp-redirect/index.js';
 import AutomatticBylineLogo from '../automattic-byline-logo/index.js';
 import JetpackLogo from '../jetpack-logo/index.js';
 /**
- * JetpackFooter component displays a tiny Jetpack logo with the product name on the left and the Automattic Airline "by line" on the right.
+ * UnstyledJetpackFooter displays a tiny Jetpack logo with the product name on the left and the Automattic Airline "by line" on the right, without loading its stylesheet.
  *
  * @param {JetpackFooterProps} props - Component properties.
- * @return {ReactNode} JetpackFooter component.
+ * @return {ReactNode} UnstyledJetpackFooter component.
  */
-const JetpackFooter = ({ className, menu, ...otherProps }) => {
+const UnstyledJetpackFooter = ({ className, menu, ...otherProps }) => {
     let items = [];
     if (getScriptData()?.myJetpack?.isAvailable === true &&
         !isWpcomPlatformSite() &&
@@ -36,4 +36,4 @@ const JetpackFooter = ({ className, menu, ...otherProps }) => {
                     return (_jsx("li", { children: _jsx(Text, { variant: "body-md", className: "jetpack-footer__menu-item", render: !item.href ? (_jsx(Link, { render: _jsx("span", {}), tabIndex: 0, title: item.title || '', onClick: item.onClick || undefined, onKeyDown: item.onKeyDown || undefined, role: "button" })) : (_jsx(Link, { href: item.href, title: item.title || '', onClick: item.onClick || undefined, onKeyDown: item.onKeyDown || undefined })), children: item.label }) }, item.label));
                 }) }), _jsx("a", { className: "jetpack-footer__a8c", href: getRedirectUrl('a8c-about'), rel: "noopener noreferrer", target: "_blank", children: _jsx(AutomatticBylineLogo, { height: 8 }) })] }));
 };
-export default JetpackFooter;
+export default UnstyledJetpackFooter;

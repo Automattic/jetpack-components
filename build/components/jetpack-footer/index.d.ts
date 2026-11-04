@@ -1,2 +1,5 @@
 import './style.scss';
-export { default } from './jetpack-footer.tsx';
+import type { JetpackFooterProps } from './types.ts';
+import type { FC } from 'react';
+declare const JetpackFooter: FC<JetpackFooterProps>;
+export default JetpackFooter;

@@ -9,10 +9,10 @@ declare global {
     }
 }
 /**
- * JetpackFooter component displays a tiny Jetpack logo with the product name on the left and the Automattic Airline "by line" on the right.
+ * UnstyledJetpackFooter displays a tiny Jetpack logo with the product name on the left and the Automattic Airline "by line" on the right, without loading its stylesheet.
  *
  * @param {JetpackFooterProps} props - Component properties.
- * @return {ReactNode} JetpackFooter component.
+ * @return {ReactNode} UnstyledJetpackFooter component.
  */
-declare const JetpackFooter: FC<JetpackFooterProps>;
-export default JetpackFooter;
+declare const UnstyledJetpackFooter: FC<JetpackFooterProps>;
+export default UnstyledJetpackFooter;

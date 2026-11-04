@@ -11,6 +11,11 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Gravatar Hovercards: Update @gravatar-com/hovercards to 0.17.0, which adds defensive escaping of Gravatar profile data.
+- StatCard: Use the design system tooltip.
+- Update package dependencies.
+
+### Fixed
+- JetpackFooter: Keep the footer styles in production builds.
 
 ## [6.1.1] - 2026-11-02
 ### Changed
