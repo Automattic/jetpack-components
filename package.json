@@ -1,6 +1,6 @@
 {
 	"name": "@automattic/jetpack-components",
-	"version": "6.2.2-alpha",
+	"version": "6.3.0-alpha",
 	"description": "Jetpack Components Package",
 	"homepage": "https://github.com/Automattic/jetpack/tree/HEAD/projects/js-packages/components/#readme",
 	"bugs": {
@@ -41,6 +41,10 @@
 		"./gravatar": {
 			"types": "./build/components/gravatar/index.d.ts",
 			"default": "./build/components/gravatar/index.js"
+		},
+		"./highlight-banner": {
+			"types": "./build/components/highlight-banner/index.d.ts",
+			"default": "./build/components/highlight-banner/index.js"
 		},
 		"./jetpack-footer": {
 			"types": "./build/components/jetpack-footer/index.d.ts",

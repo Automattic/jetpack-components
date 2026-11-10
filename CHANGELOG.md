@@ -2,9 +2,12 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [6.2.2-alpha] - unreleased
+## [6.3.0-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
+
+### Added
+- Add a HighlightBanner component: Jetpack's dark green banner with gradient orbs, previously copied into the Jetpack plugin and My Jetpack.
 
 ### Changed
 - Update package dependencies.
@@ -2074,7 +2077,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[6.2.2-alpha]: https://github.com/Automattic/jetpack-components/compare/6.2.1...6.2.2-alpha
+[6.3.0-alpha]: https://github.com/Automattic/jetpack-components/compare/6.2.1...6.3.0-alpha
 [6.2.1]: https://github.com/Automattic/jetpack-components/compare/6.2.0...6.2.1
 [6.2.0]: https://github.com/Automattic/jetpack-components/compare/6.1.1...6.2.0
 [6.1.1]: https://github.com/Automattic/jetpack-components/compare/6.1.0...6.1.1
