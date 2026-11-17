@@ -1,6 +1,6 @@
 {
 	"name": "@automattic/jetpack-components",
-	"version": "6.3.0",
+	"version": "7.0.0-alpha",
 	"description": "Jetpack Components Package",
 	"homepage": "https://github.com/Automattic/jetpack/tree/HEAD/projects/js-packages/components/#readme",
 	"bugs": {
@@ -33,10 +33,6 @@
 		"./checkbox-card": {
 			"types": "./build/components/checkbox-card/index.d.ts",
 			"default": "./build/components/checkbox-card/index.js"
-		},
-		"./global-notices": {
-			"types": "./build/components/global-notices/index.d.ts",
-			"default": "./build/components/global-notices/index.js"
 		},
 		"./gravatar": {
 			"types": "./build/components/gravatar/index.d.ts",
@@ -114,7 +110,6 @@
 		"@wordpress/element": "10.1.0",
 		"@wordpress/i18n": "7.1.0",
 		"@wordpress/icons": "20.0.0",
-		"@wordpress/notices": "6.1.0",
 		"@wordpress/theme": "4.0.0",
 		"@wordpress/ui": "0.26.0",
 		"clsx": "2.1.1",

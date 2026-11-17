@@ -63,5 +63,4 @@ export { default as DiffViewer } from './components/diff-viewer/index.js';
 export { default as MarkedLines } from './components/marked-lines/index.js';
 export { default as DetailsViewer } from './components/details-viewer/index.js';
 export { default as SidebarFooter } from './components/sidebar-footer/index.js';
-export * from './components/global-notices/index.js';
 export * from './components/navigator-modal/index.js';
