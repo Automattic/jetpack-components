@@ -4,19 +4,25 @@ import { useLayoutEffect, useRef } from 'react';
 import './style.scss';
 const NOTICES_ID = 'jp-admin-notices';
 /**
- * Returns the page's one `#jp-admin-notices`, creating it on first use.
+ * Returns the page's shared `#jp-admin-notices`, creating it on first use.
  *
  * Found through the DOM, not a module variable: each wp-build route bundles its own copy
- * of this module.
+ * of this module. Another admin shell app's own container is not the shared one.
  *
+ * @param {HTMLElement} host - The slot's element.
  * @return {HTMLElement} The element.
  */
-const getNotices = () => {
-    let element = document.getElementById(NOTICES_ID);
+const getNotices = (host) => {
+    const app = host.closest('[data-shell-page]');
+    let element = Array.from(document.querySelectorAll(`[id="${NOTICES_ID}"]`)).find(candidate => {
+        const owner = candidate.closest('[data-shell-page]');
+        return 'jitmSlot' in candidate.dataset || !owner || owner === app;
+    });
     if (!element) {
         element = document.createElement('div');
         element.id = NOTICES_ID;
     }
+    element.dataset.jitmSlot = '';
     return element;
 };
 /**
@@ -36,10 +42,22 @@ const JitmSlot = ({ className, inset }) => {
         if (!host) {
             return;
         }
-        const element = getNotices();
+        const element = getNotices(host);
         element.hidden = false;
         host.appendChild(element);
+        // The admin shell keeps hidden apps mounted: take the element back when this slot's app is shown.
+        const onShown = (event) => {
+            const app = host.closest('[data-shell-page]');
+            const notices = getNotices(host);
+            if (app?.getAttribute('data-shell-page') === event.detail?.page &&
+                !app.contains(notices)) {
+                notices.hidden = false;
+                host.appendChild(notices);
+            }
+        };
+        window.addEventListener('jetpack-admin-shell:page-shown', onShown);
         return () => {
+            window.removeEventListener('jetpack-admin-shell:page-shown', onShown);
             // A slot that mounted before this one unmounted may already hold it.
             if (element.parentNode === host) {
                 element.hidden = true;
