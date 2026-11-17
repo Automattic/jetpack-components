@@ -2,12 +2,9 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [7.0.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [7.0.0] - 2026-11-17
 ### Removed
-- Remove the deprecated `GlobalNotices` component, `useGlobalNotices` hook and `globalNoticesStore`; use `@wordpress/notices` directly.
+- Remove the deprecated `GlobalNotices` component, `useGlobalNotices` hook and `globalNoticesStore`; use `@wordpress/notices` directly. [#55007]
 
 ## [6.3.0] - 2026-11-16
 ### Added
@@ -2081,7 +2078,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[7.0.0-alpha]: https://github.com/Automattic/jetpack-components/compare/6.3.0...7.0.0-alpha
+[7.0.0]: https://github.com/Automattic/jetpack-components/compare/6.3.0...7.0.0
 [6.3.0]: https://github.com/Automattic/jetpack-components/compare/6.2.1...6.3.0
 [6.2.1]: https://github.com/Automattic/jetpack-components/compare/6.2.0...6.2.1
 [6.2.0]: https://github.com/Automattic/jetpack-components/compare/6.1.1...6.2.0
