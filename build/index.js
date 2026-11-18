@@ -15,6 +15,7 @@ along with this program; if not, see <https://www.gnu.org/licenses/>.
 export { default as JetpackLogo } from './components/jetpack-logo/index.js';
 export { default as JetpackVaultPressBackupLogo } from './components/jetpack-vaultpress-backup-logo/index.js';
 export { default as getRedirectUrl } from './tools/jp-redirect/index.js';
+export { loadMediaLibrary } from './tools/load-media-library/index.js';
 export { default as getProductCheckoutUrl } from './tools/get-product-checkout-url/index.js';
 export { isFirstMonthTrial } from './tools/pricing-utils/index.js';
 export { default as AutomatticBylineLogo } from './components/automattic-byline-logo/index.js';

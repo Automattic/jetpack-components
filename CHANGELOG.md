@@ -2,9 +2,12 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [7.0.1-alpha] - unreleased
+## [7.1.0-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
+
+### Added
+- Add loadMediaLibrary(), which loads the WordPress media library when a dashboard first opens it.
 
 ### Fixed
 - JitmSlot: Take the JITM container back when the admin shell shows the slot's dashboard again.
@@ -2085,7 +2088,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[7.0.1-alpha]: https://github.com/Automattic/jetpack-components/compare/7.0.0...7.0.1-alpha
+[7.1.0-alpha]: https://github.com/Automattic/jetpack-components/compare/7.0.0...7.1.0-alpha
 [7.0.0]: https://github.com/Automattic/jetpack-components/compare/6.3.0...7.0.0
 [6.3.0]: https://github.com/Automattic/jetpack-components/compare/6.2.1...6.3.0
 [6.2.1]: https://github.com/Automattic/jetpack-components/compare/6.2.0...6.2.1
