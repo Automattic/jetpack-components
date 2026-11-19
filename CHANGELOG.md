@@ -10,6 +10,7 @@ This is an alpha version! The changes listed here are not final.
 - Add loadMediaLibrary(), which loads the WordPress media library when a dashboard first opens it.
 
 ### Fixed
+- JetpackFooter: Show the My Jetpack links on WordPress.com sites where the host shows My Jetpack.
 - JitmSlot: Take the JITM container back when the admin shell shows the slot's dashboard again.
 
 ## [7.0.0] - 2026-11-17
