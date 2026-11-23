@@ -2,6 +2,13 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
+## [7.1.1-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Fixed
+- Media library: Skip the scripts and styles the page already loaded, even when they were concatenated.
+
 ## [7.1.0] - 2026-11-23
 ### Added
 - Add loadMediaLibrary(), which loads the WordPress media library when a dashboard first opens it. [#55120]
@@ -2086,6 +2093,7 @@
 ### Changed
 - Update node version requirement to 14.16.1
 
+[7.1.1-alpha]: https://github.com/Automattic/jetpack-components/compare/7.1.0...7.1.1-alpha
 [7.1.0]: https://github.com/Automattic/jetpack-components/compare/7.0.0...7.1.0
 [7.0.0]: https://github.com/Automattic/jetpack-components/compare/6.3.0...7.0.0
 [6.3.0]: https://github.com/Automattic/jetpack-components/compare/6.2.1...6.3.0
