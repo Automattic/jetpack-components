@@ -17,7 +17,7 @@ import styles from './style.module.scss';
  * @param {AdminPageProps} props - Component properties.
  * @return {ReactNode} AdminPage component.
  */
-const AdminPage = ({ children, className, showHeader = true, showFooter = true, showBackground = true, sandboxedDomain = '', apiRoot = '', apiNonce = '', optionalMenuItems, header, title, subTitle, logo, actions, globalControls, breadcrumbs, ariaLabel, tabs, showBottomBorder = true, unwrapped = false, }) => {
+const AdminPage = ({ children, className, showHeader = true, showFooter = true, showBackground = true, sandboxedDomain = '', apiRoot = '', apiNonce = '', optionalMenuItems, showFooterFeaturesLink = true, header, title, subTitle, logo, actions, globalControls, breadcrumbs, ariaLabel, tabs, showBottomBorder = true, unwrapped = false, }) => {
     // Only set what was passed: the client is shared, so an empty default would wipe what the page set.
     useEffect(() => {
         if (apiRoot) {
@@ -49,12 +49,12 @@ const AdminPage = ({ children, className, showHeader = true, showFooter = true, 
     }, []);
     // When title or breadcrumbs are provided, use admin-ui Page for the full page layout.
     if (showHeader && (title || breadcrumbs)) {
-        return (_jsx("div", { className: rootClassName, children: _jsxs(Page, { className: "jp-admin-page__page", visual: logo || _jsx(JetpackLogo, { showText: false, height: 20 }), breadcrumbs: breadcrumbs, title: title, ariaLabel: ariaLabel, subTitle: subTitle, actions: globalControls ? (_jsxs(_Fragment, { children: [actions, actions && (_jsx("span", { role: "separator", "aria-orientation": "vertical", className: styles['global-controls-separator'] })), globalControls] })) : (actions), showSidebarToggle: false, children: [tabs, unwrapped ? (children) : (_jsx(Container, { className: "jp-admin-page__content", fluid: true, horizontalSpacing: 0, children: _jsx(Col, { children: children }) })), showFooter && _jsx(JetpackFooter, { menu: optionalMenuItems })] }) }));
+        return (_jsx("div", { className: rootClassName, children: _jsxs(Page, { className: "jp-admin-page__page", visual: logo || _jsx(JetpackLogo, { showText: false, height: 20 }), breadcrumbs: breadcrumbs, title: title, ariaLabel: ariaLabel, subTitle: subTitle, actions: globalControls ? (_jsxs(_Fragment, { children: [actions, actions && (_jsx("span", { role: "separator", "aria-orientation": "vertical", className: styles['global-controls-separator'] })), globalControls] })) : (actions), showSidebarToggle: false, children: [tabs, unwrapped ? (children) : (_jsx(Container, { className: "jp-admin-page__content", fluid: true, horizontalSpacing: 0, children: _jsx(Col, { children: children }) })), showFooter && (_jsx(JetpackFooter, { menu: optionalMenuItems, showFeaturesLink: showFooterFeaturesLink }))] }) }));
     }
     // Legacy path: no title provided, render the classic header.
     return (_jsxs("div", { className: rootClassName, children: [showHeader && (_jsx(Container, { horizontalSpacing: 5, children: _jsxs(Col, { className: clsx(styles['admin-page-header'], 'jp-admin-page-header'), children: [header ? header : _jsx(JetpackLogo, {}), sandboxedDomain && (_jsx("code", { className: styles['sandbox-domain-badge'], onClick: testConnection, onKeyDown: testConnection, 
                             // eslint-disable-next-line jsx-a11y/no-noninteractive-element-to-interactive-role
-                            role: "button", tabIndex: 0, title: `Sandboxing via ${sandboxedDomain}. Click to test connection.`, children: "API Sandboxed" }))] }) })), _jsx(Container, { fluid: true, horizontalSpacing: 0, children: _jsx(Col, { children: children }) }), showFooter && _jsx(JetpackFooter, { menu: optionalMenuItems })] }));
+                            role: "button", tabIndex: 0, title: `Sandboxing via ${sandboxedDomain}. Click to test connection.`, children: "API Sandboxed" }))] }) })), _jsx(Container, { fluid: true, horizontalSpacing: 0, children: _jsx(Col, { children: children }) }), showFooter && (_jsx(JetpackFooter, { menu: optionalMenuItems, showFeaturesLink: showFooterFeaturesLink }))] }));
 };
 export default AdminPage;
 export { default as PageActionButton } from './page-action-button.js';

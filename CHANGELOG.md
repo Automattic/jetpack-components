@@ -8,6 +8,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Add an optional closeOnClickOutsideExceptRef prop to IconTooltip, for a caller's own field whose clicks shouldn't close the tooltip. Escape still closes the tooltip while focus is in that field.
+- Footer: Add a showFeaturesLink prop so a page that already links to Features can leave it out of the footer.
 
 ### Fixed
 - Media library: Skip the scripts and styles the page already loaded, even when they were concatenated.
