@@ -24,7 +24,7 @@ const placementsToPositions = (placement) => {
  * @param {IconTooltipProps} props - Props
  * @return {ReactElement} - JSX element
  */
-const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', placement = 'bottom-end', animate = true, iconCode = info, label, iconSize = 18, offset = 10, title, children, popoverAnchorStyle = 'icon', trigger, onTriggerClick, closeOnClickOutside = true, forceShow = false, hoverShow = false, wide = false, inline = true, shift = false, }) => {
+const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', placement = 'bottom-end', animate = true, iconCode = info, label, iconSize = 18, offset = 10, title, children, popoverAnchorStyle = 'icon', trigger, onTriggerClick, closeOnClickOutside = true, closeOnClickOutsideExceptRef, forceShow = false, hoverShow = false, wide = false, inline = true, shift = false, }) => {
     const POPOVER_HELPER_WIDTH = 124;
     const [isVisible, setIsVisible] = useState(false);
     const [hoverTimeout, setHoverTimeout] = useState(null);
@@ -134,7 +134,10 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
         },
         onFocusOutside: (event) => {
             // A pointer press on our own trigger dismisses through that trigger instead.
-            if (closeOnClickOutside && !wrapperRef.current?.contains(event.relatedTarget)) {
+            const related = event.relatedTarget;
+            if (closeOnClickOutside &&
+                !wrapperRef.current?.contains(related) &&
+                !closeOnClickOutsideExceptRef?.current?.contains(related)) {
                 hideTooltip();
             }
         },
@@ -154,27 +157,41 @@ const IconTooltip = ({ className = '', popoverClassName, iconClassName = '', pla
         const doc = wrapperRef.current?.ownerDocument;
         const handlePointerDown = (event) => {
             const target = event.target;
-            if (!wrapperRef.current?.contains(target) && !popoverRef.current?.contains(target)) {
+            if (!wrapperRef.current?.contains(target) &&
+                !popoverRef.current?.contains(target) &&
+                !closeOnClickOutsideExceptRef?.current?.contains(target)) {
                 hideTooltip();
             }
         };
         doc?.addEventListener('pointerdown', handlePointerDown);
         return () => doc?.removeEventListener('pointerdown', handlePointerDown);
-    }, [isVisible, isForcedToShow, closeOnClickOutside, hideTooltip]);
-    // Hover leaves focus elsewhere, so Escape is watched directly to keep the content dismissible.
+    }, [
+        isVisible,
+        isForcedToShow,
+        closeOnClickOutside,
+        closeOnClickOutsideExceptRef,
+        hideTooltip,
+    ]);
+    // Hover, or a press in closeOnClickOutsideExceptRef, leaves focus off the trigger, so Escape
+    // is watched directly to keep the content dismissible.
     useEffect(() => {
-        if (!isVisible || !openedByHover.current) {
+        if (!isVisible || !(openedByHover.current || closeOnClickOutsideExceptRef)) {
             return;
         }
         const doc = wrapperRef.current?.ownerDocument;
         const handleKeyDown = (event) => {
-            if (event.key === 'Escape') {
+            // With an except-ref field, skip an Escape something else handled or that dismisses an
+            // IME candidate list (keyCode 229 covers Safari, which can send it with isComposing false);
+            // other tooltips keep closing on any Escape.
+            const leftToField = closeOnClickOutsideExceptRef &&
+                (event.defaultPrevented || event.isComposing || event.keyCode === 229);
+            if (event.key === 'Escape' && !leftToField) {
                 hideTooltip();
             }
         };
         doc?.addEventListener('keydown', handleKeyDown);
         return () => doc?.removeEventListener('keydown', handleKeyDown);
-    }, [isVisible, hideTooltip]);
+    }, [isVisible, closeOnClickOutsideExceptRef, hideTooltip]);
     useEffect(() => {
         if (isForcedToShow || isVisible) {
             return;

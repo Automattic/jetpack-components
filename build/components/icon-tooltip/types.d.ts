@@ -1,5 +1,5 @@
 import type { Icon } from '@wordpress/icons';
-import type { ComponentProps, ReactNode } from 'react';
+import type { ComponentProps, ReactNode, RefObject } from 'react';
 export type Placement = 'top' | 'top-start' | 'top-end' | 'bottom' | 'bottom-start' | 'bottom-end';
 export type Position = 'top left' | 'top center' | 'top right' | 'bottom left' | 'bottom center' | 'bottom right';
 export type IconTooltipProps = {
@@ -68,6 +68,11 @@ export type IconTooltipProps = {
      * reference the visitor keeps open while working elsewhere on the page.
      */
     closeOnClickOutside?: boolean;
+    /**
+     * A caller's own element whose press doesn't count as "outside" for `closeOnClickOutside`,
+     * e.g. a field the visitor edits while keeping the tooltip's reference content open.
+     */
+    closeOnClickOutsideExceptRef?: RefObject<HTMLElement | null>;
     /**
      * Force the Popover to show without an event trigger. Only for a wrapper-anchored
      * tooltip with no `trigger`, such as a programmatic tour step.

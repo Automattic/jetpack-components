@@ -2,9 +2,12 @@
 
 ### This is a list detailing changes for the Jetpack RNA Components package releases.
 
-## [7.1.1-alpha] - unreleased
+## [7.2.0-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
+
+### Added
+- Add an optional closeOnClickOutsideExceptRef prop to IconTooltip, for a caller's own field whose clicks shouldn't close the tooltip. Escape still closes the tooltip while focus is in that field.
 
 ### Fixed
 - Media library: Skip the scripts and styles the page already loaded, even when they were concatenated.
@@ -2093,7 +2096,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update node version requirement to 14.16.1
 
-[7.1.1-alpha]: https://github.com/Automattic/jetpack-components/compare/7.1.0...7.1.1-alpha
+[7.2.0-alpha]: https://github.com/Automattic/jetpack-components/compare/7.1.0...7.2.0-alpha
 [7.1.0]: https://github.com/Automattic/jetpack-components/compare/7.0.0...7.1.0
 [7.0.0]: https://github.com/Automattic/jetpack-components/compare/6.3.0...7.0.0
 [6.3.0]: https://github.com/Automattic/jetpack-components/compare/6.2.1...6.3.0
