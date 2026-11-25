@@ -6,6 +6,8 @@ import styles from './style.module.scss';
 /**
  * Text component.
  *
+ * @deprecated Use `Text` from `@wordpress/ui` instead.
+ *
  * @param {TextProps} props - Component props.
  * @return {ReactElement} - JSX.Element
  */
@@ -27,14 +29,9 @@ const Text = forwardRef(({ variant = 'body', children, component, className, ...
 Text.displayName = 'Text';
 export default Text;
 /**
- * Heading component - Medium size.
- *
- * @param {TextProps} props - Component props.
- * @return {ReactElement} - JSX.Element
- */
-export const H2 = ({ children, ...componentProps }) => (_jsx(Text, { variant: "headline-medium", mb: 3, ...componentProps, children: children }));
-/**
  * Heading component - Small size,
+ *
+ * @deprecated Use `Text` from `@wordpress/ui` instead.
  *
  * @param {H3Props} props - Component props.
  * @return {ReactElement} - JSX.Element
@@ -45,6 +42,8 @@ export const H3 = ({ children, weight = 'bold', ...componentProps }) => {
 };
 /**
  * Title component, based on Text component.
+ *
+ * @deprecated Use `Text` from `@wordpress/ui` instead.
  *
  * @param {TitleProps} props - Component props.
  * @return {ReactElement} - JSX.Element
